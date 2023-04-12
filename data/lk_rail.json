@@ -1,0 +1,20 @@
+{
+    "anchor_idx": {
+        "Kankesanthurai": [0, 10],
+        "Colombo Fort": [0,0],
+        "Badulla": [10,  0],
+        "Beliatta": [0,-10]
+    },
+    "line_list": [
+        {
+            "node_list": ["Colombo Fort", "Peradeniya", "Badulla"],
+            "color": "red"
+        },
+        {
+            "node_list":   ["Colombo Fort", "Galle", "Matara", "Beliatta"],
+            "color": "blue"
+        }      
+    ]
+}
+
+
