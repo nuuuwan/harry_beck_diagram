@@ -1,5 +1,4 @@
 import copy
-import math
 from functools import cached_property
 
 from utils import JSONFile, Log
@@ -77,40 +76,55 @@ class Config:
         return junction_list
 
     @cached_property
-    def node_to_neighbors(self):
-        node_to_neighbors = {}
-        for line in self.line_list:
-            node_list = line['node_list']
-            for i in range(len(node_list) - 1):
-                node = node_list[i]
-                neighbor = node_list[i + 1]
-                if node not in node_to_neighbors:
-                    node_to_neighbors[node] = set()
-                node_to_neighbors[node].add(neighbor)
+    def node_to_text_angle(self):
+        def xy_to_k(x, y):
+            return f'{x:.1f}:{y:.1f}'
 
-                if neighbor not in node_to_neighbors:
-                    node_to_neighbors[neighbor] = set()
-                node_to_neighbors[neighbor].add(node)
+        used_ks = set()
 
-        return node_to_neighbors
+        for node, (x, y) in self.node_idx.items():
+            used_ks.add(xy_to_k(x, y))
 
-    @cached_property
-    def node_to_angles(self):
-        node_to_angles = {}
-        for node, neighbors in self.node_to_neighbors.items():
-            angles = []
-            for neighbor in neighbors:
-                dx = self.node_idx[neighbor][0] - self.node_idx[node][0]
-                dy = self.node_idx[neighbor][1] - self.node_idx[node][1]
-                angle = abs(int(180 * math.atan2(dy, dx) / math.pi)) % 180
-                angles.append(angle)
-            node_to_angles[node] = angles
-        return node_to_angles
+        node_to_text_angle = {}
+        for i_junction in [0, 1, 2]:
+            for node, (x, y) in self.node_idx.items():
+                is_node_junction = node in self.junction_list
+                is_node_district_capital = node[:3] == node.upper()[:3]
+                if i_junction == 0 and not is_node_junction:
+                    continue
 
-    @cached_property
-    def node_to_angle(self):
-        node_to_angle = {}
-        for node, angles in self.node_to_angles.items():
-            angle = sum(angles) / len(angles)
-            node_to_angle[node] = angle
-        return node_to_angle
+                if i_junction == 1 and not (
+                    not is_node_junction and is_node_district_capital
+                ):
+                    continue
+
+                if i_junction == 2 and not (
+                    not is_node_junction and not is_node_district_capital
+                ):
+                    continue
+
+                node_to_text_angle[node] = None
+
+                for dx, dy, angle in [
+                    [1, 0, 0],
+                    [-1, 0, 180],
+                    [1, 1, 45],
+                    [1, -1, 315],
+                    [0, 1, 90],
+                    [0, -1, 270],
+                    [-1, 1, 135],
+                    [-1, -1, 215],
+                    [1, 0.5, 22.5],
+                    [1, -0.5, 360 - 22.5],
+                ]:
+                    x1, y1 = x + dx, y + dy
+                    k1 = xy_to_k(x1, y1)
+                    if k1 not in used_ks:
+                        used_ks.add(k1)
+                        node_to_text_angle[node] = angle
+                        break
+
+                if node_to_text_angle[node] is None:
+                    log.error(f'Could not find text angle for node {node}')
+
+        return node_to_text_angle

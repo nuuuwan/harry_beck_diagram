@@ -48,12 +48,11 @@ class Draw(Config):
 
         return t
 
-    def draw_node(self, label, x, y, t):
-        log.debug(f"({x},{y}) {label}")
+    def draw_node(self, node, x, y, t):
         sx, sy = t(x, y)
         inner_list = []
 
-        if label in self.junction_list:
+        if node in self.junction_list:
             inner_list.append(
                 _(
                     'circle',
@@ -78,20 +77,41 @@ class Draw(Config):
             ),
         )
 
-        angle = self.node_to_angle[label] + 270
-        transform = f'translate({sx},{sy}) rotate(-{angle}) translate({-sx},{-sy})'
-        inner_list.append(
-            _(
-                'text',
-                label,
-                STYLE.NODE_TEXT
-                | dict(
-                    x=sx + RADIUS * 2,
-                    y=sy,
-                    transform=transform,
+        text_angle = self.node_to_text_angle[node]
+        if text_angle is not None:
+            text_anchor = 'start'
+            space_dir = 1
+            if 90 < text_angle <= 270:
+                text_anchor = 'end'
+                space_dir = -1
+                text_angle -= 180
+
+            transform = f'translate({sx},{sy}) rotate(-{text_angle}) translate({-sx},{-sy})'
+            default_font_size = STYLE.NODE_TEXT['font_size']
+            font_size = (
+                int(default_font_size * 1.5)
+                if (node in self.junction_list)
+                else default_font_size
+            )
+            is_node_district_capital = node[:3] == node.upper()[:3]
+            default_font_weight = STYLE.NODE_TEXT['font_weight']
+            font_weight = default_font_weight
+
+            inner_list.append(
+                _(
+                    'text',
+                    node,
+                    STYLE.NODE_TEXT
+                    | dict(
+                        x=sx + space_dir * RADIUS * 2.5,
+                        y=sy,
+                        text_anchor=text_anchor,
+                        transform=transform,
+                        font_size=font_size,
+                        font_weight=font_weight,
+                    ),
                 ),
-            ),
-        )
+            )
         return _(
             'g',
             inner_list,
@@ -141,4 +161,4 @@ class Draw(Config):
 if __name__ == '__main__':
     draw = Draw('data/lk_rail.json')
     draw.draw()
-    log.debug(draw.node_to_angles)
+    log.debug(draw.node_to_text_angle)

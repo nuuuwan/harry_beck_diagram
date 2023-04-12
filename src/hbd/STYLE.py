@@ -1,12 +1,12 @@
-RADIUS = 5
-DIM = 600
+RADIUS = 6
+DIM = 1000
 
 
 class STYLE:
     SVG = dict(
         width=DIM,
         height=DIM,
-        padding=50,
+        padding=200,
     )
     NODE_CIRCLE = dict(
         r=RADIUS,
@@ -18,7 +18,7 @@ class STYLE:
         fill='black',
         stroke='none',
         font_size=10,
-        font_family='Helvetica',
+        font_family='Trebuchet MS',
         font_weight="100",
         text_anchor='start',
         dominant_baseline='central',
@@ -27,4 +27,5 @@ class STYLE:
     LINE_POLYLINE = dict(
         fill='none',
         stroke_width=RADIUS * 2.1,
+        stroke_opacity=0.8,
     )
