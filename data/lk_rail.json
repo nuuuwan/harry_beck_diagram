@@ -1,19 +1,58 @@
 {
     "anchor_idx": {
-        "Kankesanthurai": [0, 10],
-        "Colombo Fort": [0,0],
-        "Badulla": [10,  0],
-        "Beliatta": [0,-10]
+        "Kankesanthurai": [5, 15],
+        "COLOMBO (Fort)": [0,0],
+        "BADULLA": [10,  0],
+        "Beliatta": [0,-5],
+        "Avissawella": [2, -2],
+        "Periyanurvillu": [0, 7],
+        "MATALE": [7, 3],
+        "Mihintale": [7, 10],
+        "Talaimannar Pier": [0,10],
+        "BATTICALOA": [10, 5],
+        "TRINCOMALEE": [10, 10]
     },
     "line_list": [
         {
-            "node_list": ["Colombo Fort", "Peradeniya", "Badulla"],
+            "node_list": ["COLOMBO (Fort)", "COLOMBO (Maradana)", "Ragama", "GAMPAHA", "Polgahawela", "Peradeniya", "BADULLA"],
             "color": "red"
         },
         {
-            "node_list":   ["Colombo Fort", "Galle", "Matara", "Beliatta"],
+            "node_list":   ["COLOMBO (Fort)", "KALUTARA (North)", "GALLE", "MATARA", "Beliatta"],
+            "color": "cyan"
+        },
+        {
+            "node_list":   ["Polgahawela", "KURUNEGALA", "Maho", "ANURADHAPURA", "Mihintale Junction", "Medavachchiya", "VAVUNIYA", "KILINOCHCHI", "JAFFNA", "Kankesanthurai"],
+            "color": "orange"
+        },
+        {
+            "node_list":   ["COLOMBO (Maradana)", "Avissawella"],
+            "color": "darkblue"
+        },
+        {
+            "node_list":   ["Ragama", "Puttalam", "Periyanurvillu"],
+            "color": "green"
+        },
+        {
+            "node_list":   ["Peradeniya", "KANDY", "MATALE"],
+            "color": "purple"
+        },
+        {
+            "node_list": ["Mihintale Junction", "Mihintale"],
+            "color": "yellow"
+        } ,
+        {
+            "node_list": ["Medavachchiya", "MANNAR", "Talaimannar Pier"],
             "color": "blue"
-        }      
+        },
+        {
+            "node_list": ["Maho", "Galoya", "POLONNARUWA", "BATTICALOA"],
+            "color": "darkgreen"
+        } ,
+        {
+            "node_list": ["Galoya", "TRINCOMALEE"],
+            "color": "silver"
+        }          
     ]
 }
 

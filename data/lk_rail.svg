@@ -1,33 +1,141 @@
 <?xml version="1.0" ?>
 <svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" padding="50">
-  <polyline fill="none" stroke-width="7" points="50,300 350,300 550,300" stroke="red"/>
-  <polyline fill="none" stroke-width="7" points="50,300 50,475 50,425 50,550" stroke="blue"/>
+  <polyline fill="none" stroke-width="5" points="50,425 100,425 150,425 250,425 300,425 400,425 550,425" stroke="red"/>
+  <polyline fill="none" stroke-width="5" points="50,425 50,450 50,475 50,500 50,550" stroke="cyan"/>
+  <polyline fill="none" stroke-width="5" points="300,425 300,400 300,350 300,325 300,275 300,250 300,200 300,175 300,125 300,50" stroke="orange"/>
+  <polyline fill="none" stroke-width="5" points="100,425 150,475" stroke="darkblue"/>
+  <polyline fill="none" stroke-width="5" points="150,425 100,375 50,250" stroke="green"/>
+  <polyline fill="none" stroke-width="5" points="400,425 400,400 400,350" stroke="purple"/>
+  <polyline fill="none" stroke-width="5" points="300,275 400,175" stroke="yellow"/>
+  <polyline fill="none" stroke-width="5" points="300,250 200,225 50,175" stroke="blue"/>
+  <polyline fill="none" stroke-width="5" points="300,350 350,350 400,325 550,300" stroke="darkgreen"/>
+  <polyline fill="none" stroke-width="5" points="350,350 550,175" stroke="silver"/>
   <g>
-    <circle r="10" fill="white" stroke="black" stroke-width="7" cx="50" cy="50"/>
-    <text fill="black" stroke="none" font-size="10" text-anchor="start" font-family="sans-serif" alignment-baseline="middle" x="65.0" y="50">Kankesanthurai</text>
+    <circle r="5" fill="white" stroke="black" stroke-width="3.5" cx="300" cy="50"/>
+    <text fill="black" stroke="none" font-size="10" text-anchor="start" font-family="sans-serif" alignment-baseline="middle" x="307.5" y="50">Kankesanthurai</text>
   </g>
   <g>
-    <circle r="10" fill="white" stroke="black" stroke-width="7" cx="50" cy="300"/>
-    <text fill="black" stroke="none" font-size="10" text-anchor="start" font-family="sans-serif" alignment-baseline="middle" x="65.0" y="300">Colombo Fort</text>
+    <circle r="5" fill="white" stroke="black" stroke-width="3.5" cx="50" cy="425"/>
+    <text fill="black" stroke="none" font-size="10" text-anchor="start" font-family="sans-serif" alignment-baseline="middle" x="57.5" y="425">COLOMBO (Fort)</text>
   </g>
   <g>
-    <circle r="10" fill="white" stroke="black" stroke-width="7" cx="550" cy="300"/>
-    <text fill="black" stroke="none" font-size="10" text-anchor="start" font-family="sans-serif" alignment-baseline="middle" x="565.0" y="300">Badulla</text>
+    <circle r="5" fill="white" stroke="black" stroke-width="3.5" cx="550" cy="425"/>
+    <text fill="black" stroke="none" font-size="10" text-anchor="start" font-family="sans-serif" alignment-baseline="middle" x="557.5" y="425">BADULLA</text>
   </g>
   <g>
-    <circle r="10" fill="white" stroke="black" stroke-width="7" cx="50" cy="550"/>
-    <text fill="black" stroke="none" font-size="10" text-anchor="start" font-family="sans-serif" alignment-baseline="middle" x="65.0" y="550">Beliatta</text>
+    <circle r="5" fill="white" stroke="black" stroke-width="3.5" cx="50" cy="550"/>
+    <text fill="black" stroke="none" font-size="10" text-anchor="start" font-family="sans-serif" alignment-baseline="middle" x="57.5" y="550">Beliatta</text>
   </g>
   <g>
-    <circle r="10" fill="white" stroke="black" stroke-width="7" cx="350" cy="300"/>
-    <text fill="black" stroke="none" font-size="10" text-anchor="start" font-family="sans-serif" alignment-baseline="middle" x="365.0" y="300">Peradeniya</text>
+    <circle r="5" fill="white" stroke="black" stroke-width="3.5" cx="150" cy="475"/>
+    <text fill="black" stroke="none" font-size="10" text-anchor="start" font-family="sans-serif" alignment-baseline="middle" x="157.5" y="475">Avissawella</text>
   </g>
   <g>
-    <circle r="10" fill="white" stroke="black" stroke-width="7" cx="50" cy="475"/>
-    <text fill="black" stroke="none" font-size="10" text-anchor="start" font-family="sans-serif" alignment-baseline="middle" x="65.0" y="475">Galle</text>
+    <circle r="5" fill="white" stroke="black" stroke-width="3.5" cx="50" cy="250"/>
+    <text fill="black" stroke="none" font-size="10" text-anchor="start" font-family="sans-serif" alignment-baseline="middle" x="57.5" y="250">Periyanurvillu</text>
   </g>
   <g>
-    <circle r="10" fill="white" stroke="black" stroke-width="7" cx="50" cy="425"/>
-    <text fill="black" stroke="none" font-size="10" text-anchor="start" font-family="sans-serif" alignment-baseline="middle" x="65.0" y="425">Matara</text>
+    <circle r="5" fill="white" stroke="black" stroke-width="3.5" cx="400" cy="350"/>
+    <text fill="black" stroke="none" font-size="10" text-anchor="start" font-family="sans-serif" alignment-baseline="middle" x="407.5" y="350">MATALE</text>
+  </g>
+  <g>
+    <circle r="5" fill="white" stroke="black" stroke-width="3.5" cx="400" cy="175"/>
+    <text fill="black" stroke="none" font-size="10" text-anchor="start" font-family="sans-serif" alignment-baseline="middle" x="407.5" y="175">Mihintale</text>
+  </g>
+  <g>
+    <circle r="5" fill="white" stroke="black" stroke-width="3.5" cx="50" cy="175"/>
+    <text fill="black" stroke="none" font-size="10" text-anchor="start" font-family="sans-serif" alignment-baseline="middle" x="57.5" y="175">Talaimannar Pier</text>
+  </g>
+  <g>
+    <circle r="5" fill="white" stroke="black" stroke-width="3.5" cx="550" cy="300"/>
+    <text fill="black" stroke="none" font-size="10" text-anchor="start" font-family="sans-serif" alignment-baseline="middle" x="557.5" y="300">BATTICALOA</text>
+  </g>
+  <g>
+    <circle r="5" fill="white" stroke="black" stroke-width="3.5" cx="550" cy="175"/>
+    <text fill="black" stroke="none" font-size="10" text-anchor="start" font-family="sans-serif" alignment-baseline="middle" x="557.5" y="175">TRINCOMALEE</text>
+  </g>
+  <g>
+    <circle r="5" fill="white" stroke="black" stroke-width="3.5" cx="100" cy="425"/>
+    <text fill="black" stroke="none" font-size="10" text-anchor="start" font-family="sans-serif" alignment-baseline="middle" x="107.5" y="425">COLOMBO (Maradana)</text>
+  </g>
+  <g>
+    <circle r="5" fill="white" stroke="black" stroke-width="3.5" cx="150" cy="425"/>
+    <text fill="black" stroke="none" font-size="10" text-anchor="start" font-family="sans-serif" alignment-baseline="middle" x="157.5" y="425">Ragama</text>
+  </g>
+  <g>
+    <circle r="5" fill="white" stroke="black" stroke-width="3.5" cx="250" cy="425"/>
+    <text fill="black" stroke="none" font-size="10" text-anchor="start" font-family="sans-serif" alignment-baseline="middle" x="257.5" y="425">GAMPAHA</text>
+  </g>
+  <g>
+    <circle r="5" fill="white" stroke="black" stroke-width="3.5" cx="300" cy="425"/>
+    <text fill="black" stroke="none" font-size="10" text-anchor="start" font-family="sans-serif" alignment-baseline="middle" x="307.5" y="425">Polgahawela</text>
+  </g>
+  <g>
+    <circle r="5" fill="white" stroke="black" stroke-width="3.5" cx="400" cy="425"/>
+    <text fill="black" stroke="none" font-size="10" text-anchor="start" font-family="sans-serif" alignment-baseline="middle" x="407.5" y="425">Peradeniya</text>
+  </g>
+  <g>
+    <circle r="5" fill="white" stroke="black" stroke-width="3.5" cx="50" cy="450"/>
+    <text fill="black" stroke="none" font-size="10" text-anchor="start" font-family="sans-serif" alignment-baseline="middle" x="57.5" y="450">KALUTARA (North)</text>
+  </g>
+  <g>
+    <circle r="5" fill="white" stroke="black" stroke-width="3.5" cx="50" cy="475"/>
+    <text fill="black" stroke="none" font-size="10" text-anchor="start" font-family="sans-serif" alignment-baseline="middle" x="57.5" y="475">GALLE</text>
+  </g>
+  <g>
+    <circle r="5" fill="white" stroke="black" stroke-width="3.5" cx="50" cy="500"/>
+    <text fill="black" stroke="none" font-size="10" text-anchor="start" font-family="sans-serif" alignment-baseline="middle" x="57.5" y="500">MATARA</text>
+  </g>
+  <g>
+    <circle r="5" fill="white" stroke="black" stroke-width="3.5" cx="300" cy="400"/>
+    <text fill="black" stroke="none" font-size="10" text-anchor="start" font-family="sans-serif" alignment-baseline="middle" x="307.5" y="400">KURUNEGALA</text>
+  </g>
+  <g>
+    <circle r="5" fill="white" stroke="black" stroke-width="3.5" cx="300" cy="350"/>
+    <text fill="black" stroke="none" font-size="10" text-anchor="start" font-family="sans-serif" alignment-baseline="middle" x="307.5" y="350">Maho</text>
+  </g>
+  <g>
+    <circle r="5" fill="white" stroke="black" stroke-width="3.5" cx="300" cy="325"/>
+    <text fill="black" stroke="none" font-size="10" text-anchor="start" font-family="sans-serif" alignment-baseline="middle" x="307.5" y="325">ANURADHAPURA</text>
+  </g>
+  <g>
+    <circle r="5" fill="white" stroke="black" stroke-width="3.5" cx="300" cy="275"/>
+    <text fill="black" stroke="none" font-size="10" text-anchor="start" font-family="sans-serif" alignment-baseline="middle" x="307.5" y="275">Mihintale Junction</text>
+  </g>
+  <g>
+    <circle r="5" fill="white" stroke="black" stroke-width="3.5" cx="300" cy="250"/>
+    <text fill="black" stroke="none" font-size="10" text-anchor="start" font-family="sans-serif" alignment-baseline="middle" x="307.5" y="250">Medavachchiya</text>
+  </g>
+  <g>
+    <circle r="5" fill="white" stroke="black" stroke-width="3.5" cx="300" cy="200"/>
+    <text fill="black" stroke="none" font-size="10" text-anchor="start" font-family="sans-serif" alignment-baseline="middle" x="307.5" y="200">VAVUNIYA</text>
+  </g>
+  <g>
+    <circle r="5" fill="white" stroke="black" stroke-width="3.5" cx="300" cy="175"/>
+    <text fill="black" stroke="none" font-size="10" text-anchor="start" font-family="sans-serif" alignment-baseline="middle" x="307.5" y="175">KILINOCHCHI</text>
+  </g>
+  <g>
+    <circle r="5" fill="white" stroke="black" stroke-width="3.5" cx="300" cy="125"/>
+    <text fill="black" stroke="none" font-size="10" text-anchor="start" font-family="sans-serif" alignment-baseline="middle" x="307.5" y="125">JAFFNA</text>
+  </g>
+  <g>
+    <circle r="5" fill="white" stroke="black" stroke-width="3.5" cx="100" cy="375"/>
+    <text fill="black" stroke="none" font-size="10" text-anchor="start" font-family="sans-serif" alignment-baseline="middle" x="107.5" y="375">Puttalam</text>
+  </g>
+  <g>
+    <circle r="5" fill="white" stroke="black" stroke-width="3.5" cx="400" cy="400"/>
+    <text fill="black" stroke="none" font-size="10" text-anchor="start" font-family="sans-serif" alignment-baseline="middle" x="407.5" y="400">KANDY</text>
+  </g>
+  <g>
+    <circle r="5" fill="white" stroke="black" stroke-width="3.5" cx="200" cy="225"/>
+    <text fill="black" stroke="none" font-size="10" text-anchor="start" font-family="sans-serif" alignment-baseline="middle" x="207.5" y="225">MANNAR</text>
+  </g>
+  <g>
+    <circle r="5" fill="white" stroke="black" stroke-width="3.5" cx="350" cy="350"/>
+    <text fill="black" stroke="none" font-size="10" text-anchor="start" font-family="sans-serif" alignment-baseline="middle" x="357.5" y="350">Galoya</text>
+  </g>
+  <g>
+    <circle r="5" fill="white" stroke="black" stroke-width="3.5" cx="400" cy="325"/>
+    <text fill="black" stroke="none" font-size="10" text-anchor="start" font-family="sans-serif" alignment-baseline="middle" x="407.5" y="325">POLONNARUWA</text>
   </g>
 </svg>

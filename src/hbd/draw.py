@@ -6,6 +6,8 @@ from utils.xmlx import _
 
 log = Log(__name__)
 
+RADIUS = 5
+
 
 class STYLE:
     SVG = dict(
@@ -14,10 +16,10 @@ class STYLE:
         padding=50,
     )
     NODE_CIRCLE = dict(
-        r=10,
+        r=RADIUS,
         fill='white',
         stroke='black',
-        stroke_width=7,
+        stroke_width=RADIUS * 0.7,
     )
     NODE_TEXT = dict(
         fill='black',
@@ -30,7 +32,7 @@ class STYLE:
 
     LINE_POLYLINE = dict(
         fill='none',
-        stroke_width=7,
+        stroke_width=RADIUS,
     )
 
 
@@ -61,13 +63,13 @@ class Draw:
         for line in self.line_list:
             node_list = line['node_list']
             start, end = node_list[0], node_list[-1]
-            start_loc = self.anchor_idx[start]
-            end_loc = self.anchor_idx[end]
+            start_loc = node_idx[start]
+            end_loc = node_idx[end]
 
             n = len(node_list)
             for i in range(1, n - 1):
-                p = i / n
-                q = 1 - p
+                q = i / n
+                p = 1 - q
                 node = node_list[i]
                 node_idx[node] = [
                     int(p * start_loc[0] + q * end_loc[0]),
@@ -147,7 +149,7 @@ class Draw:
         lines = []
         for line in self.line_list:
             node_list = line['node_list']
-            color = line['color']   
+            color = line['color']
             points = []
             for node in node_list:
                 x, y = self.node_idx[node]
@@ -157,7 +159,8 @@ class Draw:
                 _(
                     'polyline',
                     None,
-                    STYLE.LINE_POLYLINE |  dict(
+                    STYLE.LINE_POLYLINE
+                    | dict(
                         points=' '.join(points),
                         stroke=color,
                     ),
