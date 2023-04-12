@@ -1,112 +1,15 @@
-import copy
 from functools import cache, cached_property
 
-from utils import JSONFile, Log
+from utils import Log
 from utils.xmlx import _
+
+from hbd.STYLE import STYLE, RADIUS
+from hbd.config import Config
 
 log = Log(__name__)
 
-RADIUS = 5
-DIM = 1000
 
-class STYLE:
-    SVG = dict(
-        width=DIM,
-        height=DIM,
-        padding=50,
-    )
-    NODE_CIRCLE = dict(
-        r=RADIUS,
-        fill='white',
-        stroke='black',
-        stroke_width=RADIUS * 0.7,
-    )
-    NODE_TEXT = dict(
-        fill='black',
-        stroke='none',
-        font_size=10,
-        text_anchor='start',
-        font_family='Arial',
-        font_weight="600",
-        alignment_baseline='middle',
-    )
-
-    LINE_POLYLINE = dict(
-        fill='none',
-        stroke_width=RADIUS * 2.1,
-    )
-
-
-class Draw:
-    def __init__(self, config_path: str):
-        self.config_path = config_path
-
-    @property
-    def config(self) -> dict:
-        return JSONFile(self.config_path).read()
-
-    @property
-    def anchor_idx(self) -> dict:
-        return self.config['anchor_idx']
-
-    @property
-    def anchor_loc_list(self) -> list[float]:
-        return list(self.anchor_idx.values())
-
-    @property
-    def line_list(self) -> list[dict]:
-        return self.config['line_list']
-
-    @cached_property
-    def node_idx(self):
-        node_idx = copy.deepcopy(self.anchor_idx)
-
-        for line in self.line_list:
-            node_list = line['node_list']
-            start, end = node_list[0], node_list[-1]
-            start_loc = node_idx[start]
-            end_loc = node_idx[end]
-
-            n = len(node_list)
-            for i in range(1, n - 1):
-                q = (i) / (n - 1)
-                p = 1 - q
-                node = node_list[i]
-                node_idx[node] = [
-                    int(p * start_loc[0] + q * end_loc[0]),
-                    int(p * start_loc[1] + q * end_loc[1]),
-                ]
-
-        return node_idx
-
-    @cached_property
-    def node_to_color_set(self):
-        node_to_color_set = {}
-        for line in self.line_list:
-            node_list = line['node_list']
-            color = line['color']
-            for node in node_list:
-                if node not in node_to_color_set:
-                    node_to_color_set[node] = set()
-                node_to_color_set[node].add(color)
-        return node_to_color_set
-    
-    @cached_property
-    def node_to_n(self):
-        node_to_n = {}
-        for node, color_set in self.node_to_color_set.items():
-            node_to_n[node] = len(color_set)
-        return node_to_n
-    
-
-    @cached_property
-    def junction_list(self):
-        junction_list = []
-        for node, n in self.node_to_n.items():
-            if n >= 2:
-                junction_list.append(node)
-        return junction_list
-
+class Draw(Config):
     @property
     def svg_path(self) -> str:
         return self.config_path.replace('.json', '.svg')
@@ -130,7 +33,7 @@ class Draw:
         min_x, min_y, max_x, max_y = self.bbox
         x_span = max_x - min_x
         y_span = max_y - min_y
-        max_span = max(x_span, y_span)   
+        max_span = max(x_span, y_span)
 
         padding = STYLE.SVG['padding']
         inner_width = STYLE.SVG['width'] - 2 * padding
@@ -152,17 +55,17 @@ class Draw:
 
         if label in self.junction_list:
             inner_list.append(
-            _(
-                'circle',
-                None,
-                STYLE.NODE_CIRCLE
-                | dict(
-                    cx=sx,
-                    cy=sy,
-                    r=RADIUS * 2,
+                _(
+                    'circle',
+                    None,
+                    STYLE.NODE_CIRCLE
+                    | dict(
+                        cx=sx,
+                        cy=sy,
+                        r=RADIUS * 2,
+                    ),
                 ),
-            ),
-        )
+            )
         inner_list.append(
             _(
                 'circle',
@@ -174,7 +77,7 @@ class Draw:
                 ),
             ),
         )
- 
+
         inner_list.append(
             _(
                 'text',
