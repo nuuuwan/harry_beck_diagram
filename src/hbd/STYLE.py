@@ -1,13 +1,21 @@
-RADIUS = 4
-DIM = 1000
+RADIUS = 3
+DIM = 2000
 OPACITY = 1
-
+PADDING = 200
 
 class STYLE:
     SVG = dict(
         width=DIM,
         height=DIM,
-        padding=200,
+        padding=PADDING,
+    )
+    RECT_BORDER=  dict(
+        x=PADDING/2,
+        y=PADDING/2,
+        width=DIM-PADDING,
+        height=DIM-PADDING,
+        fill='white',
+        stroke='gray',
     )
     NODE_CIRCLE = dict(
         r=RADIUS,

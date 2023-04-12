@@ -34,15 +34,14 @@ class Draw(Config):
         min_x, min_y, max_x, max_y = self.bbox
         x_span = max_x - min_x
         y_span = max_y - min_y
-        max_span = max(x_span, y_span)
-
+      
         padding = STYLE.SVG['padding']
         inner_width = STYLE.SVG['width'] - 2 * padding
         inner_height = STYLE.SVG['height'] - 2 * padding
 
         def t(x: float, y: float) -> list[int]:
-            px = (x - min_x) / max_span
-            py = (y - min_y) / max_span
+            px = (x - min_x) / x_span
+            py = (y - min_y) / y_span
             sx = int(px * inner_width + padding)
             sy = int((1 - py) * inner_height + padding)
             return sx, sy
@@ -100,7 +99,7 @@ class Draw(Config):
             transform = f'translate({sx},{sy}) rotate(-{text_angle}) translate({-sx},{-sy})'
             default_font_size = STYLE.NODE_TEXT['font_size']
             font_size = (
-                int(default_font_size * 1.5)
+                int(default_font_size * 1.2)
                 if (node in self.junction_list)
                 else default_font_size
             )
@@ -111,7 +110,7 @@ class Draw(Config):
             inner_list.append(
                 _(
                     'text',
-                    node,
+                    f'{node} ({x}, {y})',
                     STYLE.NODE_TEXT
                     | dict(
                         x=sx + space_dir *( RADIUS * 1.5 + font_size*0.5),
@@ -207,9 +206,10 @@ class Draw(Config):
         return lines
 
     def draw(self):
+        rect = _('rect', None, STYLE.RECT_BORDER)
         svg = _(
             'svg',
-            self.draw_lines() + self.draw_nodes(),
+            [rect]+self.draw_lines() + self.draw_nodes(),
             STYLE.SVG,
         )
         svg.store(self.svg_path)
@@ -217,6 +217,6 @@ class Draw(Config):
 
 
 if __name__ == '__main__':
-    draw = Draw('data/lk_rail.json')
-    log.debug(draw.node_to_lines)
+    draw = Draw('data/lk_rail_all.json')
+
     draw.draw()

@@ -41,11 +41,13 @@ class Config:
                 node = node_list[i]
                     
                 if node not in node_idx:
-                    q = (i) / (n - 1)
+                    q = i * 1.0 / (n - 1)
                     p = 1 - q
+      
+                
                     node_idx[node] = [
-                        int(p * start_loc[0] + q * end_loc[0]),
-                        int(p * start_loc[1] + q * end_loc[1]),
+                        round(p * start_loc[0] + q * end_loc[0], 0),
+                        round(p * start_loc[1] + q * end_loc[1], 0),
                     ]
 
         return node_idx
@@ -88,46 +90,34 @@ class Config:
             used_ks.add(xy_to_k(x, y))
 
         node_to_text_angle = {}
-        for i_junction in [0, 1, 2]:
-            for node, (x, y) in self.node_idx.items():
-                is_node_junction = node in self.junction_list
-                is_node_district_capital = node[:3] == node.upper()[:3]
-                if i_junction == 0 and not is_node_junction:
-                    continue
+        for node, (x, y) in self.node_idx.items():
+            is_node_junction = node in self.junction_list
+            is_node_district_capital = node[:3] == node.upper()[:3]
 
-                if i_junction == 1 and not (
-                    not is_node_junction and is_node_district_capital
-                ):
-                    continue
 
-                if i_junction == 2 and not (
-                    not is_node_junction and not is_node_district_capital
-                ):
-                    continue
+            node_to_text_angle[node] = None
 
-                node_to_text_angle[node] = None
+            for dx, dy, angle in [
+                [1, 0, 0],
+                [-1, 0, 180],
+                [1, 1, 45],
+                [1, -1, 315],
+                [0, 1, 90],
+                [0, -1, 270],
+                [-1, 1, 135],
+                [-1, -1, 215],
+                [1, 0.5, 22.5],
+                [1, -0.5, 360 - 22.5],
+            ]:
+                x1, y1 = x + dx, y + dy
+                k1 = xy_to_k(x1, y1)
+                if k1 not in used_ks:
+                    used_ks.add(k1)
+                    node_to_text_angle[node] = angle
+                    break
 
-                for dx, dy, angle in [
-                    [1, 0, 0],
-                    [-1, 0, 180],
-                    [1, 1, 45],
-                    [1, -1, 315],
-                    [0, 1, 90],
-                    [0, -1, 270],
-                    [-1, 1, 135],
-                    [-1, -1, 215],
-                    [1, 0.5, 22.5],
-                    [1, -0.5, 360 - 22.5],
-                ]:
-                    x1, y1 = x + dx, y + dy
-                    k1 = xy_to_k(x1, y1)
-                    if k1 not in used_ks:
-                        used_ks.add(k1)
-                        node_to_text_angle[node] = angle
-                        break
-
-                if node_to_text_angle[node] is None:
-                    log.error(f'Could not find text angle for node {node}')
+            if node_to_text_angle[node] is None:
+                log.error(f'Could not find text angle for node {node}')
 
         return node_to_text_angle
 
