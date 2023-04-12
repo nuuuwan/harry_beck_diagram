@@ -1,16 +1,17 @@
 {
     "anchor_idx": {
-        "Kankesanthurai": [5, 15],
+        "Kankesanthurai": [4, 9],
         "COLOMBO (Fort)": [0,0],
-        "BADULLA": [10,  0],
-        "Beliatta": [0,-5],
-        "Avissawella": [2, -2],
-        "Periyanurvillu": [0, 7],
-        "MATALE": [7, 3],
-        "Mihintale": [7, 10],
-        "Talaimannar Pier": [0,10],
-        "BATTICALOA": [10, 5],
-        "TRINCOMALEE": [10, 10]
+        "BADULLA": [6,  0],
+        "Beliatta": [0,-4],
+        "Avissawella": [1, -1],
+        "Periyanurvillu": [2, 2],
+        "MATALE": [6, 1],
+        "KANDY": [5, 1],
+        "Mihintale": [5, 4],
+        "Talaimannar Pier": [2,5],
+        "BATTICALOA": [7, 2],
+        "TRINCOMALEE": [5, 3]
     },
     "line_list": [
         {
@@ -30,11 +31,15 @@
             "color": "darkblue"
         },
         {
-            "node_list":   ["Ragama", "Puttalam", "Periyanurvillu"],
+            "node_list":   ["Ragama", "PUTTALAM", "Periyanurvillu"],
             "color": "green"
         },
         {
-            "node_list":   ["Peradeniya", "KANDY", "MATALE"],
+            "node_list":   ["Peradeniya", "KANDY"],
+            "color": "purple"
+        },
+        {
+            "node_list":   ["KANDY", "MATALE"],
             "color": "purple"
         },
         {

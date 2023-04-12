@@ -7,12 +7,12 @@ from utils.xmlx import _
 log = Log(__name__)
 
 RADIUS = 5
-
+DIM = 1000
 
 class STYLE:
     SVG = dict(
-        width=600,
-        height=600,
+        width=DIM,
+        height=DIM,
         padding=50,
     )
     NODE_CIRCLE = dict(
@@ -26,13 +26,14 @@ class STYLE:
         stroke='none',
         font_size=10,
         text_anchor='start',
-        font_family='sans-serif',
+        font_family='Arial',
+        font_weight="600",
         alignment_baseline='middle',
     )
 
     LINE_POLYLINE = dict(
         fill='none',
-        stroke_width=RADIUS,
+        stroke_width=RADIUS * 2.1,
     )
 
 
@@ -68,7 +69,7 @@ class Draw:
 
             n = len(node_list)
             for i in range(1, n - 1):
-                q = i / n
+                q = (i) / (n - 1)
                 p = 1 - q
                 node = node_list[i]
                 node_idx[node] = [
@@ -79,15 +80,24 @@ class Draw:
         return node_idx
 
     @cached_property
-    def node_to_n(self):
-        node_to_n = {}
+    def node_to_color_set(self):
+        node_to_color_set = {}
         for line in self.line_list:
             node_list = line['node_list']
+            color = line['color']
             for node in node_list:
-                if node not in node_to_n:
-                    node_to_n[node] = 0
-                node_to_n[node] += 1
+                if node not in node_to_color_set:
+                    node_to_color_set[node] = set()
+                node_to_color_set[node].add(color)
+        return node_to_color_set
+    
+    @cached_property
+    def node_to_n(self):
+        node_to_n = {}
+        for node, color_set in self.node_to_color_set.items():
+            node_to_n[node] = len(color_set)
         return node_to_n
+    
 
     @cached_property
     def junction_list(self):
@@ -118,13 +128,17 @@ class Draw:
     @cache
     def get_t(self):
         min_x, min_y, max_x, max_y = self.bbox
+        x_span = max_x - min_x
+        y_span = max_y - min_y
+        max_span = max(x_span, y_span)   
+
         padding = STYLE.SVG['padding']
         inner_width = STYLE.SVG['width'] - 2 * padding
         inner_height = STYLE.SVG['height'] - 2 * padding
 
         def t(x: float, y: float) -> list[int]:
-            px = (x - min_x) / (max_x - min_x)
-            py = (y - min_y) / (max_y - min_y)
+            px = (x - min_x) / max_span
+            py = (y - min_y) / max_span
             sx = int(px * inner_width + padding)
             sy = int((1 - py) * inner_height + padding)
             return sx, sy
@@ -132,6 +146,7 @@ class Draw:
         return t
 
     def draw_node(self, label, x, y, t):
+        log.debug(f"({x},{y}) {label}")
         sx, sy = t(x, y)
         inner_list = []
 
@@ -166,7 +181,7 @@ class Draw:
                 label,
                 STYLE.NODE_TEXT
                 | dict(
-                    x=sx + STYLE.NODE_CIRCLE['r'] * 1.5,
+                    x=sx + STYLE.NODE_CIRCLE['r'] * 2.5,
                     y=sy,
                 ),
             ),
