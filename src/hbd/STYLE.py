@@ -1,5 +1,5 @@
 RADIUS = 5
-DIM = 1000
+DIM = 600
 
 
 class STYLE:
@@ -18,8 +18,8 @@ class STYLE:
         fill='black',
         stroke='none',
         font_size=10,
-        font_family='Arial',
-        font_weight="600",
+        font_family='Helvetica',
+        font_weight="100",
         text_anchor='start',
         dominant_baseline='central',
     )
