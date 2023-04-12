@@ -35,11 +35,7 @@
             "color": "green"
         },
         {
-            "node_list":   ["Peradeniya", "KANDY"],
-            "color": "purple"
-        },
-        {
-            "node_list":   ["KANDY", "MATALE"],
+            "node_list":   ["Peradeniya", "KANDY", "MATALE"],
             "color": "purple"
         },
         {

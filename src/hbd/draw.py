@@ -1,4 +1,5 @@
 from functools import cache, cached_property
+import math
 
 from utils import Log
 from utils.xmlx import _
@@ -51,6 +52,7 @@ class Draw(Config):
     def draw_node(self, node, x, y, t):
         sx, sy = t(x, y)
         inner_list = []
+        text_angle = self.node_to_text_angle[node]
 
         if node in self.junction_list:
             inner_list.append(
@@ -65,19 +67,28 @@ class Draw(Config):
                     ),
                 ),
             )
-        inner_list.append(
-            _(
-                'circle',
-                None,
-                STYLE.NODE_CIRCLE
-                | dict(
-                    cx=sx,
-                    cy=sy,
-                ),
-            ),
-        )
+        else:
+            if node not in self.terminal_list:
+                color = self.node_to_lines[node][0]
 
-        text_angle = self.node_to_text_angle[node]
+                dx = math.cos(math.radians(text_angle))
+                dy = -math.sin(math.radians(text_angle))
+
+                inner_list.append(
+                    _(
+                        'rect',
+                        None,
+                        STYLE.LINE_END_BLIP
+                        | dict(
+                            x=sx + RADIUS * (dx-1),
+                            y=sy + RADIUS * (dy-1),
+                            width=RADIUS * 2,
+                            height=RADIUS * 2,
+                            fill=color,
+                        ),
+                    )
+                )
+
         if text_angle is not None:
             text_anchor = 'start'
             space_dir = 1
@@ -103,7 +114,7 @@ class Draw(Config):
                     node,
                     STYLE.NODE_TEXT
                     | dict(
-                        x=sx + space_dir * RADIUS * 2.5,
+                        x=sx + space_dir *( RADIUS * 1.5 + font_size*0.5),
                         y=sy,
                         text_anchor=text_anchor,
                         transform=transform,
@@ -112,6 +123,7 @@ class Draw(Config):
                     ),
                 ),
             )
+
         return _(
             'g',
             inner_list,
@@ -124,18 +136,56 @@ class Draw(Config):
             nodes.append(self.draw_node(label, x, y, t))
         return nodes
 
-    def draw_lines(self):
-        t = self.get_t()
-        lines = []
-        for line in self.line_list:
-            node_list = line['node_list']
-            color = line['color']
-            points = []
-            for node in node_list:
-                x, y = self.node_idx[node]
-                sx, sy = t(x, y)
-                points.append(f'{sx},{sy}')
-            lines.append(
+    def draw_line(self, line, t):
+        node_list = line['node_list']
+        color = line['color']
+        points = []
+        for node in node_list:
+            x, y = self.node_idx[node]
+            sx, sy = t(x, y)
+            points.append(f'{sx},{sy}')
+
+        x_start, y_start = self.node_idx[node_list[0]]
+        sx_start, sy_start = t(x_start, y_start)
+        x_end, y_end = self.node_idx[node_list[-1]]
+        sx_end, sy_end = t(x_end, y_end)
+        dx, dy = sx_end - sx_start, sy_end - sy_start
+
+        sdx, sdy = 0, 0
+        end_blips = []
+        for sx1, sy1 in [[sx_end, sy_end]]:
+
+            if dx != 0:
+                end_blip = _(
+                    'rect',
+                    None,
+                    STYLE.LINE_END_BLIP
+                    | dict(
+                        x=sx1 - RADIUS,
+                        y=sy1 - RADIUS * 2,
+                        width=RADIUS * 2,
+                        height=RADIUS * 4,
+                        fill=color,
+                    ),
+                )
+            else:
+                end_blip = _(
+                    'rect',
+                    None,
+                    STYLE.LINE_END_BLIP
+                    | dict(
+                        x=sx1 - RADIUS * 2,
+                        y=sy1 - RADIUS,
+                        width=RADIUS * 4,
+                        height=RADIUS * 2,
+                        fill=color,
+                    ),
+                )
+            end_blips.append(end_blip)
+
+        return _(
+            'g',
+            [
                 _(
                     'polyline',
                     None,
@@ -144,8 +194,16 @@ class Draw(Config):
                         points=' '.join(points),
                         stroke=color,
                     ),
-                )
-            )
+                ),
+            ]
+            + end_blips,
+        )
+
+    def draw_lines(self):
+        t = self.get_t()
+        lines = []
+        for line in self.line_list:
+            lines.append(self.draw_line(line, t))
         return lines
 
     def draw(self):
@@ -160,5 +218,5 @@ class Draw(Config):
 
 if __name__ == '__main__':
     draw = Draw('data/lk_rail.json')
+    log.debug(draw.node_to_lines)
     draw.draw()
-    log.debug(draw.node_to_text_angle)

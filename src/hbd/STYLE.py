@@ -1,5 +1,6 @@
-RADIUS = 6
+RADIUS = 4
 DIM = 1000
+OPACITY = 1
 
 
 class STYLE:
@@ -24,8 +25,10 @@ class STYLE:
         dominant_baseline='central',
     )
 
+    LINE_END_BLIP = dict(stroke="none", fill_opacity=OPACITY)
+
     LINE_POLYLINE = dict(
         fill='none',
         stroke_width=RADIUS * 2.1,
-        stroke_opacity=0.8,
+        stroke_opacity=OPACITY,
     )

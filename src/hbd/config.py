@@ -38,13 +38,15 @@ class Config:
 
             n = len(node_list)
             for i in range(1, n - 1):
-                q = (i) / (n - 1)
-                p = 1 - q
                 node = node_list[i]
-                node_idx[node] = [
-                    int(p * start_loc[0] + q * end_loc[0]),
-                    int(p * start_loc[1] + q * end_loc[1]),
-                ]
+                    
+                if node not in node_idx:
+                    q = (i) / (n - 1)
+                    p = 1 - q
+                    node_idx[node] = [
+                        int(p * start_loc[0] + q * end_loc[0]),
+                        int(p * start_loc[1] + q * end_loc[1]),
+                    ]
 
         return node_idx
 
@@ -128,3 +130,38 @@ class Config:
                     log.error(f'Could not find text angle for node {node}')
 
         return node_to_text_angle
+
+    @cached_property
+    def node_to_lines(self):
+        node_to_lines = {}
+        for line in self.line_list:
+            node_list = line['node_list']
+            color = line['color']
+            for node in node_list:
+                if node not in node_to_lines:
+                    node_to_lines[node] = []
+                node_to_lines[node].append(color)
+        return node_to_lines
+
+    @cached_property
+    def node_to_neighbors(self):
+        node_to_neighbors = {}
+        for line in self.line_list:
+            node_list = line['node_list']
+            for i in range(len(node_list) - 1):
+                node1, node2 = node_list[i], node_list[i + 1]
+                if node1 not in node_to_neighbors:
+                    node_to_neighbors[node1] = set()
+                if node2 not in node_to_neighbors:
+                    node_to_neighbors[node2] = set()
+                node_to_neighbors[node1].add(node2)
+                node_to_neighbors[node2].add(node1)
+        return node_to_neighbors
+
+    @cached_property
+    def terminal_list(self):
+        terminal_list = []
+        for node, neighbors in self.node_to_neighbors.items():
+            if len(neighbors) == 1:
+                terminal_list.append(node)
+        return terminal_list
