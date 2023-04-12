@@ -18,10 +18,10 @@ class STYLE:
         fill='black',
         stroke='none',
         font_size=10,
-        text_anchor='start',
         font_family='Arial',
         font_weight="600",
-        alignment_baseline='middle',
+        text_anchor='start',
+        dominant_baseline='central',
     )
 
     LINE_POLYLINE = dict(

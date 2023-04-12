@@ -3,8 +3,8 @@ from functools import cache, cached_property
 from utils import Log
 from utils.xmlx import _
 
-from hbd.STYLE import STYLE, RADIUS
 from hbd.config import Config
+from hbd.STYLE import RADIUS, STYLE
 
 log = Log(__name__)
 
@@ -78,14 +78,17 @@ class Draw(Config):
             ),
         )
 
+        angle = self.node_to_angle[label] + 270
+        transform = f'translate({sx},{sy}) rotate(-{angle}) translate({-sx},{-sy})'
         inner_list.append(
             _(
                 'text',
                 label,
                 STYLE.NODE_TEXT
                 | dict(
-                    x=sx + STYLE.NODE_CIRCLE['r'] * 2.5,
+                    x=sx + RADIUS * 2,
                     y=sy,
+                    transform=transform,
                 ),
             ),
         )
@@ -138,3 +141,4 @@ class Draw(Config):
 if __name__ == '__main__':
     draw = Draw('data/lk_rail.json')
     draw.draw()
+    log.debug(draw.node_to_angles)

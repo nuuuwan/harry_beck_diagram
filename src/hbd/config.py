@@ -1,8 +1,8 @@
 import copy
+import math
 from functools import cached_property
 
 from utils import JSONFile, Log
-
 
 log = Log(__name__)
 
@@ -75,3 +75,42 @@ class Config:
             if n >= 2:
                 junction_list.append(node)
         return junction_list
+
+    @cached_property
+    def node_to_neighbors(self):
+        node_to_neighbors = {}
+        for line in self.line_list:
+            node_list = line['node_list']
+            for i in range(len(node_list) - 1):
+                node = node_list[i]
+                neighbor = node_list[i + 1]
+                if node not in node_to_neighbors:
+                    node_to_neighbors[node] = set()
+                node_to_neighbors[node].add(neighbor)
+
+                if neighbor not in node_to_neighbors:
+                    node_to_neighbors[neighbor] = set()
+                node_to_neighbors[neighbor].add(node)
+
+        return node_to_neighbors
+
+    @cached_property
+    def node_to_angles(self):
+        node_to_angles = {}
+        for node, neighbors in self.node_to_neighbors.items():
+            angles = []
+            for neighbor in neighbors:
+                dx = self.node_idx[neighbor][0] - self.node_idx[node][0]
+                dy = self.node_idx[neighbor][1] - self.node_idx[node][1]
+                angle = abs(int(180 * math.atan2(dy, dx) / math.pi)) % 180
+                angles.append(angle)
+            node_to_angles[node] = angles
+        return node_to_angles
+
+    @cached_property
+    def node_to_angle(self):
+        node_to_angle = {}
+        for node, angles in self.node_to_angles.items():
+            angle = sum(angles) / len(angles)
+            node_to_angle[node] = angle
+        return node_to_angle
