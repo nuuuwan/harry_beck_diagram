@@ -78,6 +78,25 @@ class Draw:
 
         return node_idx
 
+    @cached_property
+    def node_to_n(self):
+        node_to_n = {}
+        for line in self.line_list:
+            node_list = line['node_list']
+            for node in node_list:
+                if node not in node_to_n:
+                    node_to_n[node] = 0
+                node_to_n[node] += 1
+        return node_to_n
+
+    @cached_property
+    def junction_list(self):
+        junction_list = []
+        for node, n in self.node_to_n.items():
+            if n >= 2:
+                junction_list.append(node)
+        return junction_list
+
     @property
     def svg_path(self) -> str:
         return self.config_path.replace('.json', '.svg')
@@ -112,36 +131,56 @@ class Draw:
 
         return t
 
+    def draw_node(self, label, x, y, t):
+        sx, sy = t(x, y)
+        inner_list = []
+
+        if label in self.junction_list:
+            inner_list.append(
+            _(
+                'circle',
+                None,
+                STYLE.NODE_CIRCLE
+                | dict(
+                    cx=sx,
+                    cy=sy,
+                    r=RADIUS * 2,
+                ),
+            ),
+        )
+        inner_list.append(
+            _(
+                'circle',
+                None,
+                STYLE.NODE_CIRCLE
+                | dict(
+                    cx=sx,
+                    cy=sy,
+                ),
+            ),
+        )
+ 
+        inner_list.append(
+            _(
+                'text',
+                label,
+                STYLE.NODE_TEXT
+                | dict(
+                    x=sx + STYLE.NODE_CIRCLE['r'] * 1.5,
+                    y=sy,
+                ),
+            ),
+        )
+        return _(
+            'g',
+            inner_list,
+        )
+
     def draw_nodes(self):
         t = self.get_t()
         nodes = []
         for label, (x, y) in self.node_idx.items():
-            sx, sy = t(x, y)
-            nodes.append(
-                _(
-                    'g',
-                    [
-                        _(
-                            'circle',
-                            None,
-                            STYLE.NODE_CIRCLE
-                            | dict(
-                                cx=sx,
-                                cy=sy,
-                            ),
-                        ),
-                        _(
-                            'text',
-                            label,
-                            STYLE.NODE_TEXT
-                            | dict(
-                                x=sx + STYLE.NODE_CIRCLE['r'] * 1.5,
-                                y=sy,
-                            ),
-                        ),
-                    ],
-                )
-            )
+            nodes.append(self.draw_node(label, x, y, t))
         return nodes
 
     def draw_lines(self):

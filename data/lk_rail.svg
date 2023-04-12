@@ -15,6 +15,7 @@
     <text fill="black" stroke="none" font-size="10" text-anchor="start" font-family="sans-serif" alignment-baseline="middle" x="307.5" y="50">Kankesanthurai</text>
   </g>
   <g>
+    <circle r="10" fill="white" stroke="black" stroke-width="3.5" cx="50" cy="425"/>
     <circle r="5" fill="white" stroke="black" stroke-width="3.5" cx="50" cy="425"/>
     <text fill="black" stroke="none" font-size="10" text-anchor="start" font-family="sans-serif" alignment-baseline="middle" x="57.5" y="425">COLOMBO (Fort)</text>
   </g>
@@ -55,10 +56,12 @@
     <text fill="black" stroke="none" font-size="10" text-anchor="start" font-family="sans-serif" alignment-baseline="middle" x="557.5" y="175">TRINCOMALEE</text>
   </g>
   <g>
+    <circle r="10" fill="white" stroke="black" stroke-width="3.5" cx="100" cy="425"/>
     <circle r="5" fill="white" stroke="black" stroke-width="3.5" cx="100" cy="425"/>
     <text fill="black" stroke="none" font-size="10" text-anchor="start" font-family="sans-serif" alignment-baseline="middle" x="107.5" y="425">COLOMBO (Maradana)</text>
   </g>
   <g>
+    <circle r="10" fill="white" stroke="black" stroke-width="3.5" cx="150" cy="425"/>
     <circle r="5" fill="white" stroke="black" stroke-width="3.5" cx="150" cy="425"/>
     <text fill="black" stroke="none" font-size="10" text-anchor="start" font-family="sans-serif" alignment-baseline="middle" x="157.5" y="425">Ragama</text>
   </g>
@@ -67,10 +70,12 @@
     <text fill="black" stroke="none" font-size="10" text-anchor="start" font-family="sans-serif" alignment-baseline="middle" x="257.5" y="425">GAMPAHA</text>
   </g>
   <g>
+    <circle r="10" fill="white" stroke="black" stroke-width="3.5" cx="300" cy="425"/>
     <circle r="5" fill="white" stroke="black" stroke-width="3.5" cx="300" cy="425"/>
     <text fill="black" stroke="none" font-size="10" text-anchor="start" font-family="sans-serif" alignment-baseline="middle" x="307.5" y="425">Polgahawela</text>
   </g>
   <g>
+    <circle r="10" fill="white" stroke="black" stroke-width="3.5" cx="400" cy="425"/>
     <circle r="5" fill="white" stroke="black" stroke-width="3.5" cx="400" cy="425"/>
     <text fill="black" stroke="none" font-size="10" text-anchor="start" font-family="sans-serif" alignment-baseline="middle" x="407.5" y="425">Peradeniya</text>
   </g>
@@ -91,6 +96,7 @@
     <text fill="black" stroke="none" font-size="10" text-anchor="start" font-family="sans-serif" alignment-baseline="middle" x="307.5" y="400">KURUNEGALA</text>
   </g>
   <g>
+    <circle r="10" fill="white" stroke="black" stroke-width="3.5" cx="300" cy="350"/>
     <circle r="5" fill="white" stroke="black" stroke-width="3.5" cx="300" cy="350"/>
     <text fill="black" stroke="none" font-size="10" text-anchor="start" font-family="sans-serif" alignment-baseline="middle" x="307.5" y="350">Maho</text>
   </g>
@@ -99,10 +105,12 @@
     <text fill="black" stroke="none" font-size="10" text-anchor="start" font-family="sans-serif" alignment-baseline="middle" x="307.5" y="325">ANURADHAPURA</text>
   </g>
   <g>
+    <circle r="10" fill="white" stroke="black" stroke-width="3.5" cx="300" cy="275"/>
     <circle r="5" fill="white" stroke="black" stroke-width="3.5" cx="300" cy="275"/>
     <text fill="black" stroke="none" font-size="10" text-anchor="start" font-family="sans-serif" alignment-baseline="middle" x="307.5" y="275">Mihintale Junction</text>
   </g>
   <g>
+    <circle r="10" fill="white" stroke="black" stroke-width="3.5" cx="300" cy="250"/>
     <circle r="5" fill="white" stroke="black" stroke-width="3.5" cx="300" cy="250"/>
     <text fill="black" stroke="none" font-size="10" text-anchor="start" font-family="sans-serif" alignment-baseline="middle" x="307.5" y="250">Medavachchiya</text>
   </g>
@@ -131,6 +139,7 @@
     <text fill="black" stroke="none" font-size="10" text-anchor="start" font-family="sans-serif" alignment-baseline="middle" x="207.5" y="225">MANNAR</text>
   </g>
   <g>
+    <circle r="10" fill="white" stroke="black" stroke-width="3.5" cx="350" cy="350"/>
     <circle r="5" fill="white" stroke="black" stroke-width="3.5" cx="350" cy="350"/>
     <text fill="black" stroke="none" font-size="10" text-anchor="start" font-family="sans-serif" alignment-baseline="middle" x="357.5" y="350">Galoya</text>
   </g>
