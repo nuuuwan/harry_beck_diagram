@@ -4,6 +4,7 @@ from utils import Log
 from utils.xmlx import _
 
 from hbd.STYLE import RADIUS, STYLE
+from hbd.DISTRICT_CAPITAL_LIST import DISTRICT_CAPITAL_LIST
 
 log = Log(__name__)
 
@@ -54,18 +55,23 @@ class DrawNode:
                 f'translate({-sx},{-sy})',
             ]
         )
-        default_font_size = STYLE.NODE_TEXT['font_size']
-        font_size = (
-            int(default_font_size * 1.2)
-            if (node in self.junction_list)
-            else default_font_size
-        )
-        default_font_weight = STYLE.NODE_TEXT['font_weight']
-        font_weight = default_font_weight
+        default_font_size = int(STYLE.NODE_TEXT['font_size'])
+        default_font_weight = int(STYLE.NODE_TEXT['font_weight'])
+        
+        label = node
+        log.debug(f'{node} ({x}, {y})')
+        cmp = self.get_node_cmp_value(node)
+
+        font_size = default_font_size * (1 + (3- cmp) * 0.2)
+        font_weight = default_font_weight * (1 + (3 - cmp) * 0.2)
+
+        for district_name in DISTRICT_CAPITAL_LIST:
+            if district_name in label:
+                label = label.replace(district_name, district_name.upper())
 
         return _(
             'text',
-            f'{node} ({x}, {y})',
+            label,
             STYLE.NODE_TEXT
             | dict(
                 x=sx + space_dir * (RADIUS * 1.5 + font_size * 0.5),

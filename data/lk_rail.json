@@ -19,7 +19,7 @@
             "color": "red"
         },
         {
-            "node_list":   ["Colombo Fort", "Kalutara (North)", "Galle", "Matara", "Beliatta"],
+            "node_list":   ["Colombo Fort", "Kalutara North", "Galle", "Matara", "Beliatta"],
             "color": "cyan"
         },
         {
