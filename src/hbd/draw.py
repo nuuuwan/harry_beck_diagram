@@ -51,8 +51,7 @@ class Draw(Config):
         return t
 
     def draw_node_circle(self, sx, sy):
-        return (
-            _(
+        return _(
                 'circle',
                 None,
                 STYLE.NODE_CIRCLE
@@ -61,8 +60,8 @@ class Draw(Config):
                     cy=sy,
                     r=RADIUS * 2,
                 ),
-            ),
         )
+        
 
     def draw_node_blip(self, sx, sy, node, text_angle):
         color = self.node_to_lines[node][0]
@@ -107,8 +106,7 @@ class Draw(Config):
         default_font_weight = STYLE.NODE_TEXT['font_weight']
         font_weight = default_font_weight
 
-        return (
-            _(
+        return _(
                 'text',
                 f'{node} ({x}, {y})',
                 STYLE.NODE_TEXT
@@ -120,8 +118,8 @@ class Draw(Config):
                     font_size=font_size,
                     font_weight=font_weight,
                 ),
-            ),
         )
+        
 
     def draw_node(self, node, x, y, t):
         sx, sy = t(x, y)
@@ -133,12 +131,12 @@ class Draw(Config):
         else:
             if node not in self.terminal_list:
                 inner_list.append(
-                    self.draw_node_blip(self, sx, sy, node, text_angle)
+                    self.draw_node_blip(sx, sy, node, text_angle)
                 )
 
         if text_angle is not None:
             inner_list.append(
-                self.draw_node_text(self, sx, sy, node, x, y, text_angle)
+                self.draw_node_text(sx, sy, node, x, y, text_angle)
             )
 
         return _(
@@ -152,6 +150,45 @@ class Draw(Config):
         for label, (x, y) in self.node_idx.items():
             nodes.append(self.draw_node(label, x, y, t))
         return nodes
+
+    def draw_line_blip(self, sx_end, sy_end, dx, color):
+        sx1, sy1 = sx_end, sy_end
+        if dx != 0:
+            return _(
+                'rect',
+                None,
+                STYLE.LINE_END_BLIP
+                | dict(
+                    x=sx1 - RADIUS,
+                    y=sy1 - RADIUS * 2,
+                    width=RADIUS * 2,
+                    height=RADIUS * 4,
+                    fill=color,
+                ),
+            )
+        return _(
+            'rect',
+            None,
+            STYLE.LINE_END_BLIP
+            | dict(
+                x=sx1 - RADIUS * 2,
+                y=sy1 - RADIUS,
+                width=RADIUS * 4,
+                height=RADIUS * 2,
+                fill=color,
+            ),
+        )
+
+    def draw_line_polyline(self, points, color):
+        return _(
+            'polyline',
+            None,
+            STYLE.LINE_POLYLINE
+            | dict(
+                points=' '.join(points),
+                stroke=color,
+            ),
+        )
 
     def draw_line(self, line, t):
         node_list = line['node_list']
@@ -168,51 +205,12 @@ class Draw(Config):
         sx_end, sy_end = t(x_end, y_end)
         dx, dy = sx_end - sx_start, sy_end - sy_start
 
-        sdx, sdy = 0, 0
-        end_blips = []
-        for sx1, sy1 in [[sx_end, sy_end]]:
-            if dx != 0:
-                end_blip = _(
-                    'rect',
-                    None,
-                    STYLE.LINE_END_BLIP
-                    | dict(
-                        x=sx1 - RADIUS,
-                        y=sy1 - RADIUS * 2,
-                        width=RADIUS * 2,
-                        height=RADIUS * 4,
-                        fill=color,
-                    ),
-                )
-            else:
-                end_blip = _(
-                    'rect',
-                    None,
-                    STYLE.LINE_END_BLIP
-                    | dict(
-                        x=sx1 - RADIUS * 2,
-                        y=sy1 - RADIUS,
-                        width=RADIUS * 4,
-                        height=RADIUS * 2,
-                        fill=color,
-                    ),
-                )
-            end_blips.append(end_blip)
-
         return _(
             'g',
             [
-                _(
-                    'polyline',
-                    None,
-                    STYLE.LINE_POLYLINE
-                    | dict(
-                        points=' '.join(points),
-                        stroke=color,
-                    ),
-                ),
-            ]
-            + end_blips,
+                self.draw_line_polyline(points, color),
+                self.draw_line_blip(sx_end, sy_end, dx, color),
+            ],
         )
 
     def draw_lines(self):
