@@ -1,7 +1,7 @@
-from functools import cache, cached_property
 import math
 import os
 import webbrowser
+from functools import cache, cached_property
 
 from utils import Log
 from utils.xmlx import _
@@ -36,7 +36,7 @@ class Draw(Config):
         min_x, min_y, max_x, max_y = self.bbox
         x_span = max_x - min_x
         y_span = max_y - min_y
-      
+
         padding = STYLE.SVG['padding']
         inner_width = STYLE.SVG['width'] - 2 * padding
         inner_height = STYLE.SVG['height'] - 2 * padding
@@ -50,79 +50,95 @@ class Draw(Config):
 
         return t
 
+    def draw_node_circle(self, sx, sy):
+        return (
+            _(
+                'circle',
+                None,
+                STYLE.NODE_CIRCLE
+                | dict(
+                    cx=sx,
+                    cy=sy,
+                    r=RADIUS * 2,
+                ),
+            ),
+        )
+
+    def draw_node_blip(self, sx, sy, node, text_angle):
+        color = self.node_to_lines[node][0]
+
+        dx = math.cos(math.radians(text_angle))
+        dy = -math.sin(math.radians(text_angle))
+        return _(
+            'rect',
+            None,
+            STYLE.LINE_END_BLIP
+            | dict(
+                x=sx + RADIUS * (dx - 1),
+                y=sy + RADIUS * (dy - 1),
+                width=RADIUS * 2,
+                height=RADIUS * 2,
+                fill=color,
+            ),
+        )
+
+    def draw_node_text(self, sx, sy, node, x, y, text_angle):
+        text_anchor = 'start'
+        space_dir = 1
+        if 90 < text_angle <= 270:
+            text_anchor = 'end'
+            space_dir = -1
+            text_angle -= 180
+
+        transform = ' '.join(
+            [
+                f'translate({sx},{sy})',
+                f'rotate(-{text_angle})',
+                f'translate({-sx},{-sy})',
+            ]
+        )
+        default_font_size = STYLE.NODE_TEXT['font_size']
+        font_size = (
+            int(default_font_size * 1.2)
+            if (node in self.junction_list)
+            else default_font_size
+        )
+        is_node_district_capital = node[:3] == node.upper()[:3]
+        default_font_weight = STYLE.NODE_TEXT['font_weight']
+        font_weight = default_font_weight
+
+        return (
+            _(
+                'text',
+                f'{node} ({x}, {y})',
+                STYLE.NODE_TEXT
+                | dict(
+                    x=sx + space_dir * (RADIUS * 1.5 + font_size * 0.5),
+                    y=sy,
+                    text_anchor=text_anchor,
+                    transform=transform,
+                    font_size=font_size,
+                    font_weight=font_weight,
+                ),
+            ),
+        )
+
     def draw_node(self, node, x, y, t):
         sx, sy = t(x, y)
         inner_list = []
         text_angle = self.node_to_text_angle[node]
 
         if node in self.junction_list:
-            inner_list.append(
-                _(
-                    'circle',
-                    None,
-                    STYLE.NODE_CIRCLE
-                    | dict(
-                        cx=sx,
-                        cy=sy,
-                        r=RADIUS * 2,
-                    ),
-                ),
-            )
+            inner_list.append(self.draw_node_circle(sx, sy))
         else:
             if node not in self.terminal_list:
-                color = self.node_to_lines[node][0]
-
-                dx = math.cos(math.radians(text_angle))
-                dy = -math.sin(math.radians(text_angle))
-
                 inner_list.append(
-                    _(
-                        'rect',
-                        None,
-                        STYLE.LINE_END_BLIP
-                        | dict(
-                            x=sx + RADIUS * (dx-1),
-                            y=sy + RADIUS * (dy-1),
-                            width=RADIUS * 2,
-                            height=RADIUS * 2,
-                            fill=color,
-                        ),
-                    )
+                    self.draw_node_blip(self, sx, sy, node, text_angle)
                 )
 
         if text_angle is not None:
-            text_anchor = 'start'
-            space_dir = 1
-            if 90 < text_angle <= 270:
-                text_anchor = 'end'
-                space_dir = -1
-                text_angle -= 180
-
-            transform = f'translate({sx},{sy}) rotate(-{text_angle}) translate({-sx},{-sy})'
-            default_font_size = STYLE.NODE_TEXT['font_size']
-            font_size = (
-                int(default_font_size * 1.2)
-                if (node in self.junction_list)
-                else default_font_size
-            )
-            is_node_district_capital = node[:3] == node.upper()[:3]
-            default_font_weight = STYLE.NODE_TEXT['font_weight']
-            font_weight = default_font_weight
-
             inner_list.append(
-                _(
-                    'text',
-                    f'{node} ({x}, {y})',
-                    STYLE.NODE_TEXT
-                    | dict(
-                        x=sx + space_dir *( RADIUS * 1.5 + font_size*0.5),
-                        y=sy,
-                        text_anchor=text_anchor,
-                        transform=transform,
-                        font_size=font_size,
-                        font_weight=font_weight,
-                    ),
-                ),
+                self.draw_node_text(self, sx, sy, node, x, y, text_angle)
             )
 
         return _(
@@ -155,7 +171,6 @@ class Draw(Config):
         sdx, sdy = 0, 0
         end_blips = []
         for sx1, sy1 in [[sx_end, sy_end]]:
-
             if dx != 0:
                 end_blip = _(
                     'rect',
@@ -211,14 +226,13 @@ class Draw(Config):
         rect = _('rect', None, STYLE.RECT_BORDER)
         svg = _(
             'svg',
-            [rect]+self.draw_lines() + self.draw_nodes(),
+            [rect] + self.draw_lines() + self.draw_nodes(),
             STYLE.SVG,
         )
         svg.store(self.svg_path)
         log.debug(f'Saved {self.svg_path}')
 
         webbrowser.open(os.path.abspath(self.svg_path))
-        
 
 
 if __name__ == '__main__':
