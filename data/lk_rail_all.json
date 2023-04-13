@@ -5,45 +5,27 @@
       "direction_list": [
         [
           20,
-          [
-            1,
-            1
-          ]
+          "NE"
         ],
         [
           20,
-          [
-            1,
-            0
-          ]
+          "E"
         ],
         [
           20,
-          [
-            1,
-            0
-          ]
+          "E"
         ],
         [
           20,
-          [
-            1,
-            -1
-          ]
+          "SE"
         ],
         [
           20,
-          [
-            1,
-            1
-          ]
+          "NE"
         ],
         [
           4,
-          [
-            0,
-            1
-          ]
+          "N"
         ]
       ],
       "node_list": [
@@ -159,31 +141,19 @@
       "direction_list": [
         [
           20,
-          [
-            0,
-            -1
-          ]
+          "S"
         ],
         [
           20,
-          [
-            1,
-            -1
-          ]
+          "SE"
         ],
         [
           20,
-          [
-            1,
-            0
-          ]
+          "E"
         ],
         [
           14,
-          [
-            1,
-            1
-          ]
+          "NE"
         ]
       ],
       "node_list": [
@@ -266,6 +236,24 @@
     },
     {
       "color": "orange",
+      "direction_list": [
+        [
+          20,
+          "N"
+        ],
+        [
+          20,
+          "N"
+        ],
+        [
+          10,
+          "NW"
+        ],
+        [
+          8,
+          "N"
+        ]
+      ],
       "node_list": [
         "Polgahawela Junction",
         "Girambe",
@@ -326,12 +314,6 @@
         "Tellippalai",
         "Maviddapuram",
         "Kankesanthurai"
-      ],
-      "direction_list": [
-        [20, [0,1]],
-        [20, [0,1]],
-        [10, [-1,1]],
-        [8, [0,1]]
       ]
     },
     {
@@ -339,17 +321,11 @@
       "direction_list": [
         [
           20,
-          [
-            1,
-            -1
-          ]
+          "SE"
         ],
         [
           19,
-          [
-            1,
-            0
-          ]
+          "E"
         ]
       ],
       "node_list": [
@@ -400,31 +376,19 @@
       "direction_list": [
         [
           9,
-          [
-            -1,
-            1
-          ]
+          "NW"
         ],
         [
           11,
-          [
-            0,
-            1
-          ]
+          "N"
         ],
         [
           20,
-          [
-            0,
-            1
-          ]
+          "N"
         ],
         [
           5,
-          [
-            0,
-            1
-          ]
+          "N"
         ]
       ],
       "node_list": [
@@ -481,24 +445,15 @@
       "direction_list": [
         [
           10,
-          [
-            1,
-            1
-          ]
+          "NE"
         ],
         [
           10,
-          [
-            0,
-            1
-          ]
+          "N"
         ],
         [
           4,
-          [
-            0,
-            1
-          ]
+          "N"
         ]
       ],
       "node_list": [
@@ -531,16 +486,25 @@
     },
     {
       "color": "yellow",
+      "direction_list": [
+        [
+          1,
+          "E"
+        ]
+      ],
       "node_list": [
         "Mihintale Junction",
         "Mihintale"
-      ],
-      "direction_list": [
-        [1,[1,0]] 
       ]
     },
     {
       "color": "blue",
+      "direction_list": [
+        [
+          11,
+          "NW"
+        ]
+      ],
       "node_list": [
         "Medawachchiya Junction",
         "Neriyakulam",
@@ -554,13 +518,24 @@
         "Pesalai",
         "Talaimannar",
         "Talaimannar Pier"
-      ],
-      "direction_list": [
-        [11,[-1,1]]
       ]
     },
     {
       "color": "darkgreen",
+      "direction_list": [
+        [
+          15,
+          "NE"
+        ],
+        [
+          5,
+          "E"
+        ],
+        [
+          18,
+          "E"
+        ]
+      ],
       "node_list": [
         "Maho Junction",
         "Yapahuwa",
@@ -601,15 +576,16 @@
         "Vandaramoolai",
         "Eravur",
         "Batticaloa"
-      ],
-      "direction_list": [
-        [15,[1,1]],
-        [5,[1,0]],
-        [18,[1,0]] 
       ]
     },
     {
       "color": "silver",
+      "direction_list": [
+        [
+          8,
+          "N"
+        ]
+      ],
       "node_list": [
         "Gal Oya Junction",
         "Aluth oya",
@@ -620,9 +596,6 @@
         "Thampalakamam",
         "China Bay",
         "Trincomalee"
-      ],
-      "direction_list": [
-        [8,[0,1]]
       ]
     }
   ]

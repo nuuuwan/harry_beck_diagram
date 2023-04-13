@@ -25,6 +25,18 @@ log = Log(__name__)
 def xy_to_k(x, y):
     return f'{x:.1f}:{y:.1f}'
 
+def parse_direction(direction):
+    dx,dy = 0,0
+    if 'N' in direction:
+        dy = 1
+    if 'S' in direction:
+        dy = -1
+    if 'E' in direction:
+        dx = 1
+    if 'W' in direction:
+        dx = -1
+    return [dx, dy]
+
 
 class Config:
     def __init__(self, config_path: str):
@@ -54,7 +66,8 @@ class Config:
 
         for line in self.line_list:
             i_cur = 0
-            for n, [dx, dy] in line['direction_list']:
+            for n, direction in line['direction_list']:
+                [dx, dy] = parse_direction(direction)
                 cur_node = line['node_list'][i_cur]
                 x_cur, y_cur = node_idx[cur_node]
                 for i in range(0, n):
