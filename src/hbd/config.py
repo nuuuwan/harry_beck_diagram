@@ -5,7 +5,7 @@ from utils import JSONFile, Log
 
 from hbd.DISTRICT_CAPITAL_LIST import DISTRICT_CAPITAL_LIST
 
-TEXT_SPACE = 2
+TEXT_SPACE = 1
 ANGLE_CONFIG = [
     [1, 0, 0],
     [-1, 0, 180],
@@ -35,55 +35,28 @@ class Config:
         return JSONFile(self.config_path).read()
 
     @property
-    def anchor_idx(self) -> dict:
-        return self.config['anchor_idx']
-
-    @property
-    def anchor_loc_list(self) -> list[float]:
-        return list(self.anchor_idx.values())
-
-    @property
     def line_list(self) -> list[dict]:
         return self.config['line_list']
 
     @cached_property
     def node_idx_unsorted(self):
-        node_idx = copy.deepcopy(self.anchor_idx)
+        node_idx = {}
+        first_line = self.line_list[0]
+        center_node = first_line['node_list'][0]
+        node_idx[center_node] = [0, 0]
 
         for line in self.line_list:
-            node_list = line['node_list']
-            n = len(node_list)
-            i_start, i_end = 0, 1
-            while True:
-                while node_list[i_end] not in node_idx:
-                    i_end += 1
-
-                start, end = node_list[i_start], node_list[i_end]
-                assert start in node_idx
-
-                start_loc = node_idx[start]
-                end_loc = node_idx[end]
-                span = i_end - i_start
-
-                for i in range(i_start + 1, i_end):
-                    node = node_list[i]
-                    if node in node_idx:
-                        log.warning(f'{node} already in node_idx')
-                        continue
-
-                    q = (i - i_start) * 1.0 / span
-                    p = 1 - q
-
-                    x = round(p * start_loc[0] + q * end_loc[0], 0)
-                    y = round(p * start_loc[1] + q * end_loc[1], 0)
-
-                    node_idx[node] = [x, y]
-
-                i_start = i_end
-                i_end += 1
-                if i_end >= n:
-                    break
-
+            i_cur = 0
+            for n, [dx, dy] in line['direction_list']:
+                cur_node = line['node_list'][i_cur]
+                x_cur, y_cur = node_idx[cur_node]
+                for i in range(0, n):
+                    node = line['node_list'][i_cur + i + 1]
+                    node_idx[node] = [
+                        x_cur + dx * (i + 1),
+                        y_cur + dy * (i + 1),
+                    ]
+                i_cur += n
         return node_idx
 
     @cache
@@ -104,6 +77,10 @@ class Config:
                 key=lambda x: self.get_node_cmp_value(x[0]),
             )
         )
+    
+    @cached_property
+    def loc_list(self):
+        return list(self.node_idx.values())
 
     @cached_property
     def node_to_color_set(self):
@@ -187,14 +164,3 @@ class Config:
                 terminal_list.append(node)
         return terminal_list
 
-    def normalize(self, center_node: str):
-        cx, cy = self.node_idx[center_node]
-        norm_anchor_idx = {}
-        for node, (x, y) in self.anchor_idx.items():
-            norm_anchor_idx[node] = [x - cx, y - cy]
-        norm_config = dict(
-            anchor_idx=norm_anchor_idx,
-            line_list=self.line_list,
-        )
-        JSONFile(self.config_path).write(norm_config)
-        log.info(f'Normalized config to {center_node}')

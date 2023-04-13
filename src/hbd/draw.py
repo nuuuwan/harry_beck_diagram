@@ -21,7 +21,7 @@ class Draw(Config, DrawNode, DrawLine):
 
     @cache
     def get_t(self):
-        return bbox_utils.get_t(self.anchor_loc_list)
+        return bbox_utils.get_t(self.loc_list)
 
     def draw_nodes(self):
         t = self.get_t()
@@ -36,17 +36,19 @@ class Draw(Config, DrawNode, DrawLine):
         for line in self.line_list:
             lines.append(self.draw_line(line, t))
         return lines
-    
+
     def draw_rect_border(self):
-        return  _('rect', None, STYLE.RECT_BORDER)
+        return _('rect', None, STYLE.RECT_BORDER)
 
     def draw_title(self):
-        return  _('text', 'Railways of Sri Lanka', STYLE.TEXT_TITLE)
+        return _('text', 'Railways of Sri Lanka', STYLE.TEXT_TITLE)
 
     def draw(self):
         svg = _(
             'svg',
-            [self.draw_rect_border(), self.draw_title()] + self.draw_lines() + self.draw_nodes(),
+            [self.draw_rect_border(), self.draw_title()]
+            + self.draw_lines()
+            + self.draw_nodes(),
             STYLE.SVG,
         )
         svg.store(self.svg_path)
@@ -56,8 +58,8 @@ class Draw(Config, DrawNode, DrawLine):
 
 
 if __name__ == '__main__':
-    config_path = 'data/lk_rail_all.json'
+    config_path = 'data/lk_rail2.json'
 
     draw = Draw(config_path)
     draw.draw()
-    draw.normalize('Colombo Fort')
+

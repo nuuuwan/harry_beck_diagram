@@ -1,60 +1,145 @@
 {
     "anchor_idx": {
-        "Avissawella": [1, -1],
-        "Badulla": [6,  0],
-        "Batticaloa": [7, 2],
-        "Beliatta": [0,-4],
-        "Colombo Fort": [0,0],
-        "Kandy": [5, 1],
-        "Kankesanthurai": [4, 9],
-        "Matale": [6, 1],
-        "Mihintale": [5, 4],
-        "Periyanurvillu": [2, 2],
-        "Talaimannar Pier": [2,5],
-        "Trincomalee": [5, 3]
+        "Avissawella": [
+            1,
+            -1
+        ],
+        "Badulla": [
+            6,
+            0
+        ],
+        "Batticaloa": [
+            7,
+            2
+        ],
+        "Beliatta": [
+            0,
+            -4
+        ],
+        "Colombo Fort": [
+            0,
+            0
+        ],
+        "Kandy": [
+            5,
+            1
+        ],
+        "Kankesanthurai": [
+            4,
+            9
+        ],
+        "Matale": [
+            6,
+            1
+        ],
+        "Mihintale": [
+            5,
+            4
+        ],
+        "Periyanurvillu": [
+            2,
+            2
+        ],
+        "Talaimannar Pier": [
+            2,
+            5
+        ],
+        "Trincomalee": [
+            5,
+            3
+        ]
     },
     "line_list": [
         {
-            "node_list": ["Colombo Fort", "Maradana", "Ragama", "Gampaha", "Polgahawela", "Peradeniya", "Badulla"],
-            "color": "red"
+            "color": "red",
+            "node_list": [
+                "Colombo Fort",
+                "Maradana",
+                "Ragama",
+                "Gampaha",
+                "Polgahawela",
+                "Peradeniya",
+                "Badulla"
+            ]
         },
         {
-            "node_list":   ["Colombo Fort", "Kalutara North", "Galle", "Matara", "Beliatta"],
-            "color": "cyan"
+            "color": "cyan",
+            "node_list": [
+                "Colombo Fort",
+                "Kalutara North",
+                "Galle",
+                "Matara",
+                "Beliatta"
+            ]
         },
         {
-            "node_list":   ["Polgahawela", "Kurunegala", "Maho", "Anuradhapura", "Mihintale Junction", "Medavachchiya", "Vavuniya", "Kilinochchi", "Jaffna", "Kankesanthurai"],
-            "color": "orange"
+            "color": "orange",
+            "node_list": [
+                "Polgahawela",
+                "Kurunegala",
+                "Maho",
+                "Anuradhapura",
+                "Mihintale Junction",
+                "Medavachchiya",
+                "Vavuniya",
+                "Kilinochchi",
+                "Jaffna",
+                "Kankesanthurai"
+            ]
         },
         {
-            "node_list":   ["Maradana", "Avissawella"],
-            "color": "darkblue"
+            "color": "darkblue",
+            "node_list": [
+                "Maradana",
+                "Avissawella"
+            ]
         },
         {
-            "node_list":   ["Ragama", "Puttalam", "Periyanurvillu"],
-            "color": "green"
+            "color": "green",
+            "node_list": [
+                "Ragama",
+                "Puttalam",
+                "Periyanurvillu"
+            ]
         },
         {
-            "node_list":   ["Peradeniya", "Kandy", "Matale"],
-            "color": "purple"
+            "color": "purple",
+            "node_list": [
+                "Peradeniya",
+                "Kandy",
+                "Matale"
+            ]
         },
         {
-            "node_list": ["Mihintale Junction", "Mihintale"],
-            "color": "yellow"
-        } ,
-        {
-            "node_list": ["Medavachchiya", "Mannar", "Talaimannar Pier"],
-            "color": "blue"
+            "color": "yellow",
+            "node_list": [
+                "Mihintale Junction",
+                "Mihintale"
+            ]
         },
         {
-            "node_list": ["Maho", "Galoya", "Polonnaruwa", "Batticaloa"],
-            "color": "darkgreen"
-        } ,
+            "color": "blue",
+            "node_list": [
+                "Medavachchiya",
+                "Mannar",
+                "Talaimannar Pier"
+            ]
+        },
         {
-            "node_list": ["Galoya", "Trincomalee"],
-            "color": "silver"
-        }          
+            "color": "darkgreen",
+            "node_list": [
+                "Maho",
+                "Galoya",
+                "Polonnaruwa",
+                "Batticaloa"
+            ]
+        },
+        {
+            "color": "silver",
+            "node_list": [
+                "Galoya",
+                "Trincomalee"
+            ]
+        }
     ]
 }
-
-

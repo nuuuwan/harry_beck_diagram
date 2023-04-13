@@ -84,6 +84,8 @@ class DrawNode:
         sx, sy = t(x, y)
         inner_list = []
         text_angle = self.node_to_text_angle[node]
+        if text_angle is None:
+            log.debug(f'no text angle: {node}')
 
         if node in self.junction_list:
             inner_list.append(self.draw_node_circle(sx, sy))

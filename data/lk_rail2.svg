@@ -79,13 +79,7 @@
     <text fill="black" stroke="none" font-size="12.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="971.5" y="853" transform="translate(961,853) rotate(-45) translate(-961,-853)">Galoya</text>
   </g>
   <g>
-    <text fill="black" stroke="none" font-size="11.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="540.0" y="1176" transform="translate(530,1176) rotate(-315) translate(-530,-1176)">Avissawella</text>
-  </g>
-  <g>
     <text fill="black" stroke="none" font-size="11.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="1079.0" y="1069" transform="translate(1069,1069) rotate(-0) translate(-1069,-1069)">BADULLA</text>
-  </g>
-  <g>
-    <text fill="black" stroke="none" font-size="11.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="1186.0" y="853" transform="translate(1176,853) rotate(-0) translate(-1176,-853)">BATTICALOA</text>
   </g>
   <g>
     <text fill="black" stroke="none" font-size="11.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="433.0" y="1500" transform="translate(423,1500) rotate(-0) translate(-423,-1500)">Beliatta</text>
@@ -94,23 +88,25 @@
     <text fill="black" stroke="none" font-size="11.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="863.0" y="100" transform="translate(853,100) rotate(-0) translate(-853,-100)">Kankesanthurai</text>
   </g>
   <g>
+    <text fill="black" stroke="none" font-size="11.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="540.0" y="1176" transform="translate(530,1176) rotate(-315) translate(-530,-1176)">Avissawella</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="11.0" font-family="Trebuchet MS" font-weight="100" text-anchor="end" dominant-baseline="central" x="628.0" y="853" transform="translate(638,853) rotate(-0) translate(-638,-853)">Periyanurvillu</text>
+  </g>
+  <g>
     <text fill="black" stroke="none" font-size="11.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="1079.0" y="961" transform="translate(1069,961) rotate(-0) translate(-1069,-961)">MATALE</text>
   </g>
   <g>
     <text fill="black" stroke="none" font-size="11.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="971.0" y="638" transform="translate(961,638) rotate(-0) translate(-961,-638)">Mihintale</text>
   </g>
   <g>
-    <text fill="black" stroke="none" font-size="11.0" font-family="Trebuchet MS" font-weight="100" text-anchor="end" dominant-baseline="central" x="628.0" y="853" transform="translate(638,853) rotate(-0) translate(-638,-853)">Periyanurvillu</text>
-  </g>
-  <g>
     <text fill="black" stroke="none" font-size="11.0" font-family="Trebuchet MS" font-weight="100" text-anchor="end" dominant-baseline="central" x="628.0" y="530" transform="translate(638,530) rotate(-0) translate(-638,-530)">Talaimannar Pier</text>
   </g>
   <g>
-    <text fill="black" stroke="none" font-size="11.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="971.0" y="746" transform="translate(961,746) rotate(-22.5) translate(-961,-746)">TRINCOMALEE</text>
+    <text fill="black" stroke="none" font-size="11.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="1186.0" y="853" transform="translate(1176,853) rotate(-0) translate(-1176,-853)">BATTICALOA</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="960.7716385975339" y="956.8519497029047" width="6" height="6" fill="purple"/>
-    <text fill="black" stroke="none" font-size="10" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="970.5" y="961" transform="translate(961,961) rotate(-22.5) translate(-961,-961)">KANDY</text>
+    <text fill="black" stroke="none" font-size="11.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="971.0" y="746" transform="translate(961,746) rotate(-22.5) translate(-961,-746)">TRINCOMALEE</text>
   </g>
   <g>
     <rect stroke="none" fill-opacity="1" x="745.1213203435597" y="1068.1213203435595" width="6" height="6" fill="red"/>
@@ -143,6 +139,10 @@
   <g>
     <rect stroke="none" fill-opacity="1" x="853.0" y="204.0" width="6" height="6" fill="orange"/>
     <text fill="black" stroke="none" font-size="10" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="862.5" y="207" transform="translate(853,207) rotate(-0) translate(-853,-207)">JAFFNA</text>
+  </g>
+  <g>
+    <rect stroke="none" fill-opacity="1" x="960.7716385975339" y="956.8519497029047" width="6" height="6" fill="purple"/>
+    <text fill="black" stroke="none" font-size="10" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="970.5" y="961" transform="translate(961,961) rotate(-22.5) translate(-961,-961)">KANDY</text>
   </g>
   <g>
     <rect stroke="none" fill-opacity="1" x="743.0" y="524.0" width="6" height="6" fill="blue"/>

@@ -5,10 +5,10 @@ from hbd.STYLE import STYLE
 log = Log(__name__)
 
 
-def get_bbox(anchor_loc_list: list) -> tuple[float, float, float, float]:
-    x0, y0 = anchor_loc_list[0]
+def get_bbox(loc_list: list) -> tuple[float, float, float, float]:
+    x0, y0 = loc_list[0]
     min_x, min_y, max_x, max_y = x0, y0, x0, y0
-    for x, y in anchor_loc_list:
+    for x, y in loc_list:
         min_x = min(min_x, x)
         min_y = min(min_y, y)
         max_x = max(max_x, x)
@@ -17,10 +17,10 @@ def get_bbox(anchor_loc_list: list) -> tuple[float, float, float, float]:
     return min_x, min_y, max_x, max_y
 
 
-def get_t(anchor_loc_list: list):
-    min_x, min_y, max_x, max_y = get_bbox(anchor_loc_list)
-    x_span = max_x - min_x
-    y_span = max_y - min_y
+def get_t(loc_list: list):
+    min_x, min_y, max_x, max_y = get_bbox(loc_list)
+    x_span = max(1, max_x - min_x)
+    y_span = max(1, max_y - min_y)
     max_span = max(x_span, y_span)
     log.debug(f'{x_span=}, {y_span=}')
 
