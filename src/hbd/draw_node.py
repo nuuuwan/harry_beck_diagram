@@ -18,7 +18,7 @@ class DrawNode:
             | dict(
                 cx=sx,
                 cy=sy,
-                r=RADIUS * 2,
+         
             ),
         )
 

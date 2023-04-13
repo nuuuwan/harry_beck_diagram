@@ -1,4 +1,4 @@
-RADIUS = 3
+RADIUS = 2
 DIM = 1600
 OPACITY = 1
 PADDING = 100
@@ -31,7 +31,7 @@ class STYLE:
         stroke='gray',
     )
     NODE_CIRCLE = dict(
-        r=RADIUS,
+        r=RADIUS*2,
         fill='white',
         stroke='black',
         stroke_width=RADIUS * 0.7,
