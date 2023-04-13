@@ -1,164 +1,163 @@
 {
-    "anchor_idx":{
-       "Kankesanthurai":[
-          33,
-          58
-       ],
-       "Colombo Fort":[
-          0,
-          0
-       ],
-       "Badulla":[
-          104,
-          0
-       ],
-       "Beliatta":[
-          0,
-          -80
-       ],
-       "Avissawella":[
-          1,
-          -40
-       ],
-       "Periyanagavillu":[
-          8,
-          45
-       ],
-       "Matale":[
-          53,
-          25
-       ],
-       "Mihintale":[
-          34,
-          23
-       ],
-       "Talaimannar Pier":[
-          22,
-          27
-       ],
-       "Batticaloa":[
-          71,
-          13
-       ],
-       "Trincomalee":[
-          48,
-          21
-       ]
-    },
-    "line_list":[
-       {
-          "node_list":[
+   "anchor_idx": {
+      "Kankesanthurai": [
+         33,
+         58
+      ],
+      "Colombo Fort": [
+         0,
+         0
+      ],
+      "Badulla": [
+         104,
+         0
+      ],
+      "Beliatta": [
+         0,
+         -80
+      ],
+      "Avissawella": [
+         1,
+         -40
+      ],
+      "Periyanagavillu": [
+         8,
+         45
+      ],
+      "Matale": [
+         53,
+         25
+      ],
+      "Mihintale": [
+         34,
+         23
+      ],
+      "Talaimannar Pier": [
+         22,
+         27
+      ],
+      "Batticaloa": [
+         71,
+         13
+      ],
+      "Trincomalee": [
+         48,
+         21
+      ]
+   },
+   "line_list": [
+      {
+         "node_list": [
             "Colombo Fort",
-"Maradana",
-"Dematagoda",
-"Kelaniya",
-"Wanawasala",
-"Hunupitiya",
-"Ederamulla",
-"Horape",
-"Ragama Junction",
-"Walpola",
-"Batuwaththa",
-"Bulugahagoda",
-"Ganemulla",
-"Yagoda",
-"Gampaha",
-"Daraluwa",
-"Bemmulla",
-"Magalegoda",
-"Heendeniya Pattiyagoda",
-"Veyangoda",
-"Wadurawa",
-"Keenawala",
-"Pallewela",
-"Ganegoda",
-"Wijaya Rajadahana",
-"Meerigama",
-"Wilwatta",
-"Botale",
-"Ambepussa",
-"Yaththalgoda",
-"Bujjomuwa",
-"Alawwa",
-"Walakumbura",
-"Polgahawela Junction",
-"Panaliya",
-"Tismalpola",
-"Korossa",
-"Yatagama",
-"Rambukkana",
-"Kadigamuwa",
-"Yatiweldeniya",
-"Gangoda",
-"Ihala Kotte",
-"Bambaragala",
-"Makehelwala",
-"Balana",
-"Weralugolla",
-"Kadugannawa",
-"Kotabogolla",
-"Urapola",
-"Pilimatalawa",
-"Barammane",
-"Kiribathkumbura",
-"Peradeniya Junction",
-"Koshinna",
-"Gelioya",
-"Polgahaanga",
-"Weligalla",
-"Botalapitiya",
-"Gangathilaka",
-"Kahatapitiya",
-"Gampola",
-"Wallahagoda",
-"Tembiligala",
-"Warakapitiya",
-"Ulapane",
-"Pallegama",
-"Warakawa",
-"Nawalapitiya",
-"Selam",
-"Hieghtenford",
-"Inguruoya",
-"Penrose",
-"Galboda",
-"Dekinda",
-"Wewelthalawa",
-"Watawala",
-"Ihala Watawala",
-"Rozella",
-"Hatton",
-"Galkandawatta",
-"Kotagala",
-"St. Clair",
-"Thalawakelle",
-"Watagoda",
-"Great Western",
-"Radella",
-"Nanu Oya",
-"Perakumpura",
-"Ambewela",
-"Pattipola",
-"Ohiya",
-"Idalgashinna",
-"Glenanore",
-"Haputale",
-"Diyatalawa",
-"Bandarawela",
-"Kinigama",
-"Heeloya",
-"Kitalella",
-"Ella",
-"Demodara",
-"Uduwara",
-"Hali-Ela",
-"Badulla"
-
-          ],
-          "color":"red"
-       },
-       {
-          "node_list":[
+            "Maradana",
+            "Dematagoda",
+            "Kelaniya",
+            "Wanawasala",
+            "Hunupitiya",
+            "Ederamulla",
+            "Horape",
+            "Ragama Junction",
+            "Walpola",
+            "Batuwaththa",
+            "Bulugahagoda",
+            "Ganemulla",
+            "Yagoda",
+            "Gampaha",
+            "Daraluwa",
+            "Bemmulla",
+            "Magalegoda",
+            "Heendeniya Pattiyagoda",
+            "Veyangoda",
+            "Wadurawa",
+            "Keenawala",
+            "Pallewela",
+            "Ganegoda",
+            "Wijaya Rajadahana",
+            "Meerigama",
+            "Wilwatta",
+            "Botale",
+            "Ambepussa",
+            "Yaththalgoda",
+            "Bujjomuwa",
+            "Alawwa",
+            "Walakumbura",
+            "Polgahawela Junction",
+            "Panaliya",
+            "Tismalpola",
+            "Korossa",
+            "Yatagama",
+            "Rambukkana",
+            "Kadigamuwa",
+            "Yatiweldeniya",
+            "Gangoda",
+            "Ihala Kotte",
+            "Bambaragala",
+            "Makehelwala",
+            "Balana",
+            "Weralugolla",
+            "Kadugannawa",
+            "Kotabogolla",
+            "Urapola",
+            "Pilimatalawa",
+            "Barammane",
+            "Kiribathkumbura",
+            "Peradeniya Junction",
+            "Koshinna",
+            "Gelioya",
+            "Polgahaanga",
+            "Weligalla",
+            "Botalapitiya",
+            "Gangathilaka",
+            "Kahatapitiya",
+            "Gampola",
+            "Wallahagoda",
+            "Tembiligala",
+            "Warakapitiya",
+            "Ulapane",
+            "Pallegama",
+            "Warakawa",
+            "Nawalapitiya",
+            "Selam",
+            "Hieghtenford",
+            "Inguruoya",
+            "Penrose",
+            "Galboda",
+            "Dekinda",
+            "Wewelthalawa",
+            "Watawala",
+            "Ihala Watawala",
+            "Rozella",
+            "Hatton",
+            "Galkandawatta",
+            "Kotagala",
+            "St. Clair",
+            "Thalawakelle",
+            "Watagoda",
+            "Great Western",
+            "Radella",
+            "Nanu Oya",
+            "Perakumpura",
+            "Ambewela",
+            "Pattipola",
+            "Ohiya",
+            "Idalgashinna",
+            "Glenanore",
+            "Haputale",
+            "Diyatalawa",
+            "Bandarawela",
+            "Kinigama",
+            "Heeloya",
+            "Kitalella",
+            "Ella",
+            "Demodara",
+            "Uduwara",
+            "Hali-Ela",
+            "Badulla"
+         ],
+         "color": "red"
+      },
+      {
+         "node_list": [
             "Colombo Fort",
             "Secretariant Halt",
             "Kompanna Veediya",
@@ -234,12 +233,11 @@
             "Wewurukannala",
             "Nakulugamuwa",
             "Beliatta"
-            
-          ],
-          "color":"cyan"
-       },
-       {
-          "node_list":[
+         ],
+         "color": "cyan"
+      },
+      {
+         "node_list": [
             "Polgahawela Junction",
             "Girambe",
             "Thalawattegedara",
@@ -299,12 +297,11 @@
             "Tellippalai",
             "Maviddapuram",
             "Kankesanthurai"
-            
-          ],
-          "color":"orange"
-       },
-       {
-          "node_list":[
+         ],
+         "color": "orange"
+      },
+      {
+         "node_list": [
             "Maradana",
             "Baseline Road",
             "Cotta Road",
@@ -345,64 +342,62 @@
             "Puwakpitiya Town",
             "Kiriwadala",
             "Avissawella"
-            
-          ],
-          "color":"darkblue"
-       },
-       {
-          "node_list":[
+         ],
+         "color": "darkblue"
+      },
+      {
+         "node_list": [
             "Ragama Junction",
-"Peralanda",
-"Kandana",
-"Kapuwatta",
-"Ja-Ela",
-"Thudella",
-"Kudahakkapola",
-"Alawathupitiya",
-"Seeduwa",
-"Liyanagemulla",
-"Inventment Promotion Zone",
-"Colombo Airport Katunayake",
-"Katunayaka",
-"Kurana",
-"Negombo",
-"Kattuwa",
-"Kochchikade",
-"Waikkala",
-"Bolawatta",
-"Boralessa",
-"Lunuwila",
-"Thummodara",
-"Nattandiya",
-"Walahapitiya",
-"Kudawewa",
-"Nelumpokuna",
-"Madampe",
-"Kakkapalliya",
-"Sawarana",
-"Chilaw",
-"Manuwangama",
-"Bangadeniya",
-"Arachchikattuwa",
-"Anawilundawa",
-"Battuluoya",
-"Pulichchikulam",
-"Mundel",
-"Mangala Eliya",
-"Madurankuli",
-"Erukkalampiddy",
-"Palavi",
-"Thillayadi",
-"Puttalam",
-"Noor Nagar",
-"Karadipooval",
-"Periyanagavillu"
-
-          ],
-          "color":"green"
-       },
-       {
-          "node_list":[
+            "Peralanda",
+            "Kandana",
+            "Kapuwatta",
+            "Ja-Ela",
+            "Thudella",
+            "Kudahakkapola",
+            "Alawathupitiya",
+            "Seeduwa",
+            "Liyanagemulla",
+            "Inventment Promotion Zone",
+            "Colombo Airport Katunayake",
+            "Katunayaka",
+            "Kurana",
+            "Negombo",
+            "Kattuwa",
+            "Kochchikade",
+            "Waikkala",
+            "Bolawatta",
+            "Boralessa",
+            "Lunuwila",
+            "Thummodara",
+            "Nattandiya",
+            "Walahapitiya",
+            "Kudawewa",
+            "Nelumpokuna",
+            "Madampe",
+            "Kakkapalliya",
+            "Sawarana",
+            "Chilaw",
+            "Manuwangama",
+            "Bangadeniya",
+            "Arachchikattuwa",
+            "Anawilundawa",
+            "Battuluoya",
+            "Pulichchikulam",
+            "Mundel",
+            "Mangala Eliya",
+            "Madurankuli",
+            "Erukkalampiddy",
+            "Palavi",
+            "Thillayadi",
+            "Puttalam",
+            "Noor Nagar",
+            "Karadipooval",
+            "Periyanagavillu"
+         ],
+         "color": "green"
+      },
+      {
+         "node_list": [
             "Peradeniya Junction",
             "Sarasavi Uyana",
             "Rajawatte",
@@ -427,19 +422,19 @@
             "Tawalankoya",
             "Elwala",
             "Kohobiliwala",
-            "Matale"            
-          ],
-          "color":"purple"
-       },
-       {
-          "node_list":[
-             "Mihintale Junction",
-             "Mihintale"
-          ],
-          "color":"yellow"
-       },
-       {
-          "node_list":[
+            "Matale"
+         ],
+         "color": "purple"
+      },
+      {
+         "node_list": [
+            "Mihintale Junction",
+            "Mihintale"
+         ],
+         "color": "yellow"
+      },
+      {
+         "node_list": [
             "Medawachchiya Junction",
             "Neriyakulam",
             "Cheddikulam",
@@ -452,12 +447,11 @@
             "Pesalai",
             "Talaimannar",
             "Talaimannar Pier"
-            
-          ],
-          "color":"blue"
-       },
-       {
-          "node_list":[
+         ],
+         "color": "blue"
+      },
+      {
+         "node_list": [
             "Maho Junction",
             "Yapahuwa",
             "Konwewa",
@@ -497,12 +491,11 @@
             "Vandaramoolai",
             "Eravur",
             "Batticaloa"
-            
-          ],
-          "color":"darkgreen"
-       },
-       {
-          "node_list":[
+         ],
+         "color": "darkgreen"
+      },
+      {
+         "node_list": [
             "Gal Oya Junction",
             "Aluth oya",
             "Agbopura",
@@ -512,9 +505,8 @@
             "Thampalakamam",
             "China Bay",
             "Trincomalee"
-            
-          ],
-          "color":"silver"
-       }
-    ]
- }
+         ],
+         "color": "silver"
+      }
+   ]
+}
