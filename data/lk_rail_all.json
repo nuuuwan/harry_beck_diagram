@@ -9,39 +9,41 @@
       "Beliatta": [-41, -41],
 
       "Maradana": [-99, -24],
-      "Malapalle": [-85, -40],
-      "Uggalla": [-73, -40],
-      "Avissawella": [-59, -24],
+      "Malapalle": [-86, -37],
+      "Pinnawala": [-73, -37],
+      "Avissawella": [-60, -24],
 
       "Wadurawa": [-80, -5],
       "Polgahawela Junction": [-67, -5],
       "Gangoda": [-59, -5],
       "Peradeniya Junction": [-47, -5],
-      "Hieghtenford": [-29, -23],
-      "Nanu Oya": [-12, -23],
-      "Badulla": [5, -6],
+      "Hieghtenford": [-30, -22],
+      "Nanu Oya": [-13, -22],
+      "Badulla": [4, -5],
 
-      "Ragama Junction": [-91, -16],
-      "Periyanagavillu": [-91, 30],
+      "Ragama Junction": [-92, -17],
+      "Periyanagavillu": [-92, 28],
 
       
-     "Maho Junction": [-67, 15],
-     "Mihintale Junction": [-67, 24],
-     "Medawachchiya Junction": [-67, 29],
-     "Kankesanthurai": [-67, 59],
+     "Maho Junction": [-67, 8],
+     "Mihintale Junction": [-67, 18],
+     "Medawachchiya Junction": [-67, 22],
+     "Elephantpass": [-67, 34],
+     "Jaffna": [-78, 45],
+     "Kankesanthurai": [-78, 53],
      
 
-     "Talaimannar Pier": [-79, 41],
+     "Talaimannar Pier": [-78, 33],
 
-     "Mihintale": [-66, 24],
+     "Mihintale": [-66, 18],
 
 
-      "Gal Oya Junction": [-53, 15],
-     "Batticaloa": [-28, 15],
-     "Trincomalee": [-44, 24],
+      "Gal Oya Junction": [-52, 23],
+     "Batticaloa": [-29, 23],
+     "Trincomalee": [-44, 31],
 
-      "Udathalawinna": [-35, -5],
-     "Matale": [-23, 7]
+      "Udathalawinna": [-35, 7],
+     "Matale": [-35, 19]
 
 
 

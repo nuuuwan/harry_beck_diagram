@@ -46,10 +46,16 @@ class DrawLine:
         node_list = line['node_list']
         color = line['color']
         points = []
+        x0, y0 = None, None
         for node in node_list:
             x, y = self.node_idx[node]
             sx, sy = t(x, y)
             points.append(f'{sx},{sy}')
+            if x0 is not None:
+                dx, dy = x - x0, y - y0
+                if [abs(dx), abs(dy)] not in [[1.0,0], [0,1.0], [1.0,1.0]]: 
+                    log.warning(f'Invalid jump: {node} ({dx}, {dy})')
+            x0, y0 = x, y
 
         x_start, y_start = self.node_idx[node_list[0]]
         sx_start, sy_start = t(x_start, y_start)

@@ -1,5 +1,6 @@
 from hbd.STYLE import STYLE
-
+from utils import Log
+log = Log(__name__)
 
 def get_bbox(anchor_loc_list: list) -> tuple[float, float, float, float]:
     x0, y0 = anchor_loc_list[0]
@@ -18,6 +19,7 @@ def get_t(anchor_loc_list: list):
     x_span = max_x - min_x
     y_span = max_y - min_y
     max_span = max(x_span, y_span)
+    log.debug(f'{x_span=}, {y_span=}')
 
     padding = STYLE.SVG['padding']
     diagram_width = STYLE.SVG['width'] - 2 * padding
@@ -27,8 +29,6 @@ def get_t(anchor_loc_list: list):
     inner_height = diagram_height * y_span / max_span
     padding_x = (diagram_width - inner_width) / 2
     padding_y = (diagram_height - inner_height) / 2
-
-    print(inner_width, inner_height, padding_x, padding_y)
 
     def t(x: float, y: float) -> list[int]:
         px = (x - min_x) / x_span

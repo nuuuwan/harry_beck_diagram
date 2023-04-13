@@ -55,13 +55,11 @@ class Config:
             i_start, i_end = 0, 1
             while True:
                 while node_list[i_end] not in node_idx:
-                    print(node_list[i_end])
                     i_end += 1
 
                 start, end = node_list[i_start], node_list[i_end]
                 assert start in node_idx
 
-                log.debug(f'{start} -> {end}')
                 start_loc = node_idx[start]
                 end_loc = node_idx[end]
                 span = i_end - i_start
@@ -79,8 +77,6 @@ class Config:
                     y = round(p * start_loc[1] + q * end_loc[1], 0)
 
                     node_idx[node] = [x, y]
-
-                    log.debug([span, i, q, node, x, y, start_loc, end_loc])
 
                 i_start = i_end
                 i_end += 1
@@ -159,8 +155,6 @@ class Config:
             used_ks, text_angle = Config.get_node_text_angle(used_ks, x, y)
             node_to_text_angle[node] = text_angle
 
-            logger = log.error if text_angle is None else log.debug
-            logger(f'{node} {text_angle}')
 
         return node_to_text_angle
 

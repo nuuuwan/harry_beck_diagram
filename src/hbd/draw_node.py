@@ -59,7 +59,8 @@ class DrawNode:
         default_font_weight = int(STYLE.NODE_TEXT['font_weight'])
 
         label = node
-        log.debug(f'{node} ({x}, {y})')
+        # label_with_loc = f'{node} ({x}, {y})'
+
         cmp = self.get_node_cmp_value(node)
 
         font_size = default_font_size * (1 + (3 - cmp) * 0.2)
