@@ -3,7 +3,7 @@
   <rect x="50.0" y="50.0" width="1500" height="1500" fill="white" stroke="gray"/>
   <text fill="black" stroke="none" font-size="50" font-family="Trebuchet MS" x="800.0" y="200" text-anchor="middle">Railways of Sri Lanka</text>
   <g>
-    <path fill="none" stroke-width="6.300000000000001" stroke-opacity="1" d="M212 1025 L224 1013 L236 1001 L248 989 L260 977 L272 966 L283 954 L295 942 L307 930 L319 918 L331 906 L343 894 L355 883 L366 871 L378 859 L390 847 L402 835 L414 823 L426 811 L438 800 L450 788 L461 788 L473 788 L485 788 L497 788 L509 788 L521 788 L533 788 L544 788 L556 788 L568 788 L580 788 L592 788 L604 788 L616 788 L627 788 L639 788 L651 788 L663 788 L675 788 L687 788 L699 788 L711 788 L722 788 L734 788 L746 788 L758 788 L770 788 L782 788 L794 788 L805 788 L817 788 L829 788 L841 788 L853 788 L865 788 L877 788 L888 788 L900 788 L912 788 L924 788 L936 800 L948 811 L960 823 L972 835 L983 847 L995 859 L1007 871 L1019 883 L1031 894 L1043 906 L1055 918 L1066 930 L1078 942 L1090 954 L1102 966 L1114 977 L1126 989 L1138 1001 L1150 1013 L1161 1025 L1173 1013 L1185 1001 L1197 989 L1209 977 L1221 966 L1233 954 L1244 942 L1256 930 L1268 918 L1280 906 L1292 894 L1304 883 L1316 871 L1327 859 L1339 847 L1351 835 L1363 823 L1375 811 L1387 800 L1399 788 L1399 776 L1399 764 L1399 752 L1399 740" stroke="red"/>
+    <path fill="none" stroke-width="6.300000000000001" stroke-opacity="1" d="M212 1025 L224 1013 L236 1001 L248 989 L260 977 L272 966 L283 954 L295 942 L307 930 L319 918 L331 906 L343 894 L355 883 L366 871 L378 859 L390 847 L402 835 L414 823 L426 811 L438 800 L450 788 L461 788 L473 788 L485 788 L497 788 L509 788 L521 788 L533 788 L544 788 L556 788 L568 788 L580 788 L592 788 L604 788 L616 788 L627 788 L639 788 L651 788 L663 788 L675 788 L687 788 L699 800 L711 811 L722 823 L734 835 L746 847 L758 859 L770 871 L782 883 L794 894 L805 906 L817 918 L829 930 L841 942 L853 954 L865 966 L877 977 L888 989 L900 1001 L912 1013 L924 1025 L936 1025 L948 1025 L960 1025 L972 1025 L983 1025 L995 1025 L1007 1025 L1019 1025 L1031 1025 L1043 1025 L1055 1025 L1066 1025 L1078 1025 L1090 1025 L1102 1025 L1114 1025 L1126 1025 L1138 1025 L1150 1025 L1161 1025 L1173 1013 L1185 1001 L1197 989 L1209 977 L1221 966 L1233 954 L1244 942 L1256 930 L1268 918 L1280 906 L1292 894 L1304 883 L1316 871 L1327 859 L1339 847 L1351 835 L1363 823 L1375 811 L1387 800 L1399 788 L1399 776 L1399 764 L1399 752 L1399 740" stroke="red"/>
     <rect stroke="none" fill-opacity="1" x="1393" y="737" width="12" height="6" fill="red"/>
   </g>
   <g>
@@ -15,16 +15,16 @@
     <rect stroke="none" fill-opacity="1" x="479" y="97" width="12" height="6" fill="orange"/>
   </g>
   <g>
-    <path fill="none" stroke-width="6.300000000000001" stroke-opacity="1" d="M224 1013 L236 1025 L248 1037 L260 1049 L272 1061 L283 1072 L295 1084 L307 1096 L319 1108 L331 1120 L343 1132 L355 1144 L366 1155 L378 1167 L390 1179 L402 1191 L414 1203 L426 1215 L438 1227 L450 1238 L461 1250 L473 1250 L485 1250 L497 1250 L509 1250 L521 1250 L533 1250 L544 1250 L556 1250 L568 1250 L580 1250 L592 1250 L604 1250 L616 1250 L627 1250 L639 1250 L651 1250 L663 1250 L675 1250 L687 1250" stroke="darkblue"/>
-    <rect stroke="none" fill-opacity="1" x="684" y="1244" width="6" height="12" fill="darkblue"/>
+    <path fill="none" stroke-width="6.300000000000001" stroke-opacity="1" d="M224 1013 L236 1025 L248 1037 L260 1049 L272 1061 L283 1072 L295 1084 L307 1096 L319 1108 L331 1120 L343 1132 L355 1132 L366 1132 L378 1132 L390 1132 L402 1132 L414 1132 L426 1132 L438 1132 L450 1132 L461 1132 L473 1132 L485 1132 L497 1132 L509 1132 L521 1132 L533 1132 L544 1132 L556 1132 L568 1132 L580 1132 L592 1120 L604 1108 L616 1096 L627 1084 L639 1072 L651 1061 L663 1049 L675 1037 L687 1025" stroke="darkblue"/>
+    <rect stroke="none" fill-opacity="1" x="684" y="1019" width="6" height="12" fill="darkblue"/>
   </g>
   <g>
     <path fill="none" stroke-width="6.300000000000001" stroke-opacity="1" d="M307 930 L295 918 L283 906 L272 894 L260 883 L248 871 L236 859 L224 847 L212 835 L200 823 L200 811 L200 800 L200 788 L200 776 L200 764 L200 752 L200 740 L200 728 L200 716 L200 705 L200 693 L200 681 L200 669 L200 657 L200 645 L200 633 L200 622 L200 610 L200 598 L200 586 L200 574 L200 562 L200 550 L200 538 L200 527 L200 515 L200 503 L200 491 L200 479 L200 467 L200 455 L200 444 L200 432 L200 420 L200 408 L200 396" stroke="green"/>
     <rect stroke="none" fill-opacity="1" x="194" y="393" width="12" height="6" fill="green"/>
   </g>
   <g>
-    <path fill="none" stroke-width="6.300000000000001" stroke-opacity="1" d="M841 788 L853 776 L865 764 L877 752 L888 740 L900 728 L912 716 L924 705 L936 693 L948 681 L960 669 L960 657 L960 645 L960 633 L960 622 L960 610 L960 598 L960 586 L960 574 L960 562 L960 550 L960 538 L960 527 L960 515 L960 503" stroke="purple"/>
-    <rect stroke="none" fill-opacity="1" x="954" y="500" width="12" height="6" fill="purple"/>
+    <path fill="none" stroke-width="6.300000000000001" stroke-opacity="1" d="M841 942 L853 930 L865 918 L877 906 L888 894 L900 883 L912 871 L924 859 L936 847 L948 835 L960 823 L960 811 L960 800 L960 788 L960 776 L960 764 L960 752 L960 740 L960 728 L960 716 L960 705 L960 693 L960 681 L960 669 L960 657" stroke="purple"/>
+    <rect stroke="none" fill-opacity="1" x="954" y="654" width="12" height="6" fill="purple"/>
   </g>
   <g>
     <path fill="none" stroke-width="6.300000000000001" stroke-opacity="1" d="M604 515 L616 515" stroke="yellow"/>
@@ -59,8 +59,8 @@
     <text fill="black" stroke="none" font-size="12.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="614.5" y="788" transform="translate(604,788) rotate(-45) translate(-604,-788)">Polgahawela Junction</text>
   </g>
   <g>
-    <circle r="6" fill="white" stroke="black" stroke-width="2.0999999999999996" cx="841" cy="788"/>
-    <text fill="black" stroke="none" font-size="12.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="851.5" y="788" transform="translate(841,788) rotate(-315) translate(-841,-788)">Peradeniya Junction</text>
+    <circle r="6" fill="white" stroke="black" stroke-width="2.0999999999999996" cx="841" cy="942"/>
+    <text fill="black" stroke="none" font-size="12.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="851.5" y="942" transform="translate(841,942) rotate(-0) translate(-841,-942)">Peradeniya Junction</text>
   </g>
   <g>
     <circle r="6" fill="white" stroke="black" stroke-width="2.0999999999999996" cx="604" cy="633"/>
@@ -88,13 +88,13 @@
     <text fill="black" stroke="none" font-size="11.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="495.0" y="100" transform="translate(485,100) rotate(-0) translate(-485,-100)">Kankesanthurai</text>
   </g>
   <g>
-    <text fill="black" stroke="none" font-size="11.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="697.0" y="1250" transform="translate(687,1250) rotate(-0) translate(-687,-1250)">Avissawella</text>
+    <text fill="black" stroke="none" font-size="11.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="697.0" y="1025" transform="translate(687,1025) rotate(-0) translate(-687,-1025)">Avissawella</text>
   </g>
   <g>
     <text fill="black" stroke="none" font-size="11.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="210.0" y="396" transform="translate(200,396) rotate(-0) translate(-200,-396)">Periyanagavillu</text>
   </g>
   <g>
-    <text fill="black" stroke="none" font-size="11.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="970.0" y="503" transform="translate(960,503) rotate(-0) translate(-960,-503)">MATALE</text>
+    <text fill="black" stroke="none" font-size="11.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="970.0" y="657" transform="translate(960,657) rotate(-0) translate(-960,-657)">MATALE</text>
   </g>
   <g>
     <text fill="black" stroke="none" font-size="11.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="626.0" y="515" transform="translate(616,515) rotate(-0) translate(-616,-515)">Mihintale</text>
@@ -141,8 +141,8 @@
     <text fill="black" stroke="none" font-size="10" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="494.5" y="194" transform="translate(485,194) rotate(-0) translate(-485,-194)">JAFFNA</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="900.0" y="725.0" width="6" height="6" fill="purple"/>
-    <text fill="black" stroke="none" font-size="10" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="909.5" y="728" transform="translate(900,728) rotate(-0) translate(-900,-728)">KANDY</text>
+    <rect stroke="none" fill-opacity="1" x="900.0" y="880.0" width="6" height="6" fill="purple"/>
+    <text fill="black" stroke="none" font-size="10" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="909.5" y="883" transform="translate(900,883) rotate(-0) translate(-900,-883)">KANDY</text>
   </g>
   <g>
     <rect stroke="none" fill-opacity="1" x="521.0" y="381.0" width="6" height="6" fill="blue"/>
@@ -293,160 +293,160 @@
     <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="683.5" y="788" transform="translate(675,788) rotate(-45) translate(-675,-788)">Kadigamuwa</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="686.1213203435597" y="782.8786796564403" width="6" height="6" fill="red"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="695.5" y="788" transform="translate(687,788) rotate(-45) translate(-687,-788)">Yatiweldeniya</text>
+    <rect stroke="none" fill-opacity="1" x="687.0" y="785.0" width="6" height="6" fill="red"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="695.5" y="788" transform="translate(687,788) rotate(-0) translate(-687,-788)">Yatiweldeniya</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="698.1213203435597" y="782.8786796564403" width="6" height="6" fill="red"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="707.5" y="788" transform="translate(699,788) rotate(-45) translate(-699,-788)">Gangoda</text>
+    <rect stroke="none" fill-opacity="1" x="699.0" y="797.0" width="6" height="6" fill="red"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="707.5" y="800" transform="translate(699,800) rotate(-0) translate(-699,-800)">Gangoda</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="710.1213203435597" y="782.8786796564403" width="6" height="6" fill="red"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="719.5" y="788" transform="translate(711,788) rotate(-45) translate(-711,-788)">Ihala Kotte</text>
+    <rect stroke="none" fill-opacity="1" x="711.0" y="808.0" width="6" height="6" fill="red"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="719.5" y="811" transform="translate(711,811) rotate(-0) translate(-711,-811)">Ihala Kotte</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="721.1213203435597" y="782.8786796564403" width="6" height="6" fill="red"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="730.5" y="788" transform="translate(722,788) rotate(-45) translate(-722,-788)">Bambaragala</text>
+    <rect stroke="none" fill-opacity="1" x="722.0" y="820.0" width="6" height="6" fill="red"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="730.5" y="823" transform="translate(722,823) rotate(-0) translate(-722,-823)">Bambaragala</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="733.1213203435597" y="782.8786796564403" width="6" height="6" fill="red"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="742.5" y="788" transform="translate(734,788) rotate(-45) translate(-734,-788)">Makehelwala</text>
+    <rect stroke="none" fill-opacity="1" x="734.0" y="832.0" width="6" height="6" fill="red"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="742.5" y="835" transform="translate(734,835) rotate(-0) translate(-734,-835)">Makehelwala</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="745.1213203435597" y="782.8786796564403" width="6" height="6" fill="red"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="754.5" y="788" transform="translate(746,788) rotate(-45) translate(-746,-788)">Balana</text>
+    <rect stroke="none" fill-opacity="1" x="746.0" y="844.0" width="6" height="6" fill="red"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="754.5" y="847" transform="translate(746,847) rotate(-0) translate(-746,-847)">Balana</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="757.1213203435597" y="782.8786796564403" width="6" height="6" fill="red"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="766.5" y="788" transform="translate(758,788) rotate(-45) translate(-758,-788)">Weralugolla</text>
+    <rect stroke="none" fill-opacity="1" x="758.0" y="856.0" width="6" height="6" fill="red"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="766.5" y="859" transform="translate(758,859) rotate(-0) translate(-758,-859)">Weralugolla</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="769.1213203435597" y="782.8786796564403" width="6" height="6" fill="red"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="778.5" y="788" transform="translate(770,788) rotate(-45) translate(-770,-788)">Kadugannawa</text>
+    <rect stroke="none" fill-opacity="1" x="770.0" y="868.0" width="6" height="6" fill="red"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="778.5" y="871" transform="translate(770,871) rotate(-0) translate(-770,-871)">Kadugannawa</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="781.1213203435597" y="782.8786796564403" width="6" height="6" fill="red"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="790.5" y="788" transform="translate(782,788) rotate(-45) translate(-782,-788)">Kotabogolla</text>
+    <rect stroke="none" fill-opacity="1" x="782.0" y="880.0" width="6" height="6" fill="red"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="790.5" y="883" transform="translate(782,883) rotate(-0) translate(-782,-883)">Kotabogolla</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="793.1213203435597" y="782.8786796564403" width="6" height="6" fill="red"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="802.5" y="788" transform="translate(794,788) rotate(-45) translate(-794,-788)">Urapola</text>
+    <rect stroke="none" fill-opacity="1" x="794.0" y="891.0" width="6" height="6" fill="red"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="802.5" y="894" transform="translate(794,894) rotate(-0) translate(-794,-894)">Urapola</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="804.1213203435597" y="782.8786796564403" width="6" height="6" fill="red"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="813.5" y="788" transform="translate(805,788) rotate(-45) translate(-805,-788)">Pilimatalawa</text>
+    <rect stroke="none" fill-opacity="1" x="805.0" y="903.0" width="6" height="6" fill="red"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="813.5" y="906" transform="translate(805,906) rotate(-0) translate(-805,-906)">Pilimatalawa</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="816.1213203435597" y="782.8786796564403" width="6" height="6" fill="red"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="825.5" y="788" transform="translate(817,788) rotate(-45) translate(-817,-788)">Barammane</text>
+    <rect stroke="none" fill-opacity="1" x="817.0" y="915.0" width="6" height="6" fill="red"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="825.5" y="918" transform="translate(817,918) rotate(-0) translate(-817,-918)">Barammane</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="828.1213203435597" y="782.8786796564403" width="6" height="6" fill="red"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="837.5" y="788" transform="translate(829,788) rotate(-45) translate(-829,-788)">Kiribathkumbura</text>
+    <rect stroke="none" fill-opacity="1" x="829.0" y="927.0" width="6" height="6" fill="red"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="837.5" y="930" transform="translate(829,930) rotate(-0) translate(-829,-930)">Kiribathkumbura</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="852.1213203435597" y="782.8786796564403" width="6" height="6" fill="red"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="861.5" y="788" transform="translate(853,788) rotate(-45) translate(-853,-788)">Koshinna</text>
+    <rect stroke="none" fill-opacity="1" x="853.0" y="951.0" width="6" height="6" fill="red"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="861.5" y="954" transform="translate(853,954) rotate(-0) translate(-853,-954)">Koshinna</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="864.1213203435597" y="782.8786796564403" width="6" height="6" fill="red"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="873.5" y="788" transform="translate(865,788) rotate(-45) translate(-865,-788)">Gelioya</text>
+    <rect stroke="none" fill-opacity="1" x="865.0" y="963.0" width="6" height="6" fill="red"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="873.5" y="966" transform="translate(865,966) rotate(-0) translate(-865,-966)">Gelioya</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="876.1213203435597" y="782.8786796564403" width="6" height="6" fill="red"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="885.5" y="788" transform="translate(877,788) rotate(-45) translate(-877,-788)">Polgahaanga</text>
+    <rect stroke="none" fill-opacity="1" x="877.0" y="974.0" width="6" height="6" fill="red"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="885.5" y="977" transform="translate(877,977) rotate(-0) translate(-877,-977)">Polgahaanga</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="887.1213203435597" y="782.8786796564403" width="6" height="6" fill="red"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="896.5" y="788" transform="translate(888,788) rotate(-45) translate(-888,-788)">Weligalla</text>
+    <rect stroke="none" fill-opacity="1" x="888.0" y="986.0" width="6" height="6" fill="red"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="896.5" y="989" transform="translate(888,989) rotate(-0) translate(-888,-989)">Weligalla</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="899.1213203435597" y="782.8786796564403" width="6" height="6" fill="red"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="908.5" y="788" transform="translate(900,788) rotate(-45) translate(-900,-788)">Botalapitiya</text>
+    <rect stroke="none" fill-opacity="1" x="900.0" y="998.0" width="6" height="6" fill="red"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="908.5" y="1001" transform="translate(900,1001) rotate(-0) translate(-900,-1001)">Botalapitiya</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="911.1213203435597" y="782.8786796564403" width="6" height="6" fill="red"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="920.5" y="788" transform="translate(912,788) rotate(-45) translate(-912,-788)">Gangathilaka</text>
+    <rect stroke="none" fill-opacity="1" x="912.0" y="1010.0" width="6" height="6" fill="red"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="920.5" y="1013" transform="translate(912,1013) rotate(-0) translate(-912,-1013)">Gangathilaka</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="924.0" y="785.0" width="6" height="6" fill="red"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="932.5" y="788" transform="translate(924,788) rotate(-0) translate(-924,-788)">Kahatapitiya</text>
+    <rect stroke="none" fill-opacity="1" x="918.0" y="1022.0" width="6" height="6" fill="red"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="end" dominant-baseline="central" x="915.5" y="1025" transform="translate(924,1025) rotate(-0) translate(-924,-1025)">Kahatapitiya</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="936.0" y="797.0" width="6" height="6" fill="red"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="944.5" y="800" transform="translate(936,800) rotate(-0) translate(-936,-800)">Gampola</text>
+    <rect stroke="none" fill-opacity="1" x="935.1213203435597" y="1019.8786796564403" width="6" height="6" fill="red"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="944.5" y="1025" transform="translate(936,1025) rotate(-45) translate(-936,-1025)">Gampola</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="948.0" y="808.0" width="6" height="6" fill="red"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="956.5" y="811" transform="translate(948,811) rotate(-0) translate(-948,-811)">Wallahagoda</text>
+    <rect stroke="none" fill-opacity="1" x="947.1213203435597" y="1019.8786796564403" width="6" height="6" fill="red"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="956.5" y="1025" transform="translate(948,1025) rotate(-45) translate(-948,-1025)">Wallahagoda</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="960.0" y="820.0" width="6" height="6" fill="red"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="968.5" y="823" transform="translate(960,823) rotate(-0) translate(-960,-823)">Tembiligala</text>
+    <rect stroke="none" fill-opacity="1" x="959.1213203435597" y="1019.8786796564403" width="6" height="6" fill="red"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="968.5" y="1025" transform="translate(960,1025) rotate(-45) translate(-960,-1025)">Tembiligala</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="972.0" y="832.0" width="6" height="6" fill="red"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="980.5" y="835" transform="translate(972,835) rotate(-0) translate(-972,-835)">Warakapitiya</text>
+    <rect stroke="none" fill-opacity="1" x="971.1213203435597" y="1019.8786796564403" width="6" height="6" fill="red"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="980.5" y="1025" transform="translate(972,1025) rotate(-45) translate(-972,-1025)">Warakapitiya</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="983.0" y="844.0" width="6" height="6" fill="red"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="991.5" y="847" transform="translate(983,847) rotate(-0) translate(-983,-847)">Ulapane</text>
+    <rect stroke="none" fill-opacity="1" x="982.1213203435597" y="1019.8786796564403" width="6" height="6" fill="red"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="991.5" y="1025" transform="translate(983,1025) rotate(-45) translate(-983,-1025)">Ulapane</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="995.0" y="856.0" width="6" height="6" fill="red"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="1003.5" y="859" transform="translate(995,859) rotate(-0) translate(-995,-859)">Pallegama</text>
+    <rect stroke="none" fill-opacity="1" x="994.1213203435597" y="1019.8786796564403" width="6" height="6" fill="red"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="1003.5" y="1025" transform="translate(995,1025) rotate(-45) translate(-995,-1025)">Pallegama</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="1007.0" y="868.0" width="6" height="6" fill="red"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="1015.5" y="871" transform="translate(1007,871) rotate(-0) translate(-1007,-871)">Warakawa</text>
+    <rect stroke="none" fill-opacity="1" x="1006.1213203435597" y="1019.8786796564403" width="6" height="6" fill="red"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="1015.5" y="1025" transform="translate(1007,1025) rotate(-45) translate(-1007,-1025)">Warakawa</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="1019.0" y="880.0" width="6" height="6" fill="red"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="1027.5" y="883" transform="translate(1019,883) rotate(-0) translate(-1019,-883)">Nawalapitiya</text>
+    <rect stroke="none" fill-opacity="1" x="1018.1213203435597" y="1019.8786796564403" width="6" height="6" fill="red"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="1027.5" y="1025" transform="translate(1019,1025) rotate(-45) translate(-1019,-1025)">Nawalapitiya</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="1031.0" y="891.0" width="6" height="6" fill="red"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="1039.5" y="894" transform="translate(1031,894) rotate(-0) translate(-1031,-894)">Selam</text>
+    <rect stroke="none" fill-opacity="1" x="1030.1213203435595" y="1019.8786796564403" width="6" height="6" fill="red"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="1039.5" y="1025" transform="translate(1031,1025) rotate(-45) translate(-1031,-1025)">Selam</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="1043.0" y="903.0" width="6" height="6" fill="red"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="1051.5" y="906" transform="translate(1043,906) rotate(-0) translate(-1043,-906)">Hieghtenford</text>
+    <rect stroke="none" fill-opacity="1" x="1042.1213203435595" y="1019.8786796564403" width="6" height="6" fill="red"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="1051.5" y="1025" transform="translate(1043,1025) rotate(-45) translate(-1043,-1025)">Hieghtenford</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="1055.0" y="915.0" width="6" height="6" fill="red"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="1063.5" y="918" transform="translate(1055,918) rotate(-0) translate(-1055,-918)">Inguruoya</text>
+    <rect stroke="none" fill-opacity="1" x="1054.1213203435595" y="1019.8786796564403" width="6" height="6" fill="red"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="1063.5" y="1025" transform="translate(1055,1025) rotate(-45) translate(-1055,-1025)">Inguruoya</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="1066.0" y="927.0" width="6" height="6" fill="red"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="1074.5" y="930" transform="translate(1066,930) rotate(-0) translate(-1066,-930)">Penrose</text>
+    <rect stroke="none" fill-opacity="1" x="1065.1213203435595" y="1019.8786796564403" width="6" height="6" fill="red"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="1074.5" y="1025" transform="translate(1066,1025) rotate(-45) translate(-1066,-1025)">Penrose</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="1078.0" y="939.0" width="6" height="6" fill="red"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="1086.5" y="942" transform="translate(1078,942) rotate(-0) translate(-1078,-942)">Galboda</text>
+    <rect stroke="none" fill-opacity="1" x="1077.1213203435595" y="1019.8786796564403" width="6" height="6" fill="red"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="1086.5" y="1025" transform="translate(1078,1025) rotate(-45) translate(-1078,-1025)">Galboda</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="1090.0" y="951.0" width="6" height="6" fill="red"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="1098.5" y="954" transform="translate(1090,954) rotate(-0) translate(-1090,-954)">Dekinda</text>
+    <rect stroke="none" fill-opacity="1" x="1089.1213203435595" y="1019.8786796564403" width="6" height="6" fill="red"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="1098.5" y="1025" transform="translate(1090,1025) rotate(-45) translate(-1090,-1025)">Dekinda</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="1102.0" y="963.0" width="6" height="6" fill="red"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="1110.5" y="966" transform="translate(1102,966) rotate(-0) translate(-1102,-966)">Wewelthalawa</text>
+    <rect stroke="none" fill-opacity="1" x="1101.1213203435595" y="1019.8786796564403" width="6" height="6" fill="red"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="1110.5" y="1025" transform="translate(1102,1025) rotate(-45) translate(-1102,-1025)">Wewelthalawa</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="1114.0" y="974.0" width="6" height="6" fill="red"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="1122.5" y="977" transform="translate(1114,977) rotate(-0) translate(-1114,-977)">Watawala</text>
+    <rect stroke="none" fill-opacity="1" x="1113.1213203435595" y="1019.8786796564403" width="6" height="6" fill="red"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="1122.5" y="1025" transform="translate(1114,1025) rotate(-45) translate(-1114,-1025)">Watawala</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="1126.0" y="986.0" width="6" height="6" fill="red"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="1134.5" y="989" transform="translate(1126,989) rotate(-0) translate(-1126,-989)">Ihala Watawala</text>
+    <rect stroke="none" fill-opacity="1" x="1125.1213203435595" y="1019.8786796564403" width="6" height="6" fill="red"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="1134.5" y="1025" transform="translate(1126,1025) rotate(-45) translate(-1126,-1025)">Ihala Watawala</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="1138.0" y="998.0" width="6" height="6" fill="red"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="1146.5" y="1001" transform="translate(1138,1001) rotate(-0) translate(-1138,-1001)">Rozella</text>
+    <rect stroke="none" fill-opacity="1" x="1137.1213203435595" y="1019.8786796564403" width="6" height="6" fill="red"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="1146.5" y="1025" transform="translate(1138,1025) rotate(-45) translate(-1138,-1025)">Rozella</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="1150.0" y="1010.0" width="6" height="6" fill="red"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="1158.5" y="1013" transform="translate(1150,1013) rotate(-0) translate(-1150,-1013)">Hatton</text>
+    <rect stroke="none" fill-opacity="1" x="1149.1213203435595" y="1019.8786796564403" width="6" height="6" fill="red"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="1158.5" y="1025" transform="translate(1150,1025) rotate(-45) translate(-1150,-1025)">Hatton</text>
   </g>
   <g>
     <rect stroke="none" fill-opacity="1" x="1161.0" y="1022.0" width="6" height="6" fill="red"/>
@@ -1061,120 +1061,120 @@
     <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="339.5" y="1120" transform="translate(331,1120) rotate(-0) translate(-331,-1120)">Nawinna</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="343.0" y="1129.0" width="6" height="6" fill="darkblue"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="351.5" y="1132" transform="translate(343,1132) rotate(-0) translate(-343,-1132)">Maharagama</text>
+    <rect stroke="none" fill-opacity="1" x="337.0" y="1129.0" width="6" height="6" fill="darkblue"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="end" dominant-baseline="central" x="334.5" y="1132" transform="translate(343,1132) rotate(-0) translate(-343,-1132)">Maharagama</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="355.0" y="1141.0" width="6" height="6" fill="darkblue"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="363.5" y="1144" transform="translate(355,1144) rotate(-0) translate(-355,-1144)">Pannipitiya</text>
+    <rect stroke="none" fill-opacity="1" x="354.12132034355966" y="1126.8786796564405" width="6" height="6" fill="darkblue"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="363.5" y="1132" transform="translate(355,1132) rotate(-45) translate(-355,-1132)">Pannipitiya</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="366.0" y="1152.0" width="6" height="6" fill="darkblue"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="374.5" y="1155" transform="translate(366,1155) rotate(-0) translate(-366,-1155)">Kottawa</text>
+    <rect stroke="none" fill-opacity="1" x="365.12132034355966" y="1126.8786796564405" width="6" height="6" fill="darkblue"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="374.5" y="1132" transform="translate(366,1132) rotate(-45) translate(-366,-1132)">Kottawa</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="378.0" y="1164.0" width="6" height="6" fill="darkblue"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="386.5" y="1167" transform="translate(378,1167) rotate(-0) translate(-378,-1167)">Malapalle</text>
+    <rect stroke="none" fill-opacity="1" x="377.12132034355966" y="1126.8786796564405" width="6" height="6" fill="darkblue"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="386.5" y="1132" transform="translate(378,1132) rotate(-45) translate(-378,-1132)">Malapalle</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="390.0" y="1176.0" width="6" height="6" fill="darkblue"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="398.5" y="1179" transform="translate(390,1179) rotate(-0) translate(-390,-1179)">Makumbura</text>
+    <rect stroke="none" fill-opacity="1" x="389.12132034355966" y="1126.8786796564405" width="6" height="6" fill="darkblue"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="398.5" y="1132" transform="translate(390,1132) rotate(-45) translate(-390,-1132)">Makumbura</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="402.0" y="1188.0" width="6" height="6" fill="darkblue"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="410.5" y="1191" transform="translate(402,1191) rotate(-0) translate(-402,-1191)">Homagama Hospital</text>
+    <rect stroke="none" fill-opacity="1" x="401.12132034355966" y="1126.8786796564405" width="6" height="6" fill="darkblue"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="410.5" y="1132" transform="translate(402,1132) rotate(-45) translate(-402,-1132)">Homagama Hospital</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="414.0" y="1200.0" width="6" height="6" fill="darkblue"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="422.5" y="1203" transform="translate(414,1203) rotate(-0) translate(-414,-1203)">Homagama</text>
+    <rect stroke="none" fill-opacity="1" x="413.12132034355966" y="1126.8786796564405" width="6" height="6" fill="darkblue"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="422.5" y="1132" transform="translate(414,1132) rotate(-45) translate(-414,-1132)">Homagama</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="426.0" y="1212.0" width="6" height="6" fill="darkblue"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="434.5" y="1215" transform="translate(426,1215) rotate(-0) translate(-426,-1215)">Panagoda</text>
+    <rect stroke="none" fill-opacity="1" x="425.12132034355966" y="1126.8786796564405" width="6" height="6" fill="darkblue"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="434.5" y="1132" transform="translate(426,1132) rotate(-45) translate(-426,-1132)">Panagoda</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="438.0" y="1224.0" width="6" height="6" fill="darkblue"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="446.5" y="1227" transform="translate(438,1227) rotate(-0) translate(-438,-1227)">Godagama</text>
+    <rect stroke="none" fill-opacity="1" x="437.12132034355966" y="1126.8786796564405" width="6" height="6" fill="darkblue"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="446.5" y="1132" transform="translate(438,1132) rotate(-45) translate(-438,-1132)">Godagama</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="450.0" y="1235.0" width="6" height="6" fill="darkblue"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="458.5" y="1238" transform="translate(450,1238) rotate(-0) translate(-450,-1238)">Meegoda</text>
+    <rect stroke="none" fill-opacity="1" x="449.12132034355966" y="1126.8786796564405" width="6" height="6" fill="darkblue"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="458.5" y="1132" transform="translate(450,1132) rotate(-45) translate(-450,-1132)">Meegoda</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="455.0" y="1247.0" width="6" height="6" fill="darkblue"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="end" dominant-baseline="central" x="452.5" y="1250" transform="translate(461,1250) rotate(-0) translate(-461,-1250)">Watareka</text>
+    <rect stroke="none" fill-opacity="1" x="460.12132034355966" y="1126.8786796564405" width="6" height="6" fill="darkblue"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="469.5" y="1132" transform="translate(461,1132) rotate(-45) translate(-461,-1132)">Watareka</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="472.12132034355966" y="1244.8786796564405" width="6" height="6" fill="darkblue"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="481.5" y="1250" transform="translate(473,1250) rotate(-45) translate(-473,-1250)">Liyanwala</text>
+    <rect stroke="none" fill-opacity="1" x="472.12132034355966" y="1126.8786796564405" width="6" height="6" fill="darkblue"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="481.5" y="1132" transform="translate(473,1132) rotate(-45) translate(-473,-1132)">Liyanwala</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="484.12132034355966" y="1244.8786796564405" width="6" height="6" fill="darkblue"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="493.5" y="1250" transform="translate(485,1250) rotate(-45) translate(-485,-1250)">Padukka</text>
+    <rect stroke="none" fill-opacity="1" x="484.12132034355966" y="1126.8786796564405" width="6" height="6" fill="darkblue"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="493.5" y="1132" transform="translate(485,1132) rotate(-45) translate(-485,-1132)">Padukka</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="496.12132034355966" y="1244.8786796564405" width="6" height="6" fill="darkblue"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="505.5" y="1250" transform="translate(497,1250) rotate(-45) translate(-497,-1250)">Arukwathupura</text>
+    <rect stroke="none" fill-opacity="1" x="496.12132034355966" y="1126.8786796564405" width="6" height="6" fill="darkblue"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="505.5" y="1132" transform="translate(497,1132) rotate(-45) translate(-497,-1132)">Arukwathupura</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="508.12132034355966" y="1244.8786796564405" width="6" height="6" fill="darkblue"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="517.5" y="1250" transform="translate(509,1250) rotate(-45) translate(-509,-1250)">Angampitiya</text>
+    <rect stroke="none" fill-opacity="1" x="508.12132034355966" y="1126.8786796564405" width="6" height="6" fill="darkblue"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="517.5" y="1132" transform="translate(509,1132) rotate(-45) translate(-509,-1132)">Angampitiya</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="520.1213203435597" y="1244.8786796564405" width="6" height="6" fill="darkblue"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="529.5" y="1250" transform="translate(521,1250) rotate(-45) translate(-521,-1250)">Uggalla</text>
+    <rect stroke="none" fill-opacity="1" x="520.1213203435597" y="1126.8786796564405" width="6" height="6" fill="darkblue"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="529.5" y="1132" transform="translate(521,1132) rotate(-45) translate(-521,-1132)">Uggalla</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="532.1213203435597" y="1244.8786796564405" width="6" height="6" fill="darkblue"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="541.5" y="1250" transform="translate(533,1250) rotate(-45) translate(-533,-1250)">Pinnawala</text>
+    <rect stroke="none" fill-opacity="1" x="532.1213203435597" y="1126.8786796564405" width="6" height="6" fill="darkblue"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="541.5" y="1132" transform="translate(533,1132) rotate(-45) translate(-533,-1132)">Pinnawala</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="543.1213203435597" y="1244.8786796564405" width="6" height="6" fill="darkblue"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="552.5" y="1250" transform="translate(544,1250) rotate(-45) translate(-544,-1250)">Gammana</text>
+    <rect stroke="none" fill-opacity="1" x="543.1213203435597" y="1126.8786796564405" width="6" height="6" fill="darkblue"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="552.5" y="1132" transform="translate(544,1132) rotate(-45) translate(-544,-1132)">Gammana</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="555.1213203435597" y="1244.8786796564405" width="6" height="6" fill="darkblue"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="564.5" y="1250" transform="translate(556,1250) rotate(-45) translate(-556,-1250)">Morakale</text>
+    <rect stroke="none" fill-opacity="1" x="555.1213203435597" y="1126.8786796564405" width="6" height="6" fill="darkblue"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="564.5" y="1132" transform="translate(556,1132) rotate(-45) translate(-556,-1132)">Morakale</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="567.1213203435597" y="1244.8786796564405" width="6" height="6" fill="darkblue"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="576.5" y="1250" transform="translate(568,1250) rotate(-45) translate(-568,-1250)">Waga</text>
+    <rect stroke="none" fill-opacity="1" x="567.1213203435597" y="1126.8786796564405" width="6" height="6" fill="darkblue"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="576.5" y="1132" transform="translate(568,1132) rotate(-45) translate(-568,-1132)">Waga</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="579.1213203435597" y="1244.8786796564405" width="6" height="6" fill="darkblue"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="588.5" y="1250" transform="translate(580,1250) rotate(-45) translate(-580,-1250)">Kadugoda</text>
+    <rect stroke="none" fill-opacity="1" x="580.0" y="1129.0" width="6" height="6" fill="darkblue"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="588.5" y="1132" transform="translate(580,1132) rotate(-0) translate(-580,-1132)">Kadugoda</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="591.1213203435597" y="1244.8786796564405" width="6" height="6" fill="darkblue"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="600.5" y="1250" transform="translate(592,1250) rotate(-45) translate(-592,-1250)">Arapanagama</text>
+    <rect stroke="none" fill-opacity="1" x="592.0" y="1117.0" width="6" height="6" fill="darkblue"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="600.5" y="1120" transform="translate(592,1120) rotate(-0) translate(-592,-1120)">Arapanagama</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="603.1213203435597" y="1244.8786796564405" width="6" height="6" fill="darkblue"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="612.5" y="1250" transform="translate(604,1250) rotate(-45) translate(-604,-1250)">Kosgama</text>
+    <rect stroke="none" fill-opacity="1" x="604.0" y="1105.0" width="6" height="6" fill="darkblue"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="612.5" y="1108" transform="translate(604,1108) rotate(-0) translate(-604,-1108)">Kosgama</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="615.1213203435597" y="1244.8786796564405" width="6" height="6" fill="darkblue"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="624.5" y="1250" transform="translate(616,1250) rotate(-45) translate(-616,-1250)">Aluthambalama</text>
+    <rect stroke="none" fill-opacity="1" x="616.0" y="1093.0" width="6" height="6" fill="darkblue"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="624.5" y="1096" transform="translate(616,1096) rotate(-0) translate(-616,-1096)">Aluthambalama</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="626.1213203435597" y="1244.8786796564405" width="6" height="6" fill="darkblue"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="635.5" y="1250" transform="translate(627,1250) rotate(-45) translate(-627,-1250)">Miriswatte</text>
+    <rect stroke="none" fill-opacity="1" x="627.0" y="1081.0" width="6" height="6" fill="darkblue"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="635.5" y="1084" transform="translate(627,1084) rotate(-0) translate(-627,-1084)">Miriswatte</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="638.1213203435597" y="1244.8786796564405" width="6" height="6" fill="darkblue"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="647.5" y="1250" transform="translate(639,1250) rotate(-45) translate(-639,-1250)">Hingurala</text>
+    <rect stroke="none" fill-opacity="1" x="639.0" y="1069.0" width="6" height="6" fill="darkblue"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="647.5" y="1072" transform="translate(639,1072) rotate(-0) translate(-639,-1072)">Hingurala</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="650.1213203435597" y="1244.8786796564405" width="6" height="6" fill="darkblue"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="659.5" y="1250" transform="translate(651,1250) rotate(-45) translate(-651,-1250)">Puwakpitiya</text>
+    <rect stroke="none" fill-opacity="1" x="651.0" y="1058.0" width="6" height="6" fill="darkblue"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="659.5" y="1061" transform="translate(651,1061) rotate(-0) translate(-651,-1061)">Puwakpitiya</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="662.1213203435597" y="1244.8786796564405" width="6" height="6" fill="darkblue"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="671.5" y="1250" transform="translate(663,1250) rotate(-45) translate(-663,-1250)">Puwakpitiya Town</text>
+    <rect stroke="none" fill-opacity="1" x="663.0" y="1046.0" width="6" height="6" fill="darkblue"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="671.5" y="1049" transform="translate(663,1049) rotate(-0) translate(-663,-1049)">Puwakpitiya Town</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="674.1213203435597" y="1244.8786796564405" width="6" height="6" fill="darkblue"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="683.5" y="1250" transform="translate(675,1250) rotate(-45) translate(-675,-1250)">Kiriwadala</text>
+    <rect stroke="none" fill-opacity="1" x="675.0" y="1034.0" width="6" height="6" fill="darkblue"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="683.5" y="1037" transform="translate(675,1037) rotate(-0) translate(-675,-1037)">Kiriwadala</text>
   </g>
   <g>
     <rect stroke="none" fill-opacity="1" x="295.0" y="915.0" width="6" height="6" fill="green"/>
@@ -1353,92 +1353,92 @@
     <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="208.5" y="408" transform="translate(200,408) rotate(-0) translate(-200,-408)">Karadipooval</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="850.0" y="770.0" width="6" height="6" fill="purple"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="861.5" y="776" transform="translate(853,776) rotate(-90) translate(-853,-776)">Sarasavi Uyana</text>
+    <rect stroke="none" fill-opacity="1" x="853.0" y="927.0" width="6" height="6" fill="purple"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="861.5" y="930" transform="translate(853,930) rotate(-0) translate(-853,-930)">Sarasavi Uyana</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="865.0" y="761.0" width="6" height="6" fill="purple"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="873.5" y="764" transform="translate(865,764) rotate(-0) translate(-865,-764)">Rajawatte</text>
+    <rect stroke="none" fill-opacity="1" x="865.0" y="915.0" width="6" height="6" fill="purple"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="873.5" y="918" transform="translate(865,918) rotate(-0) translate(-865,-918)">Rajawatte</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="877.0" y="749.0" width="6" height="6" fill="purple"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="885.5" y="752" transform="translate(877,752) rotate(-0) translate(-877,-752)">Randles Hill</text>
+    <rect stroke="none" fill-opacity="1" x="877.0" y="903.0" width="6" height="6" fill="purple"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="885.5" y="906" transform="translate(877,906) rotate(-0) translate(-877,-906)">Randles Hill</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="888.0" y="737.0" width="6" height="6" fill="purple"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="896.5" y="740" transform="translate(888,740) rotate(-0) translate(-888,-740)">Suduhumpola</text>
+    <rect stroke="none" fill-opacity="1" x="888.0" y="891.0" width="6" height="6" fill="purple"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="896.5" y="894" transform="translate(888,894) rotate(-0) translate(-888,-894)">Suduhumpola</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="912.0" y="713.0" width="6" height="6" fill="purple"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="920.5" y="716" transform="translate(912,716) rotate(-0) translate(-912,-716)">Asgirya</text>
+    <rect stroke="none" fill-opacity="1" x="912.0" y="868.0" width="6" height="6" fill="purple"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="920.5" y="871" transform="translate(912,871) rotate(-0) translate(-912,-871)">Asgirya</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="924.0" y="702.0" width="6" height="6" fill="purple"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="932.5" y="705" transform="translate(924,705) rotate(-0) translate(-924,-705)">Mahiyawa</text>
+    <rect stroke="none" fill-opacity="1" x="924.0" y="856.0" width="6" height="6" fill="purple"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="932.5" y="859" transform="translate(924,859) rotate(-0) translate(-924,-859)">Mahiyawa</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="936.0" y="690.0" width="6" height="6" fill="purple"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="944.5" y="693" transform="translate(936,693) rotate(-0) translate(-936,-693)">Katugastota Road</text>
+    <rect stroke="none" fill-opacity="1" x="936.0" y="844.0" width="6" height="6" fill="purple"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="944.5" y="847" transform="translate(936,847) rotate(-0) translate(-936,-847)">Katugastota Road</text>
   </g>
   <g>
-    <rect stroke="none" fill-opacity="1" x="948.0" y="678.0" width="6" height="6" fill="purple"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="956.5" y="681" transform="translate(948,681) rotate(-0) translate(-948,-681)">Mavilmada</text>
+    <rect stroke="none" fill-opacity="1" x="948.0" y="832.0" width="6" height="6" fill="purple"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="956.5" y="835" transform="translate(948,835) rotate(-0) translate(-948,-835)">Mavilmada</text>
+  </g>
+  <g>
+    <rect stroke="none" fill-opacity="1" x="960.0" y="820.0" width="6" height="6" fill="purple"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="968.5" y="823" transform="translate(960,823) rotate(-0) translate(-960,-823)">Katugastota</text>
+  </g>
+  <g>
+    <rect stroke="none" fill-opacity="1" x="960.0" y="808.0" width="6" height="6" fill="purple"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="968.5" y="811" transform="translate(960,811) rotate(-0) translate(-960,-811)">Pallethalawinna</text>
+  </g>
+  <g>
+    <rect stroke="none" fill-opacity="1" x="960.0" y="797.0" width="6" height="6" fill="purple"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="968.5" y="800" transform="translate(960,800) rotate(-0) translate(-960,-800)">Udathalawinna</text>
+  </g>
+  <g>
+    <rect stroke="none" fill-opacity="1" x="960.0" y="785.0" width="6" height="6" fill="purple"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="968.5" y="788" transform="translate(960,788) rotate(-0) translate(-960,-788)">Meegammana</text>
+  </g>
+  <g>
+    <rect stroke="none" fill-opacity="1" x="960.0" y="773.0" width="6" height="6" fill="purple"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="968.5" y="776" transform="translate(960,776) rotate(-0) translate(-960,-776)">Yatirawana</text>
+  </g>
+  <g>
+    <rect stroke="none" fill-opacity="1" x="960.0" y="761.0" width="6" height="6" fill="purple"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="968.5" y="764" transform="translate(960,764) rotate(-0) translate(-960,-764)">Wattegama</text>
+  </g>
+  <g>
+    <rect stroke="none" fill-opacity="1" x="960.0" y="749.0" width="6" height="6" fill="purple"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="968.5" y="752" transform="translate(960,752) rotate(-0) translate(-960,-752)">Yatawara</text>
+  </g>
+  <g>
+    <rect stroke="none" fill-opacity="1" x="960.0" y="737.0" width="6" height="6" fill="purple"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="968.5" y="740" transform="translate(960,740) rotate(-0) translate(-960,-740)">Pathanpaha</text>
+  </g>
+  <g>
+    <rect stroke="none" fill-opacity="1" x="960.0" y="725.0" width="6" height="6" fill="purple"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="968.5" y="728" transform="translate(960,728) rotate(-0) translate(-960,-728)">Marukona</text>
+  </g>
+  <g>
+    <rect stroke="none" fill-opacity="1" x="960.0" y="713.0" width="6" height="6" fill="purple"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="968.5" y="716" transform="translate(960,716) rotate(-0) translate(-960,-716)">Udaththawala</text>
+  </g>
+  <g>
+    <rect stroke="none" fill-opacity="1" x="960.0" y="702.0" width="6" height="6" fill="purple"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="968.5" y="705" transform="translate(960,705) rotate(-0) translate(-960,-705)">Ukuwela</text>
+  </g>
+  <g>
+    <rect stroke="none" fill-opacity="1" x="960.0" y="690.0" width="6" height="6" fill="purple"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="968.5" y="693" transform="translate(960,693) rotate(-0) translate(-960,-693)">Tawalankoya</text>
+  </g>
+  <g>
+    <rect stroke="none" fill-opacity="1" x="960.0" y="678.0" width="6" height="6" fill="purple"/>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="968.5" y="681" transform="translate(960,681) rotate(-0) translate(-960,-681)">Elwala</text>
   </g>
   <g>
     <rect stroke="none" fill-opacity="1" x="960.0" y="666.0" width="6" height="6" fill="purple"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="968.5" y="669" transform="translate(960,669) rotate(-0) translate(-960,-669)">Katugastota</text>
-  </g>
-  <g>
-    <rect stroke="none" fill-opacity="1" x="960.0" y="654.0" width="6" height="6" fill="purple"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="968.5" y="657" transform="translate(960,657) rotate(-0) translate(-960,-657)">Pallethalawinna</text>
-  </g>
-  <g>
-    <rect stroke="none" fill-opacity="1" x="960.0" y="642.0" width="6" height="6" fill="purple"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="968.5" y="645" transform="translate(960,645) rotate(-0) translate(-960,-645)">Udathalawinna</text>
-  </g>
-  <g>
-    <rect stroke="none" fill-opacity="1" x="960.0" y="630.0" width="6" height="6" fill="purple"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="968.5" y="633" transform="translate(960,633) rotate(-0) translate(-960,-633)">Meegammana</text>
-  </g>
-  <g>
-    <rect stroke="none" fill-opacity="1" x="960.0" y="619.0" width="6" height="6" fill="purple"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="968.5" y="622" transform="translate(960,622) rotate(-0) translate(-960,-622)">Yatirawana</text>
-  </g>
-  <g>
-    <rect stroke="none" fill-opacity="1" x="960.0" y="607.0" width="6" height="6" fill="purple"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="968.5" y="610" transform="translate(960,610) rotate(-0) translate(-960,-610)">Wattegama</text>
-  </g>
-  <g>
-    <rect stroke="none" fill-opacity="1" x="960.0" y="595.0" width="6" height="6" fill="purple"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="968.5" y="598" transform="translate(960,598) rotate(-0) translate(-960,-598)">Yatawara</text>
-  </g>
-  <g>
-    <rect stroke="none" fill-opacity="1" x="960.0" y="583.0" width="6" height="6" fill="purple"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="968.5" y="586" transform="translate(960,586) rotate(-0) translate(-960,-586)">Pathanpaha</text>
-  </g>
-  <g>
-    <rect stroke="none" fill-opacity="1" x="960.0" y="571.0" width="6" height="6" fill="purple"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="968.5" y="574" transform="translate(960,574) rotate(-0) translate(-960,-574)">Marukona</text>
-  </g>
-  <g>
-    <rect stroke="none" fill-opacity="1" x="960.0" y="559.0" width="6" height="6" fill="purple"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="968.5" y="562" transform="translate(960,562) rotate(-0) translate(-960,-562)">Udaththawala</text>
-  </g>
-  <g>
-    <rect stroke="none" fill-opacity="1" x="960.0" y="547.0" width="6" height="6" fill="purple"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="968.5" y="550" transform="translate(960,550) rotate(-0) translate(-960,-550)">Ukuwela</text>
-  </g>
-  <g>
-    <rect stroke="none" fill-opacity="1" x="960.0" y="535.0" width="6" height="6" fill="purple"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="968.5" y="538" transform="translate(960,538) rotate(-0) translate(-960,-538)">Tawalankoya</text>
-  </g>
-  <g>
-    <rect stroke="none" fill-opacity="1" x="960.0" y="524.0" width="6" height="6" fill="purple"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="968.5" y="527" transform="translate(960,527) rotate(-0) translate(-960,-527)">Elwala</text>
-  </g>
-  <g>
-    <rect stroke="none" fill-opacity="1" x="960.0" y="512.0" width="6" height="6" fill="purple"/>
-    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="968.5" y="515" transform="translate(960,515) rotate(-0) translate(-960,-515)">Kohobiliwala</text>
+    <text fill="black" stroke="none" font-size="8.0" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="968.5" y="669" transform="translate(960,669) rotate(-0) translate(-960,-669)">Kohobiliwala</text>
   </g>
   <g>
     <rect stroke="none" fill-opacity="1" x="586.0" y="452.0" width="6" height="6" fill="blue"/>
