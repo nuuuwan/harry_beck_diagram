@@ -56,15 +56,12 @@ class DrawNode:
             ]
         )
         default_font_size = int(STYLE.NODE_TEXT['font_size'])
-        default_font_weight = int(STYLE.NODE_TEXT['font_weight'])
-
         label = node
         # label_with_loc = f'{node} ({x}, {y})'
 
         cmp = self.get_node_cmp_value(node)
 
-        font_size = default_font_size * (1 + (3 - cmp) * 0.1)
-        font_weight = default_font_weight * (1 + (3 - cmp) * 0.1)
+        font_size = default_font_size * [1.2,1.1,1,0.8] [cmp]
 
         for district_name in DISTRICT_CAPITAL_LIST:
             if district_name in label:
@@ -80,7 +77,6 @@ class DrawNode:
                 text_anchor=text_anchor,
                 transform=transform,
                 font_size=font_size,
-                font_weight=font_weight,
             ),
         )
 

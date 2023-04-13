@@ -36,7 +36,7 @@ class STYLE:
 
     LINE_END_BLIP = dict(stroke="none", fill_opacity=OPACITY)
 
-    LINE_POLYLINE = dict(
+    LINE_PATH = dict(
         fill='none',
         stroke_width=RADIUS * 2.1,
         stroke_opacity=OPACITY,
