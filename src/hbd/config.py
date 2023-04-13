@@ -35,8 +35,15 @@ class Config:
         return JSONFile(self.config_path).read()
 
     @property
-    def line_list(self) -> list[dict]:
+    def line_list_raw(self) -> list[dict]:
         return self.config['line_list']
+    
+    @property
+    def line_list(self) -> list[dict]:
+        return list(filter(
+            lambda line: 'direction_list' in line,
+            self.line_list_raw,
+        ))
 
     @cached_property
     def node_idx_unsorted(self):

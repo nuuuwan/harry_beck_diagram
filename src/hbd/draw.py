@@ -58,7 +58,7 @@ class Draw(Config, DrawNode, DrawLine):
 
 
 if __name__ == '__main__':
-    config_path = 'data/lk_rail2.json'
+    config_path = 'data/lk_rail_all.json'
 
     draw = Draw(config_path)
     draw.draw()

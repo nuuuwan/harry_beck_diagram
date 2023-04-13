@@ -1,140 +1,51 @@
 {
-  "anchor_idx": {
-    "Colombo Fort": [
-      0,
-      0
-    ],
-    "Pinwatte": [
-      0,
-      -15
-    ],
-    "Kosgoda": [
-      15,
-      -30
-    ],
-    "Kumarakanda": [
-      30,
-      -30
-    ],
-    "Midigama": [
-      45,
-      -30
-    ],
-    "Beliatta": [
-      59,
-      -16
-    ],
-    "Maradana": [
-      1,
-      1
-    ],
-    "Malapalle": [
-      14,
-      -12
-    ],
-    "Pinnawala": [
-      27,
-      -12
-    ],
-    "Avissawella": [
-      40,
-      1
-    ],
-    "Wadurawa": [
-      20,
-      20
-    ],
-    "Polgahawela Junction": [
-      33,
-      20
-    ],
-    "Gangoda": [
-      41,
-      20
-    ],
-    "Peradeniya Junction": [
-      53,
-      20
-    ],
-    "Hieghtenford": [
-      70,
-      3
-    ],
-    "Nanu Oya": [
-      87,
-      3
-    ],
-    "Badulla": [
-      104,
-      20
-    ],
-    "Ragama Junction": [
-      8,
-      8
-    ],
-    "Seeduwa": [
-      0,
-      16
-    ],
-    "Periyanagavillu": [
-      0,
-      53
-    ],
-    "Maho Junction": [
-      33,
-      33
-    ],
-    "Mihintale Junction": [
-      33,
-      43
-    ],
-    "Medawachchiya Junction": [
-      33,
-      47
-    ],
-    "Elephantpass": [
-      33,
-      59
-    ],
-    "Jaffna": [
-      22,
-      70
-    ],
-    "Kankesanthurai": [
-      22,
-      78
-    ],
-    "Talaimannar Pier": [
-      22,
-      58
-    ],
-    "Mihintale": [
-      34,
-      43
-    ],
-    "Gal Oya Junction": [
-      48,
-      48
-    ],
-    "Batticaloa": [
-      71,
-      48
-    ],
-    "Trincomalee": [
-      56,
-      56
-    ],
-    "Udathalawinna": [
-      65,
-      32
-    ],
-    "Matale": [
-      65,
-      44
-    ]
-  },
   "line_list": [
     {
+      "color": "red",
+      "direction_list": [
+        [
+          20,
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          20,
+          [
+            1,
+            0
+          ]
+        ],
+        [
+          20,
+          [
+            1,
+            0
+          ]
+        ],
+        [
+          20,
+          [
+            1,
+            -1
+          ]
+        ],
+        [
+          20,
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          4,
+          [
+            0,
+            1
+          ]
+        ]
+      ],
       "node_list": [
         "Colombo Fort",
         "Maradana",
@@ -241,10 +152,40 @@
         "Uduwara",
         "Hali-Ela",
         "Badulla"
-      ],
-      "color": "red"
+      ]
     },
     {
+      "color": "cyan",
+      "direction_list": [
+        [
+          20,
+          [
+            0,
+            -1
+          ]
+        ],
+        [
+          20,
+          [
+            1,
+            -1
+          ]
+        ],
+        [
+          20,
+          [
+            1,
+            0
+          ]
+        ],
+        [
+          14,
+          [
+            1,
+            1
+          ]
+        ]
+      ],
       "node_list": [
         "Colombo Fort",
         "Secretariant Halt",
@@ -321,10 +262,10 @@
         "Wewurukannala",
         "Nakulugamuwa",
         "Beliatta"
-      ],
-      "color": "cyan"
+      ]
     },
     {
+      "color": "orange",
       "node_list": [
         "Polgahawela Junction",
         "Girambe",
@@ -386,9 +327,31 @@
         "Maviddapuram",
         "Kankesanthurai"
       ],
-      "color": "orange"
+      "direction_list": [
+        [20, [0,1]],
+        [20, [0,1]],
+        [10, [-1,1]],
+        [8, [0,1]]
+      ]
     },
     {
+      "color": "darkblue",
+      "direction_list": [
+        [
+          20,
+          [
+            1,
+            -1
+          ]
+        ],
+        [
+          19,
+          [
+            1,
+            0
+          ]
+        ]
+      ],
       "node_list": [
         "Maradana",
         "Baseline Road",
@@ -430,10 +393,40 @@
         "Puwakpitiya Town",
         "Kiriwadala",
         "Avissawella"
-      ],
-      "color": "darkblue"
+      ]
     },
     {
+      "color": "green",
+      "direction_list": [
+        [
+          9,
+          [
+            -1,
+            1
+          ]
+        ],
+        [
+          11,
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          20,
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          5,
+          [
+            0,
+            1
+          ]
+        ]
+      ],
       "node_list": [
         "Ragama Junction",
         "Peralanda",
@@ -481,10 +474,33 @@
         "Noor Nagar",
         "Karadipooval",
         "Periyanagavillu"
-      ],
-      "color": "green"
+      ]
     },
     {
+      "color": "purple",
+      "direction_list": [
+        [
+          10,
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          10,
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          4,
+          [
+            0,
+            1
+          ]
+        ]
+      ],
       "node_list": [
         "Peradeniya Junction",
         "Sarasavi Uyana",
@@ -511,17 +527,20 @@
         "Elwala",
         "Kohobiliwala",
         "Matale"
-      ],
-      "color": "purple"
+      ]
     },
     {
+      "color": "yellow",
       "node_list": [
         "Mihintale Junction",
         "Mihintale"
       ],
-      "color": "yellow"
+      "direction_list": [
+        [1,[1,0]] 
+      ]
     },
     {
+      "color": "blue",
       "node_list": [
         "Medawachchiya Junction",
         "Neriyakulam",
@@ -536,9 +555,12 @@
         "Talaimannar",
         "Talaimannar Pier"
       ],
-      "color": "blue"
+      "direction_list": [
+        [11,[-1,1]]
+      ]
     },
     {
+      "color": "darkgreen",
       "node_list": [
         "Maho Junction",
         "Yapahuwa",
@@ -580,9 +602,14 @@
         "Eravur",
         "Batticaloa"
       ],
-      "color": "darkgreen"
+      "direction_list": [
+        [15,[1,1]],
+        [5,[1,0]],
+        [18,[1,0]] 
+      ]
     },
     {
+      "color": "silver",
       "node_list": [
         "Gal Oya Junction",
         "Aluth oya",
@@ -594,7 +621,9 @@
         "China Bay",
         "Trincomalee"
       ],
-      "color": "silver"
+      "direction_list": [
+        [8,[0,1]]
+      ]
     }
   ]
 }
