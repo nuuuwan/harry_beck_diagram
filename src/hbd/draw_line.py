@@ -10,27 +10,23 @@ class DrawLine:
     def draw_line_blip(self, sx_end2, sx_end, sy_end, color):
         dx = sx_end - sx_end2
 
-        sx=sx_end - RADIUS * 2
-        sy=sy_end - RADIUS * 2
-        text_angle = 0
-
-        transform = ' '.join(
-            [
-                f'translate({sx},{sy})',
-                f'rotate(-{text_angle})',
-                f'translate({-sx},{-sy})',
-            ]
-        )
+        krx, kry, kwidth, kheight = 1, 1, 1, 1
+        if dx != 0:
+            kry = 2
+            kheight = 2
+        else:
+            krx = 2
+            kwidth = 2
 
         return _(
             'rect',
             None,
             STYLE.LINE_END_BLIP
             | dict(
-                x=sx,
-                y=sy,
-                width=RADIUS *4,
-                height=RADIUS * 2,
+                x=sx_end - RADIUS * krx,
+                y=sy_end - RADIUS * kry,
+                width=RADIUS * 2 * kwidth,
+                height=RADIUS * 2 * kheight,
                 fill=color,
             ),
         )
@@ -64,7 +60,7 @@ class DrawLine:
         x_start, y_start = self.node_idx[node_list[0]]
         sx_start, sy_start = t(x_start, y_start)
         x_end, y_end = self.node_idx[node_list[-1]]
-        x_end2, y_end2 = self.node_idx[node_list[-1]]
+        x_end2, y_end2 = self.node_idx[node_list[-2]]
         sx_end, sy_end = t(x_end, y_end)
         sx_end2, sy_end2 = t(x_end2, y_end2)
         return _(
