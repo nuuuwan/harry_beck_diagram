@@ -186,3 +186,15 @@ class Config:
             if len(neighbors) == 1:
                 terminal_list.append(node)
         return terminal_list
+
+    def normalize(self, center_node: str):
+        cx, cy = self.node_idx[center_node]
+        norm_anchor_idx = {}
+        for node, (x, y) in self.anchor_idx.items():
+            norm_anchor_idx[node] = [x - cx, y - cy]
+        norm_config = dict(
+            anchor_idx=norm_anchor_idx,
+            line_list=self.line_list,
+        )
+        JSONFile(self.config_path).write(norm_config)
+        log.info(f'Normalized config to {center_node}')

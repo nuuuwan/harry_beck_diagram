@@ -61,7 +61,7 @@ class DrawNode:
 
         cmp = self.get_node_cmp_value(node)
 
-        font_size = default_font_size * [1.2,1.1,1,0.8] [cmp]
+        font_size = default_font_size * [1.2, 1.1, 1, 0.8][cmp]
 
         for district_name in DISTRICT_CAPITAL_LIST:
             if district_name in label:

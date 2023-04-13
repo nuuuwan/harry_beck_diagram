@@ -36,12 +36,17 @@ class Draw(Config, DrawNode, DrawLine):
         for line in self.line_list:
             lines.append(self.draw_line(line, t))
         return lines
+    
+    def draw_rect_border(self):
+        return  _('rect', None, STYLE.RECT_BORDER)
+
+    def draw_title(self):
+        return  _('text', 'Railways of Sri Lanka', STYLE.TEXT_TITLE)
 
     def draw(self):
-        rect = _('rect', None, STYLE.RECT_BORDER)
         svg = _(
             'svg',
-            [rect] + self.draw_lines() + self.draw_nodes(),
+            [self.draw_rect_border(), self.draw_title()] + self.draw_lines() + self.draw_nodes(),
             STYLE.SVG,
         )
         svg.store(self.svg_path)
@@ -55,3 +60,4 @@ if __name__ == '__main__':
 
     draw = Draw(config_path)
     draw.draw()
+    draw.normalize('Colombo Fort')

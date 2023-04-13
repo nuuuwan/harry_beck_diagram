@@ -34,13 +34,13 @@ class DrawLine:
     def draw_line_polyline(self, points, color):
         d_str_list = []
         prev_x, prev_y = None, None
-        for x,y in points:
+        for x, y in points:
             if prev_x is None:
                 d_str = f'M{x} {y}'
             else:
-                x1 ,y1 = (x + prev_x) / 2, (y + prev_y) / 2
+                x1, y1 = (x + prev_x) / 2, (y + prev_y) / 2
                 x2, y2 = x1, y1
-                d_str = f'S{x1} {y1} {x} {y}'
+                d_str = f'L{x} {y}'
 
             d_str_list.append(d_str)
             prev_x, prev_y = x, y
