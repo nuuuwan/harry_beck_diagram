@@ -2,16 +2,14 @@ from hbd.STYLE import STYLE
 
 
 def get_bbox(anchor_loc_list: list) -> tuple[float, float, float, float]:
-    min_x, min_y, max_x, max_y = None, None, None, None
+    x0, y0 = anchor_loc_list[0]
+    min_x, min_y, max_x, max_y = x0, y0, x0, y0
     for x, y in anchor_loc_list:
-        if min_x is None or x < min_x:
-            min_x = x
-        if min_y is None or y < min_y:
-            min_y = y
-        if max_x is None or x > max_x:
-            max_x = x
-        if max_y is None or y > max_y:
-            max_y = y
+        min_x = min(min_x, x)
+        min_y = min(min_y, y)
+        max_x = max(max_x, x)
+        max_y = max(max_y, y)
+
     return min_x, min_y, max_x, max_y
 
 
