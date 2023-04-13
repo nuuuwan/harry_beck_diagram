@@ -1,16 +1,16 @@
 {
     "anchor_idx": {
-        "Kankesanthurai": [4, 9],
-        "Colombo Fort": [0,0],
-        "Badulla": [6,  0],
-        "Beliatta (for Hambantota)": [0,-4],
         "Avissawella": [1, -1],
-        "Periyanurvillu": [2, 2],
-        "Matale": [6, 1],
-        "Kandy": [5, 1],
-        "Mihintale": [5, 4],
-        "Talaimannar Pier": [2,5],
+        "Badulla": [6,  0],
         "Batticaloa": [7, 2],
+        "Beliatta": [0,-4],
+        "Colombo Fort": [0,0],
+        "Kandy": [5, 1],
+        "Kankesanthurai": [4, 9],
+        "Matale": [6, 1],
+        "Mihintale": [5, 4],
+        "Periyanurvillu": [2, 2],
+        "Talaimannar Pier": [2,5],
         "Trincomalee": [5, 3]
     },
     "line_list": [
@@ -19,7 +19,7 @@
             "color": "red"
         },
         {
-            "node_list":   ["Colombo Fort", "Kalutara North", "Galle", "Matara", "Beliatta (for Hambantota)"],
+            "node_list":   ["Colombo Fort", "Kalutara North", "Galle", "Matara", "Beliatta"],
             "color": "cyan"
         },
         {

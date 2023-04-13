@@ -3,8 +3,8 @@ import math
 from utils import Log
 from utils.xmlx import _
 
-from hbd.STYLE import RADIUS, STYLE
 from hbd.DISTRICT_CAPITAL_LIST import DISTRICT_CAPITAL_LIST
+from hbd.STYLE import RADIUS, STYLE
 
 log = Log(__name__)
 
@@ -57,12 +57,12 @@ class DrawNode:
         )
         default_font_size = int(STYLE.NODE_TEXT['font_size'])
         default_font_weight = int(STYLE.NODE_TEXT['font_weight'])
-        
+
         label = node
         log.debug(f'{node} ({x}, {y})')
         cmp = self.get_node_cmp_value(node)
 
-        font_size = default_font_size * (1 + (3- cmp) * 0.2)
+        font_size = default_font_size * (1 + (3 - cmp) * 0.2)
         font_weight = default_font_weight * (1 + (3 - cmp) * 0.2)
 
         for district_name in DISTRICT_CAPITAL_LIST:

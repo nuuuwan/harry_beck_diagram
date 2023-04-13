@@ -51,23 +51,40 @@ class Config:
 
         for line in self.line_list:
             node_list = line['node_list']
-            start, end = node_list[0], node_list[-1]
-            start_loc = node_idx[start]
-            end_loc = node_idx[end]
-
             n = len(node_list)
-            for i in range(1, n - 1):
-                node = node_list[i]
-                if node in node_idx:
-                    continue
+            i_start, i_end = 0, 1
+            while True:
+                while node_list[i_end] not in node_idx:
+                    i_end += 1
 
-                q = i * 1.0 / (n - 1)
-                p = 1 - q
+                start, end = node_list[i_start], node_list[i_end]
+                assert start in node_idx
 
-                node_idx[node] = [
-                    round(p * start_loc[0] + q * end_loc[0], 0),
-                    round(p * start_loc[1] + q * end_loc[1], 0),
-                ]
+                log.debug(f'{start} -> {end}')
+                start_loc = node_idx[start]
+                end_loc = node_idx[end]
+                span = i_end - i_start
+
+                for i in range(i_start + 1, i_end):
+                    node = node_list[i]
+                    if node in node_idx:
+                        log.warning(f'{node} already in node_idx')
+                        continue
+
+                    q = (i - i_start) * 1.0 / span
+                    p = 1 - q
+
+                    x = round(p * start_loc[0] + q * end_loc[0], 0)
+                    y = round(p * start_loc[1] + q * end_loc[1], 0)
+
+                    node_idx[node] = [x, y]
+
+                    log.debug([span, i, q, node, x, y, start_loc, end_loc])
+
+                i_start = i_end
+                i_end += 1
+                if i_end >= n:
+                    break
 
         return node_idx
 
