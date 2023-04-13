@@ -1,6 +1,6 @@
-from functools import cache
 import os
 import webbrowser
+from functools import cache
 
 from utils import Log
 from utils.xmlx import _

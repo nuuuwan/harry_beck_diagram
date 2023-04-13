@@ -95,6 +95,18 @@ class Config:
                 junction_list.append(node)
         return junction_list
 
+    @staticmethod
+    def get_node_text_angle(used_ks, x, y):
+        for dx, dy, angle in ANGLE_CONFIG:
+            x1, y1 = x + dx, y + dy
+            k1 = xy_to_k(x1, y1)
+            if k1 in used_ks:
+                continue
+
+            used_ks.add(k1)
+            return used_ks, angle
+        return used_ks, None
+
     @cached_property
     def node_to_text_angle(self):
         used_ks = set()
@@ -104,19 +116,10 @@ class Config:
 
         node_to_text_angle = {}
         for node, (x, y) in self.node_idx.items():
-            node_to_text_angle[node] = None
+            used_ks, text_angle = Config.get_node_text_angle(used_ks, x, y)
+            node_to_text_angle[node] = text_angle
 
-            for dx, dy, angle in ANGLE_CONFIG:
-                x1, y1 = x + dx, y + dy
-                k1 = xy_to_k(x1, y1)
-                if k1 in used_ks:
-                    continue
-
-                used_ks.add(k1)
-                node_to_text_angle[node] = angle
-                break
-
-            if node_to_text_angle[node] is None:
+            if text_angle is None:
                 log.error(f'Could not find text angle for node {node}')
 
         return node_to_text_angle
