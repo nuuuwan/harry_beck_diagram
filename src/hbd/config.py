@@ -75,12 +75,12 @@ class Config:
     @cache
     def get_node_cmp_value(self, node):
         if node in self.junction_list:
-            return 3
+            return 0
         if node in self.terminal_list:
-            return 2
+            return 1
         if node in DISTRICT_CAPITAL_LIST:
-            return 1 
-        return 0
+            return 2
+        return 3
 
     @cached_property
     def node_idx(self):
@@ -134,13 +134,12 @@ class Config:
 
         node_to_text_angle = {}
         for node, (x, y) in self.node_idx.items():
-            print(node)
             used_ks, text_angle = Config.get_node_text_angle(used_ks, x, y)
             node_to_text_angle[node] = text_angle
 
-            if text_angle is None:
-                log.error(f'Could not find text angle for node {node}')
-
+            logger = log.error if text_angle is None else log.debug
+            logger(f'{node} {text_angle}')
+            
         return node_to_text_angle
 
     @cached_property
