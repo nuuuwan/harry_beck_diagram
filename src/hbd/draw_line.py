@@ -7,30 +7,26 @@ log = Log(__name__)
 
 
 class DrawLine:
-    def draw_line_blip(self, sx_end, sy_end, dx, color):
-        sx1, sy1 = sx_end, sy_end
+    def draw_line_blip(self, sx_start, sx_end, sy_end, color):
+        dx = sx_end - sx_start
+
+        krx, kry, kwidth, kheight = 1, 1, 1, 1
         if dx != 0:
-            return _(
-                'rect',
-                None,
-                STYLE.LINE_END_BLIP
-                | dict(
-                    x=sx1 - RADIUS,
-                    y=sy1 - RADIUS * 2,
-                    width=RADIUS * 2,
-                    height=RADIUS * 4,
-                    fill=color,
-                ),
-            )
+            kry = 2
+            kheight = 2
+        else:
+            krx = 2
+            kwidth = 2
+
         return _(
             'rect',
             None,
             STYLE.LINE_END_BLIP
             | dict(
-                x=sx1 - RADIUS * 2,
-                y=sy1 - RADIUS,
-                width=RADIUS * 4,
-                height=RADIUS * 2,
+                x=sx_end - RADIUS * krx,
+                y=sy_end - RADIUS * kry,
+                width=RADIUS * 2 * kwidth,
+                height=RADIUS * 2 * kheight,
                 fill=color,
             ),
         )
@@ -59,12 +55,11 @@ class DrawLine:
         sx_start, sy_start = t(x_start, y_start)
         x_end, y_end = self.node_idx[node_list[-1]]
         sx_end, sy_end = t(x_end, y_end)
-        dx, dy = sx_end - sx_start, sy_end - sy_start
 
         return _(
             'g',
             [
                 self.draw_line_polyline(points, color),
-                self.draw_line_blip(sx_end, sy_end, dx, color),
+                self.draw_line_blip(sx_start, sx_end, sy_end, color),
             ],
         )
