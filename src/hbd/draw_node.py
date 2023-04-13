@@ -60,7 +60,6 @@ class DrawNode:
             if (node in self.junction_list)
             else default_font_size
         )
-        is_node_district_capital = node[:3] == node.upper()[:3]
         default_font_weight = STYLE.NODE_TEXT['font_weight']
         font_weight = default_font_weight
 
