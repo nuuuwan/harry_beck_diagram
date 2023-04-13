@@ -1,5 +1,7 @@
 from functools import cache, cached_property
 import math
+import os
+import webbrowser
 
 from utils import Log
 from utils.xmlx import _
@@ -215,8 +217,12 @@ class Draw(Config):
         svg.store(self.svg_path)
         log.debug(f'Saved {self.svg_path}')
 
+        webbrowser.open(os.path.abspath(self.svg_path))
+        
+
 
 if __name__ == '__main__':
-    draw = Draw('data/lk_rail_all.json')
+    config_path = 'data/lk_rail.json'
 
+    draw = Draw(config_path)
     draw.draw()

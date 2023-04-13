@@ -1,41 +1,41 @@
 {
     "anchor_idx": {
         "Kankesanthurai": [4, 9],
-        "COLOMBO (Fort)": [0,0],
-        "BADULLA": [6,  0],
+        "Colombo Fort": [0,0],
+        "Badulla": [6,  0],
         "Beliatta": [0,-4],
         "Avissawella": [1, -1],
         "Periyanurvillu": [2, 2],
-        "MATALE": [6, 1],
-        "KANDY": [5, 1],
+        "Matale": [6, 1],
+        "Kandy": [5, 1],
         "Mihintale": [5, 4],
         "Talaimannar Pier": [2,5],
-        "BATTICALOA": [7, 2],
-        "TRINCOMALEE": [5, 3]
+        "Batticaloa": [7, 2],
+        "Trincomalee": [5, 3]
     },
     "line_list": [
         {
-            "node_list": ["COLOMBO (Fort)", "COLOMBO (Maradana)", "Ragama", "GAMPAHA", "Polgahawela", "Peradeniya", "BADULLA"],
+            "node_list": ["Colombo Fort", "Maradana", "Ragama Junction", "Gampaha", "Polgahawela Junction", "Peradeniya Junction", "Badulla"],
             "color": "red"
         },
         {
-            "node_list":   ["COLOMBO (Fort)", "KALUTARA (North)", "GALLE", "MATARA", "Beliatta"],
+            "node_list":   ["Colombo Fort", "Kalutara (North)", "Galle", "Matara", "Beliatta"],
             "color": "cyan"
         },
         {
-            "node_list":   ["Polgahawela", "KURUNEGALA", "Maho", "ANURADHAPURA", "Mihintale Junction", "Medavachchiya", "VAVUNIYA", "KILINOCHCHI", "JAFFNA", "Kankesanthurai"],
+            "node_list":   ["Polgahawela Junction", "Kurunegala", "Maho", "Anuradhapura", "Mihintale Junction", "Medavachchiya", "Vavuniya", "Kilinochchi", "Jaffna", "Kankesanthurai"],
             "color": "orange"
         },
         {
-            "node_list":   ["COLOMBO (Maradana)", "Avissawella"],
+            "node_list":   ["Maradana", "Avissawella"],
             "color": "darkblue"
         },
         {
-            "node_list":   ["Ragama", "PUTTALAM", "Periyanurvillu"],
+            "node_list":   ["Ragama Junction", "Puttalam", "Periyanurvillu"],
             "color": "green"
         },
         {
-            "node_list":   ["Peradeniya", "KANDY", "MATALE"],
+            "node_list":   ["Peradeniya Junction", "Kandy", "Matale"],
             "color": "purple"
         },
         {
@@ -43,15 +43,15 @@
             "color": "yellow"
         } ,
         {
-            "node_list": ["Medavachchiya", "MANNAR", "Talaimannar Pier"],
+            "node_list": ["Medavachchiya", "Mannar", "Talaimannar Pier"],
             "color": "blue"
         },
         {
-            "node_list": ["Maho", "Galoya", "POLONNARUWA", "BATTICALOA"],
+            "node_list": ["Maho", "Galoya", "Polonnaruwa", "Batticaloa"],
             "color": "darkgreen"
         } ,
         {
-            "node_list": ["Galoya", "TRINCOMALEE"],
+            "node_list": ["Galoya", "Trincomalee"],
             "color": "silver"
         }          
     ]
