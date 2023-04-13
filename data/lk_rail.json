@@ -3,7 +3,7 @@
         "Kankesanthurai": [4, 9],
         "Colombo Fort": [0,0],
         "Badulla": [6,  0],
-        "Beliatta": [0,-4],
+        "Beliatta (for Hambantota)": [0,-4],
         "Avissawella": [1, -1],
         "Periyanurvillu": [2, 2],
         "Matale": [6, 1],
@@ -19,7 +19,7 @@
             "color": "red"
         },
         {
-            "node_list":   ["Colombo Fort", "Kalutara North", "Galle", "Matara", "Beliatta"],
+            "node_list":   ["Colombo Fort", "Kalutara North", "Galle", "Matara", "Beliatta (for Hambantota)"],
             "color": "cyan"
         },
         {
