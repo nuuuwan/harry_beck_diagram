@@ -55,6 +55,7 @@ class Config:
             i_start, i_end = 0, 1
             while True:
                 while node_list[i_end] not in node_idx:
+                    print(node_list[i_end])
                     i_end += 1
 
                 start, end = node_list[i_start], node_list[i_end]

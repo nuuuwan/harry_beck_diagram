@@ -1,49 +1,50 @@
 {
    "anchor_idx": {
-      "Kankesanthurai": [
-         33,
-         58
-      ],
-      "Colombo Fort": [
-         0,
-         0
-      ],
-      "Badulla": [
-         104,
-         0
-      ],
-      "Beliatta": [
-         0,
-         -80
-      ],
-      "Avissawella": [
-         1,
-         -40
-      ],
-      "Periyanagavillu": [
-         8,
-         45
-      ],
-      "Matale": [
-         53,
-         25
-      ],
-      "Mihintale": [
-         34,
-         23
-      ],
-      "Talaimannar Pier": [
-         22,
-         27
-      ],
-      "Batticaloa": [
-         71,
-         13
-      ],
-      "Trincomalee": [
-         48,
-         21
-      ]
+
+      "Colombo Fort": [-100, -25],
+      "Pinwatte": [-100, -40],
+      "Kosgoda": [-85, -55],
+      "Kumarakanda": [-70, -55],
+      "Midigama": [-55, -55],
+      "Beliatta": [-41, -41],
+
+      "Maradana": [-99, -24],
+      "Malapalle": [-85, -40],
+      "Uggalla": [-73, -40],
+      "Avissawella": [-59, -24],
+
+      "Wadurawa": [-80, -5],
+      "Polgahawela Junction": [-67, -5],
+      "Gangoda": [-59, -5],
+      "Peradeniya Junction": [-47, -5],
+      "Hieghtenford": [-29, -23],
+      "Nanu Oya": [-12, -23],
+      "Badulla": [5, -6],
+
+      "Ragama Junction": [-91, -16],
+      "Periyanagavillu": [-91, 30],
+
+      
+     "Maho Junction": [-67, 15],
+     "Mihintale Junction": [-67, 24],
+     "Medawachchiya Junction": [-67, 29],
+     "Kankesanthurai": [-67, 59],
+     
+
+     "Talaimannar Pier": [-79, 41],
+
+     "Mihintale": [-66, 24],
+
+
+      "Gal Oya Junction": [-53, 15],
+     "Batticaloa": [-28, 15],
+     "Trincomalee": [-44, 24],
+
+      "Udathalawinna": [-35, -5],
+     "Matale": [-23, 7]
+
+
+
    },
    "line_list": [
       {
