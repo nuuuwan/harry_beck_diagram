@@ -22,7 +22,7 @@ class DrawNode:
         )
 
     def draw_node_blip(self, sx, sy, node, text_angle):
-        color = self.node_to_lines[node][0]
+        color = self.node_to_color_set[node].pop()
 
         dx = math.cos(math.radians(text_angle))
         dy = -math.sin(math.radians(text_angle))

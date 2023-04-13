@@ -126,18 +126,6 @@ class Config:
         return node_to_text_angle
 
     @cached_property
-    def node_to_lines(self):
-        node_to_lines = {}
-        for line in self.line_list:
-            node_list = line['node_list']
-            color = line['color']
-            for node in node_list:
-                if node not in node_to_lines:
-                    node_to_lines[node] = []
-                node_to_lines[node].append(color)
-        return node_to_lines
-
-    @cached_property
     def node_to_neighbors(self):
         node_to_neighbors = {}
         for line in self.line_list:
