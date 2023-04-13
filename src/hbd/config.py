@@ -56,15 +56,16 @@ class Config:
             n = len(node_list)
             for i in range(1, n - 1):
                 node = node_list[i]
+                if node in node_idx:
+                    continue
 
-                if node not in node_idx:
-                    q = i * 1.0 / (n - 1)
-                    p = 1 - q
+                q = i * 1.0 / (n - 1)
+                p = 1 - q
 
-                    node_idx[node] = [
-                        round(p * start_loc[0] + q * end_loc[0], 0),
-                        round(p * start_loc[1] + q * end_loc[1], 0),
-                    ]
+                node_idx[node] = [
+                    round(p * start_loc[0] + q * end_loc[0], 0),
+                    round(p * start_loc[1] + q * end_loc[1], 0),
+                ]
 
         return node_idx
 
