@@ -1,4 +1,4 @@
-from hbd.STYLE import STYLE, PADDING
+from hbd.STYLE import STYLE
 
 
 def get_bbox(anchor_loc_list: list) -> tuple[float, float, float, float]:
@@ -19,12 +19,12 @@ def get_t(anchor_loc_list: list):
     y_span = max_y - min_y
     max_span = max(x_span, y_span)
 
-    padding = STYLE.SVG['padding'] 
+    padding = STYLE.SVG['padding']
     diagram_width = STYLE.SVG['width'] - 2 * padding
     diagram_height = STYLE.SVG['height'] - 2 * padding
 
-    inner_width =diagram_width * x_span / max_span 
-    inner_height =diagram_height * y_span / max_span
+    inner_width = diagram_width * x_span / max_span
+    inner_height = diagram_height * y_span / max_span
     padding_x = (diagram_width - inner_width) / 2
     padding_y = (diagram_height - inner_height) / 2
 

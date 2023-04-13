@@ -25,7 +25,6 @@ def xy_to_k(x, y):
     return f'{x:.1f}:{y:.1f}'
 
 
-
 class Config:
     def __init__(self, config_path: str):
         self.config_path = config_path
@@ -71,7 +70,7 @@ class Config:
                 ]
 
         return node_idx
-    
+
     @cache
     def get_node_cmp_value(self, node):
         if node in self.junction_list:
@@ -84,7 +83,12 @@ class Config:
 
     @cached_property
     def node_idx(self):
-        return dict(sorted(self.node_idx_unsorted.items(), key=lambda x: self.get_node_cmp_value(x[0])))
+        return dict(
+            sorted(
+                self.node_idx_unsorted.items(),
+                key=lambda x: self.get_node_cmp_value(x[0]),
+            )
+        )
 
     @cached_property
     def node_to_color_set(self):
@@ -139,7 +143,7 @@ class Config:
 
             logger = log.error if text_angle is None else log.debug
             logger(f'{node} {text_angle}')
-            
+
         return node_to_text_angle
 
     @cached_property
