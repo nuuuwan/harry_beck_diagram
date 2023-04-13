@@ -15,7 +15,7 @@
     },
     "line_list": [
         {
-            "node_list": ["Colombo Fort", "Maradana", "Ragama Junction", "Gampaha", "Polgahawela Junction", "Peradeniya Junction", "Badulla"],
+            "node_list": ["Colombo Fort", "Maradana", "Ragama", "Gampaha", "Polgahawela", "Peradeniya", "Badulla"],
             "color": "red"
         },
         {
@@ -23,7 +23,7 @@
             "color": "cyan"
         },
         {
-            "node_list":   ["Polgahawela Junction", "Kurunegala", "Maho", "Anuradhapura", "Mihintale Junction", "Medavachchiya", "Vavuniya", "Kilinochchi", "Jaffna", "Kankesanthurai"],
+            "node_list":   ["Polgahawela", "Kurunegala", "Maho", "Anuradhapura", "Mihintale Junction", "Medavachchiya", "Vavuniya", "Kilinochchi", "Jaffna", "Kankesanthurai"],
             "color": "orange"
         },
         {
@@ -31,11 +31,11 @@
             "color": "darkblue"
         },
         {
-            "node_list":   ["Ragama Junction", "Puttalam", "Periyanurvillu"],
+            "node_list":   ["Ragama", "Puttalam", "Periyanurvillu"],
             "color": "green"
         },
         {
-            "node_list":   ["Peradeniya Junction", "Kandy", "Matale"],
+            "node_list":   ["Peradeniya", "Kandy", "Matale"],
             "color": "purple"
         },
         {

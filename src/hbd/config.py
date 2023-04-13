@@ -1,7 +1,9 @@
 import copy
-from functools import cached_property
+from functools import cache, cached_property
 
 from utils import JSONFile, Log
+
+from hbd.DISTRICT_CAPITAL_LIST import DISTRICT_CAPITAL_LIST
 
 ANGLE_CONFIG = [
     [1, 0, 0],
@@ -21,6 +23,7 @@ log = Log(__name__)
 
 def xy_to_k(x, y):
     return f'{x:.1f}:{y:.1f}'
+
 
 
 class Config:
@@ -44,7 +47,7 @@ class Config:
         return self.config['line_list']
 
     @cached_property
-    def node_idx(self):
+    def node_idx_unsorted(self):
         node_idx = copy.deepcopy(self.anchor_idx)
 
         for line in self.line_list:
@@ -68,6 +71,20 @@ class Config:
                 ]
 
         return node_idx
+    
+    @cache
+    def get_node_cmp_value(self, node):
+        if node in self.junction_list:
+            return 3
+        if node in self.terminal_list:
+            return 2
+        if node in DISTRICT_CAPITAL_LIST:
+            return 1 
+        return 0
+
+    @cached_property
+    def node_idx(self):
+        return dict(sorted(self.node_idx_unsorted.items(), key=lambda x: self.get_node_cmp_value(x[0])))
 
     @cached_property
     def node_to_color_set(self):
@@ -117,6 +134,7 @@ class Config:
 
         node_to_text_angle = {}
         for node, (x, y) in self.node_idx.items():
+            print(node)
             used_ks, text_angle = Config.get_node_text_angle(used_ks, x, y)
             node_to_text_angle[node] = text_angle
 
