@@ -1,7 +1,7 @@
 RADIUS = 5
 DIM = 900
 OPACITY = 1
-PADDING = 200
+PADDING = 50
 
 
 class STYLE:
