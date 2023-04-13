@@ -1,6 +1,9 @@
-from hbd.STYLE import STYLE
 from utils import Log
+
+from hbd.STYLE import STYLE
+
 log = Log(__name__)
+
 
 def get_bbox(anchor_loc_list: list) -> tuple[float, float, float, float]:
     x0, y0 = anchor_loc_list[0]

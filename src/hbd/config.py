@@ -5,6 +5,7 @@ from utils import JSONFile, Log
 
 from hbd.DISTRICT_CAPITAL_LIST import DISTRICT_CAPITAL_LIST
 
+TEXT_SPACE = 2
 ANGLE_CONFIG = [
     [1, 0, 0],
     [-1, 0, 180],
@@ -134,12 +135,18 @@ class Config:
     @staticmethod
     def get_node_text_angle(used_ks, x, y):
         for dx, dy, angle in ANGLE_CONFIG:
-            x1, y1 = x + dx, y + dy
-            k1 = xy_to_k(x1, y1)
-            if k1 in used_ks:
-                continue
+            is_free = True
+            for d in range(TEXT_SPACE):
+                k = xy_to_k(x + dx * (d + 1), y + dy * (d + 1))
+                if k in used_ks:
+                    is_free = False
+                    break
 
-            used_ks.add(k1)
+            if not is_free:
+                continue
+            for d in range(TEXT_SPACE):
+                k = xy_to_k(x + dx * (d + 1), y + dy * (d + 1))
+                used_ks.add(k)
             return used_ks, angle
         return used_ks, None
 
@@ -154,7 +161,6 @@ class Config:
         for node, (x, y) in self.node_idx.items():
             used_ks, text_angle = Config.get_node_text_angle(used_ks, x, y)
             node_to_text_angle[node] = text_angle
-
 
         return node_to_text_angle
 

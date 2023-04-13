@@ -63,8 +63,8 @@ class DrawNode:
 
         cmp = self.get_node_cmp_value(node)
 
-        font_size = default_font_size * (1 + (3 - cmp) * 0.2)
-        font_weight = default_font_weight * (1 + (3 - cmp) * 0.2)
+        font_size = default_font_size * (1 + (3 - cmp) * 0.1)
+        font_weight = default_font_weight * (1 + (3 - cmp) * 0.1)
 
         for district_name in DISTRICT_CAPITAL_LIST:
             if district_name in label:
