@@ -1,9 +1,9 @@
-RADIUS = 2
-DIM = 1600
+RADIUS = 3
+DIM = 700
 OPACITY = 1
-PADDING = 100
+PADDING = 200
 FONT_FAMILY = 'Trebuchet MS'
-FONT_SIZE = 9
+FONT_SIZE = 12
 
 class STYLE:
     SVG = dict(
@@ -13,7 +13,7 @@ class STYLE:
     )
 
     TEXT_TITLE = dict(
-        fill='black',
+        fill='gray',
         stroke='none',
         font_size=FONT_SIZE*4,
         font_family=FONT_FAMILY,

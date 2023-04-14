@@ -41,7 +41,7 @@ class Draw(Config, DrawNode, DrawLine):
         return _('rect', None, STYLE.RECT_BORDER)
 
     def draw_title(self):
-        return _('text', 'Railways Stations of Sri Lanka', STYLE.TEXT_TITLE)
+        return _('text', '', STYLE.TEXT_TITLE)
 
     def draw(self):
         svg = _(
@@ -58,7 +58,7 @@ class Draw(Config, DrawNode, DrawLine):
 
 
 if __name__ == '__main__':
-    config_path = 'data/lk_rail_all.json'
+    config_path = 'data/lk_rail_udupussellawa_closed.json'
 
     draw = Draw(config_path)
     draw.draw()

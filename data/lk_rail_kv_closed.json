@@ -1,0 +1,34 @@
+{
+    "line_list": [
+        {
+          "node_list": [
+            "Avissawella",
+            "Talduwa",
+            "Dehiovita",
+            "Karawanella",
+            "Yatiyanthota"
+            
+          ],
+          "color": "lightblue",
+          "direction_list": [[1, "E"],[2, "NE"],[1, "E"]]
+        },
+        
+        {
+          "node_list": [
+            "Avissawella",
+            "Getahetta",
+            "Eheliyagoda",
+            "Parakaduwa",
+            "Kuruwita",
+            "Ratnapura",
+            "Tiriwanaketiya",
+            "Dela",
+            "Watapota",
+            "Kahawatta",
+            "Opanayaka"
+            
+          ],
+          "color": "blue","direction_list": [[5, "SE"],[5, "E"]]
+        }
+    ]
+}
