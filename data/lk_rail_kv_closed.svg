@@ -3,11 +3,11 @@
   <rect x="100.0" y="100.0" width="500" height="500" fill="white" stroke="gray"/>
   <text fill="gray" stroke="none" font-size="9.722222222222221" font-family="Trebuchet MS" x="350.0" y="112.0" text-anchor="middle" dominant-baseline="hanging">The Abandoned Yatoyantota &amp; OPanayaka Branches of the Kelani-Valley Line</text>
   <g>
-    <path fill="none" stroke-width="8.4" stroke-opacity="1" d="M 200.0,305.0 L 228.5,305.0 C 228.505,305.0 231.0571246378739,303.94287536212613 231.06066017177983,303.93933982822017 L 260.0,275.0 L 288.93933982822017,246.06066017177983 C 288.94287536212613,246.0571246378739 291.495,245.0 291.5,245.0 L 320.0,245.0" stroke="lightblue"/>
+    <path fill="none" stroke-width="8.4" stroke-opacity="1" d="M 200.0,305.0 L 228.5,305.0 C 229.0,305.0 230.70710678118655,304.29289321881345 231.06066017177983,303.93933982822017 L 260.0,275.0 L 288.93933982822017,246.06066017177983 C 289.29289321881345,245.70710678118655 291.0,245.0 291.5,245.0 L 320.0,245.0" stroke="lightblue"/>
     <rect stroke="none" fill-opacity="1" x="316" y="237" width="8" height="16" fill="lightblue"/>
   </g>
   <g>
-    <path fill="none" stroke-width="8.4" stroke-opacity="1" d="M 200.0,305.0 L 230.0,335.0 L 260.0,365.0 L 290.0,395.0 L 320.0,425.0 L 348.93933982822017,453.93933982822017 C 348.94287536212613,453.94287536212613 351.495,455.0 351.5,455.0 L 380.0,455.0 L 410.0,455.0 L 440.0,455.0 L 470.0,455.0 L 500.0,455.0" stroke="blue"/>
+    <path fill="none" stroke-width="8.4" stroke-opacity="1" d="M 200.0,305.0 L 230.0,335.0 L 260.0,365.0 L 290.0,395.0 L 320.0,425.0 L 348.93933982822017,453.93933982822017 C 349.29289321881345,454.29289321881345 351.0,455.0 351.5,455.0 L 380.0,455.0 L 410.0,455.0 L 440.0,455.0 L 470.0,455.0 L 500.0,455.0" stroke="blue"/>
     <rect stroke="none" fill-opacity="1" x="496" y="447" width="8" height="16" fill="blue"/>
   </g>
   <g>

@@ -3,7 +3,7 @@
   <rect x="100.0" y="100.0" width="500" height="500" fill="white" stroke="gray"/>
   <text fill="gray" stroke="none" font-size="21.875" font-family="Trebuchet MS" x="350.0" y="112.0" text-anchor="middle" dominant-baseline="hanging">The Abandoned Udupussellawa Line</text>
   <g>
-    <path fill="none" stroke-width="8.4" stroke-opacity="1" d="M 200.0,485.0 L 230.0,455.0 L 260.0,425.0 L 290.0,395.0 L 320.0,365.0 L 350.0,335.0 L 380.0,305.0 L 410.0,275.0 L 440.0,245.0 L 468.93933982822017,216.06066017177983 C 468.94287536212613,216.0571246378739 471.495,215.0 471.5,215.0 L 500.0,215.0" stroke="blue"/>
+    <path fill="none" stroke-width="8.4" stroke-opacity="1" d="M 200.0,485.0 L 230.0,455.0 L 260.0,425.0 L 290.0,395.0 L 320.0,365.0 L 350.0,335.0 L 380.0,305.0 L 410.0,275.0 L 440.0,245.0 L 468.93933982822017,216.06066017177983 C 469.29289321881345,215.70710678118655 471.0,215.0 471.5,215.0 L 500.0,215.0" stroke="blue"/>
     <rect stroke="none" fill-opacity="1" x="496" y="207" width="8" height="16" fill="blue"/>
   </g>
   <g>

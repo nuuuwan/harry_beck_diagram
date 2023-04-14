@@ -41,7 +41,7 @@ class DrawLine:
             d_str_list.append(d_str)
         d = ' '.join(d_str_list)
         path = svgpathtools.parse_path(d)
-        smoothed_path = svgpathtools.smoothed_path(path)
+        smoothed_path = svgpathtools.smoothed_path(path,  maxjointsize=self.styler.svg['width'], tightness=1)
         d = smoothed_path.d()
         
         return _(

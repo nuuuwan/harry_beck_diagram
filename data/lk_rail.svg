@@ -23,7 +23,7 @@
     <rect stroke="none" fill-opacity="1" x="384" y="465" width="16" height="8" fill="green"/>
   </g>
   <g>
-    <path fill="none" stroke-width="8.4" stroke-opacity="1" d="M 507.0,546.0 L 507.0,508.5 C 507.0,508.495 508.495,507.0 508.5,507.0 L 546.0,507.0" stroke="purple"/>
+    <path fill="none" stroke-width="8.4" stroke-opacity="1" d="M 507.0,546.0 L 507.0,508.95 C 507.0,508.3 508.3,507.0 508.95,507.0 L 546.0,507.0" stroke="purple"/>
     <rect stroke="none" fill-opacity="1" x="542" y="499" width="8" height="16" fill="purple"/>
   </g>
   <g>
