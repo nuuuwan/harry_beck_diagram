@@ -34,8 +34,9 @@ class Styler:
             font_size=self.FONT_SIZE * 4,
             font_family=self.FONT_FAMILY,
             x=self.DIM / 2,
-            y=self.DIM * 0.1,
+            y=self.PADDING/2  + self.FONT_SIZE ,
             text_anchor='middle',
+            dominant_baseline='hanging',
         )
 
     @cached_property

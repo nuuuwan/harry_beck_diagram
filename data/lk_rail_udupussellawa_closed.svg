@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <svg xmlns="http://www.w3.org/2000/svg" width="700" height="700" padding="200">
   <rect x="100.0" y="100.0" width="500" height="500" fill="white" stroke="gray"/>
-  <text fill="gray" stroke="none" font-size="21.875" font-family="Trebuchet MS" x="350.0" y="70.0" text-anchor="middle">The Abandoned Udupussellawa Line</text>
+  <text fill="gray" stroke="none" font-size="21.875" font-family="Trebuchet MS" x="350.0" y="112.0" text-anchor="middle" dominant-baseline="hanging">The Abandoned Udupussellawa Line</text>
   <g>
     <path fill="none" stroke-width="6.300000000000001" stroke-opacity="1" d="M200 485 L230 455 L260 425 L290 395 L320 365 L350 335 L380 305 L410 275 L440 245 L470 215 L500 215" stroke="blue"/>
     <rect stroke="none" fill-opacity="1" x="497" y="209" width="6" height="12" fill="blue"/>

@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <svg xmlns="http://www.w3.org/2000/svg" width="700" height="700" padding="200">
   <rect x="100.0" y="100.0" width="500" height="500" fill="white" stroke="gray"/>
-  <text fill="gray" stroke="none" font-size="9.722222222222221" font-family="Trebuchet MS" x="350.0" y="70.0" text-anchor="middle">The Abandoned Yatoyantota &amp; OPanayaka Branches of the Kelani-Valley Line</text>
+  <text fill="gray" stroke="none" font-size="9.722222222222221" font-family="Trebuchet MS" x="350.0" y="112.0" text-anchor="middle" dominant-baseline="hanging">The Abandoned Yatoyantota &amp; OPanayaka Branches of the Kelani-Valley Line</text>
   <g>
     <path fill="none" stroke-width="6.300000000000001" stroke-opacity="1" d="M200 305 L230 305 L260 275 L290 245 L320 245" stroke="lightblue"/>
     <rect stroke="none" fill-opacity="1" x="317" y="239" width="6" height="12" fill="lightblue"/>
