@@ -1,6 +1,6 @@
 from utils import Log
 from utils.xmlx import _
-
+import svgpathtools 
 log = Log(__name__)
 
 
@@ -31,16 +31,19 @@ class DrawLine:
 
     def draw_line_polyline(self, points, color):
         d_str_list = []
-        prev_x = None
-        for x, y in points:
-            if prev_x is None:
+        n = len(points)
+        for i in range(n):
+            x, y = points[i]
+            if i == 0:
                 d_str = f'M{x} {y}'
             else:
                 d_str = f'L{x} {y}'
-
             d_str_list.append(d_str)
-            prev_x = x
         d = ' '.join(d_str_list)
+        path = svgpathtools.parse_path(d)
+        smoothed_path = svgpathtools.smoothed_path(path)
+        d = smoothed_path.d()
+        
         return _(
             'path',
             None,

@@ -4,7 +4,7 @@ from functools import cached_property
 class Styler:
     def __init__(
         self,
-        RADIUS=3,
+        RADIUS=4,
         DIM=700,
         OPACITY=1,
         PADDING=200,
@@ -56,7 +56,7 @@ class Styler:
             r=self.RADIUS * 2,
             fill='white',
             stroke='black',
-            stroke_width=self.RADIUS * 0.7,
+            stroke_width=self.RADIUS * 0.5,
         )
 
     @cached_property
