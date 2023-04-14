@@ -45,6 +45,11 @@ class Config:
     @property
     def config(self) -> dict:
         return JSONFile(self.config_path).read()
+    
+
+    @property 
+    def title(self) -> str:
+        return self.config.get('title', '')
 
     @property
     def line_list_raw(self) -> list[dict]:

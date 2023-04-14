@@ -47,7 +47,8 @@ class Draw(Config, Styler, DrawNode, DrawLine):
         return _('rect', None, self.rect_border)
 
     def draw_title(self):
-        return _('text', '', self.text_title)
+        font_size = self.svg['width'] / len(self.title)
+        return _('text', self.title, self.text_title | dict(font_size=font_size))
 
     def draw(self):
         svg = _(

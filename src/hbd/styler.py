@@ -26,7 +26,7 @@ class Styler:
             font_size=self.FONT_SIZE * 4,
             font_family=self.FONT_FAMILY,
             x=self.DIM / 2,
-            y=self.PADDING * 2,
+            y=self.DIM * 0.1,
             text_anchor='middle',
         )
 
