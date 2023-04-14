@@ -23,6 +23,8 @@ class DrawNode:
         )
 
     def draw_node_blip(self, sx, sy, node, text_angle):
+        text_angle = 0 if text_angle is None else text_angle
+        
         color = self.node_to_color_set[node].pop()
 
         dx = math.cos(math.radians(text_angle))
@@ -84,9 +86,6 @@ class DrawNode:
         sx, sy = t(x, y)
         inner_list = []
         text_angle = self.node_to_text_angle[node]
-        if text_angle is None:
-            log.debug(f'no text angle: {node}')
-            return _('g')
 
         if node in self.junction_list:
             inner_list.append(self.draw_node_circle(sx, sy))
