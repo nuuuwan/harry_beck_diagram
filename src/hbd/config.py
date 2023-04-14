@@ -4,7 +4,7 @@ from utils import JSONFile, Log
 
 from hbd.DISTRICT_CAPITAL_LIST import DISTRICT_CAPITAL_LIST
 
-TEXT_SPACE = 3
+TEXT_SPACE = 2
 ANGLE_CONFIG = [
     [1, 0, 0],
     [-1, 0, 180],
@@ -45,11 +45,10 @@ class Config:
     @property
     def config(self) -> dict:
         return JSONFile(self.config_path).read()
-    
 
-    @property 
+    @property
     def title(self) -> str:
-        return self.config.get('title', '')
+        return self.config.get('title', 'Untitled')
 
     @property
     def line_list_raw(self) -> list[dict]:

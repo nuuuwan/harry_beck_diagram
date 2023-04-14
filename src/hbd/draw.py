@@ -11,6 +11,7 @@ from hbd.draw_line import DrawLine
 from hbd.draw_node import DrawNode
 from hbd.styler import Styler
 
+
 log = Log(__name__)
 
 
@@ -22,6 +23,10 @@ class Draw(DrawNode, DrawLine):
     @property
     def svg_path(self) -> str:
         return self.config.config_path.replace('.json', '.svg')
+
+    @property
+    def png_path(self) -> str:
+        return self.config.config_path.replace('.json', '.png')
 
     @cache
     def get_t(self):
@@ -45,9 +50,11 @@ class Draw(DrawNode, DrawLine):
         return _('rect', None, self.styler.rect_border)
 
     def draw_title(self):
-        title=  self.config.title
+        title = self.config.title
         font_size = self.styler.svg['width'] / len(title)
-        return _('text', title, self.styler.text_title | dict(font_size=font_size))
+        return _(
+            'text', title, self.styler.text_title | dict(font_size=font_size)
+        )
 
     def draw(self):
         svg = _(
@@ -63,6 +70,15 @@ class Draw(DrawNode, DrawLine):
         webbrowser.open(os.path.abspath(self.svg_path))
 
 
+
 if __name__ == '__main__':
-    draw = Draw(Config( 'data/lk_rail_udupussellawa_closed.json'), Styler())
-    draw.draw()
+    draw_list = [
+        Draw(Config('data/lk_rail.json'), Styler(DIM=900)),
+        Draw(Config('data/lk_rail_all.json'), Styler(DIM=2000)),
+        Draw(Config('data/lk_rail_kv_closed.json'), Styler(DIM=700)),
+        Draw(
+            Config('data/lk_rail_udupussellawa_closed.json'), Styler(DIM=700)
+        ),
+    ]
+    for draw in draw_list:
+        draw.draw()

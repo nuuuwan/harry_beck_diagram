@@ -1,14 +1,12 @@
 {
+  "title": "Topographical Map of Railways in Sri Lanka",
   "line_list": [
     {
       "color": "red",
       "direction_list": [
         [
           6,
-          [
-            1,
-            0
-          ]
+         "E"
         ]
       ],
       "node_list": [
@@ -26,10 +24,7 @@
       "direction_list": [
         [
           4,
-          [
-            0,
-            -1
-          ]
+         "S"
         ]
       ],
       "node_list": [
@@ -54,7 +49,7 @@
         "Jaffna",
         "Kankesanthurai"
       ],
-      "direction_list": [[9,[0,1]]]
+      "direction_list": [[9,"N"]]
     },
     {
       "color": "darkblue",
@@ -62,7 +57,7 @@
         "Maradana",
         "Avissawella"
       ],
-      "direction_list": [[1,[0,-1]]]
+      "direction_list": [[1,"S"]]
     },
     {
       "color": "green",
@@ -70,7 +65,7 @@
         "Ragama",
         "Puttalam",
         "Periyanurvillu"
-      ], "direction_list": [[2,[0,1]]]
+      ], "direction_list": [[2,"N"]]
     },
     {
       "color": "purple",
@@ -78,14 +73,14 @@
         "Peradeniya",
         "Kandy",
         "Matale"
-      ], "direction_list": [[1,[0,1]],[1,[1,0]]]
+      ], "direction_list": [[1,"N"],[1,"E"]]
     },
     {
       "color": "yellow",
       "node_list": [
         "Mihintale Junction",
         "Mihintale"
-      ], "direction_list": [[1,[1,0]]]
+      ], "direction_list": [[1,"E"]]
     },
     {
       "color": "blue",
@@ -93,7 +88,7 @@
         "Medavachchiya",
         "Mannar",
         "Talaimannar Pier"
-      ], "direction_list": [[2,[-1,0]]]
+      ], "direction_list": [[2,"W"]]
     },
     {
       "color": "darkgreen",
@@ -102,14 +97,14 @@
         "Galoya",
         "Polonnaruwa",
         "Batticaloa"
-      ], "direction_list": [[3,[1,0]]]
+      ], "direction_list": [[3,"E"]]
     },
     {
       "color": "silver",
       "node_list": [
         "Galoya",
         "Trincomalee"
-      ], "direction_list": [[1,[0,1]]]
+      ], "direction_list": [[1,"N"]]
     }
   ]
 }

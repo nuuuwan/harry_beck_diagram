@@ -72,7 +72,8 @@ class DrawNode:
             label,
             self.styler.node_text
             | dict(
-                x=sx + space_dir * (self.styler.RADIUS * 1.5 + font_size * 0.5),
+                x=sx
+                + space_dir * (self.styler.RADIUS * 1.5 + font_size * 0.5),
                 y=sy,
                 text_anchor=text_anchor,
                 transform=transform,
