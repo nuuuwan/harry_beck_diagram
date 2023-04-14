@@ -1,7 +1,7 @@
 {
     "line_list": [
         {
-            "color": "gray",
+            "color": "cyan",
             "direction_list": [
                 [
                     7,
@@ -20,7 +20,7 @@
             ]
         },
         {
-            "color": "lightgray",
+            "color": "red",
             "direction_list": [
                 [
                     4,
@@ -43,7 +43,7 @@
             ]
         },
         {
-            "color": "gray",
+            "color": "green",
             "direction_list": [
                 [
                     2,
@@ -64,7 +64,7 @@
             ]
         },
         {
-            "color": "lightgray",
+            "color": "darkblue",
             "direction_list": [
                 [
                     3,
@@ -98,7 +98,7 @@
             ]
         },
         {
-            "color": "red",
+            "color": "orange",
             "direction_list": [
                 [
                     5,
@@ -116,7 +116,7 @@
             ]
         },
         {
-            "color": "orange",
+            "color": "purple",
             "direction_list": [
                 [
                    4,
