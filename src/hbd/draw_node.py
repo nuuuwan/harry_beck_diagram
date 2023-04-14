@@ -4,7 +4,6 @@ from utils import Log
 from utils.xmlx import _
 
 from hbd.DISTRICT_CAPITAL_LIST import DISTRICT_CAPITAL_LIST
-from hbd.STYLE import RADIUS, STYLE
 
 log = Log(__name__)
 
@@ -14,17 +13,16 @@ class DrawNode:
         return _(
             'circle',
             None,
-            STYLE.NODE_CIRCLE
+            self.node_circle
             | dict(
                 cx=sx,
                 cy=sy,
-         
             ),
         )
 
     def draw_node_blip(self, sx, sy, node, text_angle):
         text_angle = 0 if text_angle is None else text_angle
-        
+
         color = self.node_to_color_set[node].pop()
 
         dx = math.cos(math.radians(text_angle))
@@ -32,12 +30,12 @@ class DrawNode:
         return _(
             'rect',
             None,
-            STYLE.LINE_END_BLIP
+            self.line_end_blip
             | dict(
-                x=sx + RADIUS * (dx - 1),
-                y=sy + RADIUS * (dy - 1),
-                width=RADIUS * 2,
-                height=RADIUS * 2,
+                x=sx + self.RADIUS * (dx - 1),
+                y=sy + self.RADIUS * (dy - 1),
+                width=self.RADIUS * 2,
+                height=self.RADIUS * 2,
                 fill=color,
             ),
         )
@@ -57,12 +55,12 @@ class DrawNode:
                 f'translate({-sx},{-sy})',
             ]
         )
-       
+
         label = node
         # label_with_loc = f'{node} ({x}, {y})'
 
         cmp = self.get_node_cmp_value(node)
-        default_font_size = int(STYLE.NODE_TEXT['font_size'])
+        default_font_size = int(self.node_text['font_size'])
         font_size = default_font_size * [1.3, 1.2, 1.1, 1][cmp]
 
         for district_name in DISTRICT_CAPITAL_LIST:
@@ -72,9 +70,9 @@ class DrawNode:
         return _(
             'text',
             label,
-            STYLE.NODE_TEXT
+            self.node_text
             | dict(
-                x=sx + space_dir * (RADIUS * 1.5 + font_size * 0.5),
+                x=sx + space_dir * (self.RADIUS * 1.5 + font_size * 0.5),
                 y=sy,
                 text_anchor=text_anchor,
                 transform=transform,

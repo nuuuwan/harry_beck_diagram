@@ -1,4 +1,3 @@
-import copy
 from functools import cache, cached_property
 
 from utils import JSONFile, Log
@@ -9,21 +8,14 @@ TEXT_SPACE = 3
 ANGLE_CONFIG = [
     [1, 0, 0],
     [-1, 0, 180],
-    
     [1, 1, 45],
     [1, -1, 315],
-
     [-1, 1, 135],
     [-1, -1, 215],
-    
     [1, 0.5, 22.5],
     [1, -0.5, 360 - 22.5],
-
     [0, 1, 90],
     [0, -1, 270],
-    
-
-    
 ]
 
 log = Log(__name__)
@@ -32,8 +24,9 @@ log = Log(__name__)
 def xy_to_k(x, y):
     return f'{x:.1f}:{y:.1f}'
 
+
 def parse_direction(direction):
-    dx,dy = 0,0
+    dx, dy = 0, 0
     if 'N' in direction:
         dy = 1
     if 'S' in direction:
@@ -56,13 +49,15 @@ class Config:
     @property
     def line_list_raw(self) -> list[dict]:
         return self.config['line_list']
-    
+
     @property
     def line_list(self) -> list[dict]:
-        return list(filter(
-            lambda line: 'direction_list' in line,
-            self.line_list_raw,
-        ))
+        return list(
+            filter(
+                lambda line: 'direction_list' in line,
+                self.line_list_raw,
+            )
+        )
 
     @cached_property
     def node_idx_unsorted(self):
@@ -104,7 +99,7 @@ class Config:
                 key=lambda x: self.get_node_cmp_value(x[0]),
             )
         )
-    
+
     @cached_property
     def loc_list(self):
         return list(self.node_idx.values())
@@ -190,4 +185,3 @@ class Config:
             if len(neighbors) == 1:
                 terminal_list.append(node)
         return terminal_list
-

@@ -9,19 +9,25 @@ from hbd import bbox_utils
 from hbd.config import Config
 from hbd.draw_line import DrawLine
 from hbd.draw_node import DrawNode
-from hbd.STYLE import STYLE
+from hbd.styler import Styler
 
 log = Log(__name__)
 
 
-class Draw(Config, DrawNode, DrawLine):
+class Draw(Config, Styler, DrawNode, DrawLine):
+    def __init__(self, config_path):
+        Config.__init__(self, config_path)
+        Styler.__init__(self)
+        DrawNode.__init__(self)
+        DrawLine.__init__(self)
+    
     @property
     def svg_path(self) -> str:
         return self.config_path.replace('.json', '.svg')
 
     @cache
     def get_t(self):
-        return bbox_utils.get_t(self.loc_list)
+        return bbox_utils.get_t(self, self.loc_list)
 
     def draw_nodes(self):
         t = self.get_t()
@@ -38,10 +44,10 @@ class Draw(Config, DrawNode, DrawLine):
         return lines
 
     def draw_rect_border(self):
-        return _('rect', None, STYLE.RECT_BORDER)
+        return _('rect', None, self.rect_border)
 
     def draw_title(self):
-        return _('text', '', STYLE.TEXT_TITLE)
+        return _('text', '', self.text_title)
 
     def draw(self):
         svg = _(
@@ -49,7 +55,7 @@ class Draw(Config, DrawNode, DrawLine):
             [self.draw_rect_border(), self.draw_title()]
             + self.draw_lines()
             + self.draw_nodes(),
-            STYLE.SVG,
+            self.svg,
         )
         svg.store(self.svg_path)
         log.debug(f'Saved {self.svg_path}')
@@ -62,4 +68,3 @@ if __name__ == '__main__':
 
     draw = Draw(config_path)
     draw.draw()
-

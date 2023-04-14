@@ -1,7 +1,5 @@
 from utils import Log
 
-from hbd.STYLE import STYLE
-
 log = Log(__name__)
 
 
@@ -17,16 +15,16 @@ def get_bbox(loc_list: list) -> tuple[float, float, float, float]:
     return min_x, min_y, max_x, max_y
 
 
-def get_t(loc_list: list):
+def get_t(styler, loc_list: list):
     min_x, min_y, max_x, max_y = get_bbox(loc_list)
     x_span = max(1, max_x - min_x)
     y_span = max(1, max_y - min_y)
     max_span = max(x_span, y_span)
     log.debug(f'{x_span=}, {y_span=}')
 
-    padding = STYLE.SVG['padding']
-    diagram_width = STYLE.SVG['width'] - 2 * padding
-    diagram_height = STYLE.SVG['height'] - 2 * padding
+    padding = styler.svg['padding']
+    diagram_width = styler.svg['width'] - 2 * padding
+    diagram_height = styler.svg['height'] - 2 * padding
 
     inner_width = diagram_width * x_span / max_span
     inner_height = diagram_height * y_span / max_span

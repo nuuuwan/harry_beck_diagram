@@ -1,8 +1,6 @@
 from utils import Log
 from utils.xmlx import _
 
-from hbd.STYLE import RADIUS, STYLE
-
 log = Log(__name__)
 
 
@@ -21,12 +19,12 @@ class DrawLine:
         return _(
             'rect',
             None,
-            STYLE.LINE_END_BLIP
+            self.line_end_blip
             | dict(
-                x=sx_end - RADIUS * krx,
-                y=sy_end - RADIUS * kry,
-                width=RADIUS * 2 * kwidth,
-                height=RADIUS * 2 * kheight,
+                x=sx_end - self.RADIUS * krx,
+                y=sy_end - self.RADIUS * kry,
+                width=self.RADIUS * 2 * kwidth,
+                height=self.RADIUS * 2 * kheight,
                 fill=color,
             ),
         )
@@ -48,7 +46,7 @@ class DrawLine:
         return _(
             'path',
             None,
-            STYLE.LINE_PATH
+            self.line_path
             | dict(
                 d=d,
                 stroke=color,
