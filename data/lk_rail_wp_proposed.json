@@ -1,156 +1,134 @@
 {
     "line_list": [
         {
-            "color": "cyan",
+            "color": "gray",
             "direction_list": [
                 [
-                    14,
+                    7,
                     "S"
                 ]
             ],
             "node_list": [
                 "Colombo Fort",
-                "Secretariant Halt",
-                "Kompanna Veediya",
                 "Kollupitiya",
                 "Bambalapitiya",
                 "Wellawatte",
                 "Dehiwela",
-                "Mount Lavinia",
                 "Ratmalana",
-                "Angulana",
-                "Lunawa",
                 "Moratuwa",
-                "Koralawella",
-                "Egoda Uyana",
                 "Panadura"
+            ]
+        },
+        {
+            "color": "lightgray",
+            "direction_list": [
+                [
+                    4,
+                    "NE"
+                ],
+                [
+                    3,
+                    "E"
+                ]
+            ],
+            "node_list": [
+                "Colombo Fort",
+                "Maradana",
+                "Kelaniya",
+                "Ragama Junction",
+                "Gampaha",
+                "Daraluwa",
+                "Veyangoda",
+                "Meerigama"
+            ]
+        },
+        {
+            "color": "gray",
+            "direction_list": [
+                [
+                    2,
+                    "NW"
+                ],
+                [
+                    3,
+                    "N"
+                ]
+            ],
+            "node_list": [
+                "Ragama Junction",
+                "Kandana",
+                "Ja-Ela",
+                "Seeduwa",
+                "Colombo Airport Katunayake",
+                "Negombo"
+            ]
+        },
+        {
+            "color": "lightgray",
+            "direction_list": [
+                [
+                    3,
+                    "SE"
+                ],
+                [
+                    2,
+                    "E"
+                ],
+                [
+                    2,
+                    "NE"
+                ],
+                [
+                    3,
+                    "N"
+                ]
+            ],
+            "node_list": [
+                "Maradana",
+                "Narahenpita",
+                "Nugegoda",
+                "Maharagama",
+                "Kottawa",
+                "Homagama",
+                "Padukka",
+                "Waga",
+                "Kosgama",
+                "Puwakpitiya",
+                "Avissawella"
             ]
         },
         {
             "color": "red",
             "direction_list": [
                 [
-                    20,
-                    "NE"
-                ],
-                [5,"E"]
-            ],
-            "node_list": [
-                "Colombo Fort",
-                "Maradana",
-                "Dematagoda",
-                "Kelaniya",
-                "Wanawasala",
-                "Hunupitiya",
-                "Ederamulla",
-                "Horape",
-                "Ragama Junction",
-                "Walpola",
-                "Batuwaththa",
-                "Bulugahagoda",
-                "Ganemulla",
-                "Yagoda",
-                "Gampaha",
-                "Daraluwa",
-                "Bemmulla",
-                "Magalegoda",
-                "Heendeniya Pattiyagoda",
-                "Veyangoda",
-                "Wadurawa",
-                "Keenawala",
-                "Pallewela",
-                "Ganegoda",
-                "Wijaya Rajadahana",
-                "Meerigama"
-            ]
-        },
-        {
-            "color": "green",
-            "direction_list": [
-                [
-                    8,
-                    "NW"
-                ],[6, "N"]
-            ],
-            "node_list": [
-                "Ragama Junction",
-                "Peralanda",
-                "Kandana",
-                "Kapuwatta",
-                "Ja-Ela",
-                "Thudella",
-                "Kudahakkapola",
-                "Alawathupitiya",
-                "Seeduwa",
-                "Liyanagemulla",
-                "Inventment Promotion Zone",
-                "Colombo Airport Katunayake",
-                "Katunayaka",
-                "Kurana",
-                "Negombo"
-            ]
-        },
-        {
-            "color": "darkblue",
-            "direction_list": [
-                [
-                    10,
-                    "SE"
-                ],
-                [
-                    20,
-                    "E"
-                ],
-                [
                     5,
-                    "NE"
-                ],
-                [
-                    4,
-                    "N"
+                    "E"
                 ]
             ],
             "node_list": [
-                "Maradana",
-                "Baseline Road",
-                "Cotta Road",
-                "Manning Town",
-                "Narahenpita",
-                "Kirulapone",
-                "Nugegoda",
-                "Pengiriwatte",
-                "Udahamulla",
-                "Nawinna",
-                "Maharagama",
-                "Pannipitiya",
+                "Kelaniya",
+                "Weliwita",
+                "Biyagama",
+                "Kaduwela",
+                "Kandewatta",
+                "Dompe",
+                "Kosgama"
+            ]
+        },
+        {
+            "color": "orange",
+            "direction_list": [
+                [
+                   4,
+                    "S"
+                ]
+            ],
+            "node_list": [
                 "Kottawa",
-                "Malapalle",
-                "Makumbura",
-                "Homagama Hospital",
-                "Homagama",
-                "Panagoda",
-                "Godagama",
-                "Meegoda",
-                "Watareka",
-                "Liyanwala",
-                "Padukka",
-                "Arukwathupura",
-                "Angampitiya",
-                "Uggalla",
-                "Pinnawala",
-                "Gammana",
-                "Morakale",
-                "Waga",
-                "Kadugoda",
-                "Arapanagama",
-                "Kosgama",
-                "Aluthambalama",
-                "Miriswatte",
-                "Hingurala",
-                "Puwakpitiya",
-                "Puwakpitiya Town",
-                "Kiriwadala",
-                "Avissawella"
+                "Polgasowita",
+                "Gonapola",
+                "Pokunuwita",
+                "Horana"
             ]
         }
     ],

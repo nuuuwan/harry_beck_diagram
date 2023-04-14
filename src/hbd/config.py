@@ -4,7 +4,7 @@ from utils import JSONFile, Log
 
 from hbd.DISTRICT_CAPITAL_LIST import DISTRICT_CAPITAL_LIST
 
-TEXT_SPACE = 2
+TEXT_SPACE = 1
 ANGLE_CONFIG = [
     [1, 0, 0],
     [-1, 0, 180],
@@ -78,6 +78,8 @@ class Config:
                 x_cur, y_cur = node_idx[cur_node]
                 for i in range(0, n):
                     node = line['node_list'][i_cur + i + 1]
+                    if node in node_idx:
+                        continue
                     node_idx[node] = [
                         x_cur + dx * (i + 1),
                         y_cur + dy * (i + 1),
