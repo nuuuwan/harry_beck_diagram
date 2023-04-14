@@ -136,17 +136,19 @@ class Config:
         return junction_list
 
     @staticmethod
+    def is_point_free(x, y, dx, dy, used_ks):
+        for d in range(TEXT_SPACE):
+            k = xy_to_k(x + dx * (d + 1), y + dy * (d + 1))
+            if k in used_ks:
+                return False
+        return True
+
+    @staticmethod
     def get_node_text_angle(used_ks, x, y):
         for dx, dy, angle in ANGLE_CONFIG:
-            is_free = True
-            for d in range(TEXT_SPACE):
-                k = xy_to_k(x + dx * (d + 1), y + dy * (d + 1))
-                if k in used_ks:
-                    is_free = False
-                    break
-
-            if not is_free:
+            if not Config.is_point_free(x, y, dx, dy, used_ks):
                 continue
+
             for d in range(TEXT_SPACE):
                 k = xy_to_k(x + dx * (d + 1), y + dy * (d + 1))
                 used_ks.add(k)
