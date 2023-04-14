@@ -2,6 +2,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="900" padding="200">
   <rect x="100.0" y="100.0" width="700" height="700" fill="white" stroke="gray"/>
   <text fill="gray" stroke="none" font-size="21.428571428571427" font-family="Trebuchet MS" x="450.0" y="112.0" text-anchor="middle" dominant-baseline="hanging">Topographical Map of Railways in Sri Lanka</text>
+  <text fill="gray" stroke="none" font-size="12" font-family="Trebuchet MS" x="450.0" y="788.0" text-anchor="middle" dominant-baseline="text-top"> </text>
   <g>
     <path fill="none" stroke-width="8.4" stroke-opacity="1" d="M 315.0,546.0 L 353.0,546.0 L 392.0,546.0 L 430.0,546.0 L 469.0,546.0 L 507.0,546.0 L 546.0,546.0" stroke="red"/>
     <rect stroke="none" fill-opacity="1" x="542" y="538" width="8" height="16" fill="red"/>

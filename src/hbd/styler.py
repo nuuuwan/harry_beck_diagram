@@ -38,6 +38,19 @@ class Styler:
             text_anchor='middle',
             dominant_baseline='hanging',
         )
+    
+    @cached_property
+    def text_footer_text(self):
+        return dict(
+            fill='gray',
+            stroke='none',
+            font_size=self.FONT_SIZE,
+            font_family=self.FONT_FAMILY,
+            x=self.DIM / 2,
+            y=self.DIM - (self.PADDING / 2 + self.FONT_SIZE),
+            text_anchor='middle',
+            dominant_baseline='text-top',
+        )
 
     @cached_property
     def rect_border(self):

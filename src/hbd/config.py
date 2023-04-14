@@ -51,6 +51,10 @@ class Config:
         return self.config.get('title', 'Untitled')
 
     @property
+    def footer_text(self) -> str:
+        return self.config.get('footer_text', ' ')
+
+    @property
     def line_list_raw(self) -> list[dict]:
         return self.config['line_list']
 

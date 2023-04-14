@@ -46,15 +46,24 @@ class Draw(DrawNode, DrawLine):
 
     def draw_title(self):
         title = self.config.title
-        font_size = self.styler.svg['width'] / len(title)
+        font_size = min(self.styler.text_title['font_size'], self.styler.svg['width'] / len(title))
         return _(
             'text', title, self.styler.text_title | dict(font_size=font_size)
         )
+    
+    def draw_footer_text(self):
+        footer_text = self.config.footer_text
+        font_size = min(self.styler.text_footer_text['font_size'], self.styler.svg['width'] / len(footer_text))
+        return _(
+            'text', footer_text, self.styler.text_footer_text | dict(font_size=font_size)
+        )
+    
+
 
     def draw(self):
         svg = _(
             'svg',
-            [self.draw_rect_border(), self.draw_title()]
+            [self.draw_rect_border(), self.draw_title(), self.draw_footer_text()]
             + self.draw_lines()
             + self.draw_nodes(),
             self.styler.svg,

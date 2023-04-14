@@ -2,6 +2,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" padding="80">
   <rect x="40.0" y="40.0" width="720" height="720" fill="white" stroke="gray"/>
   <text fill="gray" stroke="none" font-size="12.307692307692308" font-family="Trebuchet MS" x="400.0" y="52.0" text-anchor="middle" dominant-baseline="hanging">Proposed Railway Interventions in the Western Province, Sri Lanka</text>
+  <text fill="gray" stroke="none" font-size="12" font-family="Trebuchet MS" x="400.0" y="748.0" text-anchor="middle" dominant-baseline="text-top">Not to scale. Not all stations are displayed.</text>
   <g>
     <path fill="none" stroke-width="8.4" stroke-opacity="1" d="M 229.0,421.0 L 229.0,464.0 L 229.0,506.0 L 229.0,549.0 L 229.0,592.0 L 229.0,634.0 L 229.0,677.0 L 229.0,720.0" stroke="cyan"/>
     <rect stroke="none" fill-opacity="1" x="221" y="716" width="16" height="8" fill="cyan"/>
