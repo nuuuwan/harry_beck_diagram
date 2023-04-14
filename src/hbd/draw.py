@@ -11,7 +11,6 @@ from hbd.draw_line import DrawLine
 from hbd.draw_node import DrawNode
 from hbd.styler import Styler
 
-
 log = Log(__name__)
 
 
@@ -23,10 +22,6 @@ class Draw(DrawNode, DrawLine):
     @property
     def svg_path(self) -> str:
         return self.config.config_path.replace('.json', '.svg')
-
-    @property
-    def png_path(self) -> str:
-        return self.config.config_path.replace('.json', '.png')
 
     @cache
     def get_t(self):
@@ -68,7 +63,6 @@ class Draw(DrawNode, DrawLine):
         log.debug(f'Saved {self.svg_path}')
 
         webbrowser.open(os.path.abspath(self.svg_path))
-
 
 
 if __name__ == '__main__':
