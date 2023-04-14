@@ -23,7 +23,7 @@ class DrawNode:
     def draw_node_blip(self, sx, sy, node, text_angle):
         text_angle = 0 if text_angle is None else text_angle
 
-        color = self.node_to_color_set[node].pop()
+        color = self.config.node_to_color_set[node].pop()
 
         dx = math.cos(math.radians(text_angle))
         dy = -math.sin(math.radians(text_angle))
@@ -59,7 +59,7 @@ class DrawNode:
         label = node
         # label_with_loc = f'{node} ({x}, {y})'
 
-        cmp = self.get_node_cmp_value(node)
+        cmp = self.config.get_node_cmp_value(node)
         default_font_size = int(self.styler.node_text['font_size'])
         font_size = default_font_size * [1.3, 1.2, 1.1, 1][cmp]
 
@@ -83,12 +83,12 @@ class DrawNode:
     def draw_node(self, node, x, y, t):
         sx, sy = t(x, y)
         inner_list = []
-        text_angle = self.node_to_text_angle[node]
+        text_angle = self.config.node_to_text_angle[node]
 
-        if node in self.junction_list:
+        if node in self.config.junction_list:
             inner_list.append(self.draw_node_circle(sx, sy))
         else:
-            if node not in self.terminal_list:
+            if node not in self.config.terminal_list:
                 inner_list.append(
                     self.draw_node_blip(sx, sy, node, text_angle)
                 )

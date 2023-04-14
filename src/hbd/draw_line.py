@@ -59,7 +59,7 @@ class DrawLine:
         points = []
         x0, y0 = None, None
         for node in node_list:
-            x, y = self.node_idx[node]
+            x, y = self.config.node_idx[node]
             sx, sy = t(x, y)
             points.append([sx, sy])
             if x0 is not None:
@@ -68,8 +68,8 @@ class DrawLine:
                     log.warning(f'Invalid jump: {node} ({dx}, {dy})')
             x0, y0 = x, y
 
-        x_end, y_end = self.node_idx[node_list[-1]]
-        x_end2, y_end2 = self.node_idx[node_list[-2]]
+        x_end, y_end = self.config.node_idx[node_list[-1]]
+        x_end2, y_end2 = self.config.node_idx[node_list[-2]]
         sx_end, sy_end = t(x_end, y_end)
         sx_end2, sy_end2 = t(x_end2, y_end2)
         return _(

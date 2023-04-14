@@ -14,33 +14,30 @@ from hbd.styler import Styler
 log = Log(__name__)
 
 
-class Draw(Config, DrawNode, DrawLine):
-    def __init__(self, config_path, styler):
-        Config.__init__(self, config_path)
-        DrawNode.__init__(self)
-        DrawLine.__init__(self)
-
+class Draw(DrawNode, DrawLine):
+    def __init__(self, config, styler):
+        self.config = config
         self.styler = styler
 
     @property
     def svg_path(self) -> str:
-        return self.config_path.replace('.json', '.svg')
+        return self.config.config_path.replace('.json', '.svg')
 
     @cache
     def get_t(self):
-        return bbox_utils.get_t(self.styler, self.loc_list)
+        return bbox_utils.get_t(self.styler, self.config.loc_list)
 
     def draw_nodes(self):
         t = self.get_t()
         nodes = []
-        for label, (x, y) in self.node_idx.items():
+        for label, (x, y) in self.config.node_idx.items():
             nodes.append(self.draw_node(label, x, y, t))
         return nodes
 
     def draw_lines(self):
         t = self.get_t()
         lines = []
-        for line in self.line_list:
+        for line in self.config.line_list:
             lines.append(self.draw_line(line, t))
         return lines
 
@@ -48,8 +45,9 @@ class Draw(Config, DrawNode, DrawLine):
         return _('rect', None, self.styler.rect_border)
 
     def draw_title(self):
-        font_size = self.styler.svg['width'] / len(self.title)
-        return _('text', self.title, self.styler.text_title | dict(font_size=font_size))
+        title=  self.config.title
+        font_size = self.styler.svg['width'] / len(title)
+        return _('text', title, self.styler.text_title | dict(font_size=font_size))
 
     def draw(self):
         svg = _(
@@ -66,7 +64,5 @@ class Draw(Config, DrawNode, DrawLine):
 
 
 if __name__ == '__main__':
-    config_path = 'data/lk_rail_udupussellawa_closed.json'
-
-    draw = Draw(config_path, Styler())
+    draw = Draw(Config( 'data/lk_rail_udupussellawa_closed.json'), Styler())
     draw.draw()
