@@ -74,6 +74,8 @@ if __name__ == '__main__':
             Config('data/lk_rail_udupussellawa_closed.json'), Styler(DIM=700)
         ),
         Draw(Config('data/lk_rail_wp_proposed.json'), Styler(DIM=900, PADDING=80)),
+        Draw(Config('data/lk_colombo_lrt_proposed.json'), Styler(DIM=1300, PADDING=150)),
+       
     ]
     for draw in draw_list[-1:]:
         draw.draw()
