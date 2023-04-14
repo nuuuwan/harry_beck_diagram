@@ -14,20 +14,21 @@ from hbd.styler import Styler
 log = Log(__name__)
 
 
-class Draw(Config, Styler, DrawNode, DrawLine):
-    def __init__(self, config_path):
+class Draw(Config, DrawNode, DrawLine):
+    def __init__(self, config_path, styler):
         Config.__init__(self, config_path)
-        Styler.__init__(self)
         DrawNode.__init__(self)
         DrawLine.__init__(self)
-    
+
+        self.styler = styler
+
     @property
     def svg_path(self) -> str:
         return self.config_path.replace('.json', '.svg')
 
     @cache
     def get_t(self):
-        return bbox_utils.get_t(self, self.loc_list)
+        return bbox_utils.get_t(self.styler, self.loc_list)
 
     def draw_nodes(self):
         t = self.get_t()
@@ -44,11 +45,11 @@ class Draw(Config, Styler, DrawNode, DrawLine):
         return lines
 
     def draw_rect_border(self):
-        return _('rect', None, self.rect_border)
+        return _('rect', None, self.styler.rect_border)
 
     def draw_title(self):
-        font_size = self.svg['width'] / len(self.title)
-        return _('text', self.title, self.text_title | dict(font_size=font_size))
+        font_size = self.styler.svg['width'] / len(self.title)
+        return _('text', self.title, self.styler.text_title | dict(font_size=font_size))
 
     def draw(self):
         svg = _(
@@ -56,7 +57,7 @@ class Draw(Config, Styler, DrawNode, DrawLine):
             [self.draw_rect_border(), self.draw_title()]
             + self.draw_lines()
             + self.draw_nodes(),
-            self.svg,
+            self.styler.svg,
         )
         svg.store(self.svg_path)
         log.debug(f'Saved {self.svg_path}')
@@ -67,5 +68,5 @@ class Draw(Config, Styler, DrawNode, DrawLine):
 if __name__ == '__main__':
     config_path = 'data/lk_rail_udupussellawa_closed.json'
 
-    draw = Draw(config_path)
+    draw = Draw(config_path, Styler())
     draw.draw()

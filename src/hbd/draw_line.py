@@ -19,12 +19,12 @@ class DrawLine:
         return _(
             'rect',
             None,
-            self.line_end_blip
+            self.styler.line_end_blip
             | dict(
-                x=sx_end - self.RADIUS * krx,
-                y=sy_end - self.RADIUS * kry,
-                width=self.RADIUS * 2 * kwidth,
-                height=self.RADIUS * 2 * kheight,
+                x=sx_end - self.styler.RADIUS * krx,
+                y=sy_end - self.styler.RADIUS * kry,
+                width=self.styler.RADIUS * 2 * kwidth,
+                height=self.styler.RADIUS * 2 * kheight,
                 fill=color,
             ),
         )
@@ -46,7 +46,7 @@ class DrawLine:
         return _(
             'path',
             None,
-            self.line_path
+            self.styler.line_path
             | dict(
                 d=d,
                 stroke=color,

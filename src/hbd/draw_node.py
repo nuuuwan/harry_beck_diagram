@@ -13,7 +13,7 @@ class DrawNode:
         return _(
             'circle',
             None,
-            self.node_circle
+            self.styler.node_circle
             | dict(
                 cx=sx,
                 cy=sy,
@@ -30,12 +30,12 @@ class DrawNode:
         return _(
             'rect',
             None,
-            self.line_end_blip
+            self.styler.line_end_blip
             | dict(
-                x=sx + self.RADIUS * (dx - 1),
-                y=sy + self.RADIUS * (dy - 1),
-                width=self.RADIUS * 2,
-                height=self.RADIUS * 2,
+                x=sx + self.styler.RADIUS * (dx - 1),
+                y=sy + self.styler.RADIUS * (dy - 1),
+                width=self.styler.RADIUS * 2,
+                height=self.styler.RADIUS * 2,
                 fill=color,
             ),
         )
@@ -60,7 +60,7 @@ class DrawNode:
         # label_with_loc = f'{node} ({x}, {y})'
 
         cmp = self.get_node_cmp_value(node)
-        default_font_size = int(self.node_text['font_size'])
+        default_font_size = int(self.styler.node_text['font_size'])
         font_size = default_font_size * [1.3, 1.2, 1.1, 1][cmp]
 
         for district_name in DISTRICT_CAPITAL_LIST:
@@ -70,9 +70,9 @@ class DrawNode:
         return _(
             'text',
             label,
-            self.node_text
+            self.styler.node_text
             | dict(
-                x=sx + space_dir * (self.RADIUS * 1.5 + font_size * 0.5),
+                x=sx + space_dir * (self.styler.RADIUS * 1.5 + font_size * 0.5),
                 y=sy,
                 text_anchor=text_anchor,
                 transform=transform,

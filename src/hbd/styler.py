@@ -2,13 +2,14 @@ from functools import cached_property
 
 
 class Styler:
-    def __init__(self):
-        self.RADIUS = 3
-        self.DIM = 700
-        self.OPACITY = 1
-        self.PADDING = 200
-        self.FONT_FAMILY = 'Trebuchet MS'
-        self.FONT_SIZE = 12
+    def __init__(self, RADIUS=3, DIM=700, OPACITY=1, PADDING=200, FONT_FAMILY='Trebuchet MS', FONT_SIZE=12):
+        self.RADIUS = RADIUS
+        self.DIM = DIM
+        self.OPACITY = OPACITY
+        self.PADDING = PADDING
+        self.FONT_FAMILY = FONT_FAMILY
+        self.FONT_SIZE = FONT_SIZE
+        
 
     @cached_property
     def svg(self):
