@@ -46,7 +46,7 @@ class Draw(DrawNode, DrawLine):
 
     def draw_title(self):
         title = self.config.title
-        font_size = self.styler.svg['width']  / len(title) 
+        font_size = self.styler.svg['width'] / len(title)
         return _(
             'text', title, self.styler.text_title | dict(font_size=font_size)
         )
@@ -73,6 +73,7 @@ if __name__ == '__main__':
         Draw(
             Config('data/lk_rail_udupussellawa_closed.json'), Styler(DIM=700)
         ),
+        Draw(Config('data/lk_rail_wp_proposed.json'), Styler(DIM=1400)),
     ]
-    for draw in draw_list:
+    for draw in draw_list[-1:]:
         draw.draw()
