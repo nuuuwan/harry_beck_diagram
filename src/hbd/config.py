@@ -87,10 +87,8 @@ class Config:
 
     @cache
     def get_node_cmp_value(self, node):
-        if node in self.junction_list:
+        if node in self.junction_list or node in self.terminal_list:
             return 0
-        if node in self.terminal_list:
-            return 1
         if node in DISTRICT_CAPITAL_LIST:
             return 2
         return 3

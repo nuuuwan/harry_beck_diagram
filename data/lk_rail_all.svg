@@ -63,6 +63,12 @@
     <text fill="black" stroke="none" font-size="15.600000000000001" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="1059.3" y="1162" transform="translate(1047,1162) rotate(-0) translate(-1047,-1162)">Peradeniya Junction</text>
   </g>
   <g>
+    <text fill="black" stroke="none" font-size="15.600000000000001" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="1696.3" y="932" transform="translate(1684,932) rotate(-0) translate(-1684,-932)">BADULLA</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="15.600000000000001" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="1018.3" y="1610" transform="translate(1006,1610) rotate(-0) translate(-1006,-1610)">Beliatta</text>
+  </g>
+  <g>
     <circle r="6" fill="white" stroke="black" stroke-width="2.0999999999999996" cx="776" cy="810"/>
     <text fill="black" stroke="none" font-size="15.600000000000001" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="788.3" y="810" transform="translate(776,810) rotate(-0) translate(-776,-810)">Maho Junction</text>
   </g>
@@ -75,38 +81,32 @@
     <text fill="black" stroke="none" font-size="15.600000000000001" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="788.3" y="620" transform="translate(776,620) rotate(-0) translate(-776,-620)">Medawachchiya Junction</text>
   </g>
   <g>
+    <text fill="black" stroke="none" font-size="15.600000000000001" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="652.3" y="200" transform="translate(640,200) rotate(-0) translate(-640,-200)">Kankesanthurai</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="15.600000000000001" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="828.3" y="1257" transform="translate(816,1257) rotate(-0) translate(-816,-1257)">Avissawella</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="15.600000000000001" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="327.3" y="538" transform="translate(315,538) rotate(-0) translate(-315,-538)">Periyanagavillu</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="15.600000000000001" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="1195.3" y="837" transform="translate(1183,837) rotate(-0) translate(-1183,-837)">MATALE</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="15.600000000000001" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="828.3" y="674" transform="translate(816,674) rotate(-0) translate(-816,-674)">Mihintale</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="15.600000000000001" font-family="Trebuchet MS" font-weight="100" text-anchor="end" dominant-baseline="central" x="614.7" y="484" transform="translate(627,484) rotate(-0) translate(-627,-484)">Talaimannar Pier</text>
+  </g>
+  <g>
     <circle r="6" fill="white" stroke="black" stroke-width="2.0999999999999996" cx="979" cy="674"/>
     <text fill="black" stroke="none" font-size="15.600000000000001" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="991.3" y="674" transform="translate(979,674) rotate(-0) translate(-979,-674)">Gal Oya Junction</text>
   </g>
   <g>
-    <text fill="black" stroke="none" font-size="14.399999999999999" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="1695.7" y="932" transform="translate(1684,932) rotate(-0) translate(-1684,-932)">BADULLA</text>
+    <text fill="black" stroke="none" font-size="15.600000000000001" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="1303.3" y="810" transform="translate(1291,810) rotate(-0) translate(-1291,-810)">BATTICALOA</text>
   </g>
   <g>
-    <text fill="black" stroke="none" font-size="14.399999999999999" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="1017.7" y="1610" transform="translate(1006,1610) rotate(-0) translate(-1006,-1610)">Beliatta</text>
-  </g>
-  <g>
-    <text fill="black" stroke="none" font-size="14.399999999999999" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="651.7" y="200" transform="translate(640,200) rotate(-0) translate(-640,-200)">Kankesanthurai</text>
-  </g>
-  <g>
-    <text fill="black" stroke="none" font-size="14.399999999999999" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="827.7" y="1257" transform="translate(816,1257) rotate(-0) translate(-816,-1257)">Avissawella</text>
-  </g>
-  <g>
-    <text fill="black" stroke="none" font-size="14.399999999999999" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="326.7" y="538" transform="translate(315,538) rotate(-0) translate(-315,-538)">Periyanagavillu</text>
-  </g>
-  <g>
-    <text fill="black" stroke="none" font-size="14.399999999999999" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="1194.7" y="837" transform="translate(1183,837) rotate(-0) translate(-1183,-837)">MATALE</text>
-  </g>
-  <g>
-    <text fill="black" stroke="none" font-size="14.399999999999999" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="827.7" y="674" transform="translate(816,674) rotate(-0) translate(-816,-674)">Mihintale</text>
-  </g>
-  <g>
-    <text fill="black" stroke="none" font-size="14.399999999999999" font-family="Trebuchet MS" font-weight="100" text-anchor="end" dominant-baseline="central" x="615.3" y="484" transform="translate(627,484) rotate(-0) translate(-627,-484)">Talaimannar Pier</text>
-  </g>
-  <g>
-    <text fill="black" stroke="none" font-size="14.399999999999999" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="1302.7" y="810" transform="translate(1291,810) rotate(-0) translate(-1291,-810)">BATTICALOA</text>
-  </g>
-  <g>
-    <text fill="black" stroke="none" font-size="14.399999999999999" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="1058.7" y="566" transform="translate(1047,566) rotate(-0) translate(-1047,-566)">TRINCOMALEE</text>
+    <text fill="black" stroke="none" font-size="15.600000000000001" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="1059.3" y="566" transform="translate(1047,566) rotate(-0) translate(-1047,-566)">TRINCOMALEE</text>
   </g>
   <g>
     <rect stroke="none" fill-opacity="1" x="518.0" y="1064.0" width="6" height="6" fill="red"/>
