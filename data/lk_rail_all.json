@@ -496,7 +496,7 @@
       ]
     },
     {
-      "color": "yellow",
+      "color": "maroon",
       "direction_list": [
         [
           1,
@@ -538,7 +538,7 @@
       "color": "darkgreen",
       "direction_list": [
         [
-          15,
+          10,
           "NE"
         ],
         [
@@ -546,7 +546,11 @@
           "E"
         ],
         [
-          18,
+          10,
+          "SE"
+        ],
+        [
+          13,
           "E"
         ]
       ],
@@ -596,9 +600,10 @@
       "color": "silver",
       "direction_list": [
         [
-          8,
-          "N"
-        ]
+          5,
+          "NE"
+        ],
+        [3, "N"]
       ],
       "node_list": [
         "Gal Oya Junction",

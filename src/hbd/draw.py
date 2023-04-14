@@ -41,7 +41,7 @@ class Draw(Config, DrawNode, DrawLine):
         return _('rect', None, STYLE.RECT_BORDER)
 
     def draw_title(self):
-        return _('text', 'Railways of Sri Lanka', STYLE.TEXT_TITLE)
+        return _('text', 'Railways Stations of Sri Lanka', STYLE.TEXT_TITLE)
 
     def draw(self):
         svg = _(

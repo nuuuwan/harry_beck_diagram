@@ -55,13 +55,13 @@ class DrawNode:
                 f'translate({-sx},{-sy})',
             ]
         )
-        default_font_size = int(STYLE.NODE_TEXT['font_size'])
+       
         label = node
         # label_with_loc = f'{node} ({x}, {y})'
 
         cmp = self.get_node_cmp_value(node)
-
-        font_size = default_font_size * [1.2, 1.1, 1, 0.8][cmp]
+        default_font_size = int(STYLE.NODE_TEXT['font_size'])
+        font_size = default_font_size * [1.3, 1.2, 1.1, 1][cmp]
 
         for district_name in DISTRICT_CAPITAL_LIST:
             if district_name in label:
@@ -86,6 +86,7 @@ class DrawNode:
         text_angle = self.node_to_text_angle[node]
         if text_angle is None:
             log.debug(f'no text angle: {node}')
+            return _('g')
 
         if node in self.junction_list:
             inner_list.append(self.draw_node_circle(sx, sy))

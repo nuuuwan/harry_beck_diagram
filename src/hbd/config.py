@@ -5,18 +5,25 @@ from utils import JSONFile, Log
 
 from hbd.DISTRICT_CAPITAL_LIST import DISTRICT_CAPITAL_LIST
 
-TEXT_SPACE = 2
+TEXT_SPACE = 3
 ANGLE_CONFIG = [
     [1, 0, 0],
     [-1, 0, 180],
+    
     [1, 1, 45],
     [1, -1, 315],
-    [0, 1, 90],
-    [0, -1, 270],
+
     [-1, 1, 135],
     [-1, -1, 215],
+    
     [1, 0.5, 22.5],
     [1, -0.5, 360 - 22.5],
+
+    [0, 1, 90],
+    [0, -1, 270],
+    
+
+    
 ]
 
 log = Log(__name__)

@@ -3,7 +3,7 @@ DIM = 1600
 OPACITY = 1
 PADDING = 100
 FONT_FAMILY = 'Trebuchet MS'
-
+FONT_SIZE = 9
 
 class STYLE:
     SVG = dict(
@@ -15,7 +15,7 @@ class STYLE:
     TEXT_TITLE = dict(
         fill='black',
         stroke='none',
-        font_size=50,
+        font_size=FONT_SIZE*4,
         font_family=FONT_FAMILY,
         x=DIM / 2,
         y=PADDING * 2,
@@ -39,7 +39,7 @@ class STYLE:
     NODE_TEXT = dict(
         fill='black',
         stroke='none',
-        font_size=10,
+        font_size=FONT_SIZE,
         font_family=FONT_FAMILY,
         font_weight="100",
         text_anchor='start',
