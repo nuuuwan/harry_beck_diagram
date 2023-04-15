@@ -6,7 +6,7 @@ config = Config(
     line_list=[
         Line(
             color="red",
-            node_list=[
+            station_list=[
                 "Colombo Fort",
                 "Maradana",
                 "Ragama",

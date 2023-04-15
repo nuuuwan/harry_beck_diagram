@@ -58,11 +58,11 @@ class DrawLine:
         )
 
     def draw_line(self, line, t):
-        node_list = line.node_list
+        station_list = line.station_list
         color = line.color
         points = []
         x0, y0 = None, None
-        for node in node_list:
+        for node in station_list:
             x, y = self.config.node_idx[node]
             sx, sy = t(x, y)
             points.append([sx, sy])
@@ -72,8 +72,8 @@ class DrawLine:
                     log.warning(f'Invalid jump: {node} ({dx}, {dy})')
             x0, y0 = x, y
 
-        x_end, y_end = self.config.node_idx[node_list[-1]]
-        x_end2, y_end2 = self.config.node_idx[node_list[-2]]
+        x_end, y_end = self.config.node_idx[station_list[-1]]
+        x_end2, y_end2 = self.config.node_idx[station_list[-2]]
         sx_end, sy_end = t(x_end, y_end)
         sx_end2, sy_end2 = t(x_end2, y_end2)
         return _(

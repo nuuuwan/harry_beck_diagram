@@ -68,17 +68,17 @@ class Config:
     def node_idx_unsorted(self):
         node_idx = {}
         first_line = self.line_list[0]
-        center_node = first_line.node_list[0]
+        center_node = first_line.station_list[0]
         node_idx[center_node] = [0, 0]
 
         for line in self.line_list:
             i_cur = 0
             for n, direction in line.direction_list:
                 [dx, dy] = parse_direction(direction)
-                cur_node = line.node_list[i_cur]
+                cur_node = line.station_list[i_cur]
                 x_cur, y_cur = node_idx[cur_node]
                 for i in range(0, n):
-                    node = line.node_list[i_cur + i + 1]
+                    node = line.station_list[i_cur + i + 1]
                     if node in node_idx:
                         continue
                     node_idx[node] = [
@@ -115,9 +115,9 @@ class Config:
     def node_to_color_set(self):
         node_to_color_set = {}
         for line in self.line_list:
-            node_list = line.node_list
+            station_list = line.station_list
             color = line.color
-            for node in node_list:
+            for node in station_list:
                 if node not in node_to_color_set:
                     node_to_color_set[node] = set()
                 node_to_color_set[node].add(color)
@@ -176,9 +176,9 @@ class Config:
     def node_to_neighbors(self):
         node_to_neighbors = {}
         for line in self.line_list:
-            node_list = line.node_list
-            for i in range(len(node_list) - 1):
-                node1, node2 = node_list[i], node_list[i + 1]
+            station_list = line.station_list
+            for i in range(len(station_list) - 1):
+                node1, node2 = station_list[i], station_list[i + 1]
                 if node1 not in node_to_neighbors:
                     node_to_neighbors[node1] = set()
                 if node2 not in node_to_neighbors:

@@ -4,10 +4,10 @@ import re
 
 class Line:
     def __init__(
-        self, color: str, node_list: list[str], path: str
+        self, color: str, station_list: list[str], path: str
     ):
         self.color = color
-        self.node_list = node_list
+        self.station_list = station_list
         self.path = path
     
     @cached_property
