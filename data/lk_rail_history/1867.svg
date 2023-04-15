@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" padding="200">
+  <rect x="100.0" y="100.0" width="800" height="800" fill="white" stroke="gray"/>
+  <text fill="gray" stroke="none" font-size="48" font-family="Trebuchet MS" x="500.0" y="112.0" text-anchor="middle" dominant-baseline="hanging">1867</text>
+  <text fill="gray" stroke="none" font-size="12" font-family="Trebuchet MS" x="500.0" y="888.0" text-anchor="middle" dominant-baseline="text-top">History of Sri Lankan Railways</text>
+  <g>
+    <path fill="none" stroke-width="8.4" stroke-opacity="1" d="M 200.0,550.0 L 300.0,550.0 L 400.0,550.0 L 500.0,550.0 L 600.0,550.0 L 700.0,550.0 L 800.0,550.0" stroke="red"/>
+    <rect stroke="none" fill-opacity="1" x="796" y="542" width="8" height="16" fill="red"/>
+  </g>
+  <g>
+    <path fill="none" stroke-width="8.4" stroke-opacity="1" d="M 800.0,550.0 L 800.0,450.0" stroke="purple"/>
+    <rect stroke="none" fill-opacity="1" x="792" y="446" width="16" height="8" fill="purple"/>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="15.600000000000001" font-family="Trebuchet MS" font-weight="100" text-anchor="end" dominant-baseline="central" x="186.2" y="550" transform="translate(200,550) rotate(-0) translate(-200,-550)">COLOMBO Fort</text>
+  </g>
+  <g>
+    <circle r="8" fill="white" stroke="black" stroke-width="2.0" cx="800" cy="550"/>
+    <text fill="black" stroke="none" font-size="15.600000000000001" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="813.8" y="550" transform="translate(800,550) rotate(-0) translate(-800,-550)">Peradeniya</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="15.600000000000001" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="813.8" y="450" transform="translate(800,450) rotate(-0) translate(-800,-450)">KANDY</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="13.200000000000001" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="512.6" y="550" transform="translate(500,550) rotate(-45) translate(-500,-550)">GAMPAHA</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="12" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="312.0" y="550" transform="translate(300,550) rotate(-45) translate(-300,-550)">Maradana</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="12" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="412.0" y="550" transform="translate(400,550) rotate(-45) translate(-400,-550)">Ragama</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="12" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="612.0" y="550" transform="translate(600,550) rotate(-45) translate(-600,-550)">Ambepussa</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="12" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="712.0" y="550" transform="translate(700,550) rotate(-315) translate(-700,-550)">Polgahawela</text>
+  </g>
+</svg>

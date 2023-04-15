@@ -1,0 +1,133 @@
+<?xml version="1.0" ?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" padding="200">
+  <rect x="100.0" y="100.0" width="800" height="800" fill="white" stroke="gray"/>
+  <text fill="gray" stroke="none" font-size="48" font-family="Trebuchet MS" x="500.0" y="112.0" text-anchor="middle" dominant-baseline="hanging">1914</text>
+  <text fill="gray" stroke="none" font-size="12" font-family="Trebuchet MS" x="500.0" y="888.0" text-anchor="middle" dominant-baseline="text-top">History of Sri Lankan Railways</text>
+  <g>
+    <path fill="none" stroke-width="8.4" stroke-opacity="1" d="M 292.0,615.0 L 338.0,615.0 L 384.0,615.0 L 430.0,615.0 L 476.0,615.0 L 523.0,615.0 L 569.0,615.0 L 615.0,615.0 L 661.0,615.0 L 707.0,615.0" stroke="red"/>
+    <rect stroke="none" fill-opacity="1" x="703" y="607" width="8" height="16" fill="red"/>
+  </g>
+  <g>
+    <path fill="none" stroke-width="8.4" stroke-opacity="1" d="M 292.0,615.0 L 292.0,661.0 L 292.0,707.0 L 292.0,753.0" stroke="cyan"/>
+    <rect stroke="none" fill-opacity="1" x="284" y="749" width="16" height="8" fill="cyan"/>
+  </g>
+  <g>
+    <path fill="none" stroke-width="8.4" stroke-opacity="1" d="M 523.0,615.0 L 523.0,569.0 L 523.0,523.0 L 523.0,476.0 L 523.0,430.0 L 523.0,384.0 L 523.0,338.0 L 523.0,292.0 L 523.0,246.0 L 523.0,200.0" stroke="orange"/>
+    <rect stroke="none" fill-opacity="1" x="515" y="196" width="16" height="8" fill="orange"/>
+  </g>
+  <g>
+    <path fill="none" stroke-width="8.4" stroke-opacity="1" d="M 338.0,615.0 L 338.0,661.0 L 338.0,704.7 C 338.0,705.4666666666667 339.53333333333336,707.0 340.3,707.0 L 384.0,707.0" stroke="darkblue"/>
+    <rect stroke="none" fill-opacity="1" x="380" y="699" width="8" height="16" fill="darkblue"/>
+  </g>
+  <g>
+    <path fill="none" stroke-width="8.4" stroke-opacity="1" d="M 338.0,707.0 L 338.0,753.0 L 338.0,800.0" stroke="lightblue"/>
+    <rect stroke="none" fill-opacity="1" x="330" y="796" width="16" height="8" fill="lightblue"/>
+  </g>
+  <g>
+    <path fill="none" stroke-width="8.4" stroke-opacity="1" d="M 569.0,615.0 L 569.0,571.3 C 569.0,570.5333333333333 570.5333333333333,569.0 571.3,569.0 L 615.0,569.0" stroke="purple"/>
+    <rect stroke="none" fill-opacity="1" x="611" y="561" width="8" height="16" fill="purple"/>
+  </g>
+  <g>
+    <path fill="none" stroke-width="8.4" stroke-opacity="1" d="M 523.0,384.0 L 476.0,384.0 L 430.0,384.0" stroke="blue"/>
+    <rect stroke="none" fill-opacity="1" x="426" y="376" width="8" height="16" fill="blue"/>
+  </g>
+  <g>
+    <circle r="8" fill="white" stroke="black" stroke-width="2.0" cx="292" cy="615"/>
+    <text fill="black" stroke="none" font-size="15.600000000000001" font-family="Trebuchet MS" font-weight="100" text-anchor="end" dominant-baseline="central" x="278.2" y="615" transform="translate(292,615) rotate(-0) translate(-292,-615)">COLOMBO Fort</text>
+  </g>
+  <g>
+    <circle r="8" fill="white" stroke="black" stroke-width="2.0" cx="338" cy="615"/>
+    <text fill="black" stroke="none" font-size="15.600000000000001" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="351.8" y="615" transform="translate(338,615) rotate(-45) translate(-338,-615)">Maradana</text>
+  </g>
+  <g>
+    <circle r="8" fill="white" stroke="black" stroke-width="2.0" cx="523" cy="615"/>
+    <text fill="black" stroke="none" font-size="15.600000000000001" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="536.8" y="615" transform="translate(523,615) rotate(-315) translate(-523,-615)">Polgahawela</text>
+  </g>
+  <g>
+    <circle r="8" fill="white" stroke="black" stroke-width="2.0" cx="569" cy="615"/>
+    <text fill="black" stroke="none" font-size="15.600000000000001" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="582.8" y="615" transform="translate(569,615) rotate(-315) translate(-569,-615)">Peradeniya</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="15.600000000000001" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="720.8" y="615" transform="translate(707,615) rotate(-0) translate(-707,-615)">Bandarawela</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="15.600000000000001" font-family="Trebuchet MS" font-weight="100" text-anchor="end" dominant-baseline="central" x="278.2" y="753" transform="translate(292,753) rotate(-0) translate(-292,-753)">MATARA</text>
+  </g>
+  <g>
+    <circle r="8" fill="white" stroke="black" stroke-width="2.0" cx="523" cy="384"/>
+    <text fill="black" stroke="none" font-size="15.600000000000001" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="536.8" y="384" transform="translate(523,384) rotate(-0) translate(-523,-384)">Medavachchiya</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="15.600000000000001" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="536.8" y="200" transform="translate(523,200) rotate(-0) translate(-523,-200)">Kankesanthurai</text>
+  </g>
+  <g>
+    <circle r="8" fill="white" stroke="black" stroke-width="2.0" cx="338" cy="707"/>
+    <text fill="black" stroke="none" font-size="15.600000000000001" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="351.8" y="707" transform="translate(338,707) rotate(-315) translate(-338,-707)">Avissawella</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="15.600000000000001" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="397.8" y="707" transform="translate(384,707) rotate(-0) translate(-384,-707)">Yatiyantota</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="15.600000000000001" font-family="Trebuchet MS" font-weight="100" text-anchor="end" dominant-baseline="central" x="324.2" y="800" transform="translate(338,800) rotate(-0) translate(-338,-800)">Opanayaka</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="15.600000000000001" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="628.8" y="569" transform="translate(615,569) rotate(-0) translate(-615,-569)">MATALE</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="15.600000000000001" font-family="Trebuchet MS" font-weight="100" text-anchor="end" dominant-baseline="central" x="416.2" y="384" transform="translate(430,384) rotate(-0) translate(-430,-384)">Talaimannar Pier</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="13.200000000000001" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="442.6" y="615" transform="translate(430,615) rotate(-315) translate(-430,-615)">GAMPAHA</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="13.200000000000001" font-family="Trebuchet MS" font-weight="100" text-anchor="end" dominant-baseline="central" x="279.4" y="707" transform="translate(292,707) rotate(-0) translate(-292,-707)">GALLE</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="13.200000000000001" font-family="Trebuchet MS" font-weight="100" text-anchor="end" dominant-baseline="central" x="510.4" y="569" transform="translate(523,569) rotate(-0) translate(-523,-569)">KURUNEGALA</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="13.200000000000001" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="535.6" y="476" transform="translate(523,476) rotate(-0) translate(-523,-476)">ANURADHAPURA</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="13.200000000000001" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="535.6" y="338" transform="translate(523,338) rotate(-0) translate(-523,-338)">VAVUNIYA</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="13.200000000000001" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="535.6" y="292" transform="translate(523,292) rotate(-0) translate(-523,-292)">KILINOCHCHI</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="13.200000000000001" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="535.6" y="246" transform="translate(523,246) rotate(-0) translate(-523,-246)">JAFFNA</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="13.200000000000001" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="350.6" y="753" transform="translate(338,753) rotate(-315) translate(-338,-753)">RATNAPURA</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="13.200000000000001" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="581.6" y="569" transform="translate(569,569) rotate(-45) translate(-569,-569)">KANDY</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="13.200000000000001" font-family="Trebuchet MS" font-weight="100" text-anchor="end" dominant-baseline="central" x="463.4" y="384" transform="translate(476,384) rotate(--45) translate(-476,-384)">MANNAR</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="12" font-family="Trebuchet MS" font-weight="100" text-anchor="end" dominant-baseline="central" x="372.0" y="615" transform="translate(384,615) rotate(--45) translate(-384,-615)">Ragama</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="12" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="488.0" y="615" transform="translate(476,615) rotate(-315) translate(-476,-615)">Ambepussa</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="12" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="627.0" y="615" transform="translate(615,615) rotate(-315) translate(-615,-615)">Nawalapitiya</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="12" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="673.0" y="615" transform="translate(661,615) rotate(-315) translate(-661,-615)">Nanu Oya</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="12" font-family="Trebuchet MS" font-weight="100" text-anchor="end" dominant-baseline="central" x="280.0" y="661" transform="translate(292,661) rotate(-0) translate(-292,-661)">KALUTARA North</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="12" font-family="Trebuchet MS" font-weight="100" text-anchor="end" dominant-baseline="central" x="511.0" y="523" transform="translate(523,523) rotate(--45) translate(-523,-523)">Maho</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="12" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="535.0" y="430" transform="translate(523,430) rotate(-0) translate(-523,-430)">Mihintale Junction</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="12" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="350.0" y="661" transform="translate(338,661) rotate(-0) translate(-338,-661)">Homagama</text>
+  </g>
+</svg>

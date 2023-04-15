@@ -75,16 +75,23 @@ class Draw(DrawNode, DrawLine):
 
 
 if __name__ == '__main__':
-    draw_list = [
-        Draw(Config('data/lk_rail.json'), Styler(DIM=900)),
-        Draw(Config('data/lk_rail_all.json'), Styler(DIM=2000)),
-        Draw(Config('data/lk_rail_kv_closed.json'), Styler(DIM=700)),
-        Draw(
-            Config('data/lk_rail_udupussellawa_closed.json'), Styler(DIM=700)
-        ),
-        Draw(Config('data/lk_rail_wp_proposed.json'), Styler(DIM=800, PADDING=80)),
-        Draw(Config('data/lk_colombo_lrt_proposed.json'), Styler(DIM=1300, PADDING=150)),
+#     draw_list = [
+#         Draw(Config('data/lk_rail.json'), Styler(DIM=900)),
+#         Draw(Config('data/lk_rail_all.json'), Styler(DIM=2000)),
+#         Draw(Config('data/lk_rail_kv_closed.json'), Styler(DIM=700)),
+#         Draw(
+#             Config('data/lk_rail_udupussellawa_closed.json'), Styler(DIM=700)
+#         ),
+#         Draw(Config('data/lk_rail_wp_proposed.json'), Styler(DIM=800, PADDING=80)),
+#         Draw(Config('data/lk_colombo_lrt_proposed.json'), Styler(DIM=1300, PADDING=150)),
        
-    ]
-    for draw in draw_list:
+#     ]
+#     for draw in draw_list:
+#         draw.draw()
+
+
+    for file_name in os.listdir('data/lk_rail_history'):
+        if not file_name.endswith('.json'):
+            continue
+        draw = Draw(Config(f'data/lk_rail_history/{file_name}'), Styler(DIM=1000))
         draw.draw()

@@ -1,0 +1,22 @@
+{
+    "title": "1864",
+    "footer_text": "History of Sri Lankan Railways",
+    "line_list": [
+      {
+        "color": "red",
+        "direction_list": [
+          [
+            4,
+           "E"
+          ]
+        ],
+        "node_list": [
+          "Colombo Fort",
+          "Maradana",
+          "Ragama",
+          "Gampaha",
+          "Ambepussa"
+        ]
+      }
+    ]
+  }

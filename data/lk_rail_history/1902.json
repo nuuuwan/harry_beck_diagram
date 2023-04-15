@@ -1,0 +1,60 @@
+{
+    "title": "1902",
+    "footer_text": "History of Sri Lankan Railways",
+    "line_list": [
+      {
+        "color": "red",
+        "direction_list": [
+          [
+            9,
+           "E"
+          ]
+        ],
+        "node_list": [
+          "Colombo Fort",
+          "Maradana",
+          "Ragama",
+          "Gampaha",
+          "Ambepussa",
+          "Polgahawela",
+          "Peradeniya",
+          "Nawalapitiya",
+          "Nanu Oya",
+          "Bandarawela"
+        ]
+      },
+      {
+        "color": "cyan",
+        "direction_list": [
+          [
+           3,
+           "S"
+          ]
+        ],
+        "node_list": [
+          "Colombo Fort",
+          "Kalutara North",
+          "Galle",
+          "Matara"
+        ]
+      },
+      {
+        "color": "darkblue",
+        "node_list": [
+          "Maradana",
+          "Homagama",
+          "Avissawella",
+          "Yatiyantota"
+        ],
+        "direction_list": [[2,"S"], [1,"E"]]
+      },
+      {
+        "color": "purple",
+        "node_list": [
+          "Peradeniya",
+          "Kandy",
+          "Matale"
+        ], "direction_list": [[1,"N"],[1,"E"]]
+      }
+    ]
+  }

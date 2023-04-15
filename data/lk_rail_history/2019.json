@@ -1,0 +1,116 @@
+{
+    "title": "2019",
+    "footer_text": "History of Sri Lankan Railways",
+    "line_list": [
+      {
+        "color": "red",
+        "direction_list": [
+          [
+            10,
+           "E"
+          ]
+        ],
+        "node_list": [
+          "Colombo Fort",
+          "Maradana",
+          "Ragama",
+          "Gampaha",
+          "Ambepussa",
+          "Polgahawela",
+          "Peradeniya",
+          "Nawalapitiya",
+          "Nanu Oya",
+          "Bandarawela",
+          "Badulla"
+        ]
+      },
+      {
+        "color": "cyan",
+        "direction_list": [
+          [
+            4,
+           "S"
+          ]
+        ],
+        "node_list": [
+          "Colombo Fort",
+          "Kalutara North",
+          "Galle",
+          "Matara",
+          "Beliatta"
+        ]
+      },
+      {
+        "color": "orange",
+        "node_list": [
+          "Polgahawela",
+          "Kurunegala",
+          "Maho",
+          "Anuradhapura",
+          "Mihintale Junction",
+          "Medavachchiya",
+          "Vavuniya",
+          "Kilinochchi",
+          "Jaffna",
+          "Kankesanthurai"
+        ],
+        "direction_list": [[9,"N"]]
+      },
+      {
+        "color": "darkblue",
+        "node_list": [
+          "Maradana",
+          "Homagama",
+          "Avissawella"
+        ],
+        "direction_list": [[2,"S"]]
+      },
+      {
+        "color": "green",
+        "node_list": [
+          "Ragama",
+          "Puttalam",
+          "Periyanurvillu"
+        ], "direction_list": [[2,"N"]]
+      },
+      {
+        "color": "purple",
+        "node_list": [
+          "Peradeniya",
+          "Kandy",
+          "Matale"
+        ], "direction_list": [[1,"N"],[1,"E"]]
+      },
+      {
+        "color": "yellow",
+        "node_list": [
+          "Mihintale Junction",
+          "Mihintale"
+        ], "direction_list": [[1,"E"]]
+      },
+      {
+        "color": "blue",
+        "node_list": [
+          "Medavachchiya",
+          "Mannar",
+          "Talaimannar Pier"
+        ], "direction_list": [[2,"W"]]
+      },
+      {
+        "color": "darkgreen",
+        "node_list": [
+          "Maho",
+          "Galoya",
+          "Polonnaruwa",
+          "Batticaloa"
+        ], "direction_list": [[3,"E"]]
+      },
+      {
+        "color": "silver",
+        "node_list": [
+          "Galoya",
+          "Trincomalee"
+        ], "direction_list": [[1,"N"]]
+      }
+    ]
+  }

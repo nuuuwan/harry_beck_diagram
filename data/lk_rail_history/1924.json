@@ -1,0 +1,94 @@
+{
+    "title": "1924",
+    "footer_text": "History of Sri Lankan Railways",
+    "line_list": [
+      {
+        "color": "red",
+        "direction_list": [
+          [
+            10,
+           "E"
+          ]
+        ],
+        "node_list": [
+          "Colombo Fort",
+          "Maradana",
+          "Ragama",
+          "Gampaha",
+          "Ambepussa",
+          "Polgahawela",
+          "Peradeniya",
+          "Nawalapitiya",
+          "Nanu Oya",
+          "Bandarawela",
+          "Badulla"
+        ]
+      },
+      {
+        "color": "cyan",
+        "direction_list": [
+          [
+           3,
+           "S"
+          ]
+        ],
+        "node_list": [
+          "Colombo Fort",
+          "Kalutara North",
+          "Galle",
+          "Matara"
+        ]
+      },
+      {
+        "color": "orange",
+        "node_list": [
+          "Polgahawela",
+          "Kurunegala",
+          "Maho",
+          "Anuradhapura",
+          "Mihintale Junction",
+          "Medavachchiya",
+          "Vavuniya",
+          "Kilinochchi",
+          "Jaffna",
+          "Kankesanthurai"
+        ],
+        "direction_list": [[9,"N"]]
+      },
+      {
+        "color": "darkblue",
+        "node_list": [
+          "Maradana",
+          "Homagama",
+          "Avissawella",
+          "Yatiyantota"
+        ],
+        "direction_list": [[2,"S"], [1,"E"]]
+      },
+      {
+        "color": "lightblue",
+        "node_list": [
+          "Avissawella",
+          "Ratnapura",
+          "Opanayaka"
+        ],
+        "direction_list": [[2,"S"]]
+      },
+      {
+        "color": "purple",
+        "node_list": [
+          "Peradeniya",
+          "Kandy",
+          "Matale"
+        ], "direction_list": [[1,"N"],[1,"E"]]
+      },
+      {
+        "color": "blue",
+        "node_list": [
+          "Medavachchiya",
+          "Mannar",
+          "Talaimannar Pier"
+        ], "direction_list": [[2,"W"]]
+      }
+    ]
+  }
