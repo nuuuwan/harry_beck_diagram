@@ -1,17 +1,14 @@
-import os
-import webbrowser
 from functools import cache
 
+import imageio
+from reportlab.graphics import renderPM
+from svglib.svglib import svg2rlg
 from utils import Log
 from utils.xmlx import _
 
 from hbd import bbox_utils
 from hbd.draw_line import DrawLine
 from hbd.draw_node import DrawNode
-
-from svglib.svglib import svg2rlg
-from reportlab.graphics import renderPDF, renderPM
-        
 
 log = Log(__name__)
 
@@ -24,7 +21,7 @@ class Draw(DrawNode, DrawLine):
     @property
     def svg_path(self) -> str:
         return self.config.config_path.replace('.json', '.svg')
-    
+
     @cache
     def get_t(self):
         return bbox_utils.get_t(self.styler, self.config.loc_list)
@@ -82,17 +79,24 @@ class Draw(DrawNode, DrawLine):
         svg.store(self.svg_path)
         log.debug(f'Saved {self.svg_path}')
 
-       
-
-        Draw.convert_svg_to_png(self.svg_path)
-
+        png_path = Draw.convert_svg_to_png(self.svg_path)
+        return png_path
 
     @staticmethod
     def convert_svg_to_png(svg_path):
         png_path = svg_path[:-3] + 'png'
-        
+
         drawing = svg2rlg(svg_path)
         renderPM.drawToFile(drawing, png_path, fmt="PNG")
-        log.debug(f'Saved {png_path}')
+        log.info(f'Saved {png_path}')
 
-        webbrowser.open(os.path.abspath(png_path))
+        return png_path
+
+    @staticmethod
+    def create_animated_gif(png_path_list, gif_path):
+        png_path_list.sort()
+        images = []
+        for png_path in png_path_list:
+            images.append(imageio.imread(png_path))
+        imageio.mimwrite(gif_path, images, duration=1)
+        log.info(f'Saved {gif_path}')
