@@ -2,173 +2,229 @@ from hbd import Draw, Line, Network, Styler
 
 config_idx = {}
 
-config_idx['1864'] = Network(
-    title='1864',
-    footer_text='History of the Railways in Sri Lanka',
-    line_idx={
-        'Main': Line(
-            color="red",
-            station_list=[
-                "Colombo Fort",
-                "Maradana",
-                "Ragama",
-                "Gampaha",
-                "Ambepussa",
-            ],
-            path="4NE",
+
+def get_latest_config():
+    return list(config_idx.values())[-1]
+
+
+def init_year(year):
+    if config_idx:
+        latest_config = get_latest_config()
+        config = latest_config.copy(title=str(year))
+    else:
+        config = Network(
+            title=str(year),
+            footer_text='History of the Railways in Sri Lanka',
+            line_idx={},
         )
-    },
+    config_idx[year] = config
+    return config
+
+
+def add_line(line_name, color, station_list, path):
+    config = get_latest_config()
+    config.line_idx[line_name] = Line(
+        color=color,
+        station_list=station_list,
+        path=path,
+    )
+
+
+def extend_line(line_name, station_list, path):
+    config = get_latest_config()
+    line = config.line_idx[line_name]
+    line.station_list += station_list
+    line.path += ' ' + path
+
+
+def update_line(line_name, station_list, path):
+    config = get_latest_config()
+    config.line_idx[line_name] = Line(
+        color=config.line_idx[line_name].color,
+        station_list=station_list,
+        path=path,
+    )
+
+
+def remove_line(line_name):
+    config = get_latest_config()
+    del config.line_idx[line_name]
+
+
+init_year(1864)
+add_line(
+    'Main',
+    'red',
+    ['Colombo Fort', 'Maradana', 'Ragama', 'Gampaha', 'Ambepussa'],
+    '4NE',
 )
 
-config_idx['1867'] = config_idx['1864'].copy(title="1867")
-config_idx['1867'].line_idx['Main'].station_list += [
-    "Polgahawela",
-    "Peradeniya",
-]
-config_idx['1867'].line_idx['Main'].path += " 2E"
+init_year(1867)
+extend_line('Main', ['Polgahawela', 'Peradeniya'], '2E')
+add_line('Matale', 'purple', ['Peradeniya', 'Kandy'], '1NE')
 
-config_idx['1867'].line_idx['Matale'] = Line(
-    color="purple",
-    station_list=["Peradeniya", "Kandy"],
-    path="1NE",
+init_year(1874)
+extend_line('Main', ['Nawalapitiya'], '1SE')
+
+init_year(1877)
+add_line('Coastal', 'cyan', ['Colombo Fort', 'Panadura'], '1S')
+
+init_year(1878)
+extend_line('Coastal', ['Kalutara North'], '1S')
+
+init_year(1880)
+extend_line('Matale', ['Matale'], '1E')
+
+init_year(1885)
+extend_line('Main', ['Nanu Oya'], '1SE')
+
+init_year(1890)
+extend_line('Coastal', ['Aluthgama'], '1SE')
+
+init_year(1892)
+extend_line('Coastal', ['Kosgoda'], '1SE')
+
+init_year(1893)
+extend_line('Coastal', ['Ambalangoda'], '1SE')
+
+init_year(1894)
+extend_line('Main', ['Bandarawela'], '1E')
+extend_line('Coastal', ['Galle'], '1SE')
+add_line('Northern', 'orange', ['Polgahawela', 'Kurunegala'], '1N')
+
+init_year(1895)
+extend_line('Coastal', ['Matara'], '1E')
+
+init_year(1902)
+add_line(
+    'Kelani Valley',
+    'darkblue',
+    ['Maradana', 'Homagama', 'Avissawella', 'Yatiyantota'],
+    '1SE 1E 1NE',
 )
 
-config_idx['1874'] = config_idx['1867'].copy(title="1874")
-config_idx['1874'].line_idx['Main'].station_list += ["Nawalapitiya"]
-config_idx['1874'].line_idx['Main'].path += " 1SE"
-
-config_idx['1880'] = config_idx['1874'].copy(title="1880")
-config_idx['1880'].line_idx['Matale'].station_list += ["Matale"]
-config_idx['1880'].line_idx['Matale'].path += " 1E"
-
-config_idx['1885'] = config_idx['1880'].copy(title="1885")
-config_idx['1885'].line_idx['Main'].station_list += ["Nanu Oya"]
-config_idx['1885'].line_idx['Main'].path += " 1SE"
-
-config_idx['1894'] = config_idx['1885'].copy(title="1894")
-config_idx['1894'].line_idx['Main'].station_list += ["Bandarawela"]
-config_idx['1894'].line_idx['Main'].path += " 1E"
-
-config_idx['1895'] = config_idx['1894'].copy(title="1895")
-config_idx['1895'].line_idx['Coastal'] = Line(
-    color="cyan",
-    station_list=["Colombo Fort", "Kalutara North", "Galle", "Matara"],
-    path="1S 1SE 1E",
+init_year(1903)
+add_line(
+    'Udu Pussellawa',
+    'gray',
+    ['Nanu Oya', 'Nuwara Eliya', 'Kandapola'],
+    '1N 1NE',
 )
 
-config_idx['1902'] = config_idx['1895'].copy(title="1902")
-config_idx['1902'].line_idx['Kelani Valley'] = Line(
-    color="darkblue",
-    station_list=["Maradana", "Homagama", "Avissawella", "Yatiyantota"],
-    path="1SE 1E 1NE",
-)
+init_year(1904)
+extend_line('Udu Pussellawa', ['Ragala'], '1E')
+extend_line('Northern', ['Maho', 'Anuradhapura'], '2N')
 
-config_idx['1903'] = config_idx['1902'].copy(title="1903")
-config_idx['1903'].line_idx['Udu Pussellawa'] = Line(
-    color="gray",
-    station_list=["Nanu Oya", "Nuwara Eliya", "Kandapola"],
-    path="1N 1NE",
-)
-
-config_idx['1904'] = config_idx['1903'].copy(title="1904")
-config_idx['1904'].line_idx['Udu Pussellawa'].station_list += ["Ragala"]
-config_idx['1904'].line_idx['Udu Pussellawa'].path += " 1E"
-
-
-config_idx['1905'] = config_idx['1904'].copy(title="1905")
-config_idx['1905'].line_idx['Northern'] = Line(
-    color="orange",
-    station_list=[
-        "Polgahawela",
-        "Kurunegala",
-        "Maho",
-        "Anuradhapura",
-        "Mihintale Junction",
-        "Medavachchiya",
-        "Vavuniya",
-        "Kilinochchi",
-        "Jaffna",
-        "Kankesanthurai",
+init_year(1905)
+extend_line(
+    'Northern',
+    [
+        'Mihintale Junction',
+        'Medavachchiya',
+        'Vavuniya',
+        'Omanthai',
+        'Kilinochchi',
+        'Jaffna',
+        'Kankesanthurai',
     ],
-    path="7N 1NW 1N",
+    '5N 1NW 1N',
 )
 
-config_idx['1912'] = config_idx['1905'].copy(title="1912")
-config_idx['1912'].line_idx['Opanayaka'] = Line(
-    color="lightblue",
-    station_list=["Avissawella", "Ratnapura", "Opanayaka"],
-    path="1SE 1E",
+init_year(1909)
+add_line('Puttalam', 'green', ['Ragama', 'Negombo'], '1NW')
+
+init_year(1912)
+add_line(
+    'Opanayaka', 'lightblue', ['Avissawella', 'Ratnapura', 'Opanayaka'], '1SE 1E'
 )
 
-config_idx['1914'] = config_idx['1912'].copy(title="1914")
-config_idx['1914'].line_idx['Mannar'] = Line(
-    color="blue",
-    station_list=["Medavachchiya", "Mannar", "Talaimannar Pier"],
-    path="1NW 1W",
+init_year(1914)
+add_line(
+    'Mannar', 'blue', ['Medavachchiya', 'Mannar', 'Talaimanar Pier'], '1NW 1W'
 )
 
-config_idx['1924'] = config_idx['1914'].copy(title="1924")
-config_idx['1924'].line_idx['Main'].station_list += ["Badulla"]
-config_idx['1924'].line_idx['Main'].path += " 1NE"
+init_year(1916)
+extend_line('Puttalam', ['Chilaw'], '1NW')
 
+init_year(1924)
+extend_line('Main', ['Badulla'], '1NE')
 
-config_idx['1926'] = config_idx['1924'].copy(title="1926")
-config_idx['1926'].line_idx['Puttalam'] = Line(
-    color="green",
-    station_list=["Ragama", "Puttalam", "Periyanurvillu"],
-    path="1NW 1N",
+init_year(1926)
+extend_line('Puttalam', ['Bangadeniya', 'Puttalam'], '2N')
+
+init_year(1928)
+add_line(
+    'Batticaloa',
+    'darkgreen',
+    ['Maho', 'Gal Oya', 'Polonnaruwa', 'Batticaloa'],
+    '1NE 1SE 1E',
+)
+add_line('Trincomalee', 'silver', ['Gal Oya', 'Trincomalee'], '1NE')
+
+init_year(1942)
+update_line(
+    'Kelani Valley', ['Maradana', 'Homagama', 'Avissawella'], '1SE 1E'
 )
 
-config_idx['1928'] = config_idx['1926'].copy(title="1928")
-config_idx['1928'].line_idx['Batticaloa'] = Line(
-    color="darkgreen",
-    station_list=["Maho", "Gal Oya", "Polonnaruwa", "Batticaloa"],
-    path="1NE 1SE 1E",
-)
-config_idx['1928'].line_idx['Trincomalee'] = Line(
-    color="silver",
-    station_list=["Gal Oya", "Trincomalee"],
-    path="1NE",
+init_year(1943)
+update_line(
+    'Puttalam', ['Ragama', 'Negombo', 'Chilaw', "Bangadeniya"], '1NW 2N'
 )
 
-config_idx['1942'] = config_idx['1928'].copy(title="1942")
-config_idx['1942'].line_idx['Kelani Valley'].station_list = [
-    "Maradana",
-    "Homagama",
-    "Avissawella",
-]
-config_idx['1942'].line_idx['Kelani Valley'].path = "1SE 1E"
+init_year(1946)
+extend_line('Puttalam', ['Puttalam', 'Periyanagavillu'], '2N')
 
-config_idx['1948'] = config_idx['1942'].copy(title="1948")
-del config_idx['1948'].line_idx["Udu Pussellawa"]
+init_year(1948)
+remove_line('Udu Pussellawa')
 
-config_idx['1973'] = config_idx['1948'].copy(title="1973")
-del config_idx['1973'].line_idx["Opanayaka"]
-config_idx['1973'].line_idx['Kelani Valley'].station_list = [
-    "Maradana",
-    "Homagama",
-]
-config_idx['1973'].line_idx['Kelani Valley'].path = "1SE"
+init_year(1973)
+remove_line('Opanayaka')
+update_line('Kelani Valley', ['Maradana', 'Homagama'], '1SE')
 
-config_idx['1978'] = config_idx['1973'].copy(title="1978")
-config_idx['1978'].line_idx['Kelani Valley'].station_list = [
-    "Maradana",
-    "Homagama",
-    "Avissawella",
-]
-config_idx['1978'].line_idx['Kelani Valley'].path = "1SE 1E"
+init_year(1978)
+extend_line('Kelani Valley', ['Avissawella'], '1E')
 
-config_idx['1993'] = config_idx['1978'].copy(title="1993")
-config_idx['1993'].line_idx['Mihintale'] = Line(
-    color="maroon",
-    station_list=["Mihintale Junction", "Mihintale"],
-    path="1E",
+init_year(1990)
+update_line(
+    'Northern',
+    [
+        'Polgahawela',
+        'Kurunegala',
+        'Maho',
+        'Anuradhapura',
+        'Mihintale Junction',
+        'Medavachchiya',
+        'Vavuniya'
+    ],
+    '6N',
 )
+remove_line('Mannar')
 
-config_idx['2019'] = config_idx['1993'].copy(title="2019")
-config_idx['2019'].line_idx['Coastal'].station_list += ["Beliatta"]
-config_idx['2019'].line_idx['Coastal'].path += " 1E"
+init_year(1993)
+add_line('Mihintale', 'maroon', ['Mihintale Junction', 'Mihintale'], '1E')
 
+init_year(1996)
+update_line('Batticaloa', ['Maho', 'Gal Oya', 'Polonnaruwa'], '1NE 1SE')
+
+init_year(2003)
+extend_line('Batticaloa', ['Batticaloa'], '1E')
+
+init_year(2011)
+extend_line('Northern', ['Omanthai'], '1N')
+
+init_year(2013)
+extend_line('Northern', ['Kilinochchi'], '1N')
+add_line('Mannar', 'blue', ['Medavachchiya', 'Madhu Road'], '1NW')
+
+init_year(2014)
+extend_line('Northern', ['Jaffna'], '1NW')
+
+init_year(2015)
+extend_line('Northern', ['Kankesanthurai'], '1N')
+extend_line('Mannar', ['Mannar', 'Talaimanar Pier'], '1NW 1W')
+
+init_year(2019)
+extend_line('Coastal', ['Beliatta'], '1E')
 
 styler = Styler(DIM=1300)
 
