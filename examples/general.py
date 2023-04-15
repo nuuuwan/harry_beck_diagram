@@ -17,12 +17,12 @@ import webbrowser
 #         ),
 
 if __name__ == '__main__':
-    from hbd import Config, Draw, Styler
+    from hbd import Network, Draw, Styler
 
     config_path = 'data/lk_rail_history/max.json'
     png_path = config_path[:-4] + 'png'
     Draw(
-        Config.from_file(config_path),
+        Network.from_file(config_path),
         Styler(DIM=1024, PADDING=128),
     ).draw(png_path)
     webbrowser.open(os.path.abspath(png_path))

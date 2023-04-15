@@ -39,7 +39,7 @@ def parse_direction(direction):
     return [dx, dy]
 
 
-class Config:
+class Network:
     def __init__(self, title: str, footer_text: str, line_list: list[Line]):
         self.title = title
         self.footer_text = footer_text
@@ -53,7 +53,7 @@ class Config:
         line_list = []
         for line in config['line_list']:
             line_list.append(Line.from_dict(line))
-        return Config(title, footer_text, line_list)
+        return Network(title, footer_text, line_list)
 
     @property
     def line_list_sorted(self) -> list[Line]:
@@ -149,7 +149,7 @@ class Config:
     @staticmethod
     def get_node_text_angle(used_ks, x, y):
         for dx, dy, angle in ANGLE_CONFIG:
-            if not Config.is_point_free(x, y, dx, dy, used_ks):
+            if not Network.is_point_free(x, y, dx, dy, used_ks):
                 continue
 
             for d in range(TEXT_SPACE):
@@ -167,7 +167,7 @@ class Config:
 
         node_to_text_angle = {}
         for node, (x, y) in self.node_idx.items():
-            used_ks, text_angle = Config.get_node_text_angle(used_ks, x, y)
+            used_ks, text_angle = Network.get_node_text_angle(used_ks, x, y)
             node_to_text_angle[node] = text_angle
 
         return node_to_text_angle

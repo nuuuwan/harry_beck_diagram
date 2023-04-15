@@ -1,6 +1,6 @@
-from hbd import Config, Line, Styler, Draw
+from hbd import Network, Line, Styler, Draw
 
-config = Config(
+config = Network(
     title='Topographical Map of Railways in Sri Lanka',
     footer_text='Not to scale.',
     line_list=[
