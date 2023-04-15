@@ -17,7 +17,7 @@ class Styler:
         OPACITY=1,
         PADDING=200,
         FONT_FAMILY=DEFAULT_FONT_FAMILY,
-        FONT_SIZE=12,
+        FONT_SIZE=15,
     ):
         self.RADIUS = RADIUS
         self.DIM = DIM

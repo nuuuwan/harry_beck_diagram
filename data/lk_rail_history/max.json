@@ -6,9 +6,26 @@
         "color": "red",
         "direction_list": [
           [
-            10,
+            4,
+           "NE"
+          ],
+          [
+            2,
            "E"
+          ],
+          [
+            1,
+           "SE"
+          ],
+          [
+            2,
+           "E"
+          ],
+          [
+            1,
+           "NE"
           ]
+
         ],
         "node_list": [
           "Colombo Fort",
@@ -28,9 +45,9 @@
         "color": "cyan",
         "direction_list": [
           [
-            4,
+            1,
            "S"
-          ]
+          ], [1, "SE"], [2, "E"]
         ],
         "node_list": [
           "Colombo Fort",
@@ -54,7 +71,7 @@
           "Jaffna",
           "Kankesanthurai"
         ],
-        "direction_list": [[9,"N"]]
+        "direction_list": [[7,"N"], [1, "NW"], [1,"N"]]
       },
       {
         "color": "darkblue",
@@ -64,7 +81,7 @@
           "Avissawella",
           "Yatiyantota"
         ],
-        "direction_list": [[2,"S"], [1,"E"]]
+        "direction_list": [[1,"SE"], [1,"E"], [1, "NE"]]
       },
       {
         "color": "lightblue",
@@ -73,7 +90,7 @@
           "Ratnapura",
           "Opanayaka"
         ],
-        "direction_list": [[2,"S"]]
+        "direction_list": [[1,"SE"], [1, "E"]]
       },
       {
         "color": "green",
@@ -81,7 +98,7 @@
           "Ragama",
           "Puttalam",
           "Periyanurvillu"
-        ], "direction_list": [[2,"N"]]
+        ], "direction_list": [[1,"NW"], [1,"N"]]
       },
       {
         "color": "purple",
@@ -89,7 +106,7 @@
           "Peradeniya",
           "Kandy",
           "Matale"
-        ], "direction_list": [[1,"N"],[1,"E"]]
+        ], "direction_list": [[1,"NE"],[1,"E"]]
       },
       {
         "color": "yellow",
@@ -104,7 +121,7 @@
           "Medavachchiya",
           "Mannar",
           "Talaimannar Pier"
-        ], "direction_list": [[2,"W"]]
+        ], "direction_list": [[1,"NW"], [1,"W"]]
       },
       {
         "color": "darkgreen",
@@ -113,14 +130,22 @@
           "Galoya",
           "Polonnaruwa",
           "Batticaloa"
-        ], "direction_list": [[3,"E"]]
+        ], "direction_list": [[1,"NE"], [1, "SE"], [1,"E"]]
       },
       {
         "color": "silver",
         "node_list": [
           "Galoya",
           "Trincomalee"
-        ], "direction_list": [[1,"N"]]
+        ], "direction_list": [[1,"NE"]]
+      },
+      {
+        "color": "black",
+        "node_list": [
+          "Nanu Oya",
+          "Nuwara Eliya",
+          "Ragala"
+        ], "direction_list": [[1,"N"], [1, "NE"]]
       }
     ]
   }

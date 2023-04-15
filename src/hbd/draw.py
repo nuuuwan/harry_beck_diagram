@@ -98,10 +98,10 @@ class Draw(DrawNode, DrawLine):
         return png_path
 
     @staticmethod
-    def create_animated_gif(png_path_list, gif_path):
+    def build_animated_gif(png_path_list, gif_path):
         png_path_list.sort()
         images = []
         for png_path in png_path_list:
             images.append(imageio.imread(png_path))
         imageio.mimwrite(gif_path, images, duration=1)
-        log.info(f'Saved {gif_path}')
+        log.info(f'Built {gif_path} (from {len(png_path_list)} png files)')

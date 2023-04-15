@@ -18,6 +18,7 @@ DISTRICT_CAPITAL_LIST = [
     'Matara',
     'Moneragala',
     'Mullaitivu',
+    'Nuwara Eliya',
     'Polonnaruwa',
     'Ratnapura',
     'Trincomalee',
