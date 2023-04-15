@@ -2,8 +2,8 @@ from functools import cache, cached_property
 
 from utils import JSONFile, Log
 
-from hbd.DISTRICT_CAPITAL_LIST import DISTRICT_CAPITAL_LIST
-from hbd.line import Line
+from hbd.core.DISTRICT_CAPITAL_LIST import DISTRICT_CAPITAL_LIST
+from hbd.core.line import Line
 
 TEXT_SPACE = 2
 ANGLE_CONFIG = [
