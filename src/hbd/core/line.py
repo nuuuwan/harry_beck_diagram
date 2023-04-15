@@ -1,6 +1,6 @@
+import copy
 import re
 from functools import cached_property
-import copy
 
 
 class Line:

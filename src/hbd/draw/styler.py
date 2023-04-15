@@ -13,12 +13,12 @@ svglib.register_font(
 class Styler:
     def __init__(
         self,
-        RADIUS=4,
+        RADIUS=5,
         DIM=700,
         OPACITY=1,
         PADDING=200,
         FONT_FAMILY=DEFAULT_FONT_FAMILY,
-        FONT_SIZE=15,
+        FONT_SIZE=18,
     ):
         self.RADIUS = RADIUS
         self.DIM = DIM

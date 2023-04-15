@@ -1,3 +1,4 @@
+import copy
 from functools import cache, cached_property
 
 from utils import JSONFile, Log
@@ -40,7 +41,9 @@ def parse_direction(direction):
 
 
 class Network:
-    def __init__(self, title: str, footer_text: str, line_idx: dict[str, Line]):
+    def __init__(
+        self, title: str, footer_text: str, line_idx: dict[str, Line]
+    ):
         self.title = title
         self.footer_text = footer_text
         self.line_idx = line_idx
@@ -59,7 +62,10 @@ class Network:
         return Network(
             title=title or self.title,
             footer_text=footer_text or self.footer_text,
-            line_idx=line_idx or [line.copy() for line in self.line_idx],
+            line_idx=line_idx
+            or dict(
+                [x[0], copy.deepcopy(x[1])] for x in self.line_idx.items()
+            ),
         )
 
     @property

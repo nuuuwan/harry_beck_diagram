@@ -1,10 +1,10 @@
 <?xml version="1.0" ?>
 <svg xmlns="http://www.w3.org/2000/svg" width="1300" height="1300" padding="200">
-  <text fill="gray" stroke="none" font-size="72" font-family="GIL_____" x="650.0" y="118.0" text-anchor="middle" dominant-baseline="hanging">1867</text>
+  <text fill="gray" stroke="none" font-size="72" font-family="GIL_____" x="650.0" y="118.0" text-anchor="middle" dominant-baseline="hanging">1874</text>
   <text fill="gray" stroke="none" font-size="18" font-family="GIL_____" x="650.0" y="1218.0" text-anchor="middle" dominant-baseline="text-top">History of the Railways in Sri Lanka</text>
   <g>
-    <path fill="none" stroke-width="10.5" stroke-opacity="1" d="M 200.0,971.0 L 321.6,848.45 C 323.73333333333335,846.3 332.3,837.7333333333333 334.45,835.6 L 450.8725,720.08 C 452.915,718.0533333333333 461.05333333333334,709.915 463.08,707.8725 L 578.904,591.143625 C 580.936,589.09575 589.09575,580.936 591.143625,578.904 L 709.4569421070247,461.50784038992896 C 710.9712947380165,460.0052269266193 718.2666666666667,457.0 720.4,457.0 L 842.0,457.0 L 971.0,457.0" stroke="red"/>
-    <rect stroke="none" fill-opacity="1" x="966" y="447" width="10" height="20" fill="red"/>
+    <path fill="none" stroke-width="10.5" stroke-opacity="1" d="M 200.0,971.0 L 321.6,848.45 C 323.73333333333335,846.3 332.3,837.7333333333333 334.45,835.6 L 450.8725,720.08 C 452.915,718.0533333333333 461.05333333333334,709.915 463.08,707.8725 L 578.904,591.143625 C 580.936,589.09575 589.09575,580.936 591.143625,578.904 L 709.4569421070247,461.50784038992896 C 710.9712947380165,460.0052269266193 718.2666666666667,457.0 720.4,457.0 L 842.0,457.0 L 964.55,457.0 C 966.7,457.0 974.0523670218428,460.02870526198353 975.5785505327642,461.5430578929753 L 1100.0,585.0" stroke="red"/>
+    <rect stroke="none" fill-opacity="1" x="1095" y="575" width="10" height="20" fill="red"/>
   </g>
   <g>
     <path fill="none" stroke-width="10.5" stroke-opacity="1" d="M 971.0,457.0 L 1100.0,328.0" stroke="purple"/>
@@ -12,6 +12,9 @@
   </g>
   <g>
     <text fill="black" stroke="none" font-size="25.2" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="220.1" y="971" transform="translate(200,971) rotate(0) translate(-200,-971)">COLOMBO Fort</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="25.2" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="1120.1" y="585" transform="translate(1100,585) rotate(0) translate(-1100,-585)">Nawalapitiya</text>
   </g>
   <g>
     <text fill="black" stroke="none" font-size="25.2" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="1120.1" y="328" transform="translate(1100,328) rotate(0) translate(-1100,-328)">KANDY</text>
