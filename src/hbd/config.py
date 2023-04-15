@@ -4,7 +4,7 @@ from utils import JSONFile, Log
 
 from hbd.DISTRICT_CAPITAL_LIST import DISTRICT_CAPITAL_LIST
 
-TEXT_SPACE = 2
+TEXT_SPACE = 1
 ANGLE_CONFIG = [
     [1, 0, 0],
     [-1, 0, 180],

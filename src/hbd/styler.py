@@ -1,5 +1,13 @@
 from functools import cached_property
 
+import svglib.svglib as svglib
+
+
+DEFAULT_FONT_FAMILY = 'GIL_____'
+DEFAULT_FONT_PATH = 'C:\\Windows\\Fonts\\GIL_____.TTF'
+
+svglib.register_font(DEFAULT_FONT_FAMILY, DEFAULT_FONT_PATH, weight='normal', style='normal')
+
 
 class Styler:
     def __init__(
@@ -8,7 +16,7 @@ class Styler:
         DIM=700,
         OPACITY=1,
         PADDING=200,
-        FONT_FAMILY='Helvetica',
+        FONT_FAMILY=DEFAULT_FONT_FAMILY,
         FONT_SIZE=12,
     ):
         self.RADIUS = RADIUS

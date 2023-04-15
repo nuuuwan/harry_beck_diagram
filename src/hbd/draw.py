@@ -1,8 +1,11 @@
+import os
+import webbrowser
 from functools import cache
 
 import imageio
 from reportlab.graphics import renderPM
 from svglib.svglib import svg2rlg
+
 from utils import Log
 from utils.xmlx import _
 
@@ -11,6 +14,7 @@ from hbd.draw_line import DrawLine
 from hbd.draw_node import DrawNode
 
 log = Log(__name__)
+
 
 
 class Draw(DrawNode, DrawLine):
@@ -90,6 +94,7 @@ class Draw(DrawNode, DrawLine):
         renderPM.drawToFile(drawing, png_path, fmt="PNG")
         log.info(f'Saved {png_path}')
 
+     
         return png_path
 
     @staticmethod
