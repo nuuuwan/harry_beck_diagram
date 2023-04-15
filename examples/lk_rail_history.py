@@ -11,7 +11,7 @@ if __name__ == '__main__':
             continue
 
         draw = Draw(
-            Config(f'data/lk_rail_history/{file_name}'), Styler(DIM=1000)
+            Config(f'data/lk_rail_history/{file_name}'), Styler(DIM=1024, PADDING=128)
         )
         png_path = draw.draw()
         png_path_list.append(png_path)

@@ -1,13 +1,17 @@
 {
-    "title": "1867",
+    "title": "1867 (120km)",
     "footer_text": "History of Sri Lankan Railways",
     "line_list": [
       {
         "color": "red",
         "direction_list": [
           [
-            6,
-           "E"
+            4,
+            "NE"
+          ],
+          [
+            2,
+            "E"
           ]
         ],
         "node_list": [
@@ -25,7 +29,7 @@
         "node_list": [
           "Peradeniya",
           "Kandy"
-        ], "direction_list": [[1,"N"]]
+        ], "direction_list": [[1,"NE"]]
       }
     ]
   }

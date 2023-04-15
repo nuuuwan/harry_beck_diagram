@@ -1,85 +1,150 @@
 {
-    "title": "1912",
-    "footer_text": "History of Sri Lankan Railways",
-    "line_list": [
-      {
-        "color": "red",
-        "direction_list": [
-          [
-            9,
-           "E"
-          ]
+  "footer_text": "History of Sri Lankan Railways",
+  "line_list": [
+    {
+      "color": "red",
+      "direction_list": [
+        [
+          4,
+          "NE"
         ],
-        "node_list": [
-          "Colombo Fort",
-          "Maradana",
-          "Ragama",
-          "Gampaha",
-          "Ambepussa",
-          "Polgahawela",
-          "Peradeniya",
-          "Nawalapitiya",
-          "Nanu Oya",
-          "Bandarawela"
+        [
+          2,
+          "E"
+        ],
+        [
+          1,
+          "SE"
+        ],
+        [
+          2,
+          "E"
         ]
-      },
-      {
-        "color": "cyan",
-        "direction_list": [
-          [
-           3,
-           "S"
-          ]
+      ],
+      "node_list": [
+        "Colombo Fort",
+        "Maradana",
+        "Ragama",
+        "Gampaha",
+        "Ambepussa",
+        "Polgahawela",
+        "Peradeniya",
+        "Nawalapitiya",
+        "Nanu Oya",
+        "Bandarawela"
+      ]
+    },
+    {
+      "color": "cyan",
+      "direction_list": [
+        [
+          1,
+          "S"
         ],
-        "node_list": [
-          "Colombo Fort",
-          "Kalutara North",
-          "Galle",
-          "Matara"
+        [
+          1,
+          "SE"
+        ],
+        [
+          1,
+          "E"
         ]
-      },
-      {
-        "color": "orange",
-        "node_list": [
-          "Polgahawela",
-          "Kurunegala",
-          "Maho",
-          "Anuradhapura",
-          "Mihintale Junction",
-          "Medavachchiya",
-          "Vavuniya",
-          "Kilinochchi",
-          "Jaffna",
-          "Kankesanthurai"
+      ],
+      "node_list": [
+        "Colombo Fort",
+        "Kalutara North",
+        "Galle",
+        "Matara"
+      ]
+    },
+    {
+      "color": "orange",
+      "direction_list": [
+      [
+          7,
+          "N"
         ],
-        "direction_list": [[9,"N"]]
-      },
-      {
-        "color": "darkblue",
-        "node_list": [
-          "Maradana",
-          "Homagama",
-          "Avissawella",
-          "Yatiyantota"
+        [
+          1,
+          "NW"
         ],
-        "direction_list": [[2,"S"], [1,"E"]]
-      },
-      {
-        "color": "lightblue",
-        "node_list": [
-          "Avissawella",
-          "Ratnapura",
-          "Opanayaka"
+        [
+          1,
+          "N"
+        ]
+      ],
+      "node_list": [
+        "Polgahawela",
+        "Kurunegala",
+        "Maho",
+        "Anuradhapura",
+        "Mihintale Junction",
+        "Medavachchiya",
+        "Vavuniya",
+        "Kilinochchi",
+        "Jaffna",
+        "Kankesanthurai"
+      ]
+    },
+    {
+      "color": "darkblue",
+      "direction_list": [
+        [
+          1,
+          "SE"
         ],
-        "direction_list": [[2,"S"]]
-      },
-      {
-        "color": "purple",
-        "node_list": [
-          "Peradeniya",
-          "Kandy",
-          "Matale"
-        ], "direction_list": [[1,"N"],[1,"E"]]
-      }
-    ]
-  }
+        [
+          1,
+          "E"
+        ],
+        [
+          1,
+          "NE"
+        ]
+      ],
+      "node_list": [
+        "Maradana",
+        "Homagama",
+        "Avissawella",
+        "Yatiyantota"
+      ]
+    },
+    {
+      "color": "lightblue",
+      "direction_list": [
+        [
+          1,
+          "SE"
+        ],
+        [
+          1,
+          "E"
+        ]
+      ],
+      "node_list": [
+        "Avissawella",
+        "Ratnapura",
+        "Opanayaka"
+      ]
+    },
+    {
+      "color": "purple",
+      "direction_list": [
+        [
+          1,
+          "NE"
+        ],
+        [
+          1,
+          "E"
+        ]
+      ],
+      "node_list": [
+        "Peradeniya",
+        "Kandy",
+        "Matale"
+      ]
+    }
+  ],
+  "title": "1912 (942km)"
+}

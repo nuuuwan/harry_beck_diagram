@@ -1,13 +1,25 @@
 {
-    "title": "1902",
+    "title": "1902 (521km)",
     "footer_text": "History of Sri Lankan Railways",
     "line_list": [
       {
         "color": "red",
         "direction_list": [
           [
-            9,
-           "E"
+            4,
+            "NE"
+          ],
+          [
+            2,
+            "E"
+          ],
+          [
+            1,
+            "SE"
+          ],
+          [
+            2,
+            "E"
           ]
         ],
         "node_list": [
@@ -27,8 +39,16 @@
         "color": "cyan",
         "direction_list": [
           [
-           3,
-           "S"
+            1,
+            "S"
+          ],
+          [
+            1,
+            "SE"
+          ],
+          [
+            1,
+            "E"
           ]
         ],
         "node_list": [
@@ -46,7 +66,18 @@
           "Avissawella",
           "Yatiyantota"
         ],
-        "direction_list": [[2,"S"], [1,"E"]]
+        "direction_list": [      [
+          1,
+          "SE"
+        ],
+        [
+          1,
+          "E"
+        ],
+        [
+          1,
+          "NE"
+        ]]
       },
       {
         "color": "purple",
@@ -54,7 +85,7 @@
           "Peradeniya",
           "Kandy",
           "Matale"
-        ], "direction_list": [[1,"N"],[1,"E"]]
+        ], "direction_list": [[1,"NE"],[1,"E"]]
       }
     ]
   }

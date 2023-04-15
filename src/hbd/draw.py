@@ -103,5 +103,5 @@ class Draw(DrawNode, DrawLine):
         images = []
         for png_path in png_path_list:
             images.append(imageio.imread(png_path))
-        imageio.mimwrite(gif_path, images, duration=1)
+        imageio.mimwrite(gif_path, images, duration=2)
         log.info(f'Built {gif_path} (from {len(png_path_list)} png files)')

@@ -1,107 +1,199 @@
 {
-    "title": "1973",
-    "footer_text": "History of Sri Lankan Railways",
-    "line_list": [
-      {
-        "color": "red",
-        "direction_list": [
-          [
-            10,
-           "E"
-          ]
+  "footer_text": "History of Sri Lankan Railways",
+  "line_list": [
+    {
+      "color": "red",
+      "direction_list": [
+        [
+          4,
+          "NE"
         ],
-        "node_list": [
-          "Colombo Fort",
-          "Maradana",
-          "Ragama",
-          "Gampaha",
-          "Ambepussa",
-          "Polgahawela",
-          "Peradeniya",
-          "Nawalapitiya",
-          "Nanu Oya",
-          "Bandarawela",
-          "Badulla"
+        [
+          2,
+          "E"
+        ],
+        [
+          1,
+          "SE"
+        ],
+        [
+          2,
+          "E"
+        ],
+        [
+          1,
+          "NE"
         ]
-      },
-      {
-        "color": "cyan",
-        "direction_list": [
-          [
-            3,
-           "S"
-          ]
+      ],
+      "node_list": [
+        "Colombo Fort",
+        "Maradana",
+        "Ragama",
+        "Gampaha",
+        "Ambepussa",
+        "Polgahawela",
+        "Peradeniya",
+        "Nawalapitiya",
+        "Nanu Oya",
+        "Bandarawela",
+        "Badulla"
+      ]
+    },
+    {
+      "color": "cyan",
+      "direction_list": [
+        [
+          1,
+          "S"
         ],
-        "node_list": [
-          "Colombo Fort",
-          "Kalutara North",
-          "Galle",
-          "Matara"
+        [
+          1,
+          "SE"
+        ],
+        [
+          1,
+          "E"
         ]
-      },
-      {
-        "color": "orange",
-        "node_list": [
-          "Polgahawela",
-          "Kurunegala",
-          "Maho",
-          "Anuradhapura",
-          "Mihintale Junction",
-          "Medavachchiya",
-          "Vavuniya",
-          "Kilinochchi",
-          "Jaffna",
-          "Kankesanthurai"
+      ],
+      "node_list": [
+        "Colombo Fort",
+        "Kalutara North",
+        "Galle",
+        "Matara"
+      ]
+    },
+    {
+      "color": "orange",
+      "direction_list": [
+        [
+          7,
+          "N"
         ],
-        "direction_list": [[9,"N"]]
-      },
-      {
-        "color": "darkblue",
-        "node_list": [
-          "Maradana",
-          "Homagama"
+        [
+          1,
+          "NW"
         ],
-        "direction_list": [[1,"S"]]
-      },
-      {
-        "color": "green",
-        "node_list": [
-          "Ragama",
-          "Puttalam",
-          "Periyanurvillu"
-        ], "direction_list": [[2,"N"]]
-      },
-      {
-        "color": "purple",
-        "node_list": [
-          "Peradeniya",
-          "Kandy",
-          "Matale"
-        ], "direction_list": [[1,"N"],[1,"E"]]
-      },
-      {
-        "color": "blue",
-        "node_list": [
-          "Medavachchiya",
-          "Mannar",
-          "Talaimannar Pier"
-        ], "direction_list": [[2,"W"]]
-      },
-      {
-        "color": "darkgreen",
-        "node_list": [
-          "Maho",
-          "Galoya",
-          "Polonnaruwa",
-          "Batticaloa"
-        ], "direction_list": [[3,"E"]]
-      },
-      {
-        "color": "silver",
-        "node_list": [
-          "Galoya",
-          "Trincomalee"
-        ], "direction_list": [[1,"N"]]
-      }
-    ]
-  }
+        [
+          1,
+          "N"
+        ]
+      ],
+      "node_list": [
+        "Polgahawela",
+        "Kurunegala",
+        "Maho",
+        "Anuradhapura",
+        "Mihintale Junction",
+        "Medavachchiya",
+        "Vavuniya",
+        "Kilinochchi",
+        "Jaffna",
+        "Kankesanthurai"
+      ]
+    },
+    {
+      "color": "darkblue",
+      "direction_list": [
+        [
+          1,
+          "SE"
+        ]
+      ],
+      "node_list": [
+        "Maradana",
+        "Homagama"
+      ]
+    },
+    {
+      "color": "purple",
+      "direction_list": [
+        [
+          1,
+          "NE"
+        ],
+        [
+          1,
+          "E"
+        ]
+      ],
+      "node_list": [
+        "Peradeniya",
+        "Kandy",
+        "Matale"
+      ]
+    },
+    {
+      "color": "blue",
+      "direction_list": [
+        [
+          1,
+          "NW"
+        ],
+        [
+          1,
+          "W"
+        ]
+      ],
+      "node_list": [
+        "Medavachchiya",
+        "Mannar",
+        "Talaimannar Pier"
+      ]
+    },
+    {
+      "color": "green",
+      "direction_list": [
+        [
+          1,
+          "NW"
+        ],
+        [
+          1,
+          "N"
+        ]
+      ],
+      "node_list": [
+        "Ragama",
+        "Puttalam",
+        "Periyanurvillu"
+      ]
+    },
+    {
+      "color": "darkgreen",
+      "direction_list": [
+        [
+          1,
+          "NE"
+        ],
+        [
+          1,
+          "SE"
+        ],
+        [
+          1,
+          "E"
+        ]
+      ],
+      "node_list": [
+        "Maho",
+        "Galoya",
+        "Polonnaruwa",
+        "Batticaloa"
+      ]
+    },
+    {
+      "color": "silver",
+      "direction_list": [
+        [
+          1,
+          "NE"
+        ]
+      ],
+      "node_list": [
+        "Galoya",
+        "Trincomalee"
+      ]
+    }
+  ],
+  "title": "1973 (1364km)"
+}

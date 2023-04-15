@@ -1,14 +1,26 @@
 {
-    "title": "1885",
+    "title": "1885 (235km)",
     "footer_text": "History of Sri Lankan Railways",
     "line_list": [
       {
         "color": "red",
         "direction_list": [
-          [
-            8,
-           "E"
-          ]
+        [
+          4,
+          "NE"
+        ],
+        [
+          2,
+          "E"
+        ],
+        [
+          1,
+          "SE"
+        ],
+        [
+          1,
+          "E"
+        ]
         ],
         "node_list": [
           "Colombo Fort",
@@ -28,7 +40,14 @@
           "Peradeniya",
           "Kandy",
           "Matale"
-        ], "direction_list": [[1,"N"],[1,"E"]]
+        ], "direction_list": [        [
+          1,
+          "NE"
+        ],
+        [
+          1,
+          "E"
+        ]]
       }
     ]
   }

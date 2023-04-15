@@ -1,13 +1,25 @@
 {
-    "title": "1894",
+    "title": "1894 (286km)",
     "footer_text": "History of Sri Lankan Railways",
     "line_list": [
       {
         "color": "red",
         "direction_list": [
           [
-            9,
-           "E"
+            4,
+            "NE"
+          ],
+          [
+            2,
+            "E"
+          ],
+          [
+            1,
+            "SE"
+          ],
+          [
+            2,
+            "E"
           ]
         ],
         "node_list": [
@@ -29,7 +41,7 @@
           "Peradeniya",
           "Kandy",
           "Matale"
-        ], "direction_list": [[1,"N"],[1,"E"]]
+        ], "direction_list": [[1,"NE"],[1,"E"]]
       }
     ]
   }
