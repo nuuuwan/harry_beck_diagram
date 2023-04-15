@@ -1,5 +1,6 @@
 from functools import cache
-
+import webbrowser
+import os
 import imageio
 from reportlab.graphics import renderPM
 from svglib.svglib import svg2rlg
@@ -18,7 +19,6 @@ class Draw(DrawNode, DrawLine):
         self.config = config
         self.styler = styler
 
-  
     @cache
     def get_t(self):
         return bbox_utils.get_t(self.styler, self.config.loc_list)
@@ -62,7 +62,7 @@ class Draw(DrawNode, DrawLine):
             self.styler.text_footer_text | dict(font_size=font_size),
         )
 
-    def draw(self,png_path):
+    def draw(self, png_path, do_open=True):
         svg = _(
             'svg',
             [
@@ -77,8 +77,9 @@ class Draw(DrawNode, DrawLine):
         svg.store(svg_path)
         log.debug(f'Saved {svg_path}')
 
-        
         png_path = Draw.convert_svg_to_png(svg_path)
+        if do_open:
+            webbrowser.open(os.path.abspath(png_path))
         return png_path
 
     @staticmethod
