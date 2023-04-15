@@ -1,25 +1,24 @@
 <?xml version="1.0" ?>
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" padding="200">
-  <rect x="100.0" y="100.0" width="800" height="800" fill="white" stroke="gray"/>
-  <text fill="gray" stroke="none" font-size="48" font-family="Trebuchet MS" x="500.0" y="112.0" text-anchor="middle" dominant-baseline="hanging">1864</text>
-  <text fill="gray" stroke="none" font-size="12" font-family="Trebuchet MS" x="500.0" y="888.0" text-anchor="middle" dominant-baseline="text-top">History of Sri Lankan Railways</text>
+  <text fill="gray" stroke="none" font-size="48" font-family="Helvetica" x="500.0" y="112.0" text-anchor="middle" dominant-baseline="hanging">1864</text>
+  <text fill="gray" stroke="none" font-size="12" font-family="Helvetica" x="500.0" y="888.0" text-anchor="middle" dominant-baseline="text-top">History of Sri Lankan Railways</text>
   <g>
     <path fill="none" stroke-width="8.4" stroke-opacity="1" d="M 200.0,575.0 L 350.0,575.0 L 500.0,575.0 L 650.0,575.0 L 800.0,575.0" stroke="red"/>
     <rect stroke="none" fill-opacity="1" x="796" y="567" width="8" height="16" fill="red"/>
   </g>
   <g>
-    <text fill="black" stroke="none" font-size="15.600000000000001" font-family="Trebuchet MS" font-weight="100" text-anchor="end" dominant-baseline="central" x="186.2" y="575" transform="translate(200,575) rotate(-0) translate(-200,-575)">COLOMBO Fort</text>
+    <text fill="black" stroke="none" font-size="15.600000000000001" font-family="Helvetica" font-weight="100" text-anchor="end" dominant-baseline="central" x="186.2" y="575" transform="translate(200,575) rotate(0) translate(-200,-575)">COLOMBO Fort</text>
   </g>
   <g>
-    <text fill="black" stroke="none" font-size="15.600000000000001" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="813.8" y="575" transform="translate(800,575) rotate(-0) translate(-800,-575)">Ambepussa</text>
+    <text fill="black" stroke="none" font-size="15.600000000000001" font-family="Helvetica" font-weight="100" text-anchor="start" dominant-baseline="central" x="813.8" y="575" transform="translate(800,575) rotate(0) translate(-800,-575)">Ambepussa</text>
   </g>
   <g>
-    <text fill="black" stroke="none" font-size="13.200000000000001" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="662.6" y="575" transform="translate(650,575) rotate(-45) translate(-650,-575)">GAMPAHA</text>
+    <text fill="black" stroke="none" font-size="13.200000000000001" font-family="Helvetica" font-weight="100" text-anchor="start" dominant-baseline="central" x="662.6" y="575" transform="translate(650,575) rotate(-45) translate(-650,-575)">GAMPAHA</text>
   </g>
   <g>
-    <text fill="black" stroke="none" font-size="12" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="362.0" y="575" transform="translate(350,575) rotate(-45) translate(-350,-575)">Maradana</text>
+    <text fill="black" stroke="none" font-size="12" font-family="Helvetica" font-weight="100" text-anchor="start" dominant-baseline="central" x="362.0" y="575" transform="translate(350,575) rotate(-45) translate(-350,-575)">Maradana</text>
   </g>
   <g>
-    <text fill="black" stroke="none" font-size="12" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="512.0" y="575" transform="translate(500,575) rotate(-45) translate(-500,-575)">Ragama</text>
+    <text fill="black" stroke="none" font-size="12" font-family="Helvetica" font-weight="100" text-anchor="start" dominant-baseline="central" x="512.0" y="575" transform="translate(500,575) rotate(-45) translate(-500,-575)">Ragama</text>
   </g>
 </svg>

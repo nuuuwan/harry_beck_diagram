@@ -47,11 +47,12 @@ class DrawNode:
             text_anchor = 'end'
             space_dir = -1
             text_angle -= 180
+        text_angle =-text_angle
 
         transform = ' '.join(
             [
                 f'translate({sx},{sy})',
-                f'rotate(-{text_angle})',
+                f'rotate({text_angle})',
                 f'translate({-sx},{-sy})',
             ]
         )

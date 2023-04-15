@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" padding="200">
-  <rect x="100.0" y="100.0" width="800" height="800" fill="white" stroke="gray"/>
-  <text fill="gray" stroke="none" font-size="48" font-family="Trebuchet MS" x="500.0" y="112.0" text-anchor="middle" dominant-baseline="hanging">1880</text>
-  <text fill="gray" stroke="none" font-size="12" font-family="Trebuchet MS" x="500.0" y="888.0" text-anchor="middle" dominant-baseline="text-top">History of Sri Lankan Railways</text>
+  <text fill="gray" stroke="none" font-size="48" font-family="Helvetica" x="500.0" y="112.0" text-anchor="middle" dominant-baseline="hanging">1880</text>
+  <text fill="gray" stroke="none" font-size="12" font-family="Helvetica" x="500.0" y="888.0" text-anchor="middle" dominant-baseline="text-top">History of Sri Lankan Railways</text>
   <g>
     <path fill="none" stroke-width="8.4" stroke-opacity="1" d="M 200.0,542.0 L 285.0,542.0 L 371.0,542.0 L 457.0,542.0 L 542.0,542.0 L 628.0,542.0 L 714.0,542.0 L 800.0,542.0" stroke="red"/>
     <rect stroke="none" fill-opacity="1" x="796" y="534" width="8" height="16" fill="red"/>
@@ -12,34 +11,34 @@
     <rect stroke="none" fill-opacity="1" x="796" y="449" width="8" height="16" fill="purple"/>
   </g>
   <g>
-    <text fill="black" stroke="none" font-size="15.600000000000001" font-family="Trebuchet MS" font-weight="100" text-anchor="end" dominant-baseline="central" x="186.2" y="542" transform="translate(200,542) rotate(-0) translate(-200,-542)">COLOMBO Fort</text>
+    <text fill="black" stroke="none" font-size="15.600000000000001" font-family="Helvetica" font-weight="100" text-anchor="end" dominant-baseline="central" x="186.2" y="542" transform="translate(200,542) rotate(0) translate(-200,-542)">COLOMBO Fort</text>
   </g>
   <g>
     <circle r="8" fill="white" stroke="black" stroke-width="2.0" cx="714" cy="542"/>
-    <text fill="black" stroke="none" font-size="15.600000000000001" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="727.8" y="542" transform="translate(714,542) rotate(-315) translate(-714,-542)">Peradeniya</text>
+    <text fill="black" stroke="none" font-size="15.600000000000001" font-family="Helvetica" font-weight="100" text-anchor="start" dominant-baseline="central" x="727.8" y="542" transform="translate(714,542) rotate(-315) translate(-714,-542)">Peradeniya</text>
   </g>
   <g>
-    <text fill="black" stroke="none" font-size="15.600000000000001" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="813.8" y="542" transform="translate(800,542) rotate(-0) translate(-800,-542)">Nawalapitiya</text>
+    <text fill="black" stroke="none" font-size="15.600000000000001" font-family="Helvetica" font-weight="100" text-anchor="start" dominant-baseline="central" x="813.8" y="542" transform="translate(800,542) rotate(0) translate(-800,-542)">Nawalapitiya</text>
   </g>
   <g>
-    <text fill="black" stroke="none" font-size="15.600000000000001" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="813.8" y="457" transform="translate(800,457) rotate(-0) translate(-800,-457)">MATALE</text>
+    <text fill="black" stroke="none" font-size="15.600000000000001" font-family="Helvetica" font-weight="100" text-anchor="start" dominant-baseline="central" x="813.8" y="457" transform="translate(800,457) rotate(0) translate(-800,-457)">MATALE</text>
   </g>
   <g>
-    <text fill="black" stroke="none" font-size="13.200000000000001" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="469.6" y="542" transform="translate(457,542) rotate(-45) translate(-457,-542)">GAMPAHA</text>
+    <text fill="black" stroke="none" font-size="13.200000000000001" font-family="Helvetica" font-weight="100" text-anchor="start" dominant-baseline="central" x="469.6" y="542" transform="translate(457,542) rotate(-45) translate(-457,-542)">GAMPAHA</text>
   </g>
   <g>
-    <text fill="black" stroke="none" font-size="13.200000000000001" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="726.6" y="457" transform="translate(714,457) rotate(-45) translate(-714,-457)">KANDY</text>
+    <text fill="black" stroke="none" font-size="13.200000000000001" font-family="Helvetica" font-weight="100" text-anchor="start" dominant-baseline="central" x="726.6" y="457" transform="translate(714,457) rotate(-45) translate(-714,-457)">KANDY</text>
   </g>
   <g>
-    <text fill="black" stroke="none" font-size="12" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="297.0" y="542" transform="translate(285,542) rotate(-45) translate(-285,-542)">Maradana</text>
+    <text fill="black" stroke="none" font-size="12" font-family="Helvetica" font-weight="100" text-anchor="start" dominant-baseline="central" x="297.0" y="542" transform="translate(285,542) rotate(-45) translate(-285,-542)">Maradana</text>
   </g>
   <g>
-    <text fill="black" stroke="none" font-size="12" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="383.0" y="542" transform="translate(371,542) rotate(-45) translate(-371,-542)">Ragama</text>
+    <text fill="black" stroke="none" font-size="12" font-family="Helvetica" font-weight="100" text-anchor="start" dominant-baseline="central" x="383.0" y="542" transform="translate(371,542) rotate(-45) translate(-371,-542)">Ragama</text>
   </g>
   <g>
-    <text fill="black" stroke="none" font-size="12" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="554.0" y="542" transform="translate(542,542) rotate(-45) translate(-542,-542)">Ambepussa</text>
+    <text fill="black" stroke="none" font-size="12" font-family="Helvetica" font-weight="100" text-anchor="start" dominant-baseline="central" x="554.0" y="542" transform="translate(542,542) rotate(-45) translate(-542,-542)">Ambepussa</text>
   </g>
   <g>
-    <text fill="black" stroke="none" font-size="12" font-family="Trebuchet MS" font-weight="100" text-anchor="start" dominant-baseline="central" x="640.0" y="542" transform="translate(628,542) rotate(-315) translate(-628,-542)">Polgahawela</text>
+    <text fill="black" stroke="none" font-size="12" font-family="Helvetica" font-weight="100" text-anchor="start" dominant-baseline="central" x="640.0" y="542" transform="translate(628,542) rotate(-315) translate(-628,-542)">Polgahawela</text>
   </g>
 </svg>

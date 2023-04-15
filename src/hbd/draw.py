@@ -72,7 +72,6 @@ class Draw(DrawNode, DrawLine):
         svg = _(
             'svg',
             [
-                self.draw_rect_border(),
                 self.draw_title(),
                 self.draw_footer_text(),
             ]
