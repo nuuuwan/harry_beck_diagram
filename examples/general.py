@@ -22,7 +22,7 @@ if __name__ == '__main__':
         # ),
         Draw(
             Config('data/lk_rail_history/max.json'),
-            Styler(DIM=1000, PADDING=80),
+            Styler(DIM=1024, PADDING=128),
         ),
     ]
     for draw in draw_list:
