@@ -1,6 +1,7 @@
-from functools import cache
-import webbrowser
 import os
+import webbrowser
+from functools import cache
+
 import imageio
 from reportlab.graphics import renderPM
 from svglib.svglib import svg2rlg
@@ -33,7 +34,7 @@ class Draw(DrawNode, DrawLine):
     def draw_lines(self):
         t = self.get_t()
         lines = []
-        for line in self.config.line_list:
+        for line in self.config.line_idx.values():
             lines.append(self.draw_line(line, t))
         return lines
 

@@ -40,38 +40,45 @@ def parse_direction(direction):
 
 
 class Network:
-    def __init__(self, title: str, footer_text: str, line_list: list[Line]):
+    def __init__(self, title: str, footer_text: str, line_idx: dict[str, Line]):
         self.title = title
         self.footer_text = footer_text
-        self.line_list = line_list
+        self.line_idx = line_idx
 
     @staticmethod
     def from_file(config_path):
         config = JSONFile(config_path).read()
         title = config.get('title', 'Untitled')
         footer_text = config.get('footer_text', ' ')
-        line_list = []
-        for line in config['line_list']:
-            line_list.append(Line.from_dict(line))
-        return Network(title, footer_text, line_list)
+        line_idx = []
+        for line in config['line_idx']:
+            line_idx.append(Line.from_dict(line))
+        return Network(title, footer_text, line_idx)
+
+    def copy(self, title=None, footer_text=None, line_idx=None):
+        return Network(
+            title=title or self.title,
+            footer_text=footer_text or self.footer_text,
+            line_idx=line_idx or [line.copy() for line in self.line_idx],
+        )
 
     @property
-    def line_list_sorted(self) -> list[Line]:
+    def line_idx_sorted(self) -> list[Line]:
         return list(
             filter(
                 lambda line: 'direction_list' in line,
-                self.line_list,
+                self.line_idx,
             )
         )
 
     @cached_property
     def node_idx_unsorted(self):
         node_idx = {}
-        first_line = self.line_list[0]
+        first_line = list(self.line_idx.values())[0]
         center_node = first_line.station_list[0]
         node_idx[center_node] = [0, 0]
 
-        for line in self.line_list:
+        for line in self.line_idx.values():
             i_cur = 0
             for n, direction in line.direction_list:
                 [dx, dy] = parse_direction(direction)
@@ -114,7 +121,7 @@ class Network:
     @cached_property
     def node_to_color_set(self):
         node_to_color_set = {}
-        for line in self.line_list:
+        for line in self.line_idx.values():
             station_list = line.station_list
             color = line.color
             for node in station_list:
@@ -175,7 +182,7 @@ class Network:
     @cached_property
     def node_to_neighbors(self):
         node_to_neighbors = {}
-        for line in self.line_list:
+        for line in self.line_idx.values():
             station_list = line.station_list
             for i in range(len(station_list) - 1):
                 node1, node2 = station_list[i], station_list[i + 1]

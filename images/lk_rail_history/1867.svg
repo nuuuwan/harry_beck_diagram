@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1300" height="1300" padding="200">
+  <text fill="gray" stroke="none" font-size="60" font-family="GIL_____" x="650.0" y="115.0" text-anchor="middle" dominant-baseline="hanging">1867</text>
+  <text fill="gray" stroke="none" font-size="15" font-family="GIL_____" x="650.0" y="1215.0" text-anchor="middle" dominant-baseline="text-top">History of the Railways in Sri Lanka</text>
+  <g>
+    <path fill="none" stroke-width="8.4" stroke-opacity="1" d="M 200.0,950.0 L 350.0,800.0 L 500.0,650.0 L 650.0,500.0 L 794.6966991411009,355.3033008588991 C 796.4644660940672,353.5355339059327 805.0,350.0 807.5,350.0 L 950.0,350.0 L 1100.0,350.0" stroke="red"/>
+    <rect stroke="none" fill-opacity="1" x="1096" y="342" width="8" height="16" fill="red"/>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="21.0" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="216.5" y="950" transform="translate(200,950) rotate(0) translate(-200,-950)">COLOMBO Fort</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="21.0" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="1116.5" y="350" transform="translate(1100,350) rotate(0) translate(-1100,-350)">Peradeniya</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="15.0" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="663.5" y="500" transform="translate(650,500) rotate(0) translate(-650,-500)">GAMPAHA</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="12.0" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="362.0" y="800" transform="translate(350,800) rotate(0) translate(-350,-800)">Maradana</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="12.0" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="512.0" y="650" transform="translate(500,650) rotate(0) translate(-500,-650)">Ragama</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="12.0" font-family="GIL_____" font-weight="100" text-anchor="end" dominant-baseline="central" x="788.0" y="350" transform="translate(800,350) rotate(0) translate(-800,-350)">Ambepussa</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="12.0" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="962.0" y="350" transform="translate(950,350) rotate(-45) translate(-950,-350)">Polgahawela</text>
+  </g>
+</svg>

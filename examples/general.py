@@ -17,7 +17,7 @@ import webbrowser
 #         ),
 
 if __name__ == '__main__':
-    from hbd import Network, Draw, Styler
+    from hbd import Draw, Network, Styler
 
     config_path = 'data/lk_rail_history/max.json'
     png_path = config_path[:-4] + 'png'
