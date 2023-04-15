@@ -1,7 +1,6 @@
 if __name__ == '__main__':
     import os
     import webbrowser
-    from utils import Log
 
     from hbd import Config, Draw, Styler
 
@@ -11,11 +10,11 @@ if __name__ == '__main__':
             continue
 
         draw = Draw(
-            Config(f'data/lk_rail_history/{file_name}'), Styler(DIM=1024, PADDING=128)
+            Config(f'data/lk_rail_history/{file_name}'),
+            Styler(DIM=1024, PADDING=128),
         )
         png_path = draw.draw()
         png_path_list.append(png_path)
-
 
     gif_path = 'data/lk_rail_history/timeline.gif'
     Draw.build_animated_gif(png_path_list, gif_path)

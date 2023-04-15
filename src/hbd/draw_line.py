@@ -58,8 +58,8 @@ class DrawLine:
         )
 
     def draw_line(self, line, t):
-        node_list = line['node_list']
-        color = line['color']
+        node_list = line.node_list
+        color = line.color
         points = []
         x0, y0 = None, None
         for node in node_list:

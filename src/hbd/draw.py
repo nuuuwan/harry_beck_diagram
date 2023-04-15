@@ -1,11 +1,8 @@
-import os
-import webbrowser
 from functools import cache
 
 import imageio
 from reportlab.graphics import renderPM
 from svglib.svglib import svg2rlg
-
 from utils import Log
 from utils.xmlx import _
 
@@ -16,16 +13,12 @@ from hbd.draw_node import DrawNode
 log = Log(__name__)
 
 
-
 class Draw(DrawNode, DrawLine):
     def __init__(self, config, styler):
         self.config = config
         self.styler = styler
 
-    @property
-    def svg_path(self) -> str:
-        return self.config.config_path.replace('.json', '.svg')
-
+  
     @cache
     def get_t(self):
         return bbox_utils.get_t(self.styler, self.config.loc_list)
@@ -69,7 +62,7 @@ class Draw(DrawNode, DrawLine):
             self.styler.text_footer_text | dict(font_size=font_size),
         )
 
-    def draw(self):
+    def draw(self,png_path):
         svg = _(
             'svg',
             [
@@ -80,10 +73,12 @@ class Draw(DrawNode, DrawLine):
             + self.draw_nodes(),
             self.styler.svg,
         )
-        svg.store(self.svg_path)
-        log.debug(f'Saved {self.svg_path}')
+        svg_path = png_path[:-3] + 'svg'
+        svg.store(svg_path)
+        log.debug(f'Saved {svg_path}')
 
-        png_path = Draw.convert_svg_to_png(self.svg_path)
+        
+        png_path = Draw.convert_svg_to_png(svg_path)
         return png_path
 
     @staticmethod
@@ -94,7 +89,6 @@ class Draw(DrawNode, DrawLine):
         renderPM.drawToFile(drawing, png_path, fmt="PNG")
         log.info(f'Saved {png_path}')
 
-     
         return png_path
 
     @staticmethod

@@ -3,6 +3,7 @@ from functools import cache, cached_property
 from utils import JSONFile, Log
 
 from hbd.DISTRICT_CAPITAL_LIST import DISTRICT_CAPITAL_LIST
+from hbd.line import Line
 
 TEXT_SPACE = 2
 ANGLE_CONFIG = [
@@ -39,31 +40,27 @@ def parse_direction(direction):
 
 
 class Config:
-    def __init__(self, config_path: str):
-        self.config_path = config_path
+    def __init__(self, title: str, footer_text: str, line_list: list[Line]):
+        self.title = title
+        self.footer_text = footer_text
+        self.line_list = line_list
+
+    @staticmethod
+    def from_file(config_path):
+        config = JSONFile(config_path).read()
+        title = config.get('title', 'Untitled')
+        footer_text = config.get('footer_text', ' ')
+        line_list = []
+        for line in config['line_list']:
+            line_list.append(Line.from_dict(line))
+        return Config(title, footer_text, line_list)
 
     @property
-    def config(self) -> dict:
-        return JSONFile(self.config_path).read()
-
-    @property
-    def title(self) -> str:
-        return self.config.get('title', 'Untitled')
-
-    @property
-    def footer_text(self) -> str:
-        return self.config.get('footer_text', ' ')
-
-    @property
-    def line_list_raw(self) -> list[dict]:
-        return self.config['line_list']
-
-    @property
-    def line_list(self) -> list[dict]:
+    def line_list_sorted(self) -> list[Line]:
         return list(
             filter(
                 lambda line: 'direction_list' in line,
-                self.line_list_raw,
+                self.line_list,
             )
         )
 
@@ -71,17 +68,17 @@ class Config:
     def node_idx_unsorted(self):
         node_idx = {}
         first_line = self.line_list[0]
-        center_node = first_line['node_list'][0]
+        center_node = first_line.node_list[0]
         node_idx[center_node] = [0, 0]
 
         for line in self.line_list:
             i_cur = 0
-            for n, direction in line['direction_list']:
+            for n, direction in line.direction_list:
                 [dx, dy] = parse_direction(direction)
-                cur_node = line['node_list'][i_cur]
+                cur_node = line.node_list[i_cur]
                 x_cur, y_cur = node_idx[cur_node]
                 for i in range(0, n):
-                    node = line['node_list'][i_cur + i + 1]
+                    node = line.node_list[i_cur + i + 1]
                     if node in node_idx:
                         continue
                     node_idx[node] = [
@@ -118,8 +115,8 @@ class Config:
     def node_to_color_set(self):
         node_to_color_set = {}
         for line in self.line_list:
-            node_list = line['node_list']
-            color = line['color']
+            node_list = line.node_list
+            color = line.color
             for node in node_list:
                 if node not in node_to_color_set:
                     node_to_color_set[node] = set()
@@ -179,7 +176,7 @@ class Config:
     def node_to_neighbors(self):
         node_to_neighbors = {}
         for line in self.line_list:
-            node_list = line['node_list']
+            node_list = line.node_list
             for i in range(len(node_list) - 1):
                 node1, node2 = node_list[i], node_list[i + 1]
                 if node1 not in node_to_neighbors:

@@ -2,11 +2,12 @@ from functools import cached_property
 
 import svglib.svglib as svglib
 
-
 DEFAULT_FONT_FAMILY = 'GIL_____'
 DEFAULT_FONT_PATH = 'C:\\Windows\\Fonts\\GIL_____.TTF'
 
-svglib.register_font(DEFAULT_FONT_FAMILY, DEFAULT_FONT_PATH, weight='normal', style='normal')
+svglib.register_font(
+    DEFAULT_FONT_FAMILY, DEFAULT_FONT_PATH, weight='normal', style='normal'
+)
 
 
 class Styler:
