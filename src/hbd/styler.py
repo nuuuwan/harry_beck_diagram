@@ -8,7 +8,7 @@ class Styler:
         DIM=700,
         OPACITY=1,
         PADDING=200,
-        FONT_FAMILY='Trebuchet MS',
+        FONT_FAMILY='Helvetica',
         FONT_SIZE=12,
     ):
         self.RADIUS = RADIUS
@@ -38,7 +38,7 @@ class Styler:
             text_anchor='middle',
             dominant_baseline='hanging',
         )
-    
+
     @cached_property
     def text_footer_text(self):
         return dict(

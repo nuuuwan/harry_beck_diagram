@@ -1,6 +1,7 @@
+import svgpathtools
 from utils import Log
 from utils.xmlx import _
-import svgpathtools 
+
 log = Log(__name__)
 
 
@@ -41,9 +42,11 @@ class DrawLine:
             d_str_list.append(d_str)
         d = ' '.join(d_str_list)
         path = svgpathtools.parse_path(d)
-        smoothed_path = svgpathtools.smoothed_path(path,  maxjointsize=self.styler.svg['width'], tightness=1)
+        smoothed_path = svgpathtools.smoothed_path(
+            path, maxjointsize=self.styler.svg['width'], tightness=1
+        )
         d = smoothed_path.d()
-        
+
         return _(
             'path',
             None,

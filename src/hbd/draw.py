@@ -6,10 +6,12 @@ from utils import Log
 from utils.xmlx import _
 
 from hbd import bbox_utils
-from hbd.config import Config
 from hbd.draw_line import DrawLine
 from hbd.draw_node import DrawNode
-from hbd.styler import Styler
+
+from svglib.svglib import svg2rlg
+from reportlab.graphics import renderPDF, renderPM
+        
 
 log = Log(__name__)
 
@@ -22,7 +24,7 @@ class Draw(DrawNode, DrawLine):
     @property
     def svg_path(self) -> str:
         return self.config.config_path.replace('.json', '.svg')
-
+    
     @cache
     def get_t(self):
         return bbox_utils.get_t(self.styler, self.config.loc_list)
@@ -46,24 +48,34 @@ class Draw(DrawNode, DrawLine):
 
     def draw_title(self):
         title = self.config.title
-        font_size = min(self.styler.text_title['font_size'], self.styler.svg['width'] / len(title))
+        font_size = min(
+            self.styler.text_title['font_size'],
+            self.styler.svg['width'] / len(title),
+        )
         return _(
             'text', title, self.styler.text_title | dict(font_size=font_size)
         )
-    
+
     def draw_footer_text(self):
         footer_text = self.config.footer_text
-        font_size = min(self.styler.text_footer_text['font_size'], self.styler.svg['width'] / len(footer_text))
-        return _(
-            'text', footer_text, self.styler.text_footer_text | dict(font_size=font_size)
+        font_size = min(
+            self.styler.text_footer_text['font_size'],
+            self.styler.svg['width'] / len(footer_text),
         )
-    
-
+        return _(
+            'text',
+            footer_text,
+            self.styler.text_footer_text | dict(font_size=font_size),
+        )
 
     def draw(self):
         svg = _(
             'svg',
-            [self.draw_rect_border(), self.draw_title(), self.draw_footer_text()]
+            [
+                self.draw_rect_border(),
+                self.draw_title(),
+                self.draw_footer_text(),
+            ]
             + self.draw_lines()
             + self.draw_nodes(),
             self.styler.svg,
@@ -71,27 +83,17 @@ class Draw(DrawNode, DrawLine):
         svg.store(self.svg_path)
         log.debug(f'Saved {self.svg_path}')
 
-        webbrowser.open(os.path.abspath(self.svg_path))
-
-
-if __name__ == '__main__':
-#     draw_list = [
-#         Draw(Config('data/lk_rail.json'), Styler(DIM=900)),
-#         Draw(Config('data/lk_rail_all.json'), Styler(DIM=2000)),
-#         Draw(Config('data/lk_rail_kv_closed.json'), Styler(DIM=700)),
-#         Draw(
-#             Config('data/lk_rail_udupussellawa_closed.json'), Styler(DIM=700)
-#         ),
-#         Draw(Config('data/lk_rail_wp_proposed.json'), Styler(DIM=800, PADDING=80)),
-#         Draw(Config('data/lk_colombo_lrt_proposed.json'), Styler(DIM=1300, PADDING=150)),
        
-#     ]
-#     for draw in draw_list:
-#         draw.draw()
+
+        Draw.convert_svg_to_png(self.svg_path)
 
 
-    for file_name in os.listdir('data/lk_rail_history'):
-        if not file_name.endswith('.json'):
-            continue
-        draw = Draw(Config(f'data/lk_rail_history/{file_name}'), Styler(DIM=1000))
-        draw.draw()
+    @staticmethod
+    def convert_svg_to_png(svg_path):
+        png_path = svg_path[:-3] + 'png'
+        
+        drawing = svg2rlg(svg_path)
+        renderPM.drawToFile(drawing, png_path, fmt="PNG")
+        log.debug(f'Saved {png_path}')
+
+        webbrowser.open(os.path.abspath(png_path))
