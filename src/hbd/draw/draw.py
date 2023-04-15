@@ -96,9 +96,13 @@ class Draw(DrawNode, DrawLine):
     @staticmethod
     def build_animated_gif(png_path_list, gif_path):
         png_path_list.sort()
+        last_png_path = png_path_list[-1]
+        for i in range(0,5):
+            png_path_list.append(last_png_path)
+        
         images = []
         for png_path in png_path_list:
             images.append(imageio.imread(png_path))
-        imageio.mimwrite(gif_path, images, duration=1)
+        imageio.mimwrite(gif_path, images, duration=2)
         log.info(f'Built {gif_path} (from {len(png_path_list)} png files)')
         webbrowser.open(os.path.abspath(gif_path))

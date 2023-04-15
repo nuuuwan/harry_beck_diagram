@@ -89,7 +89,7 @@ extend_line('Coastal', ['Ambalangoda'], '1SE')
 
 init_year(1894)
 extend_line('Main', ['Bandarawela'], '1E')
-extend_line('Coastal', ['Galle'], '1SE')
+extend_line('Coastal', ['Galle'], '1E')
 add_line('Northern', 'orange', ['Polgahawela', 'Kurunegala'], '1N')
 
 init_year(1895)
@@ -140,7 +140,7 @@ add_line(
 
 init_year(1914)
 add_line(
-    'Mannar', 'blue', ['Medavachchiya', 'Mannar', 'Talaimanar Pier'], '1NW 1W'
+    'Mannar', 'blue', ['Medavachchiya', 'Madhu Road', 'Mannar', 'Talaimanar Pier'], '2NW 1W'
 )
 
 init_year(1916)
@@ -226,7 +226,7 @@ extend_line('Mannar', ['Mannar', 'Talaimanar Pier'], '1NW 1W')
 init_year(2019)
 extend_line('Coastal', ['Beliatta'], '1E')
 
-styler = Styler(DIM=1300)
+styler = Styler(DIM=1320, PADDING=148)
 
 
 png_path_list = []

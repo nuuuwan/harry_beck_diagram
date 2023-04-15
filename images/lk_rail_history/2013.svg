@@ -1,175 +1,175 @@
 <?xml version="1.0" ?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1300" height="1300" padding="200">
-  <text fill="gray" stroke="none" font-size="72" font-family="GIL_____" x="650.0" y="118.0" text-anchor="middle" dominant-baseline="hanging">2013</text>
-  <text fill="gray" stroke="none" font-size="18" font-family="GIL_____" x="650.0" y="1218.0" text-anchor="middle" dominant-baseline="text-top">History of the Railways in Sri Lanka</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="1320" padding="148">
+  <text fill="gray" stroke="none" font-size="72" font-family="GIL_____" x="660.0" y="92.0" text-anchor="middle" dominant-baseline="hanging">2013</text>
+  <text fill="gray" stroke="none" font-size="18" font-family="GIL_____" x="660.0" y="1264.0" text-anchor="middle" dominant-baseline="text-top">History of the Railways in Sri Lanka</text>
   <g>
-    <path fill="none" stroke-width="10.5" stroke-opacity="1" d="M 400.0,800.0 L 450.0,750.0 L 500.0,700.0 L 550.0,650.0 L 598.2322330470337,601.7677669529663 C 598.8214886980224,601.1785113019776 601.6666666666666,600.0 602.5,600.0 L 650.0,600.0 L 697.5,600.0 C 698.3333333333334,600.0 701.1785113019776,601.1785113019776 701.7677669529663,601.7677669529663 L 750.0,650.0 L 798.2322330470337,698.2322330470337 C 798.8214886980224,698.8214886980224 801.6666666666666,700.0 802.5,700.0 L 847.625,700.0 C 848.4166666666666,700.0 851.1195857368787,698.8804142631213 851.6793786053181,698.3206213946819 L 900.0,650.0" stroke="red"/>
-    <rect stroke="none" fill-opacity="1" x="895" y="640" width="10" height="20" fill="red"/>
+    <path fill="none" stroke-width="10.5" stroke-opacity="1" d="M 358.0,870.0 L 415.97530990500815,812.9751050114673 C 416.9835399366721,811.9834033409783 421.0,808.0 422.0,807.0 L 479.0,750.0 L 536.0,693.0 C 537.0,692.0 540.9834033409783,687.9835399366721 541.9751050114673,686.9753099050082 L 596.8612211228435,631.1744251917758 C 597.574147415229,630.4496167945172 601.0333333333333,629.0 602.05,629.0 L 660.0,629.0 L 717.0,629.0 C 718.0,629.0 721.4024779522338,630.425852584771 722.1037169283507,631.1387788771565 L 777.1051858464175,687.0569389438579 C 778.0701238976117,688.0379592959052 781.9460248578955,691.9460248578955 782.9190372868433,692.9190372868433 L 837.8786796564403,747.8786796564403 C 838.5857864376269,748.5857864376269 842.0,750.0 843.0,750.0 L 897.15,750.0 C 898.1,750.0 901.3545599555324,748.6676459453779 902.0318399332987,748.0014689180668 L 961.0,690.0" stroke="red"/>
+    <rect stroke="none" fill-opacity="1" x="956" y="680" width="10" height="20" fill="red"/>
   </g>
   <g>
-    <path fill="none" stroke-width="10.5" stroke-opacity="1" d="M 700.0,600.0 L 748.2322330470337,551.7677669529663 C 748.8214886980224,551.1785113019776 751.6666666666666,550.0 752.5,550.0 L 800.0,550.0" stroke="purple"/>
-    <rect stroke="none" fill-opacity="1" x="795" y="540" width="10" height="20" fill="purple"/>
+    <path fill="none" stroke-width="10.5" stroke-opacity="1" d="M 720.0,629.0 L 777.8786796564403,571.1213203435597 C 778.5857864376269,570.4142135623731 782.0,569.0 783.0,569.0 L 840.0,569.0" stroke="purple"/>
+    <rect stroke="none" fill-opacity="1" x="835" y="559" width="10" height="20" fill="purple"/>
   </g>
   <g>
-    <path fill="none" stroke-width="10.5" stroke-opacity="1" d="M 400.0,800.0 L 400.0,850.0 L 400.0,897.5 C 400.0,898.3333333333334 401.17851130197755,901.1785113019776 401.7677669529664,901.7677669529663 L 450.0,950.0 L 500.0,1000.0 L 550.0,1050.0 L 598.2322330470337,1098.2322330470336 C 598.8214886980224,1098.8214886980224 601.6666666666666,1100.0 602.5,1100.0 L 650.0,1100.0" stroke="cyan"/>
-    <rect stroke="none" fill-opacity="1" x="645" y="1090" width="10" height="20" fill="cyan"/>
+    <path fill="none" stroke-width="10.5" stroke-opacity="1" d="M 358.0,870.0 L 358.0,931.0 L 358.0,988.0 C 358.0,989.0 359.425852584771,992.4024779522338 360.1387788771565,993.1037169283507 L 416.0569389438578,1048.1051858464175 C 417.03795929590524,1049.0701238976117 420.9460248578955,1052.9460248578955 421.9190372868432,1053.9190372868431 L 476.1459518643422,1108.1459518643421 C 477.0973012428948,1109.0973012428947 480.8869095358588,1112.918358028123 481.83036430378826,1113.8775370421847 L 536.8962830716493,1169.8612211228435 C 537.5975220477662,1170.574147415229 541.0,1172.0 542.0,1172.0 L 599.0,1172.0 L 660.0,1172.0" stroke="cyan"/>
+    <rect stroke="none" fill-opacity="1" x="655" y="1162" width="10" height="20" fill="cyan"/>
   </g>
   <g>
-    <path fill="none" stroke-width="10.5" stroke-opacity="1" d="M 650.0,600.0 L 650.0,550.0 L 650.0,500.0 L 650.0,450.0 L 650.0,400.0 L 650.0,350.0 L 650.0,300.0 L 650.0,250.0 L 650.0,200.0" stroke="orange"/>
-    <rect stroke="none" fill-opacity="1" x="640" y="195" width="20" height="10" fill="orange"/>
+    <path fill="none" stroke-width="10.5" stroke-opacity="1" d="M 660.0,629.0 L 660.0,569.0 L 660.0,509.0 L 660.0,449.0 L 660.0,388.0 L 660.0,328.0 L 660.0,268.0 L 660.0,208.0 L 660.0,148.0" stroke="orange"/>
+    <rect stroke="none" fill-opacity="1" x="650" y="143" width="20" height="10" fill="orange"/>
   </g>
   <g>
-    <path fill="none" stroke-width="10.5" stroke-opacity="1" d="M 450.0,750.0 L 498.2322330470336,798.2322330470337 C 498.82148869802245,798.8214886980224 501.6666666666667,800.0 502.5,800.0 L 550.0,800.0" stroke="darkblue"/>
-    <rect stroke="none" fill-opacity="1" x="545" y="790" width="10" height="20" fill="darkblue"/>
+    <path fill="none" stroke-width="10.5" stroke-opacity="1" d="M 419.0,810.0 L 476.87867965644034,867.8786796564403 C 477.5857864376269,868.5857864376269 481.0,870.0 482.0,870.0 L 539.0,870.0" stroke="darkblue"/>
+    <rect stroke="none" fill-opacity="1" x="534" y="860" width="10" height="20" fill="darkblue"/>
   </g>
   <g>
-    <path fill="none" stroke-width="10.5" stroke-opacity="1" d="M 500.0,700.0 L 451.7677669529664,651.7677669529663 C 451.17851130197755,651.1785113019776 450.0,648.3333333333334 450.0,647.5 L 450.0,600.0 L 450.0,550.0 L 450.0,500.0 L 450.0,450.0" stroke="green"/>
-    <rect stroke="none" fill-opacity="1" x="440" y="445" width="20" height="10" fill="green"/>
+    <path fill="none" stroke-width="10.5" stroke-opacity="1" d="M 479.0,750.0 L 421.156675682619,692.1566756826189 C 420.4377837884127,691.4377837884126 419.0,687.9666666666667 419.0,686.95 L 419.0,629.0 L 419.0,569.0 L 419.0,509.0 L 419.0,449.0" stroke="green"/>
+    <rect stroke="none" fill-opacity="1" x="409" y="444" width="20" height="10" fill="green"/>
   </g>
   <g>
-    <path fill="none" stroke-width="10.5" stroke-opacity="1" d="M 650.0,500.0 L 697.5,452.5 C 698.3333333333334,451.6666666666667 701.6666666666666,451.6666666666667 702.5,452.5 L 748.2322330470337,498.2322330470336 C 748.8214886980224,498.82148869802245 751.6666666666666,500.0 752.5,500.0 L 800.0,500.0" stroke="darkgreen"/>
-    <rect stroke="none" fill-opacity="1" x="795" y="490" width="10" height="20" fill="darkgreen"/>
+    <path fill="none" stroke-width="10.5" stroke-opacity="1" d="M 660.0,509.0 L 717.0,452.0 C 718.0,451.0 722.0,451.0 723.0,452.0 L 777.8786796564403,506.87867965644034 C 778.5857864376269,507.5857864376269 782.0,509.0 783.0,509.0 L 840.0,509.0" stroke="darkgreen"/>
+    <rect stroke="none" fill-opacity="1" x="835" y="499" width="10" height="20" fill="darkgreen"/>
   </g>
   <g>
-    <path fill="none" stroke-width="10.5" stroke-opacity="1" d="M 700.0,450.0 L 750.0,400.0" stroke="silver"/>
-    <rect stroke="none" fill-opacity="1" x="745" y="390" width="10" height="20" fill="silver"/>
+    <path fill="none" stroke-width="10.5" stroke-opacity="1" d="M 720.0,449.0 L 780.0,388.0" stroke="silver"/>
+    <rect stroke="none" fill-opacity="1" x="775" y="378" width="10" height="20" fill="silver"/>
   </g>
   <g>
-    <path fill="none" stroke-width="10.5" stroke-opacity="1" d="M 650.0,400.0 L 700.0,400.0" stroke="maroon"/>
-    <rect stroke="none" fill-opacity="1" x="695" y="390" width="10" height="20" fill="maroon"/>
+    <path fill="none" stroke-width="10.5" stroke-opacity="1" d="M 660.0,388.0 L 720.0,388.0" stroke="maroon"/>
+    <rect stroke="none" fill-opacity="1" x="715" y="378" width="10" height="20" fill="maroon"/>
   </g>
   <g>
-    <path fill="none" stroke-width="10.5" stroke-opacity="1" d="M 650.0,350.0 L 600.0,300.0" stroke="blue"/>
-    <rect stroke="none" fill-opacity="1" x="595" y="290" width="10" height="20" fill="blue"/>
+    <path fill="none" stroke-width="10.5" stroke-opacity="1" d="M 660.0,328.0 L 599.0,268.0" stroke="blue"/>
+    <rect stroke="none" fill-opacity="1" x="594" y="258" width="10" height="20" fill="blue"/>
   </g>
   <g>
-    <text fill="black" stroke="none" font-size="25.2" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="920.1" y="650" transform="translate(900,650) rotate(0) translate(-900,-650)">BADULLA</text>
+    <text fill="black" stroke="none" font-size="25.2" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="981.1" y="690" transform="translate(961,690) rotate(0) translate(-961,-690)">BADULLA</text>
   </g>
   <g>
-    <text fill="black" stroke="none" font-size="25.2" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="820.1" y="550" transform="translate(800,550) rotate(0) translate(-800,-550)">MATALE</text>
+    <text fill="black" stroke="none" font-size="25.2" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="860.1" y="569" transform="translate(840,569) rotate(0) translate(-840,-569)">MATALE</text>
   </g>
   <g>
-    <text fill="black" stroke="none" font-size="25.2" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="670.1" y="1100" transform="translate(650,1100) rotate(0) translate(-650,-1100)">MATARA</text>
+    <text fill="black" stroke="none" font-size="25.2" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="680.1" y="1172" transform="translate(660,1172) rotate(0) translate(-660,-1172)">MATARA</text>
   </g>
   <g>
-    <text fill="black" stroke="none" font-size="25.2" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="670.1" y="200" transform="translate(650,200) rotate(0) translate(-650,-200)">KILINOCHCHI</text>
+    <text fill="black" stroke="none" font-size="25.2" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="680.1" y="148" transform="translate(660,148) rotate(0) translate(-660,-148)">KILINOCHCHI</text>
   </g>
   <g>
-    <text fill="black" stroke="none" font-size="25.2" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="570.1" y="800" transform="translate(550,800) rotate(0) translate(-550,-800)">Avissawella</text>
+    <text fill="black" stroke="none" font-size="25.2" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="559.1" y="870" transform="translate(539,870) rotate(0) translate(-539,-870)">Avissawella</text>
   </g>
   <g>
-    <text fill="black" stroke="none" font-size="25.2" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="470.1" y="450" transform="translate(450,450) rotate(0) translate(-450,-450)">Periyanagavillu</text>
+    <text fill="black" stroke="none" font-size="25.2" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="439.1" y="449" transform="translate(419,449) rotate(0) translate(-419,-449)">Periyanagavillu</text>
   </g>
   <g>
-    <text fill="black" stroke="none" font-size="25.2" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="820.1" y="500" transform="translate(800,500) rotate(0) translate(-800,-500)">BATTICALOA</text>
+    <text fill="black" stroke="none" font-size="25.2" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="860.1" y="509" transform="translate(840,509) rotate(0) translate(-840,-509)">BATTICALOA</text>
   </g>
   <g>
-    <text fill="black" stroke="none" font-size="25.2" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="770.1" y="400" transform="translate(750,400) rotate(0) translate(-750,-400)">TRINCOMALEE</text>
+    <text fill="black" stroke="none" font-size="25.2" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="800.1" y="388" transform="translate(780,388) rotate(0) translate(-780,-388)">TRINCOMALEE</text>
   </g>
   <g>
-    <text fill="black" stroke="none" font-size="25.2" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="720.1" y="400" transform="translate(700,400) rotate(-45) translate(-700,-400)">Mihintale</text>
+    <text fill="black" stroke="none" font-size="25.2" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="740.1" y="388" transform="translate(720,388) rotate(-45) translate(-720,-388)">Mihintale</text>
   </g>
   <g>
-    <text fill="black" stroke="none" font-size="25.2" font-family="GIL_____" font-weight="100" text-anchor="end" dominant-baseline="central" x="579.9" y="300" transform="translate(600,300) rotate(0) translate(-600,-300)">Madhu Road</text>
+    <text fill="black" stroke="none" font-size="25.2" font-family="GIL_____" font-weight="100" text-anchor="end" dominant-baseline="central" x="578.9" y="268" transform="translate(599,268) rotate(0) translate(-599,-268)">Madhu Road</text>
   </g>
   <g>
-    <circle r="10" fill="white" stroke="black" stroke-width="2.5" cx="400" cy="800"/>
-    <text fill="black" stroke="none" font-size="21.599999999999998" font-family="GIL_____" font-weight="100" text-anchor="end" dominant-baseline="central" x="381.7" y="800" transform="translate(400,800) rotate(0) translate(-400,-800)">COLOMBO Fort</text>
+    <circle r="10" fill="white" stroke="black" stroke-width="2.5" cx="358" cy="870"/>
+    <text fill="black" stroke="none" font-size="21.599999999999998" font-family="GIL_____" font-weight="100" text-anchor="end" dominant-baseline="central" x="339.7" y="870" transform="translate(358,870) rotate(0) translate(-358,-870)">COLOMBO Fort</text>
   </g>
   <g>
-    <circle r="10" fill="white" stroke="black" stroke-width="2.5" cx="450" cy="750"/>
-    <text fill="black" stroke="none" font-size="21.599999999999998" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="468.3" y="750" transform="translate(450,750) rotate(0) translate(-450,-750)">Maradana</text>
+    <circle r="10" fill="white" stroke="black" stroke-width="2.5" cx="419" cy="810"/>
+    <text fill="black" stroke="none" font-size="21.599999999999998" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="437.3" y="810" transform="translate(419,810) rotate(0) translate(-419,-810)">Maradana</text>
   </g>
   <g>
-    <circle r="10" fill="white" stroke="black" stroke-width="2.5" cx="500" cy="700"/>
-    <text fill="black" stroke="none" font-size="21.599999999999998" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="518.3" y="700" transform="translate(500,700) rotate(0) translate(-500,-700)">Ragama</text>
+    <circle r="10" fill="white" stroke="black" stroke-width="2.5" cx="479" cy="750"/>
+    <text fill="black" stroke="none" font-size="21.599999999999998" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="497.3" y="750" transform="translate(479,750) rotate(0) translate(-479,-750)">Ragama</text>
   </g>
   <g>
-    <circle r="10" fill="white" stroke="black" stroke-width="2.5" cx="650" cy="600"/>
-    <text fill="black" stroke="none" font-size="21.599999999999998" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="668.3" y="600" transform="translate(650,600) rotate(-315) translate(-650,-600)">Polgahawela</text>
+    <circle r="10" fill="white" stroke="black" stroke-width="2.5" cx="660" cy="629"/>
+    <text fill="black" stroke="none" font-size="21.599999999999998" font-family="GIL_____" font-weight="100" text-anchor="end" dominant-baseline="central" x="641.7" y="629" transform="translate(660,629) rotate(45) translate(-660,-629)">Polgahawela</text>
   </g>
   <g>
-    <circle r="10" fill="white" stroke="black" stroke-width="2.5" cx="700" cy="600"/>
-    <text fill="black" stroke="none" font-size="21.599999999999998" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="718.3" y="600" transform="translate(700,600) rotate(0) translate(-700,-600)">Peradeniya</text>
+    <circle r="10" fill="white" stroke="black" stroke-width="2.5" cx="720" cy="629"/>
+    <text fill="black" stroke="none" font-size="21.599999999999998" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="738.3" y="629" transform="translate(720,629) rotate(0) translate(-720,-629)">Peradeniya</text>
   </g>
   <g>
-    <circle r="10" fill="white" stroke="black" stroke-width="2.5" cx="650" cy="500"/>
-    <text fill="black" stroke="none" font-size="21.599999999999998" font-family="GIL_____" font-weight="100" text-anchor="end" dominant-baseline="central" x="631.7" y="500" transform="translate(650,500) rotate(0) translate(-650,-500)">Maho</text>
+    <circle r="10" fill="white" stroke="black" stroke-width="2.5" cx="660" cy="509"/>
+    <text fill="black" stroke="none" font-size="21.599999999999998" font-family="GIL_____" font-weight="100" text-anchor="end" dominant-baseline="central" x="641.7" y="509" transform="translate(660,509) rotate(45) translate(-660,-509)">Maho</text>
   </g>
   <g>
-    <circle r="10" fill="white" stroke="black" stroke-width="2.5" cx="650" cy="400"/>
-    <text fill="black" stroke="none" font-size="21.599999999999998" font-family="GIL_____" font-weight="100" text-anchor="end" dominant-baseline="central" x="631.7" y="400" transform="translate(650,400) rotate(0) translate(-650,-400)">Mihintale Junction</text>
+    <circle r="10" fill="white" stroke="black" stroke-width="2.5" cx="660" cy="388"/>
+    <text fill="black" stroke="none" font-size="21.599999999999998" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="678.3" y="388" transform="translate(660,388) rotate(-45) translate(-660,-388)">Mihintale Junction</text>
   </g>
   <g>
-    <circle r="10" fill="white" stroke="black" stroke-width="2.5" cx="650" cy="350"/>
-    <text fill="black" stroke="none" font-size="21.599999999999998" font-family="GIL_____" font-weight="100" text-anchor="end" dominant-baseline="central" x="631.7" y="350" transform="translate(650,350) rotate(0) translate(-650,-350)">Medavachchiya</text>
+    <circle r="10" fill="white" stroke="black" stroke-width="2.5" cx="660" cy="328"/>
+    <text fill="black" stroke="none" font-size="21.599999999999998" font-family="GIL_____" font-weight="100" text-anchor="end" dominant-baseline="central" x="641.7" y="328" transform="translate(660,328) rotate(0) translate(-660,-328)">Medavachchiya</text>
   </g>
   <g>
-    <circle r="10" fill="white" stroke="black" stroke-width="2.5" cx="700" cy="450"/>
-    <text fill="black" stroke="none" font-size="21.599999999999998" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="718.3" y="450" transform="translate(700,450) rotate(0) translate(-700,-450)">Gal Oya</text>
+    <circle r="10" fill="white" stroke="black" stroke-width="2.5" cx="720" cy="449"/>
+    <text fill="black" stroke="none" font-size="21.599999999999998" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="738.3" y="449" transform="translate(720,449) rotate(0) translate(-720,-449)">Gal Oya</text>
   </g>
   <g>
-    <text fill="black" stroke="none" font-size="19.8" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="567.4" y="650" transform="translate(550,650) rotate(0) translate(-550,-650)">GAMPAHA</text>
+    <text fill="gray" stroke="none" font-size="19.8" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="556.4" y="690" transform="translate(539,690) rotate(0) translate(-539,-690)">GAMPAHA</text>
   </g>
   <g>
-    <text fill="black" stroke="none" font-size="19.8" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="767.4" y="550" transform="translate(750,550) rotate(-337.5) translate(-750,-550)">KANDY</text>
+    <text fill="gray" stroke="none" font-size="19.8" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="797.4" y="569" transform="translate(780,569) rotate(-337.5) translate(-780,-569)">KANDY</text>
   </g>
   <g>
-    <text fill="black" stroke="none" font-size="19.8" font-family="GIL_____" font-weight="100" text-anchor="end" dominant-baseline="central" x="582.6" y="1100" transform="translate(600,1100) rotate(0) translate(-600,-1100)">GALLE</text>
-  </g>
-  <g>
-    <text fill="black" stroke="none" font-size="19.8" font-family="GIL_____" font-weight="100" text-anchor="end" dominant-baseline="central" x="632.6" y="550" transform="translate(650,550) rotate(0) translate(-650,-550)">KURUNEGALA</text>
+    <text fill="gray" stroke="none" font-size="19.8" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="616.4" y="1172" transform="translate(599,1172) rotate(-45) translate(-599,-1172)">GALLE</text>
   </g>
   <g/>
   <g>
-    <text fill="black" stroke="none" font-size="19.8" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="667.4" y="300" transform="translate(650,300) rotate(0) translate(-650,-300)">VAVUNIYA</text>
+    <text fill="gray" stroke="none" font-size="19.8" font-family="GIL_____" font-weight="100" text-anchor="end" dominant-baseline="central" x="642.6" y="449" transform="translate(660,449) rotate(-35) translate(-660,-449)">ANURADHAPURA</text>
   </g>
   <g>
-    <text fill="black" stroke="none" font-size="19.8" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="767.4" y="500" transform="translate(750,500) rotate(-22.5) translate(-750,-500)">POLONNARUWA</text>
+    <text fill="gray" stroke="none" font-size="19.8" font-family="GIL_____" font-weight="100" text-anchor="end" dominant-baseline="central" x="642.6" y="268" transform="translate(660,268) rotate(45) translate(-660,-268)">VAVUNIYA</text>
   </g>
   <g>
-    <text fill="black" stroke="none" font-size="18" font-family="GIL_____" font-weight="100" text-anchor="end" dominant-baseline="central" x="583.5" y="600" transform="translate(600,600) rotate(0) translate(-600,-600)">Ambepussa</text>
+    <text fill="gray" stroke="none" font-size="19.8" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="797.4" y="509" transform="translate(780,509) rotate(-22.5) translate(-780,-509)">POLONNARUWA</text>
   </g>
   <g>
-    <text fill="black" stroke="none" font-size="18" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="766.5" y="650" transform="translate(750,650) rotate(0) translate(-750,-650)">Nawalapitiya</text>
+    <text fill="gray" stroke="none" font-size="18" font-family="GIL_____" font-weight="100" text-anchor="end" dominant-baseline="central" x="582.5" y="629" transform="translate(599,629) rotate(0) translate(-599,-629)">Ambepussa</text>
   </g>
   <g>
-    <text fill="black" stroke="none" font-size="18" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="816.5" y="700" transform="translate(800,700) rotate(-315) translate(-800,-700)">Nanu Oya</text>
+    <text fill="gray" stroke="none" font-size="18" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="796.5" y="690" transform="translate(780,690) rotate(0) translate(-780,-690)">Nawalapitiya</text>
   </g>
   <g>
-    <text fill="black" stroke="none" font-size="18" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="866.5" y="700" transform="translate(850,700) rotate(0) translate(-850,-700)">Bandarawela</text>
+    <text fill="gray" stroke="none" font-size="18" font-family="GIL_____" font-weight="100" text-anchor="end" dominant-baseline="central" x="823.5" y="750" transform="translate(840,750) rotate(0) translate(-840,-750)">Nanu Oya</text>
   </g>
   <g>
-    <text fill="black" stroke="none" font-size="18" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="416.5" y="850" transform="translate(400,850) rotate(0) translate(-400,-850)">Panadura</text>
+    <text fill="gray" stroke="none" font-size="18" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="916.5" y="750" transform="translate(900,750) rotate(0) translate(-900,-750)">Bandarawela</text>
   </g>
   <g>
-    <text fill="black" stroke="none" font-size="18" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="416.5" y="900" transform="translate(400,900) rotate(0) translate(-400,-900)">KALUTARA North</text>
+    <text fill="gray" stroke="none" font-size="18" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="374.5" y="931" transform="translate(358,931) rotate(0) translate(-358,-931)">Panadura</text>
   </g>
   <g>
-    <text fill="black" stroke="none" font-size="18" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="466.5" y="950" transform="translate(450,950) rotate(0) translate(-450,-950)">Aluthgama</text>
+    <text fill="gray" stroke="none" font-size="18" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="374.5" y="991" transform="translate(358,991) rotate(0) translate(-358,-991)">KALUTARA North</text>
   </g>
   <g>
-    <text fill="black" stroke="none" font-size="18" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="516.5" y="1000" transform="translate(500,1000) rotate(0) translate(-500,-1000)">Kosgoda</text>
+    <text fill="gray" stroke="none" font-size="18" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="435.5" y="1051" transform="translate(419,1051) rotate(0) translate(-419,-1051)">Aluthgama</text>
   </g>
   <g>
-    <text fill="black" stroke="none" font-size="18" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="566.5" y="1050" transform="translate(550,1050) rotate(0) translate(-550,-1050)">Ambalangoda</text>
+    <text fill="gray" stroke="none" font-size="18" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="495.5" y="1111" transform="translate(479,1111) rotate(0) translate(-479,-1111)">Kosgoda</text>
   </g>
   <g>
-    <text fill="black" stroke="none" font-size="18" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="666.5" y="250" transform="translate(650,250) rotate(0) translate(-650,-250)">Omanthai</text>
+    <text fill="gray" stroke="none" font-size="18" font-family="GIL_____" font-weight="100" text-anchor="end" dominant-baseline="central" x="522.5" y="1172" transform="translate(539,1172) rotate(0) translate(-539,-1172)">Ambalangoda</text>
   </g>
   <g>
-    <text fill="black" stroke="none" font-size="18" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="516.5" y="800" transform="translate(500,800) rotate(-315) translate(-500,-800)">Homagama</text>
+    <text fill="gray" stroke="none" font-size="18" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="676.5" y="208" transform="translate(660,208) rotate(0) translate(-660,-208)">Omanthai</text>
   </g>
   <g>
-    <text fill="black" stroke="none" font-size="18" font-family="GIL_____" font-weight="100" text-anchor="end" dominant-baseline="central" x="433.5" y="650" transform="translate(450,650) rotate(0) translate(-450,-650)">Negombo</text>
+    <text fill="gray" stroke="none" font-size="18" font-family="GIL_____" font-weight="100" text-anchor="start" dominant-baseline="central" x="495.5" y="870" transform="translate(479,870) rotate(-315) translate(-479,-870)">Homagama</text>
   </g>
   <g>
-    <text fill="black" stroke="none" font-size="18" font-family="GIL_____" font-weight="100" text-anchor="end" dominant-baseline="central" x="433.5" y="600" transform="translate(450,600) rotate(0) translate(-450,-600)">Chilaw</text>
+    <text fill="gray" stroke="none" font-size="18" font-family="GIL_____" font-weight="100" text-anchor="end" dominant-baseline="central" x="402.5" y="690" transform="translate(419,690) rotate(0) translate(-419,-690)">Negombo</text>
   </g>
   <g>
-    <text fill="black" stroke="none" font-size="18" font-family="GIL_____" font-weight="100" text-anchor="end" dominant-baseline="central" x="433.5" y="550" transform="translate(450,550) rotate(0) translate(-450,-550)">Bangadeniya</text>
+    <text fill="gray" stroke="none" font-size="18" font-family="GIL_____" font-weight="100" text-anchor="end" dominant-baseline="central" x="402.5" y="629" transform="translate(419,629) rotate(0) translate(-419,-629)">Chilaw</text>
   </g>
   <g>
-    <text fill="black" stroke="none" font-size="18" font-family="GIL_____" font-weight="100" text-anchor="end" dominant-baseline="central" x="433.5" y="500" transform="translate(450,500) rotate(0) translate(-450,-500)">Puttalam</text>
+    <text fill="gray" stroke="none" font-size="18" font-family="GIL_____" font-weight="100" text-anchor="end" dominant-baseline="central" x="402.5" y="569" transform="translate(419,569) rotate(0) translate(-419,-569)">Bangadeniya</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="18" font-family="GIL_____" font-weight="100" text-anchor="end" dominant-baseline="central" x="402.5" y="509" transform="translate(419,509) rotate(0) translate(-419,-509)">Puttalam</text>
   </g>
 </svg>
