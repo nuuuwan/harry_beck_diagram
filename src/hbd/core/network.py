@@ -211,3 +211,29 @@ class Network:
             if len(neighbors) == 1:
                 terminal_list.append(node)
         return terminal_list
+    
+
+    def add_line(self, line_name, color, station_list, path):
+        self.line_idx[line_name] = Line(
+            color=color,
+            station_list=station_list,
+            path=path,
+        )
+
+
+    def extend_line(self, line_name, station_list, path):
+        line = self.line_idx[line_name]
+        line.station_list += station_list
+        line.path += ' ' + path
+
+
+    def update_line(self,line_name, station_list, path):
+        self.line_idx[line_name] = Line(
+            color=self.line_idx[line_name].color,
+            station_list=station_list,
+            path=path,
+        )
+
+
+    def remove_line(self,line_name):
+        del self.line_idx[line_name]
