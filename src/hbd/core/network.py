@@ -44,25 +44,18 @@ def parse_direction(direction):
 
 class Network:
     def __init__(
-        self, title: str, footer_text: str, line_idx: dict[str, Line]
+        self, title: str, subtitle: str, footer_text: str, line_idx: dict[str, Line]
     ):
         self.title = title
+        self.subtitle = subtitle
         self.footer_text = footer_text
         self.line_idx = line_idx
 
-    @staticmethod
-    def from_file(config_path):
-        config = JSONFile(config_path).read()
-        title = config.get('title', 'Untitled')
-        footer_text = config.get('footer_text', ' ')
-        line_idx = []
-        for line in config['line_idx']:
-            line_idx.append(Line.from_dict(line))
-        return Network(title, footer_text, line_idx)
 
-    def copy(self, title=None, footer_text=None, line_idx=None):
+    def copy(self, title=None, subtitle=None, footer_text=None, line_idx=None):
         return Network(
             title=title or self.title,
+            subtitle=subtitle or self.subtitle,
             footer_text=footer_text or self.footer_text,
             line_idx=line_idx
             or dict(

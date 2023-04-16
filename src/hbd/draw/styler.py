@@ -14,12 +14,12 @@ svglib.register_font(
 class Styler:
     def __init__(
         self,
-        RADIUS=6,
-        DIM=1440,
+        RADIUS=14,
+        DIM=2880,
         OPACITY=1,
-        PADDING=144,
+        PADDING=288,
         FONT_FAMILY=DEFAULT_FONT_FAMILY,
-        FONT_SIZE=20,
+        FONT_SIZE=40,
     ):
         self.RADIUS = RADIUS
         self.DIM = DIM
@@ -45,6 +45,19 @@ class Styler:
             font_family=self.FONT_FAMILY,
             x=self.DIM / 2,
             y=self.PADDING / 2 + self.FONT_SIZE,
+            text_anchor='middle',
+            dominant_baseline='hanging',
+        )
+
+    @cached_property
+    def text_subtitle(self):
+        return dict(
+            fill='gray',
+            stroke='none',
+            font_size=self.FONT_SIZE * 2,
+            font_family=self.FONT_FAMILY,
+            x=self.DIM / 2,
+            y=self.PADDING / 2 + self.FONT_SIZE * 4,
             text_anchor='middle',
             dominant_baseline='hanging',
         )

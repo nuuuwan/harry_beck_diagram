@@ -14,7 +14,14 @@ def init_year(year):
     else:
         config = Network(
             title=str(year),
-            footer_text='History of the Railways in Sri Lanka',
+            subtitle='History of the Railways in Sri Lanka',
+            footer_text=' ~ '.join(
+                [
+                    'data from multiple sources',
+                    'music by @bensound',
+                    'visualization by @nuuuwan',
+                ]
+            ),
             line_idx={},
         )
     config_idx[year] = config
@@ -157,14 +164,10 @@ extend_line(
 )
 
 init_year(1908)
-add_line(
-    'Puttalam', 'green', ['Ragama', 'Ja-Ela'], '1NW'
-)
+add_line('Puttalam', 'green', ['Ragama', 'Ja-Ela'], '1NW')
 
 init_year(1909)
-extend_line(
-    'Puttalam', ['Katunayake South', 'Negombo'], '2NW'
-)
+extend_line('Puttalam', ['Katunayake South', 'Negombo'], '2NW')
 
 init_year(1912)
 add_line(
@@ -214,7 +217,15 @@ update_line(
 init_year(1943)
 update_line(
     'Puttalam',
-    ['Ragama', 'Ja-Ela', 'Katunayake South', 'Negombo', 'Madampe', 'Chilaw', "Bangadeniya"],
+    [
+        'Ragama',
+        'Ja-Ela',
+        'Katunayake South',
+        'Negombo',
+        'Madampe',
+        'Chilaw',
+        "Bangadeniya",
+    ],
     '3NW 3N',
 )
 

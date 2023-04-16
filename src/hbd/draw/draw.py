@@ -42,14 +42,11 @@ class Draw(DrawNode, DrawLine):
         return _('rect', None, self.styler.rect_border)
 
     def draw_title(self):
-        title = self.config.title
-        font_size = min(
-            self.styler.text_title['font_size'],
-            self.styler.svg['width'] / len(title),
-        )
-        return _(
-            'text', title, self.styler.text_title | dict(font_size=font_size)
-        )
+        self.config.title
+        return _('text', self.config.title, self.styler.text_title)
+
+    def draw_subtitle(self):
+        return _('text', self.config.subtitle, self.styler.text_subtitle)
 
     def draw_footer_text(self):
         footer_text = self.config.footer_text
@@ -76,6 +73,7 @@ class Draw(DrawNode, DrawLine):
             [
                 self.draw_watermark(),
                 self.draw_title(),
+                self.draw_subtitle(),
                 self.draw_footer_text(),
             ]
             + self.draw_lines()
@@ -111,6 +109,7 @@ class Draw(DrawNode, DrawLine):
         images = []
         for png_path in png_path_list:
             images.append(imageio.imread(png_path))
-        imageio.mimwrite(gif_path, images, duration=2)
+        DURATION = 55.70 / 24
+        imageio.mimwrite(gif_path, images, duration=DURATION)
         log.info(f'Built {gif_path} (from {len(png_path_list)} png files)')
         webbrowser.open(os.path.abspath(gif_path))
