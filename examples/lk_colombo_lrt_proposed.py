@@ -120,4 +120,4 @@ config = Network(
 
 styler = Styler(DIM=2000)
 
-Draw(config, styler).draw('images/lk_wp_proposed.png')
+Draw(config, styler).draw('images/lk_colombo_lrt_proposed.png')
