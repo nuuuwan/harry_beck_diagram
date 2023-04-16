@@ -39,12 +39,12 @@ class Styler:
     @cached_property
     def text_title(self):
         return dict(
-            fill='gray',
+            fill='black',
             stroke='none',
-            font_size=self.FONT_SIZE * 4,
+            font_size=self.FONT_SIZE * 2,
             font_family=self.FONT_FAMILY,
             x=self.DIM / 2,
-            y=self.PADDING / 2 + self.FONT_SIZE,
+            y=self.PADDING / 2,
             text_anchor='middle',
             dominant_baseline='hanging',
         )
@@ -54,10 +54,10 @@ class Styler:
         return dict(
             fill='gray',
             stroke='none',
-            font_size=self.FONT_SIZE * 2,
+            font_size=self.FONT_SIZE,
             font_family=self.FONT_FAMILY,
             x=self.DIM / 2,
-            y=self.PADDING / 2 + self.FONT_SIZE * 4,
+            y=self.PADDING / 2 + self.FONT_SIZE * 1.25,
             text_anchor='middle',
             dominant_baseline='hanging',
         )
