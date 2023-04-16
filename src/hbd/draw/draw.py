@@ -97,9 +97,9 @@ class Draw(DrawNode, DrawLine):
     def build_animated_gif(png_path_list, gif_path):
         png_path_list.sort()
         last_png_path = png_path_list[-1]
-        for i in range(0,5):
+        for i in range(0, 5):
             png_path_list.append(last_png_path)
-        
+
         images = []
         for png_path in png_path_list:
             images.append(imageio.imread(png_path))

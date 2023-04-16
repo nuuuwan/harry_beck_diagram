@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="1320" padding="148">
+  <text fill="gray" stroke="none" font-size="72" font-family="p22" x="660.0" y="92.0" text-anchor="middle" dominant-baseline="hanging">1865</text>
+  <text fill="gray" stroke="none" font-size="18" font-family="p22" x="660.0" y="1264.0" text-anchor="middle" dominant-baseline="text-top">History of the Railways in Sri Lanka</text>
+  <g>
+    <path fill="none" stroke-width="10.5" stroke-opacity="1" d="M 148.0,1172.0 L 404.0,916.0 L 660.0,660.0 L 916.0,404.0 L 1172.0,148.0" stroke="red"/>
+    <rect stroke="none" fill-opacity="1" x="1167" y="138" width="10" height="20" fill="red"/>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="25.2" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="168.1" y="1172" transform="translate(148,1172) rotate(0) translate(-148,-1172)">COLOMBO Fort</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="25.2" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1192.1" y="148" transform="translate(1172,148) rotate(0) translate(-1172,-148)">Ambepussa</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="19.8" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="933.4" y="404" transform="translate(916,404) rotate(0) translate(-916,-404)">GAMPAHA</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="18" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="420.5" y="916" transform="translate(404,916) rotate(0) translate(-404,-916)">Maradana</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="18" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="676.5" y="660" transform="translate(660,660) rotate(0) translate(-660,-660)">Ragama</text>
+  </g>
+</svg>

@@ -20,6 +20,7 @@ DISTRICT_CAPITAL_LIST = [
     'Mullaitivu',
     'Nuwara Eliya',
     'Polonnaruwa',
+    'Puttalam',
     'Ratnapura',
     'Trincomalee',
     'Vavuniya',

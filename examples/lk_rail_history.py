@@ -51,7 +51,7 @@ def remove_line(line_name):
     del config.line_idx[line_name]
 
 
-init_year(1864)
+init_year(1865)
 add_line(
     'Main',
     'red',
@@ -124,10 +124,11 @@ extend_line(
         'Vavuniya',
         'Omanthai',
         'Kilinochchi',
+        'Pallai',
         'Jaffna',
         'Kankesanthurai',
     ],
-    '5N 1NW 1N',
+    '5N 2NW 1N',
 )
 
 init_year(1909)
@@ -135,12 +136,18 @@ add_line('Puttalam', 'green', ['Ragama', 'Negombo'], '1NW')
 
 init_year(1912)
 add_line(
-    'Opanayaka', 'lightblue', ['Avissawella', 'Ratnapura', 'Opanayaka'], '1SE 1E'
+    'Opanayaka',
+    'lightblue',
+    ['Avissawella', 'Ratnapura', 'Opanayaka'],
+    '1SE 1E',
 )
 
 init_year(1914)
 add_line(
-    'Mannar', 'blue', ['Medavachchiya', 'Madhu Road', 'Mannar', 'Talaimanar Pier'], '2NW 1W'
+    'Mannar',
+    'blue',
+    ['Medavachchiya', 'Madhu Road', 'Mannar', 'Talaimanar Pier'],
+    '2NW 1W',
 )
 
 init_year(1916)
@@ -151,15 +158,19 @@ extend_line('Main', ['Badulla'], '1NE')
 
 init_year(1926)
 extend_line('Puttalam', ['Bangadeniya', 'Puttalam'], '2N')
-
-init_year(1928)
 add_line(
     'Batticaloa',
     'darkgreen',
-    ['Maho', 'Gal Oya', 'Polonnaruwa', 'Batticaloa'],
-    '1NE 1SE 1E',
+    ['Maho', 'Gal Oya'],
+    '1NE',
 )
+
+init_year(1927)
 add_line('Trincomalee', 'silver', ['Gal Oya', 'Trincomalee'], '1NE')
+
+init_year(1928)
+extend_line('Batticaloa', ['Polonnaruwa', 'Batticaloa'], '1SE 1E')
+
 
 init_year(1942)
 update_line(
@@ -194,7 +205,7 @@ update_line(
         'Anuradhapura',
         'Mihintale Junction',
         'Medavachchiya',
-        'Vavuniya'
+        'Vavuniya',
     ],
     '6N',
 )
@@ -210,7 +221,7 @@ init_year(2003)
 extend_line('Batticaloa', ['Batticaloa'], '1E')
 
 init_year(2011)
-extend_line('Northern', ['Omanthai'], '1N')
+extend_line('Northern', ['Omanthai', 'Pallai'], '2N')
 
 init_year(2013)
 extend_line('Northern', ['Kilinochchi'], '1N')

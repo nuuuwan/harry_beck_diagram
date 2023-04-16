@@ -2,11 +2,12 @@ from functools import cached_property
 
 import svglib.svglib as svglib
 
-DEFAULT_FONT_FAMILY = 'GIL_____'
-DEFAULT_FONT_PATH = 'C:\\Windows\\Fonts\\GIL_____.TTF'
+DEFAULT_FONT_FAMILY = 'p22'
+DEFAULT_FONT_PATH = f'C:\\Windows\\Fonts\\{DEFAULT_FONT_FAMILY}.ttf'
+
 
 svglib.register_font(
-    DEFAULT_FONT_FAMILY, DEFAULT_FONT_PATH, weight='normal', style='normal'
+    DEFAULT_FONT_FAMILY, DEFAULT_FONT_PATH, weight='normal', style='regular'
 )
 
 
