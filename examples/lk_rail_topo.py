@@ -1,7 +1,8 @@
 from hbd import Draw, Line, Network, Styler
 
 config = Network(
-    title='Topographical Map of Railways in Sri Lanka',
+    title='Topographical Map of Railways',
+    subtitle="Sri Lanka",
     footer_text='Not to scale.',
     line_idx={
         'Main': Line(

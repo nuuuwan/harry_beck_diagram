@@ -1,36 +1,13 @@
-{
-    "title": "Every Railway Station in Sri Lanka",
-    "footer_text": "Not to scale.",
-    "line_list": [
-        {
-            "color": "red",
-            "direction_list": [
-                [
-                    20,
-                    "NE"
-                ],
-                [
-                    20,
-                    "E"
-                ],
-                [
-                    20,
-                    "SE"
-                ],
-                [
-                    20,
-                    "E"
-                ],
-                [
-                    20,
-                    "NE"
-                ],
-                [
-                    4,
-                    "N"
-                ]
-            ],
-            "node_list": [
+from hbd import Draw, Line, Network, Styler
+
+config = Network(
+    title='Topographical Map of Railways in Sri Lanka',
+    subtitle="Sri Lanka",
+    footer_text='Not to scale.',
+    line_idx={
+        'Main': Line(
+            color="red",
+            station_list=[
                 "Colombo Fort",
                 "Maradana",
                 "Dematagoda",
@@ -135,34 +112,78 @@
                 "Demodara",
                 "Uduwara",
                 "Hali-Ela",
-                "Badulla"
-            ]
-        },
-        {
-            "color": "cyan",
-            "direction_list": [
-                [
-                    20,
-                    "S"
-                ],
-                [
-                    20,
-                    "SE"
-                ],
-                [
-                    20,
-                    "E"
-                ],
-                [
-                    10,
-                    "NE"
-                ],
-                [
-                    4,
-                    "N"
-                ]
+                "Badulla",
             ],
-            "node_list": [
+            path="20NE 20E 20SE 20E 20NE 4N",
+        ),
+        'Northern': Line(
+            color="cyan",
+            station_list=[
+                "Polgahawela Junction",
+                "Girambe",
+                "Thalawattegedara",
+                "Potuhara",
+                "Nailiya",
+                "Kurunegala",
+                "Muttettugala",
+                "Wellawa",
+                "Pinnagolla",
+                "Ganewatta",
+                "Hiriyala",
+                "Nagollagama",
+                "Thimbiriyagedara",
+                "Maho Junction",
+                "Randenigama",
+                "Ambanpola",
+                "Galgamuwa",
+                "Senarathgama",
+                "Thambuttegama",
+                "Talawa",
+                "Shrawasthipura",
+                "Anuradhapura New Town",
+                "Anuradhapura",
+                "Mihintale Junction",
+                "Parasangahawewa",
+                "Medagama",
+                "Siyambalagahawewa",
+                "Medawachchiya Junction",
+                "Poonewa",
+                "Eratperiakulam",
+                "Vavuniya",
+                "Thandikulam",
+                "Omanthai",
+                "Puliyankulam",
+                "Mankulam",
+                "Murukandi",
+                "Ariviya Nagar",
+                "Kilinochchi",
+                "Paranthan",
+                "Elephantpass",
+                "Pallai",
+                "Eluthumadduval",
+                "Mirusuvil",
+                "Kodikamamam",
+                "Meesalai",
+                "Sankathanai",
+                "Chavakachcheri",
+                "Thachanthoppu",
+                "Navatkuly",
+                "Punkankulam",
+                "Jaffna",
+                "Kokuvil",
+                "Kondavil",
+                "Inuvil",
+                "Chunnakam",
+                "Malakkam",
+                "Tellippalai",
+                "Maviddapuram",
+                "Kankesanthurai",
+            ],
+            path="20N 20N 10NW 8N",
+        ),
+        'Coastal': Line(
+            color="cyan",
+            station_list=[
                 "Colombo Fort",
                 "Secretariant Halt",
                 "Kompanna Veediya",
@@ -237,112 +258,13 @@
                 "Bambarenda",
                 "Wewurukannala",
                 "Nakulugamuwa",
-                "Beliatta"
-            ]
-        },
-        {
-            "color": "orange",
-            "direction_list": [
-                [
-                    20,
-                    "N"
-                ],
-                [
-                    20,
-                    "N"
-                ],
-                [
-                    10,
-                    "NW"
-                ],
-                [
-                    8,
-                    "N"
-                ]
+                "Beliatta",
             ],
-            "node_list": [
-                "Polgahawela Junction",
-                "Girambe",
-                "Thalawattegedara",
-                "Potuhara",
-                "Nailiya",
-                "Kurunegala",
-                "Muttettugala",
-                "Wellawa",
-                "Pinnagolla",
-                "Ganewatta",
-                "Hiriyala",
-                "Nagollagama",
-                "Thimbiriyagedara",
-                "Maho Junction",
-                "Randenigama",
-                "Ambanpola",
-                "Galgamuwa",
-                "Senarathgama",
-                "Thambuttegama",
-                "Talawa",
-                "Shrawasthipura",
-                "Anuradhapura New Town",
-                "Anuradhapura",
-                "Mihintale Junction",
-                "Parasangahawewa",
-                "Medagama",
-                "Siyambalagahawewa",
-                "Medawachchiya Junction",
-                "Poonewa",
-                "Eratperiakulam",
-                "Vavuniya",
-                "Thandikulam",
-                "Omanthai",
-                "Puliyankulam",
-                "Mankulam",
-                "Murukandi",
-                "Ariviya Nagar",
-                "Kilinochchi",
-                "Paranthan",
-                "Elephantpass",
-                "Pallai",
-                "Eluthumadduval",
-                "Mirusuvil",
-                "Kodikamamam",
-                "Meesalai",
-                "Sankathanai",
-                "Chavakachcheri",
-                "Thachanthoppu",
-                "Navatkuly",
-                "Punkankulam",
-                "Jaffna",
-                "Kokuvil",
-                "Kondavil",
-                "Inuvil",
-                "Chunnakam",
-                "Malakkam",
-                "Tellippalai",
-                "Maviddapuram",
-                "Kankesanthurai"
-            ]
-        },
-        {
-            "color": "darkblue",
-            "direction_list": [
-                [
-                    10,
-                    "SE"
-                ],
-                [
-                    20,
-                    "E"
-                ],
-                [
-                    5,
-                    "NE"
-                ],
-                [
-                    4,
-                    "N"
-                ]
-            ],
-            "node_list": [
+            path="20S 20SE 20E 10NE 4N",
+        ),
+        'Kelani Valley': Line(
+            color="darkblue",
+            station_list=[
                 "Maradana",
                 "Baseline Road",
                 "Cotta Road",
@@ -382,30 +304,13 @@
                 "Puwakpitiya",
                 "Puwakpitiya Town",
                 "Kiriwadala",
-                "Avissawella"
-            ]
-        },
-        {
-            "color": "green",
-            "direction_list": [
-                [
-                    9,
-                    "NW"
-                ],
-                [
-                    11,
-                    "N"
-                ],
-                [
-                    20,
-                    "N"
-                ],
-                [
-                    5,
-                    "N"
-                ]
+                "Avissawella",
             ],
-            "node_list": [
+            path="10SE 20E 5NE 4N",
+        ),
+        'Puttalam': Line(
+            color="green",
+            station_list=[
                 "Ragama Junction",
                 "Peralanda",
                 "Kandana",
@@ -451,26 +356,13 @@
                 "Puttalam",
                 "Noor Nagar",
                 "Karadipooval",
-                "Periyanagavillu"
-            ]
-        },
-        {
-            "color": "purple",
-            "direction_list": [
-                [
-                    10,
-                    "NE"
-                ],
-                [
-                    10,
-                    "N"
-                ],
-                [
-                    4,
-                    "N"
-                ]
+                "Periyanagavillu",
             ],
-            "node_list": [
+            path="9NW 11N 20N 5N",
+        ),
+        'Matale': Line(
+            color="purple",
+            station_list=[
                 "Peradeniya Junction",
                 "Sarasavi Uyana",
                 "Rajawatte",
@@ -495,37 +387,23 @@
                 "Tawalankoya",
                 "Elwala",
                 "Kohobiliwala",
-                "Matale"
-            ]
-        },
-        {
-            "color": "maroon",
-            "direction_list": [
-                [
-                    3,
-                    "E"
-                ]
+                "Matale",
             ],
-            "node_list": [
+            path="10NE 10N 4N",
+        ),
+        'Mihintale': Line(
+            color="maroon",
+            station_list=[
                 "Mihintale Junction",
                 "Samagipura",
                 "Ashokapura",
-                "Mihintale"
-            ]
-        },
-        {
-            "color": "blue",
-            "direction_list": [
-                [
-                    10,
-                    "NW"
-                ],
-                [
-                    1,
-                    "W"
-                ]
+                "Mihintale",
             ],
-            "node_list": [
+            path="3E",
+        ),
+        'Mannar': Line(
+            color="blue",
+            station_list=[
                 "Medawachchiya Junction",
                 "Neriyakulam",
                 "Cheddikulam",
@@ -537,30 +415,13 @@
                 "Thoddaveli",
                 "Pesalai",
                 "Talaimannar",
-                "Talaimannar Pier"
-            ]
-        },
-        {
-            "color": "darkgreen",
-            "direction_list": [
-                [
-                    10,
-                    "NE"
-                ],
-                [
-                    5,
-                    "E"
-                ],
-                [
-                    10,
-                    "SE"
-                ],
-                [
-                    13,
-                    "E"
-                ]
+                "Talaimannar Pier",
             ],
-            "node_list": [
+            path="10NW 1W",
+        ),
+        'Batticaloa': Line(
+            color="darkgreen",
+            station_list=[
                 "Maho Junction",
                 "Yapahuwa",
                 "Konwewa",
@@ -599,22 +460,13 @@
                 "Devapuram",
                 "Vandaramoolai",
                 "Eravur",
-                "Batticaloa"
-            ]
-        },
-        {
-            "color": "silver",
-            "direction_list": [
-                [
-                    5,
-                    "NE"
-                ],
-                [
-                    3,
-                    "N"
-                ]
+                "Batticaloa",
             ],
-            "node_list": [
+            path="10NE 5E 10SE 13E",
+        ),
+        'Trincomalee': Line(
+            color="silver",
+            station_list=[
                 "Gal Oya Junction",
                 "Aluth oya",
                 "Agbopura",
@@ -623,8 +475,13 @@
                 "Mullipothanai",
                 "Thampalakamam",
                 "China Bay",
-                "Trincomalee"
-            ]
-        }
-    ]
-}
+                "Trincomalee",
+            ],
+            path="5NE 3N",
+        ),
+    },
+)
+
+styler = Styler(DIM=6000)
+
+Draw(config, styler).draw('images/lk_rail.png')
