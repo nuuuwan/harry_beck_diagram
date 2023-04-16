@@ -14,12 +14,12 @@ svglib.register_font(
 class Styler:
     def __init__(
         self,
-        RADIUS=5,
-        DIM=700,
+        RADIUS=6,
+        DIM=1440,
         OPACITY=1,
-        PADDING=200,
+        PADDING=144,
         FONT_FAMILY=DEFAULT_FONT_FAMILY,
-        FONT_SIZE=18,
+        FONT_SIZE=20,
     ):
         self.RADIUS = RADIUS
         self.DIM = DIM
@@ -60,6 +60,19 @@ class Styler:
             y=self.DIM - (self.PADDING / 2 - self.FONT_SIZE),
             text_anchor='middle',
             dominant_baseline='text-top',
+        )
+
+    @cached_property
+    def text_watermark(self):
+        return dict(
+            fill='#fcfcfc',
+            stroke='none',
+            font_size=self.DIM / 6,
+            font_family=self.FONT_FAMILY,
+            x=self.DIM / 2,
+            y=self.DIM / 2,
+            text_anchor='middle',
+            dominant_baseline='center',
         )
 
     @cached_property

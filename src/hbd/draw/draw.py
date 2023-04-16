@@ -63,10 +63,18 @@ class Draw(DrawNode, DrawLine):
             self.styler.text_footer_text | dict(font_size=font_size),
         )
 
+    def draw_watermark(self):
+        return _(
+            'text',
+            '@nuuuwan',
+            self.styler.text_watermark,
+        )
+
     def draw(self, png_path, do_open=True):
         svg = _(
             'svg',
             [
+                self.draw_watermark(),
                 self.draw_title(),
                 self.draw_footer_text(),
             ]

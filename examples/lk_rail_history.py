@@ -143,7 +143,9 @@ extend_line(
 )
 
 init_year(1909)
-add_line('Puttalam', 'green', ['Ragama', 'Negombo'], '1NW')
+add_line(
+    'Puttalam', 'green', ['Ragama', 'Katunayake South', 'Negombo'], '2NW'
+)
 
 init_year(1912)
 add_line(
@@ -190,7 +192,9 @@ update_line(
 
 init_year(1943)
 update_line(
-    'Puttalam', ['Ragama', 'Negombo', 'Chilaw', "Bangadeniya"], '1NW 2N'
+    'Puttalam',
+    ['Ragama', 'Katunayake South', 'Negombo', 'Chilaw', "Bangadeniya"],
+    '2NW 2N',
 )
 
 init_year(1946)
@@ -198,6 +202,15 @@ extend_line('Puttalam', ['Puttalam', 'Periyanagavillu'], '2N')
 
 init_year(1948)
 remove_line('Udu Pussellawa')
+
+init_year(1970)
+add_line(
+    'Katunayake',
+    'pink',
+    ['Katunayake South', 'CMB Airport'],
+    '1N',
+)
+
 
 init_year(1973)
 remove_line('Opanayaka')
@@ -248,12 +261,10 @@ extend_line('Mannar', ['Mannar', 'Talaimanar Pier'], '1NW 1W')
 init_year(2019)
 extend_line('Coastal', ['Beliatta'], '1E')
 
-styler = Styler(DIM=1320, PADDING=148)
-
 
 png_path_list = []
 for year, config in config_idx.items():
-    draw = Draw(config, styler)
+    draw = Draw(config, Styler())
     png_path = f'images/lk_rail_history/{year}.png'
     png_path = draw.draw(png_path, False)
     png_path_list.append(png_path)
