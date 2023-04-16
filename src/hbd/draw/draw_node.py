@@ -58,7 +58,7 @@ class DrawNode:
         )
 
         label = node
-        # label_with_loc = f'{node} ({x}, {y})'
+        # label = f'{node} ({x}, {y})'
 
         cmp = self.config.get_node_cmp_value(node)
         default_font_size = int(self.styler.node_text['font_size'])

@@ -102,6 +102,16 @@ add_line(
     ['Maradana', 'Homagama', 'Avissawella', 'Yatiyantota'],
     '1SE 1E 1NE',
 )
+add_line(
+    'Northern-2',
+    'orange',
+    [
+        'Pallai',
+        'Jaffna',
+        'Kankesanthurai',
+    ],
+    '1NW 1N',
+)
 
 init_year(1903)
 add_line(
@@ -116,6 +126,7 @@ extend_line('Udu Pussellawa', ['Ragala'], '1E')
 extend_line('Northern', ['Maho', 'Anuradhapura'], '2N')
 
 init_year(1905)
+remove_line('Northern-2')
 extend_line(
     'Northern',
     [
@@ -221,10 +232,10 @@ init_year(2003)
 extend_line('Batticaloa', ['Batticaloa'], '1E')
 
 init_year(2011)
-extend_line('Northern', ['Omanthai', 'Pallai'], '2N')
+extend_line('Northern', ['Omanthai'], '1N')
 
 init_year(2013)
-extend_line('Northern', ['Kilinochchi'], '1N')
+extend_line('Northern', ['Kilinochchi', 'Pallai'], '1N 1NW')
 add_line('Mannar', 'blue', ['Medavachchiya', 'Madhu Road'], '1NW')
 
 init_year(2014)

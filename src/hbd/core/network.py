@@ -6,7 +6,7 @@ from utils import JSONFile, Log
 from hbd.core.DISTRICT_CAPITAL_LIST import DISTRICT_CAPITAL_LIST
 from hbd.core.line import Line
 
-TEXT_SPACE = 2
+TEXT_SPACE = 3
 ANGLE_CONFIG = [
     [1, 0, 0],
     [-1, 0, 180],
@@ -19,6 +19,8 @@ ANGLE_CONFIG = [
     [0, 1, 90],
     [0, -1, 270],
 ]
+
+HACK_NODE_IDX = {'Pallai': [4, 13]}
 
 log = Log(__name__)
 
@@ -89,6 +91,10 @@ class Network:
             for n, direction in line.direction_list:
                 [dx, dy] = parse_direction(direction)
                 cur_node = line.station_list[i_cur]
+                if cur_node not in node_idx:
+                    node_idx[cur_node] = HACK_NODE_IDX.get(cur_node)
+                if not node_idx[cur_node]:
+                    log.error(f'No node_idx for {cur_node}')
                 x_cur, y_cur = node_idx[cur_node]
                 for i in range(0, n):
                     node = line.station_list[i_cur + i + 1]
