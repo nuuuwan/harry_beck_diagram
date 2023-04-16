@@ -1,11 +1,11 @@
 <?xml version="1.0" ?>
 <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1440" padding="144">
   <text fill="#fcfcfc" stroke="none" font-size="240.0" font-family="p22" x="720.0" y="720.0" text-anchor="middle" dominant-baseline="center">@nuuuwan</text>
-  <text fill="gray" stroke="none" font-size="80" font-family="p22" x="720.0" y="92.0" text-anchor="middle" dominant-baseline="hanging">1874</text>
+  <text fill="gray" stroke="none" font-size="80" font-family="p22" x="720.0" y="92.0" text-anchor="middle" dominant-baseline="hanging">1873</text>
   <text fill="gray" stroke="none" font-size="20" font-family="p22" x="720.0" y="1388.0" text-anchor="middle" dominant-baseline="text-top">History of the Railways in Sri Lanka</text>
   <g>
-    <path fill="none" stroke-width="12.600000000000001" stroke-opacity="1" d="M 374.0,1008.0 L 429.1248913064025,952.8751086935976 C 430.08326087093496,951.916739129065 433.9,948.0666666666667 434.85,947.1 L 486.2925,894.755 C 487.195,893.8366666666667 490.83666666666664,890.195 491.755,889.2925 L 544.23775,837.714625 C 545.1585,836.80975 548.80975,833.1585 549.714625,832.23775 L 601.967298572217,779.0683628563405 C 602.6448657148113,778.3789085708937 605.9333333333333,777.0 606.9,777.0 L 662.0,777.0 L 717.1,777.0 C 718.0666666666667,777.0 721.3551342851887,778.3789085708937 722.032701427783,779.0683628563405 L 774.2516350713892,832.203418142817 C 775.1677567142594,833.1356120952114 778.8643879047886,836.8322432857406 779.796581857183,837.7483649286108 L 835.0,892.0" stroke="red"/>
-    <rect stroke="none" fill-opacity="1" x="829" y="880" width="12" height="24" fill="red"/>
+    <path fill="none" stroke-width="12.600000000000001" stroke-opacity="1" d="M 374.0,1008.0 L 429.1248913064025,952.8751086935976 C 430.08326087093496,951.916739129065 433.9,948.0666666666667 434.85,947.1 L 486.2925,894.755 C 487.195,893.8366666666667 490.83666666666664,890.195 491.755,889.2925 L 544.23775,837.714625 C 545.1585,836.80975 548.80975,833.1585 549.714625,832.23775 L 601.967298572217,779.0683628563405 C 602.6448657148113,778.3789085708937 605.9333333333333,777.0 606.9,777.0 L 662.0,777.0 L 717.1,777.0 C 718.0666666666667,777.0 721.3551342851887,778.3789085708937 722.032701427783,779.0683628563405 L 777.0,835.0" stroke="red"/>
+    <rect stroke="none" fill-opacity="1" x="771" y="823" width="12" height="24" fill="red"/>
   </g>
   <g>
     <path fill="none" stroke-width="12.600000000000001" stroke-opacity="1" d="M 720.0,777.0 L 777.0,720.0" stroke="purple"/>
@@ -15,7 +15,7 @@
     <text fill="black" stroke="none" font-size="28.0" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="397.0" y="1008" transform="translate(374,1008) rotate(0) translate(-374,-1008)">COLOMBO Fort</text>
   </g>
   <g>
-    <text fill="black" stroke="none" font-size="28.0" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="858.0" y="892" transform="translate(835,892) rotate(0) translate(-835,-892)">Nawalapitiya</text>
+    <text fill="black" stroke="none" font-size="28.0" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="800.0" y="835" transform="translate(777,835) rotate(0) translate(-777,-835)">Gampola</text>
   </g>
   <g>
     <text fill="black" stroke="none" font-size="28.0" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="800.0" y="720" transform="translate(777,720) rotate(0) translate(-777,-720)">KANDY</text>
@@ -38,8 +38,5 @@
   </g>
   <g>
     <text fill="gray" stroke="none" font-size="20" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="681.0" y="777" transform="translate(662,777) rotate(-45) translate(-662,-777)">Polgahawela</text>
-  </g>
-  <g>
-    <text fill="gray" stroke="none" font-size="20" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="796.0" y="835" transform="translate(777,835) rotate(0) translate(-777,-835)">Gampola</text>
   </g>
 </svg>

@@ -63,8 +63,16 @@ init_year(1867)
 extend_line('Main', ['Polgahawela', 'Peradeniya'], '2E')
 add_line('Matale', 'purple', ['Peradeniya', 'Kandy'], '1NE')
 
+init_year(1873)
+extend_line('Main', ['Gampola'], '1SE')
+
+
 init_year(1874)
 extend_line('Main', ['Nawalapitiya'], '1SE')
+
+init_year(1875)
+extend_line('Main', ['Talawakele'], '1SE')
+
 
 init_year(1877)
 add_line('Coastal', 'cyan', ['Colombo Fort', 'Panadura'], '1S')
@@ -86,6 +94,7 @@ extend_line('Coastal', ['Kosgoda'], '1SE')
 
 init_year(1893)
 extend_line('Coastal', ['Ambalangoda'], '1SE')
+extend_line('Main', ['Haputale'], '1E')
 
 init_year(1894)
 extend_line('Main', ['Bandarawela'], '1E')
@@ -95,12 +104,16 @@ add_line('Northern', 'orange', ['Polgahawela', 'Kurunegala'], '1N')
 init_year(1895)
 extend_line('Coastal', ['Matara'], '1E')
 
+
+init_year(1899)
+extend_line('Northern', ['Maho'], '1N')
+
 init_year(1902)
 add_line(
     'Kelani Valley',
     'darkblue',
-    ['Maradana', 'Homagama', 'Avissawella', 'Yatiyantota'],
-    '1SE 1E 1NE',
+    ['Maradana', 'Homagama', 'Avissawella'],
+    '1SE 1E',
 )
 add_line(
     'Northern-2',
@@ -120,10 +133,11 @@ add_line(
     ['Nanu Oya', 'Nuwara Eliya', 'Kandapola'],
     '1N 1NE',
 )
+extend_line('Kelani Valley', ['Yatiyantota'], '1NE')
 
 init_year(1904)
 extend_line('Udu Pussellawa', ['Ragala'], '1E')
-extend_line('Northern', ['Maho', 'Anuradhapura'], '2N')
+extend_line('Northern', ['Anuradhapura'], '1N')
 
 init_year(1905)
 remove_line('Northern-2')
@@ -142,9 +156,14 @@ extend_line(
     '5N 2NW 1N',
 )
 
-init_year(1909)
+init_year(1908)
 add_line(
-    'Puttalam', 'green', ['Ragama', 'Katunayake South', 'Negombo'], '2NW'
+    'Puttalam', 'green', ['Ragama', 'Ja-Ela'], '1NW'
+)
+
+init_year(1909)
+extend_line(
+    'Puttalam', ['Katunayake South', 'Negombo'], '2NW'
 )
 
 init_year(1912)
@@ -162,9 +181,11 @@ add_line(
     ['Medavachchiya', 'Madhu Road', 'Mannar', 'Talaimanar Pier'],
     '2NW 1W',
 )
+init_year(1915)
+extend_line('Puttalam', ['Madampe'], '1N')
 
 init_year(1916)
-extend_line('Puttalam', ['Chilaw'], '1NW')
+extend_line('Puttalam', ['Chilaw'], '1N')
 
 init_year(1924)
 extend_line('Main', ['Badulla'], '1NE')
@@ -193,8 +214,8 @@ update_line(
 init_year(1943)
 update_line(
     'Puttalam',
-    ['Ragama', 'Katunayake South', 'Negombo', 'Chilaw', "Bangadeniya"],
-    '2NW 2N',
+    ['Ragama', 'Ja-Ela', 'Katunayake South', 'Negombo', 'Madampe', 'Chilaw', "Bangadeniya"],
+    '3NW 3N',
 )
 
 init_year(1946)
@@ -219,6 +240,9 @@ update_line('Kelani Valley', ['Maradana', 'Homagama'], '1SE')
 init_year(1978)
 extend_line('Kelani Valley', ['Avissawella'], '1E')
 
+init_year(1985)
+remove_line('Mannar')
+
 init_year(1990)
 update_line(
     'Northern',
@@ -233,7 +257,7 @@ update_line(
     ],
     '6N',
 )
-remove_line('Mannar')
+
 
 init_year(1993)
 add_line('Mihintale', 'maroon', ['Mihintale Junction', 'Mihintale'], '1E')
