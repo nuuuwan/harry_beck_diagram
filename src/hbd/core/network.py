@@ -1,12 +1,12 @@
 import copy
 from functools import cache, cached_property
 
-from utils import JSONFile, Log
+from utils import Log
 
 from hbd.core.DISTRICT_CAPITAL_LIST import DISTRICT_CAPITAL_LIST
 from hbd.core.line import Line
 
-TEXT_SPACE =3
+TEXT_SPACE = 3
 ANGLE_CONFIG = [
     [1, 0, 0],
     [-1, 0, 180],
@@ -44,15 +44,20 @@ def parse_direction(direction):
 
 class Network:
     def __init__(
-        self, title: str, subtitle: str, footer_text: str, line_idx: dict[str, Line]
+        self,
+        title: str,
+        subtitle: str,
+        footer_text: str,
+        line_idx: dict[str, Line],
     ):
         self.title = title
         self.subtitle = subtitle
         self.footer_text = footer_text
         self.line_idx = line_idx
 
-
-    def copy(self, title=None, subtitle=None, footer_text=None, line_idx=None):
+    def copy(
+        self, title=None, subtitle=None, footer_text=None, line_idx=None
+    ):
         return Network(
             title=title or self.title,
             subtitle=subtitle or self.subtitle,

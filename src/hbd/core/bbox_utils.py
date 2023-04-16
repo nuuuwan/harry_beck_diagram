@@ -17,8 +17,6 @@ def get_bbox(loc_list: list) -> tuple[float, float, float, float]:
 
 def get_t(styler, loc_list: list):
     min_x, min_y, max_x, max_y = get_bbox(loc_list)
-    log.debug([min_x, min_y, max_x, max_y])
-    min_x, min_y, max_x, max_y = [-1, -5, 13, 15]  # HACK
 
     x_span = max(1, max_x - min_x)
     y_span = max(1, max_y - min_y)
