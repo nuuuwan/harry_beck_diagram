@@ -6,7 +6,8 @@ import imageio
 from reportlab.graphics import renderPM
 from svglib.svglib import svg2rlg
 from utils import Log
-from utils.xmlx import _
+from utils import xmlx
+_ = xmlx._
 
 from hbd.core import bbox_utils
 from hbd.draw.draw_line import DrawLine

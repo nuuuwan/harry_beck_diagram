@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="2000" padding="288">
+  <text fill="#fcfcfc" stroke="none" font-size="333.3333333333333" font-family="p22" x="1000.0" y="1000.0" text-anchor="middle" dominant-baseline="center">@nuuuwan</text>
+  <text fill="black" stroke="none" font-size="80" font-family="p22" x="1000.0" y="144.0" text-anchor="middle" dominant-baseline="hanging">Simplified Roadmap</text>
+  <text fill="gray" stroke="none" font-size="40" font-family="p22" x="1000.0" y="194.0" text-anchor="middle" dominant-baseline="hanging">Colombo, Sri Lanka</text>
+  <text fill="gray" stroke="none" font-size="40" font-family="p22" x="1000.0" y="1896.0" text-anchor="middle" dominant-baseline="text-top">Not to scale.</text>
+  <g>
+    <path fill="none" stroke-width="29.400000000000002" stroke-opacity="1" d="M 762.0,288.0 L 762.0,525.0 L 762.0,762.0 L 762.0,1000.0 L 762.0,1237.0 L 762.0,1474.0 L 762.0,1712.0" stroke="black"/>
+    <rect stroke="none" fill-opacity="1" x="734" y="1698" width="56" height="28" fill="black"/>
+  </g>
+  <g>
+    <path fill="none" stroke-width="29.400000000000002" stroke-opacity="1" d="M 762.0,762.0 L 1000.0,762.0 L 1237.0,762.0" stroke="green"/>
+    <rect stroke="none" fill-opacity="1" x="1223" y="734" width="28" height="56" fill="green"/>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="56.0" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="811.0" y="288" transform="translate(762,288) rotate(0) translate(-762,-288)">Peliyagoda</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="56.0" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="811.0" y="1712" transform="translate(762,1712) rotate(0) translate(-762,-1712)">Pamankada</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="56.0" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1286.0" y="762" transform="translate(1237,762) rotate(0) translate(-1237,-762)">Battaramulla</text>
+  </g>
+  <g>
+    <circle r="28" fill="white" stroke="black" stroke-width="7.0" cx="762" cy="762"/>
+    <text fill="black" stroke="none" font-size="48.0" font-family="p22" font-weight="100" text-anchor="end" dominant-baseline="central" x="717.0" y="762" transform="translate(762,762) rotate(0) translate(-762,-762)">Baseline Rd + A0</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="40" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="803.0" y="525" transform="translate(762,525) rotate(0) translate(-762,-525)">Dematagoda</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="40" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="803.0" y="1000" transform="translate(762,1000) rotate(0) translate(-762,-1000)">Borella Junction</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="40" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="803.0" y="1237" transform="translate(762,1237) rotate(0) translate(-762,-1237)">Kanatta</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="40" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="803.0" y="1474" transform="translate(762,1474) rotate(0) translate(-762,-1474)">Kirula</text>
+  </g>
+  <g/>
+</svg>

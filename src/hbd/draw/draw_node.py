@@ -1,7 +1,8 @@
 import math
 
 from utils import Log
-from utils.xmlx import _
+from utils import xmlx
+_ = xmlx._
 
 from hbd.core.DISTRICT_CAPITAL_LIST import DISTRICT_CAPITAL_LIST
 
