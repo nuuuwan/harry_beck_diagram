@@ -1,12 +1,11 @@
-from hbd import Draw, Line, Network, Styler
+from hbd import Draw, Network, Styler
+
 
 def build_config_idx():
-
     config_idx = {}
 
     def get_latest_config():
         return list(config_idx.values())[-1]
-
 
     def init_year(year):
         if config_idx:
@@ -28,22 +27,17 @@ def build_config_idx():
         config_idx[year] = config
         return config
 
-
     def add_line(line_name, color, station_list, path):
         get_latest_config().add_line(line_name, color, station_list, path)
-        
 
     def extend_line(line_name, station_list, path):
         get_latest_config().extend_line(line_name, station_list, path)
-        
-
 
     def update_line(line_name, station_list, path):
         get_latest_config().update_line(line_name, station_list, path)
 
     def remove_line(line_name):
         get_latest_config().remove_line(line_name)
-        
 
     init_year(1865)
     add_line(
@@ -60,13 +54,11 @@ def build_config_idx():
     init_year(1873)
     extend_line('Main', ['Gampola'], '1SE')
 
-
     init_year(1874)
     extend_line('Main', ['Nawalapitiya'], '1SE')
 
     init_year(1875)
     extend_line('Main', ['Talawakele'], '1SE')
-
 
     init_year(1877)
     add_line('Coastal', 'cyan', ['Colombo Fort', 'Panadura'], '1S')
@@ -97,7 +89,6 @@ def build_config_idx():
 
     init_year(1895)
     extend_line('Coastal', ['Matara'], '1E')
-
 
     init_year(1899)
     extend_line('Northern', ['Maho'], '1N')
@@ -195,7 +186,6 @@ def build_config_idx():
     init_year(1928)
     extend_line('Batticaloa', ['Polonnaruwa', 'Batticaloa'], '1SE 1E')
 
-
     init_year(1942)
     update_line(
         'Kelani Valley', ['Maradana', 'Homagama', 'Avissawella'], '1SE 1E'
@@ -230,7 +220,6 @@ def build_config_idx():
         '1N',
     )
 
-
     init_year(1973)
     remove_line('Opanayaka')
     update_line('Kelani Valley', ['Maradana', 'Homagama'], '1SE')
@@ -255,7 +244,6 @@ def build_config_idx():
         ],
         '6N',
     )
-
 
     init_year(1993)
     add_line('Mihintale', 'maroon', ['Mihintale Junction', 'Mihintale'], '1E')
@@ -284,6 +272,7 @@ def build_config_idx():
     extend_line('Coastal', ['Beliatta'], '1E')
 
     return config_idx
+
 
 if __name__ == '__main__':
     config_idx = build_config_idx()

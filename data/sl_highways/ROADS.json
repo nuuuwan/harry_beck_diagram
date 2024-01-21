@@ -1,0 +1,77 @@
+{
+    "A1": [
+        "Colombo",
+        "Ambepussa",
+        "Peradeniya",
+        "Kandy"
+    ],
+    "A2": [
+        "Colombo",
+        "Panadura",
+        "Galle",
+        "Matara",
+        "Hambantota",
+        "Wellawaya"
+    ],
+    "A3": [
+        "Colombo",
+        "Puttalam"
+    ],
+    "A4": [
+        "Colombo",
+        "Avissawella",
+        "Ratnapura",
+        "Wellawaya",
+        "Monaragala",
+        "Batticaloa"
+    ],
+    "A5": [
+        "Peradeniya",
+        "Nuwara-Eliya",
+        "Badulla",
+        "Chenkalady"
+    ],
+
+    "A6": [
+        "Ambepussa",
+        "Kurunegala",
+        "Dambulla",
+        "Trincomalee"
+    ],
+
+    "A7": [
+        "Avissawella",
+        "Nuwara-Eliya"
+    ],
+
+    "A8": [
+      "Panadura",
+      "Ratnapura"
+    ],
+
+    "A9": [
+        "Kandy",
+        "Katugastota",
+        "Dambulla",
+        "Mihintale",
+        "Jaffna"
+    ],
+    "A10": [
+        "Katugastota",
+        "Kurunegala",
+        "Puttalam"
+    ],
+
+    "A12": [
+        "Puttalam",
+        "Mihintale",
+        "Trincomalee"
+    ],
+
+    "A15": [
+      "Batticaloa",
+      "Chenkalady",
+      "Trincomalee"
+    ]
+
+}

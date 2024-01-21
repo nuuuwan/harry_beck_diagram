@@ -1,6 +1,6 @@
 import svgpathtools
-from utils import Log
-from utils import xmlx
+from utils import Log, xmlx
+
 _ = xmlx._
 
 log = Log(__name__)

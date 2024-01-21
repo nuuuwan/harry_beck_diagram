@@ -14,7 +14,7 @@ config = Network(
                 "Borella Junction",
                 "Kanatta",
                 "Kirula",
-                "Pamankada"
+                "Pamankada",
             ],
             path="6S",
         ),
@@ -24,11 +24,10 @@ config = Network(
                 "Baseline Rd + A0",
                 "Rajagiriya",
                 "Battaramulla",
-                
             ],
             path="2E",
         ),
-    }
+    },
 )
 
 styler = Styler(DIM=2000)
