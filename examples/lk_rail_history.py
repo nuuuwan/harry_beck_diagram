@@ -1,7 +1,7 @@
 from hbd import Draw, Network, Styler
 
 
-def build_config_idx():
+def build_config_idx():  # noqa
     config_idx = {}
 
     def get_latest_config():

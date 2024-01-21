@@ -20,7 +20,6 @@ ANGLE_CONFIG = [
     [0, -1, 270],
 ]
 
-HACK_NODE_IDX = {'Pallai': [4, 13]}
 
 log = Log(__name__)
 
@@ -68,14 +67,24 @@ class Network:
             ),
         )
 
-    @property
-    def line_idx_sorted(self) -> list[Line]:
-        return list(
-            filter(
-                lambda line: 'direction_list' in line,
-                self.line_idx,
-            )
-        )
+    @staticmethod
+    def _process_line(line, node_idx):
+        i_cur = 0
+        for n, direction in line.direction_list:
+            [dx, dy] = parse_direction(direction)
+            cur_node = line.station_list[i_cur]
+            x_cur, y_cur = node_idx[cur_node]
+
+            for i in range(0, n):
+                node = line.station_list[i_cur + i + 1]
+                if node in node_idx:
+                    continue
+                node_idx[node] = [
+                    x_cur + dx * (i + 1),
+                    y_cur + dy * (i + 1),
+                ]
+            i_cur += n
+        return node_idx
 
     @cached_property
     def node_idx_unsorted(self):
@@ -85,26 +94,8 @@ class Network:
         node_idx[center_node] = [0, 0]
 
         for line in self.line_idx.values():
-            i_cur = 0
-            for n, direction in line.direction_list:
-                [dx, dy] = parse_direction(direction)
-                cur_node = line.station_list[i_cur]
-                if cur_node not in node_idx:
-                    node_idx[cur_node] = HACK_NODE_IDX.get(cur_node)
-                if not node_idx[cur_node]:
-                    log.error(f'No node_idx for {cur_node}')
-                x_cur, y_cur = node_idx[cur_node]
-                for i in range(0, n):
-                    if i_cur + i + 1 >= len(line.station_list):
-                        log.error(str(line.station_list))
-                    node = line.station_list[i_cur + i + 1]
-                    if node in node_idx:
-                        continue
-                    node_idx[node] = [
-                        x_cur + dx * (i + 1),
-                        y_cur + dy * (i + 1),
-                    ]
-                i_cur += n
+            node_idx = Network._process_line(line, node_idx)
+
         return node_idx
 
     @cache

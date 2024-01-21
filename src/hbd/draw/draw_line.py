@@ -76,7 +76,7 @@ class DrawLine:
         x_end, y_end = self.config.node_idx[station_list[-1]]
         x_end2, y_end2 = self.config.node_idx[station_list[-2]]
         sx_end, sy_end = t(x_end, y_end)
-        sx_end2, sy_end2 = t(x_end2, y_end2)
+        sx_end2, __ = t(x_end2, y_end2)
         return _(
             'g',
             [

@@ -1,5 +1,3 @@
-import math
-
 from utils import Log, xmlx
 
 from hbd.core.DISTRICT_CAPITAL_LIST import DISTRICT_CAPITAL_LIST
@@ -22,24 +20,14 @@ class DrawNode:
             ),
         )
 
-    def draw_node_blip(self, sx, sy, node, text_angle):
-        text_angle = 0 if text_angle is None else text_angle
-
-        color = self.config.node_to_color_set[node].pop()
-
-        dx = math.cos(math.radians(text_angle))
-        dy = -math.sin(math.radians(text_angle))
-        return _(
-            'rect',
-            None,
-            self.styler.line_end_blip
-            | dict(
-                x=sx + self.styler.RADIUS * (dx - 1),
-                y=sy + self.styler.RADIUS * (dy - 1),
-                width=self.styler.RADIUS * 2,
-                height=self.styler.RADIUS * 2,
-                fill=color,
-            ),
+    @staticmethod
+    def get_transform(sx, sy, text_angle):
+        return ' '.join(
+            [
+                f'translate({sx},{sy})',
+                f'rotate({-text_angle})',
+                f'translate({-sx},{-sy})',
+            ]
         )
 
     def draw_node_text(self, sx, sy, node, x, y, text_angle):
@@ -49,18 +37,8 @@ class DrawNode:
             text_anchor = 'end'
             space_dir = -1
             text_angle -= 180
-        text_angle = -text_angle
-
-        transform = ' '.join(
-            [
-                f'translate({sx},{sy})',
-                f'rotate({text_angle})',
-                f'translate({-sx},{-sy})',
-            ]
-        )
-
+        transform = DrawNode.get_transform(sx, sy, text_angle)
         label = node
-        # label = f'{node} ({x}, {y})'
 
         cmp = self.config.get_node_cmp_value(node)
         default_font_size = int(self.styler.node_text['font_size'])

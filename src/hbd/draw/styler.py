@@ -89,17 +89,6 @@ class Styler:
         )
 
     @cached_property
-    def rect_border(self):
-        return dict(
-            x=self.PADDING / 2,
-            y=self.PADDING / 2,
-            width=self.DIM - self.PADDING,
-            height=self.DIM - self.PADDING,
-            fill='white',
-            stroke='gray',
-        )
-
-    @cached_property
     def node_circle(self):
         return dict(
             r=self.RADIUS * 2,

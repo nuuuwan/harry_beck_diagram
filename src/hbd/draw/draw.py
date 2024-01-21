@@ -40,9 +40,6 @@ class Draw(DrawNode, DrawLine):
             lines.append(self.draw_line(line, t))
         return lines
 
-    def draw_rect_border(self):
-        return _('rect', None, self.styler.rect_border)
-
     def draw_title(self):
         self.config.title
         return _('text', self.config.title, self.styler.text_title)
