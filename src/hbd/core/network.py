@@ -95,6 +95,8 @@ class Network:
                     log.error(f'No node_idx for {cur_node}')
                 x_cur, y_cur = node_idx[cur_node]
                 for i in range(0, n):
+                    if i_cur + i + 1 >= len(line.station_list):
+                        log.error(str(line.station_list))
                     node = line.station_list[i_cur + i + 1]
                     if node in node_idx:
                         continue
