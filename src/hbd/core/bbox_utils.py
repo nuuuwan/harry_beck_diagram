@@ -18,7 +18,7 @@ class bbox_utils:
 
     @staticmethod
     def get_t(styler, loc_list: list):
-        min_x, min_y, max_x, max_y = get_bbox(loc_list)
+        min_x, min_y, max_x, max_y = bbox_utils.get_bbox(loc_list)
 
         x_span = max(1, max_x - min_x)
         y_span = max(1, max_y - min_y)

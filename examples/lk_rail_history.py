@@ -14,7 +14,7 @@ def build_config_idx():  # noqa
         else:
             config = Network(
                 title=str(year),
-                subtitle='History of the Railways in Sri Lanka',
+                subtitle='Railways in Sri Lanka',
                 footer_text=' ~ '.join(
                     [
                         'data from multiple sources',
@@ -100,6 +100,8 @@ def build_config_idx():  # noqa
         ['Maradana', 'Homagama', 'Avissawella'],
         '1SE 1E',
     )
+
+    
     add_line(
         'Northern-2',
         'orange',
@@ -110,6 +112,7 @@ def build_config_idx():  # noqa
         ],
         '1NW 1N',
     )
+
 
     init_year(1903)
     add_line(

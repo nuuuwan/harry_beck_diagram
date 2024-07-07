@@ -4,7 +4,7 @@ from functools import cache, cached_property
 from utils import Log
 
 from hbd.core.DISTRICT_CAPITAL_LIST import DISTRICT_CAPITAL_LIST
-from hbd.core.line import Line
+from hbd.core.Line import Line
 
 TEXT_SPACE = 1
 ANGLE_CONFIG = [
@@ -73,6 +73,9 @@ class Network:
         for n, direction in line.direction_list:
             [dx, dy] = parse_direction(direction)
             cur_node = line.station_list[i_cur]
+            if cur_node not in node_idx:
+                if cur_node == 'Pallai':
+                    node_idx[cur_node] = [4, 13]
             x_cur, y_cur = node_idx[cur_node]
 
             for i in range(0, n):

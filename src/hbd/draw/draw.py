@@ -5,14 +5,11 @@ from functools import cache
 import imageio
 from reportlab.graphics import renderPM
 from svglib.svglib import svg2rlg
-from utils import Log, xmlx
+from utils import Log, _
 
 from hbd.core import bbox_utils
 from hbd.draw.DrawLine import DrawLine
 from hbd.draw.DrawNode import DrawNode
-
-_ = xmlx._
-
 
 log = Log(__name__)
 

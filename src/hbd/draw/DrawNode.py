@@ -1,9 +1,6 @@
-from utils import Log, xmlx
+from utils import Log, _
 
 from hbd.core.DISTRICT_CAPITAL_LIST import DISTRICT_CAPITAL_LIST
-
-_ = xmlx._
-
 
 log = Log(__name__)
 
