@@ -2,6 +2,7 @@ from utils import Log
 
 log = Log(__name__)
 
+
 class bbox_utils:
     @staticmethod
     def get_bbox(loc_list: list) -> tuple[float, float, float, float]:
