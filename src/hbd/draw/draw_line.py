@@ -44,7 +44,10 @@ class DrawLine:
         d = ' '.join(d_str_list)
         path = svgpathtools.parse_path(d)
         smoothed_path = svgpathtools.smoothed_path(
-            path, maxjointsize=self.styler.svg['width'], tightness=1
+            path,
+            maxjointsize=self.styler.svg['width'],
+            tightness=1,
+            ignore_unfixable_kinks=True,
         )
         d = smoothed_path.d()
 
@@ -62,7 +65,7 @@ class DrawLine:
         station_list = line.station_list
         color = line.color
         points = []
-        x0, y0 = None, None
+        x0, y0, node0 = None, None, None
         for node in station_list:
             x, y = self.config.node_idx[node]
             sx, sy = t(x, y)
@@ -70,8 +73,10 @@ class DrawLine:
             if x0 is not None:
                 dx, dy = x - x0, y - y0
                 if [abs(dx), abs(dy)] not in [[1.0, 0], [0, 1.0], [1.0, 1.0]]:
-                    log.warning(f'Invalid jump: {node} ({dx}, {dy})')
-            x0, y0 = x, y
+                    log.warning(
+                        f'Invalid jump: {node0} -> {node} ({dx}, {dy})'
+                    )
+            x0, y0, node0 = x, y, node
 
         x_end, y_end = self.config.node_idx[station_list[-1]]
         x_end2, y_end2 = self.config.node_idx[station_list[-2]]

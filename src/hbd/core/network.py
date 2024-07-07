@@ -6,7 +6,7 @@ from utils import Log
 from hbd.core.DISTRICT_CAPITAL_LIST import DISTRICT_CAPITAL_LIST
 from hbd.core.line import Line
 
-TEXT_SPACE = 3
+TEXT_SPACE = 1
 ANGLE_CONFIG = [
     [1, 0, 0],
     [-1, 0, 180],
@@ -122,7 +122,7 @@ class Network:
         return list(self.node_idx.values())
 
     @cached_property
-    def node_to_color_set(self):
+    def node_to_color_set(self) -> dict:
         node_to_color_set = {}
         for line in self.line_idx.values():
             station_list = line.station_list
@@ -134,10 +134,14 @@ class Network:
         return node_to_color_set
 
     @cached_property
-    def node_to_n(self):
+    def node_to_n(self) -> dict:
         node_to_n = {}
-        for node, color_set in self.node_to_color_set.items():
-            node_to_n[node] = len(color_set)
+        for line in self.line_idx.values():
+            station_list = line.station_list
+            for node in station_list:
+                if node not in node_to_n:
+                    node_to_n[node] = 0
+                node_to_n[node] += 1
         return node_to_n
 
     @cached_property

@@ -1,0 +1,333 @@
+<?xml version="1.0" ?>
+<svg xmlns="http://www.w3.org/2000/svg" width="5000" height="5000" padding="288">
+  <text fill="#fcfcfc" stroke="none" font-size="833.3333333333334" font-family="p22" x="2500.0" y="2500.0" text-anchor="middle" dominant-baseline="center">@nuuuwan</text>
+  <text fill="black" stroke="none" font-size="80" font-family="p22" x="2500.0" y="144.0" text-anchor="middle" dominant-baseline="hanging">Mahaweli Ganga (335 km)</text>
+  <text fill="gray" stroke="none" font-size="40" font-family="p22" x="2500.0" y="194.0" text-anchor="middle" dominant-baseline="hanging">River and Tributaries</text>
+  <text fill="gray" stroke="none" font-size="40" font-family="p22" x="2500.0" y="4896.0" text-anchor="middle" dominant-baseline="text-top">Not to scale.</text>
+  <g>
+    <path fill="none" stroke-width="29.400000000000002" stroke-opacity="1" d="M 3557.0,288.0 L 3365.0,480.0 L 3173.0,672.0 L 2986.7882250993907,858.2117749006092 C 2984.525483399594,860.4745166004061 2980.0,871.4 2980.0,874.6 L 2980.0,1057.0 L 2980.0,1249.0 L 2980.0,1442.0 L 2980.0,1634.0 L 2980.0,1816.4 C 2980.0,1819.6 2975.486286328602,1830.5372225967697 2973.2294294929034,1832.8058338951544 L 2794.7705705070966,2012.1941661048456 C 2792.513713671398,2014.4627774032303 2781.6,2019.0 2778.4,2019.0 L 2596.0,2019.0 L 2403.0,2019.0 L 2211.0,2019.0 L 2019.0,2019.0 L 1835.6,2019.0 C 1832.4,2019.0 1826.0,2025.4 1826.0,2028.6 L 1826.0,2211.0 L 1826.0,2403.0 L 1826.0,2596.0 L 1826.0,2778.4 C 1826.0,2781.6 1830.5372225967697,2792.513713671398 1832.8058338951544,2794.7705705070966 L 2009.6902916947577,2970.738528525355 C 2012.7935277965053,2973.82568568357 2025.1743143164301,2986.2064722034947 2028.261471474645,2989.309708305242 L 2211.0,3173.0" stroke="darkblue"/>
+    <rect stroke="none" fill-opacity="1" x="2197" y="3145" width="28" height="56" fill="darkblue"/>
+  </g>
+  <g>
+    <path fill="none" stroke-width="29.400000000000002" stroke-opacity="1" d="M 2019.0,2980.0 L 1826.0,3173.0 L 1634.0,3365.0 L 1448.82358043845,3550.1764195615497 C 1446.5490536256334,3552.4509463743666 1442.0,3563.4333333333334 1442.0,3566.65 L 1442.0,3750.0" stroke="lightblue"/>
+    <rect stroke="none" fill-opacity="1" x="1414" y="3736" width="56" height="28" fill="lightblue"/>
+  </g>
+  <g>
+    <path fill="none" stroke-width="29.400000000000002" stroke-opacity="1" d="M 2211.0,3173.0 L 2403.0,3173.0 L 2586.35,3173.0 C 2589.5666666666666,3173.0 2600.5490536256334,3177.5490536256334 2602.8235804384503,3179.8235804384503 L 2788.0,3365.0" stroke="lightblue"/>
+    <rect stroke="none" fill-opacity="1" x="2774" y="3337" width="28" height="56" fill="lightblue"/>
+  </g>
+  <g>
+    <path fill="none" stroke-width="29.400000000000002" stroke-opacity="1" d="M 2211.0,3173.0 L 2393.4,3355.4 C 2396.6,3358.6 2409.416601731857,3371.38335509076 2412.624902597786,3374.5750326361394 L 2596.0,3557.0" stroke="lightblue"/>
+    <rect stroke="none" fill-opacity="1" x="2582" y="3529" width="28" height="56" fill="lightblue"/>
+  </g>
+  <g>
+    <path fill="none" stroke-width="29.400000000000002" stroke-opacity="1" d="M 2211.0,3173.0 L 2211.0,3365.0 L 2211.0,3557.0 L 2211.0,3750.0" stroke="darkblue"/>
+    <rect stroke="none" fill-opacity="1" x="2183" y="3736" width="56" height="28" fill="darkblue"/>
+  </g>
+  <g>
+    <path fill="none" stroke-width="29.400000000000002" stroke-opacity="1" d="M 2211.0,3365.0 L 2019.0,3557.0 L 1826.0,3750.0 L 1634.0,3942.0" stroke="lightblue"/>
+    <rect stroke="none" fill-opacity="1" x="1620" y="3914" width="28" height="56" fill="lightblue"/>
+  </g>
+  <g>
+    <path fill="none" stroke-width="29.400000000000002" stroke-opacity="1" d="M 2211.0,3750.0 L 2403.0,3750.0 L 2596.0,3750.0 L 2778.4,3750.0 C 2781.6,3750.0 2788.0,3743.6 2788.0,3740.4 L 2788.0,3557.0 L 2788.0,3365.0" stroke="lightblue"/>
+    <rect stroke="none" fill-opacity="1" x="2760" y="3351" width="56" height="28" fill="lightblue"/>
+  </g>
+  <g>
+    <path fill="none" stroke-width="29.400000000000002" stroke-opacity="1" d="M 2211.0,3750.0 L 2393.4,3932.4 C 2396.6,3935.6 2409.416601731857,3948.38335509076 2412.624902597786,3951.5750326361394 L 2586.8312451298893,4124.878751631807 C 2589.8874967532597,4127.919167754538 2602.080832245462,4140.112503246741 2605.121248368193,4143.168754870111 L 2781.2294294929034,4320.194166104846 C 2783.486286328602,4322.462777403231 2788.0,4333.4 2788.0,4336.6 L 2788.0,4519.0 L 2788.0,4712.0" stroke="darkblue"/>
+    <rect stroke="none" fill-opacity="1" x="2760" y="4698" width="56" height="28" fill="darkblue"/>
+  </g>
+  <g>
+    <path fill="none" stroke-width="29.400000000000002" stroke-opacity="1" d="M 1826.0,2788.0 L 2019.0,2788.0 L 2211.0,2788.0" stroke="lightblue"/>
+    <rect stroke="none" fill-opacity="1" x="2197" y="2760" width="28" height="56" fill="lightblue"/>
+  </g>
+  <g>
+    <path fill="none" stroke-width="29.400000000000002" stroke-opacity="1" d="M 1826.0,2403.0 L 2009.35,2403.0 C 2012.5666666666666,2403.0 2023.5372225967697,2407.5608539644613 2025.8058338951544,2409.8412809466918 L 2211.0,2596.0" stroke="lightblue"/>
+    <rect stroke="none" fill-opacity="1" x="2197" y="2568" width="28" height="56" fill="lightblue"/>
+  </g>
+  <g>
+    <path fill="none" stroke-width="29.400000000000002" stroke-opacity="1" d="M 2019.0,2019.0 L 2211.0,2211.0" stroke="lightblue"/>
+    <rect stroke="none" fill-opacity="1" x="2197" y="2183" width="28" height="56" fill="lightblue"/>
+  </g>
+  <g>
+    <path fill="none" stroke-width="29.400000000000002" stroke-opacity="1" d="M 2980.0,1634.0 L 2797.6,1634.0 C 2794.4,1634.0 2783.474516600406,1638.525483399594 2781.2117749006093,1640.788225099391 L 2605.2605887450304,1816.7394112549696 C 2602.1737258300204,1819.8262741699798 2589.810259397981,1819.8423305928104 2586.7153890969716,1816.7634958892154 L 2403.0,1634.0" stroke="lightblue"/>
+    <rect stroke="none" fill-opacity="1" x="2389" y="1606" width="28" height="56" fill="lightblue"/>
+  </g>
+  <g>
+    <path fill="none" stroke-width="29.400000000000002" stroke-opacity="1" d="M 2211.0,2019.0 L 2211.0,1826.0 L 2211.0,1643.6 C 2211.0,1640.4 2217.4,1634.0 2220.6,1634.0 L 2403.0,1634.0" stroke="lightblue"/>
+    <rect stroke="none" fill-opacity="1" x="2389" y="1606" width="28" height="56" fill="lightblue"/>
+  </g>
+  <g>
+    <path fill="none" stroke-width="29.400000000000002" stroke-opacity="1" d="M 2596.0,2019.0 L 2596.0,2201.4 C 2596.0,2204.6 2591.4627774032306,2215.513713671398 2589.1941661048454,2217.7705705070966 L 2409.8058338951546,2396.2294294929034 C 2407.5372225967694,2398.486286328602 2396.6,2403.0 2393.4,2403.0 L 2211.0,2403.0" stroke="lightblue"/>
+    <rect stroke="none" fill-opacity="1" x="2197" y="2375" width="28" height="56" fill="lightblue"/>
+  </g>
+  <g>
+    <path fill="none" stroke-width="29.400000000000002" stroke-opacity="1" d="M 2788.0,2019.0 L 2970.4,2019.0 C 2973.6,2019.0 2984.5372225967694,2023.5137136713977 2986.8058338951546,2025.7705705070966 L 3166.1941661048454,2204.2294294929034 C 3168.4627774032306,2206.486286328602 3173.0,2217.4 3173.0,2220.6 L 3173.0,2403.0" stroke="lightblue"/>
+    <rect stroke="none" fill-opacity="1" x="3145" y="2389" width="56" height="28" fill="lightblue"/>
+  </g>
+  <g>
+    <path fill="none" stroke-width="29.400000000000002" stroke-opacity="1" d="M 2788.0,2019.0 L 2973.2117749006093,2204.2117749006093 C 2975.474516600406,2206.474516600406 2980.0,2217.4 2980.0,2220.6 L 2980.0,2403.0 L 2980.0,2596.0 L 2980.0,2788.0 L 2980.0,2970.4 C 2980.0,2973.6 2975.486286328602,2984.5372225967694 2973.2294294929034,2986.8058338951546 L 2797.261471474645,3163.690291694758 C 2794.17431431643,3166.7935277965053 2794.190414141672,3179.190414141672 2797.285621212508,3182.285621212508 L 2973.1764195615497,3358.1764195615497 C 2975.4509463743666,3360.4509463743666 2986.4333333333334,3365.0 2989.65,3365.0 L 3173.0,3365.0" stroke="lightblue"/>
+    <rect stroke="none" fill-opacity="1" x="3159" y="3337" width="28" height="56" fill="lightblue"/>
+  </g>
+  <g>
+    <path fill="none" stroke-width="29.400000000000002" stroke-opacity="1" d="M 2980.0,865.0 L 2797.6,865.0 C 2794.4,865.0 2783.474516600406,869.5254833995939 2781.2117749006093,871.7882250993908 L 2602.8235804384503,1050.17641956155 C 2600.5490536256334,1052.4509463743666 2589.5666666666666,1057.0 2586.35,1057.0 L 2403.0,1057.0 L 2211.0,1057.0 L 2019.0,1057.0" stroke="lightblue"/>
+    <rect stroke="none" fill-opacity="1" x="2005" y="1029" width="28" height="56" fill="lightblue"/>
+  </g>
+  <g>
+    <path fill="none" stroke-width="29.400000000000002" stroke-opacity="1" d="M 2019.0,1057.0 L 2019.0,1249.0 L 2019.0,1442.0" stroke="lightblue"/>
+    <rect stroke="none" fill-opacity="1" x="1991" y="1428" width="56" height="28" fill="lightblue"/>
+  </g>
+  <g>
+    <path fill="none" stroke-width="29.400000000000002" stroke-opacity="1" d="M 2403.0,1057.0 L 2403.0,1249.0 L 2403.0,1442.0 L 2403.0,1634.0" stroke="lightblue"/>
+    <rect stroke="none" fill-opacity="1" x="2375" y="1620" width="56" height="28" fill="lightblue"/>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="56.0" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="3606.0" y="288" transform="translate(3557,288) rotate(0) translate(-3557,-288)">Bay of Bengal</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="56.0" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1491.0" y="3750" transform="translate(1442,3750) rotate(0) translate(-1442,-3750)">Sri Paada Range</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="56.0" font-family="p22" font-weight="100" text-anchor="end" dominant-baseline="central" x="2547.0" y="3557" transform="translate(2596,3557) rotate(0) translate(-2596,-3557)">Dunsinane Falls</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="56.0" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1683.0" y="3942" transform="translate(1634,3942) rotate(0) translate(-1634,-3942)">Kotagala</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="56.0" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2837.0" y="4712" transform="translate(2788,4712) rotate(0) translate(-2788,-4712)">Horton Plains</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="56.0" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2260.0" y="2788" transform="translate(2211,2788) rotate(0) translate(-2211,-2788)">Stellenberg</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="56.0" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2260.0" y="2596" transform="translate(2211,2596) rotate(0) translate(-2211,-2596)">Morahena</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="56.0" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2260.0" y="2211" transform="translate(2211,2211) rotate(0) translate(-2211,-2211)">Thalathuoya</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="56.0" font-family="p22" font-weight="100" text-anchor="end" dominant-baseline="central" x="2162.0" y="2403" transform="translate(2211,2403) rotate(45) translate(-2211,-2403)">Hewanakumbubura</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="56.0" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="3222.0" y="2403" transform="translate(3173,2403) rotate(0) translate(-3173,-2403)">Passara</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="56.0" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="3222.0" y="3365" transform="translate(3173,3365) rotate(0) translate(-3173,-3365)">Namunukula Range</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="56.0" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2068.0" y="1442" transform="translate(2019,1442) rotate(0) translate(-2019,-1442)">MATALE</text>
+  </g>
+  <g>
+    <circle r="28" fill="white" stroke="black" stroke-width="7.0" cx="2980" cy="865"/>
+    <text fill="black" stroke="none" font-size="48.0" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="3025.0" y="865" transform="translate(2980,865) rotate(0) translate(-2980,-865)">Manampitiya</text>
+  </g>
+  <g>
+    <circle r="28" fill="white" stroke="black" stroke-width="7.0" cx="2980" cy="1634"/>
+    <text fill="black" stroke="none" font-size="48.0" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="3025.0" y="1634" transform="translate(2980,1634) rotate(0) translate(-2980,-1634)">Ginnoruwa</text>
+  </g>
+  <g>
+    <circle r="28" fill="white" stroke="black" stroke-width="7.0" cx="2788" cy="2019"/>
+    <text fill="black" stroke="none" font-size="48.0" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2833.0" y="2019" transform="translate(2788,2019) rotate(-22.5) translate(-2788,-2019)">Minipe</text>
+  </g>
+  <g>
+    <circle r="28" fill="white" stroke="black" stroke-width="7.0" cx="2596" cy="2019"/>
+    <text fill="black" stroke="none" font-size="48.0" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2641.0" y="2019" transform="translate(2596,2019) rotate(-45) translate(-2596,-2019)">Uma Oya</text>
+  </g>
+  <g>
+    <circle r="28" fill="white" stroke="black" stroke-width="7.0" cx="2211" cy="2019"/>
+    <text fill="black" stroke="none" font-size="48.0" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2256.0" y="2019" transform="translate(2211,2019) rotate(-45) translate(-2211,-2019)">Victoria Res.</text>
+  </g>
+  <g>
+    <circle r="28" fill="white" stroke="black" stroke-width="7.0" cx="2019" cy="2019"/>
+    <text fill="black" stroke="none" font-size="48.0" font-family="p22" font-weight="100" text-anchor="end" dominant-baseline="central" x="1974.0" y="2019" transform="translate(2019,2019) rotate(45) translate(-2019,-2019)">Gurudeniya</text>
+  </g>
+  <g>
+    <circle r="28" fill="white" stroke="black" stroke-width="7.0" cx="1826" cy="2403"/>
+    <text fill="black" stroke="none" font-size="48.0" font-family="p22" font-weight="100" text-anchor="end" dominant-baseline="central" x="1781.0" y="2403" transform="translate(1826,2403) rotate(0) translate(-1826,-2403)">Ganegoda</text>
+  </g>
+  <g>
+    <circle r="28" fill="white" stroke="black" stroke-width="7.0" cx="1826" cy="2788"/>
+    <text fill="black" stroke="none" font-size="48.0" font-family="p22" font-weight="100" text-anchor="end" dominant-baseline="central" x="1781.0" y="2788" transform="translate(1826,2788) rotate(0) translate(-1826,-2788)">Moragolla</text>
+  </g>
+  <g>
+    <circle r="28" fill="white" stroke="black" stroke-width="7.0" cx="2019" cy="2980"/>
+    <text fill="black" stroke="none" font-size="48.0" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2064.0" y="2980" transform="translate(2019,2980) rotate(0) translate(-2019,-2980)">Nawalapitiya</text>
+  </g>
+  <g>
+    <circle r="28" fill="white" stroke="black" stroke-width="7.0" cx="2211" cy="3173"/>
+    <text fill="black" stroke="none" font-size="48.0" font-family="p22" font-weight="100" text-anchor="end" dominant-baseline="central" x="2166.0" y="3173" transform="translate(2211,3173) rotate(0) translate(-2211,-3173)">Kothmale Res.</text>
+  </g>
+  <g>
+    <circle r="28" fill="white" stroke="black" stroke-width="7.0" cx="2788" cy="3365"/>
+    <text fill="black" stroke="none" font-size="48.0" font-family="p22" font-weight="100" text-anchor="end" dominant-baseline="central" x="2743.0" y="3365" transform="translate(2788,3365) rotate(0) translate(-2788,-3365)">Pidurutalagala Range</text>
+  </g>
+  <g>
+    <circle r="28" fill="white" stroke="black" stroke-width="7.0" cx="2211" cy="3365"/>
+    <text fill="black" stroke="none" font-size="48.0" font-family="p22" font-weight="100" text-anchor="end" dominant-baseline="central" x="2166.0" y="3365" transform="translate(2211,3365) rotate(0) translate(-2211,-3365)">Kothmale Oya2</text>
+  </g>
+  <g>
+    <circle r="28" fill="white" stroke="black" stroke-width="7.0" cx="2211" cy="3750"/>
+    <text fill="black" stroke="none" font-size="48.0" font-family="p22" font-weight="100" text-anchor="end" dominant-baseline="central" x="2166.0" y="3750" transform="translate(2211,3750) rotate(0) translate(-2211,-3750)">Thalawakele</text>
+  </g>
+  <g>
+    <circle r="28" fill="white" stroke="black" stroke-width="7.0" cx="2403" cy="1634"/>
+    <text fill="black" stroke="none" font-size="48.0" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2448.0" y="1634" transform="translate(2403,1634) rotate(0) translate(-2403,-1634)">Knuckles Range</text>
+  </g>
+  <g>
+    <circle r="28" fill="white" stroke="black" stroke-width="7.0" cx="2403" cy="1057"/>
+    <text fill="black" stroke="none" font-size="48.0" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2448.0" y="1057" transform="translate(2403,1057) rotate(-45) translate(-2403,-1057)">Elahera</text>
+  </g>
+  <g>
+    <circle r="28" fill="white" stroke="black" stroke-width="7.0" cx="2019" cy="1057"/>
+    <text fill="black" stroke="none" font-size="48.0" font-family="p22" font-weight="100" text-anchor="end" dominant-baseline="central" x="1974.0" y="1057" transform="translate(2019,1057) rotate(0) translate(-2019,-1057)">Bowatenna Res.</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="44.0" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="3408.0" y="480" transform="translate(3365,480) rotate(0) translate(-3365,-480)">TRINCOMALEE</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="44.0" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2831.0" y="3750" transform="translate(2788,3750) rotate(0) translate(-2788,-3750)">NUWARA ELIYA</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="44.0" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="3023.0" y="2788" transform="translate(2980,2788) rotate(0) translate(-2980,-2788)">BADULLA</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="40" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="3214.0" y="672" transform="translate(3173,672) rotate(0) translate(-3173,-672)">Somawathiya</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="40" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="3021.0" y="1057" transform="translate(2980,1057) rotate(0) translate(-2980,-1057)">Kalinga Nuwara</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="40" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="3021.0" y="1249" transform="translate(2980,1249) rotate(0) translate(-2980,-1249)">Dehiattakandiya</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="40" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="3021.0" y="1442" transform="translate(2980,1442) rotate(0) translate(-2980,-1442)">Habarawa</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="40" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="3021.0" y="1826" transform="translate(2980,1826) rotate(0) translate(-2980,-1826)">Mahiyanganaya</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="40" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2444.0" y="2019" transform="translate(2403,2019) rotate(-22.5) translate(-2403,-2019)">Randenigala Res.</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="40" font-family="p22" font-weight="100" text-anchor="end" dominant-baseline="central" x="1785.0" y="2019" transform="translate(1826,2019) rotate(0) translate(-1826,-2019)">Katugastota</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="40" font-family="p22" font-weight="100" text-anchor="end" dominant-baseline="central" x="1785.0" y="2211" transform="translate(1826,2211) rotate(0) translate(-1826,-2211)">Peradeniya</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="40" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1867.0" y="2596" transform="translate(1826,2596) rotate(0) translate(-1826,-2596)">Gampola</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="40" font-family="p22" font-weight="100" text-anchor="end" dominant-baseline="central" x="1785.0" y="3173" transform="translate(1826,3173) rotate(0) translate(-1826,-3173)">Ginigathena</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="40" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1675.0" y="3365" transform="translate(1634,3365) rotate(0) translate(-1634,-3365)">Watawala</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="40" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1483.0" y="3557" transform="translate(1442,3557) rotate(0) translate(-1442,-3557)">Hatton</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="40" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2444.0" y="3173" transform="translate(2403,3173) rotate(-45) translate(-2403,-3173)">Ramboda</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="40" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2637.0" y="3173" transform="translate(2596,3173) rotate(-45) translate(-2596,-3173)">Labukelle</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="40" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2444.0" y="3365" transform="translate(2403,3365) rotate(-22.5) translate(-2403,-3365)">Pundalu Oya</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="40" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2252.0" y="3557" transform="translate(2211,3557) rotate(-22.5) translate(-2211,-3557)">St. Clair Falls</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="40" font-family="p22" font-weight="100" text-anchor="end" dominant-baseline="central" x="1978.0" y="3557" transform="translate(2019,3557) rotate(0) translate(-2019,-3557)">Devon Falls</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="40" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1867.0" y="3750" transform="translate(1826,3750) rotate(-315) translate(-1826,-3750)">Dimbula</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="40" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2444.0" y="3750" transform="translate(2403,3750) rotate(-315) translate(-2403,-3750)">Upper Kothmale Res.</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="40" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2637.0" y="3750" transform="translate(2596,3750) rotate(-315) translate(-2596,-3750)">Nanu Oya</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="40" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2829.0" y="3557" transform="translate(2788,3557) rotate(0) translate(-2788,-3557)">Lake Gregory</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="40" font-family="p22" font-weight="100" text-anchor="end" dominant-baseline="central" x="2362.0" y="3942" transform="translate(2403,3942) rotate(0) translate(-2403,-3942)">Lindula</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="40" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2637.0" y="4134" transform="translate(2596,4134) rotate(0) translate(-2596,-4134)">Elgin Falls</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="40" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2829.0" y="4327" transform="translate(2788,4327) rotate(0) translate(-2788,-4327)">Ambewela</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="40" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2829.0" y="4519" transform="translate(2788,4519) rotate(0) translate(-2788,-4519)">Black Pool</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="40" font-family="p22" font-weight="100" text-anchor="end" dominant-baseline="central" x="1978.0" y="2788" transform="translate(2019,2788) rotate(-35) translate(-2019,-2788)">Atabage</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="40" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2060.0" y="2403" transform="translate(2019,2403) rotate(-22.5) translate(-2019,-2403)">Nillambe</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="40" font-family="p22" font-weight="100" text-anchor="end" dominant-baseline="central" x="2747.0" y="1634" transform="translate(2788,1634) rotate(45) translate(-2788,-1634)">Uduwelwala</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="40" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2637.0" y="1826" transform="translate(2596,1826) rotate(-22.5) translate(-2596,-1826)">Meemure</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="40" font-family="p22" font-weight="100" text-anchor="end" dominant-baseline="central" x="2170.0" y="1826" transform="translate(2211,1826) rotate(0) translate(-2211,-1826)">Orutota</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="40" font-family="p22" font-weight="100" text-anchor="end" dominant-baseline="central" x="2170.0" y="1634" transform="translate(2211,1634) rotate(0) translate(-2211,-1634)">Hulu Ganga</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="40" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2637.0" y="2211" transform="translate(2596,2211) rotate(0) translate(-2596,-2211)">Puhulpola</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="40" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2444.0" y="2403" transform="translate(2403,2403) rotate(0) translate(-2403,-2403)">Welimada</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="40" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="3021.0" y="2019" transform="translate(2980,2019) rotate(0) translate(-2980,-2019)">Loggal Oya</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="40" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="3214.0" y="2211" transform="translate(3173,2211) rotate(0) translate(-3173,-2211)">Gerandi Ella</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="40" font-family="p22" font-weight="100" text-anchor="end" dominant-baseline="central" x="2939.0" y="2211" transform="translate(2980,2211) rotate(-35) translate(-2980,-2211)">Kandaketiya</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="40" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="3021.0" y="2403" transform="translate(2980,2403) rotate(-315) translate(-2980,-2403)">Thaldena</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="40" font-family="p22" font-weight="100" text-anchor="end" dominant-baseline="central" x="2939.0" y="2596" transform="translate(2980,2596) rotate(0) translate(-2980,-2596)">Dunhinda Falls</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="40" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="3021.0" y="2980" transform="translate(2980,2980) rotate(0) translate(-2980,-2980)">Muthiyanganaya</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="40" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2829.0" y="3173" transform="translate(2788,3173) rotate(0) translate(-2788,-3173)">Hali Ela</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="40" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="3021.0" y="3365" transform="translate(2980,3365) rotate(-45) translate(-2980,-3365)">Demodara</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="40" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2829.0" y="865" transform="translate(2788,865) rotate(-45) translate(-2788,-865)">Parakrama Samudraya</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="40" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2637.0" y="1057" transform="translate(2596,1057) rotate(0) translate(-2596,-1057)">Angamedilla</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="40" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2252.0" y="1057" transform="translate(2211,1057) rotate(-45) translate(-2211,-1057)">Moragahakanda Res.</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="40" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2060.0" y="1249" transform="translate(2019,1249) rotate(0) translate(-2019,-1249)">Rajjammana</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="40" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2444.0" y="1249" transform="translate(2403,1249) rotate(0) translate(-2403,-1249)">Kalu Ganga Res.</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="40" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2444.0" y="1442" transform="translate(2403,1442) rotate(-22.5) translate(-2403,-1442)">Ilukkumbura</text>
+  </g>
+</svg>
