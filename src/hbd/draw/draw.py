@@ -8,8 +8,8 @@ from svglib.svglib import svg2rlg
 from utils import Log, xmlx
 
 from hbd.core import bbox_utils
-from hbd.draw.draw_line import DrawLine
-from hbd.draw.draw_node import DrawNode
+from hbd.draw.DrawLine import DrawLine
+from hbd.draw.DrawNode import DrawNode
 
 _ = xmlx._
 
