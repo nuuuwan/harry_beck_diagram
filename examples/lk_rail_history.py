@@ -299,6 +299,6 @@ if __name__ == '__main__':
             png_path_highlight = png_path
         prev_png_path = png_path
         png_path_list.append(png_path_highlight)
-        
+
     gif_path = 'images/lk_rail_history/timeline.gif'
     Draw.build_animated_gif(png_path_list, gif_path)
