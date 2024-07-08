@@ -1,8 +1,8 @@
 <?xml version="1.0" ?>
 <svg xmlns="http://www.w3.org/2000/svg" width="3600" height="3600" padding="360">
   <text fill="#fcfcfc" stroke="none" font-size="600.0" font-family="p22" x="1800.0" y="1800.0" text-anchor="middle" dominant-baseline="center">@nuuuwan</text>
-  <text fill="black" stroke="none" font-size="120" font-family="p22" x="1800.0" y="180.0" text-anchor="middle" dominant-baseline="hanging">1877</text>
-  <text fill="gray" stroke="none" font-size="40" font-family="p22" x="1800.0" y="230.0" text-anchor="middle" dominant-baseline="hanging">Railways in Sri Lanka</text>
+  <text fill="black" stroke="none" font-size="160" font-family="p22" x="1800.0" y="180.0" text-anchor="middle" dominant-baseline="hanging">1877</text>
+  <text fill="gray" stroke="none" font-size="40" font-family="p22" x="1800.0" y="230.0" text-anchor="middle" dominant-baseline="hanging"/>
   <text fill="gray" stroke="none" font-size="40" font-family="p22" x="1800.0" y="3460.0" text-anchor="middle" dominant-baseline="text-top">data from multiple sources ~ music by @bensound ~ visualization by @nuuuwan</text>
   <g>
     <path fill="none" stroke-width="29.400000000000002" stroke-opacity="1" d="M 360.0,2440.0 L 680.0,2120.0 L 1000.0,1800.0 L 1320.0,1480.0 L 1628.6862915010151,1171.3137084989849 C 1632.4575276673436,1167.5424723326564 1650.6666666666667,1160.0 1656.0,1160.0 L 1960.0,1160.0 L 2264.0,1160.0 C 2269.3333333333335,1160.0 2287.5424723326564,1167.5424723326564 2291.313708498985,1171.3137084989849 L 2600.0,1480.0 L 2920.0,1800.0 L 3240.0,2120.0" stroke="red"/>

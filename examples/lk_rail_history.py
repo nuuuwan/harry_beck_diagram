@@ -1,4 +1,4 @@
-from hbd import Draw, Network, Styler
+from hbd import Draw, ImageHighlight, Network, Styler
 
 
 def build_config_idx():  # noqa
@@ -14,7 +14,7 @@ def build_config_idx():  # noqa
         else:
             config = Network(
                 title=str(year),
-                subtitle='Railways in Sri Lanka',
+                subtitle='',
                 footer_text=' ~ '.join(
                     [
                         'data from multiple sources',
@@ -65,6 +65,9 @@ def build_config_idx():  # noqa
 
     init_year(1878)
     extend_line('Coastal', ['Kalutara North'], '1S')
+
+    init_year(1879)
+    extend_line('Coastal', ['Wadduwa'], '1S')
 
     init_year(1880)
     extend_line('Matale', ['Matale'], '1E')
@@ -279,11 +282,23 @@ if __name__ == '__main__':
     config_idx = build_config_idx()
 
     png_path_list = []
+    prev_png_path = None
     for year, config in config_idx.items():
         draw = Draw(config, Styler())
         png_path = f'images/lk_rail_history/{year}.png'
         png_path = draw.draw(png_path, False)
-        png_path_list.append(png_path)
 
+        if prev_png_path:
+            png_path_highlight = png_path[:-4] + '.highlight.png'
+            ImageHighlight(
+                png_path,
+                prev_png_path,
+                400,
+            ).write(png_path_highlight)
+        else:
+            png_path_highlight = png_path
+        prev_png_path = png_path
+        png_path_list.append(png_path_highlight)
+        
     gif_path = 'images/lk_rail_history/timeline.gif'
     Draw.build_animated_gif(png_path_list, gif_path)

@@ -41,7 +41,7 @@ class Styler:
         return dict(
             fill='black',
             stroke='none',
-            font_size=self.FONT_SIZE * 3,
+            font_size=self.FONT_SIZE * 4,
             font_family=self.FONT_FAMILY,
             x=self.DIM / 2,
             y=self.PADDING / 2,
