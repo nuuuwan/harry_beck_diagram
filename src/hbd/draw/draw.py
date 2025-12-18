@@ -121,16 +121,17 @@ class Draw(DrawNode, DrawLine):
         durations = [image_duration for _ in png_path_list] + [5.0]
         extended_png_list = png_path_list + [png_path_list[-1]]
         clip = ImageSequenceClip(extended_png_list, durations=durations)
+        video_duration = sum(durations)
 
         audio_path = os.path.join("media", "echoofsadness.mp3")
         audio_clip = AudioFileClip(audio_path)
-
+        audio_clip = audio_clip.subclipped(0, video_duration)
         audio_clip = audio_clip.with_effects([AudioFadeOut(2.0)])
 
         clip = clip.with_audio(audio_clip)
 
         clip.write_videofile(
-            video_path, fps=30, codec="libx264", audio_codec="aac"
+            video_path, fps=4, codec="libx264", audio_codec="aac"
         )
         log.info(f"Built {video_path} (from {len(png_path_list)} png files)")
         webbrowser.open(os.path.abspath(video_path))
