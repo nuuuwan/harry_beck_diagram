@@ -300,7 +300,10 @@ def build_year_to_config():  # noqa
 
 
 if __name__ == "__main__":
-    year_to_config = build_year_to_config()
+    year_to_config = {
+        year: config
+        for year, config in list(build_year_to_config().items())[:10]
+    }
 
     for year, config in year_to_config.items():
         draw = Draw(config, Styler())
