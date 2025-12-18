@@ -3,7 +3,8 @@ import webbrowser
 from functools import cache
 
 import imageio
-from moviepy import AudioFileClip, ImageSequenceClip
+from moviepy import (AudioFileClip, ColorClip, CompositeVideoClip,
+                     ImageSequenceClip)
 from moviepy.audio.fx import AudioFadeOut
 from reportlab.graphics import renderPM
 from svglib.svglib import svg2rlg
@@ -113,7 +114,12 @@ class Draw(DrawNode, DrawLine):
 
     @staticmethod
     def build_video(
-        png_path_list, video_path, audio_path, image_duration=None
+        png_path_list,
+        video_path,
+        audio_path,
+        image_duration=None,
+        fps=8,
+        expand_end=True,
     ):
         assert (
             audio_path is not None
@@ -123,11 +129,13 @@ class Draw(DrawNode, DrawLine):
 
         image_duration = image_duration or (16.38 * 1 / 12)
         png_path_list.sort()
+        png_path_list = png_path_list[:10]
 
         durations = [image_duration for _ in png_path_list]
-        for i in range(0, 5):
-            durations[-i - 1] = 4.0
-        durations[-1] = 5
+        if expand_end:
+            for i in range(0, 5):
+                durations[-i - 1] = 4.0 * image_duration
+            durations[-1] = 8.0 * image_duration
 
         clip = ImageSequenceClip(png_path_list, durations=durations)
         video_duration = sum(durations)
@@ -139,7 +147,20 @@ class Draw(DrawNode, DrawLine):
 
         clip = clip.with_audio(audio_clip)
 
-        clip.write_videofile(
+        height = clip.h
+        width = int(height * 16 / 9)
+        clip_resized = clip.resized(width=width, height=height)
+
+        background = ColorClip(
+            size=(width, height),
+            color=(255, 255, 255),
+            duration=clip.duration,
+        )
+        final = CompositeVideoClip(
+            [background, clip_resized.with_position("center")]
+        )
+
+        final.write_videofile(
             video_path, fps=8, codec="libx264", audio_codec="aac"
         )
         log.info(f"Built {video_path} (from {len(png_path_list)} png files)")
