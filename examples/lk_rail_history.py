@@ -371,7 +371,7 @@ if __name__ == "__main__":
         draw.draw_svg(svg_path)
 
     png_path_list = []
-    for year, config in list(year_to_config.items())[:20]:
+    for year, config in list(year_to_config.items()):
         draw = Draw(config, Styler())
         svg_path = f"media/images/lk_rail_history/{year}.svg"
         png_path = draw.convert_svg_to_png(svg_path)

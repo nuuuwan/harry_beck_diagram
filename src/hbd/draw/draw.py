@@ -137,7 +137,7 @@ class Draw(DrawNode, DrawLine):
         clip = clip.with_audio(audio_clip)
 
         clip.write_videofile(
-            video_path, fps=4, codec="libx264", audio_codec="aac"
+            video_path, fps=8, codec="libx264", audio_codec="aac"
         )
         log.info(f"Built {video_path} (from {len(png_path_list)} png files)")
         webbrowser.open(os.path.abspath(video_path))
