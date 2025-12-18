@@ -23,11 +23,10 @@ class bbox_utils:
         x_span = max(1, max_x - min_x)
         y_span = max(1, max_y - min_y)
         max_span = max(x_span, y_span)
-        log.debug(f'{x_span=}, {y_span=}')
 
-        padding = styler.svg['padding']
-        diagram_width = styler.svg['width'] - 2 * padding
-        diagram_height = styler.svg['height'] - 2 * padding
+        padding = styler.svg["padding"]
+        diagram_width = styler.svg["width"] - 2 * padding
+        diagram_height = styler.svg["height"] - 2 * padding
 
         inner_width = diagram_width * x_span / max_span
         inner_height = diagram_height * y_span / max_span
