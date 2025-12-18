@@ -3,6 +3,7 @@ import webbrowser
 from functools import cache
 
 import imageio
+from moviepy import AudioFileClip, ImageSequenceClip
 from reportlab.graphics import renderPM
 from svglib.svglib import svg2rlg
 from utils import Log, _
@@ -107,3 +108,22 @@ class Draw(DrawNode, DrawLine):
         imageio.mimwrite(gif_path, images, duration=DURATION)
         log.info(f"Built {gif_path} (from {len(png_path_list)} png files)")
         webbrowser.open(os.path.abspath(gif_path))
+
+    @staticmethod
+    def build_video(png_path_list, video_path, image_duration=None):
+        image_duration = image_duration or (16.38 * 2 / 12)
+        png_path_list = png_path_list[:10]
+        png_path_list.sort()
+        clip = ImageSequenceClip(
+            png_path_list, durations=[image_duration for _ in png_path_list]
+        )
+
+        audio_path = os.path.join("media", "echoofsadness.mp3")
+        audio_clip = AudioFileClip(audio_path)
+        clip = clip.with_audio(audio_clip)
+
+        clip.write_videofile(
+            video_path, fps=30, codec="libx264", audio_codec="aac"
+        )
+        log.info(f"Built {video_path} (from {len(png_path_list)} png files)")
+        webbrowser.open(os.path.abspath(video_path))

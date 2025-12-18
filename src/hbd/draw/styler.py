@@ -17,7 +17,7 @@ class Styler:
         RADIUS=14,
         DIM=3600,
         OPACITY=1,
-        PADDING=480,
+        PADDING=720,
         FONT_FAMILY=DEFAULT_FONT_FAMILY,
         FONT_SIZE=40,
     ):

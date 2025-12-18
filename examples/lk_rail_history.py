@@ -314,5 +314,5 @@ if __name__ == "__main__":
         png_path = draw.convert_svg_to_png(svg_path)
         png_path_list.append(png_path)
 
-    gif_path = "images/lk_rail_history/timeline.gif"
-    Draw.build_animated_gif(png_path_list, gif_path)
+    video_path = "images/lk_rail_history/lk_rail_history.mp4"
+    Draw.build_video(png_path_list, video_path)
