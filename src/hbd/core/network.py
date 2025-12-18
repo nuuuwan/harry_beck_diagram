@@ -95,7 +95,6 @@ class Network:
 
     @staticmethod
     def _process_line(line, node_idx):
-        log.debug(f"Processing line: {line.station_list}, path: {line.path}")
         i_cur = 0
         for direction in line.direction_list:
             [dx, dy] = parse_direction(direction)
@@ -275,16 +274,11 @@ class Network:
 
     def remove_line_after(self, line_name, station_name):
         line = self.line_idx[line_name]
-        print("-" * 32)
-        log.debug(f"line.path: {line.path}")
-        log.debug(f"line.station_list: {line.station_list}")
 
         index = line.station_list.index(station_name)
 
         n_directions_to_keep = index
         new_direction_list = line.direction_list[:n_directions_to_keep]
         line.path = Line.direction_list_to_path(new_direction_list)
-        log.debug(f"line.path: {line.path}")
 
         line.station_list = line.station_list[: index + 1]
-        log.debug(f"line.station_list: {line.station_list}")

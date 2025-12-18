@@ -80,7 +80,7 @@ class Draw(DrawNode, DrawLine):
             self.styler.svg,
         )
         svg.store(svg_path)
-        log.debug(f"Saved {svg_path}")
+        log.info(f"Saved {svg_path}")
         return svg_path
 
     @staticmethod
