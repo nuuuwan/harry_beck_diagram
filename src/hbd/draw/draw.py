@@ -65,6 +65,8 @@ class Draw(DrawNode, DrawLine):
         )
 
     def draw_svg(self, svg_path):
+        dir_for_svg_path = os.path.dirname(svg_path)
+        os.makedirs(dir_for_svg_path, exist_ok=True)
         svg = _(
             "svg",
             [
