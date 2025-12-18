@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<svg xmlns="http://www.w3.org/2000/svg" width="3600" height="3600" padding="720">
+  <text fill="#fcfcfc" stroke="none" font-size="600.0" font-family="p22" x="1800.0" y="1800.0" text-anchor="middle" dominant-baseline="center">@nuuuwan</text>
+  <text fill="black" stroke="none" font-size="160" font-family="p22" x="1800.0" y="360.0" text-anchor="middle" dominant-baseline="hanging">1875</text>
+  <text fill="gray" stroke="none" font-size="80" font-family="p22" x="1800.0" y="518.0" text-anchor="middle" dominant-baseline="hanging">Sri Lanka's Railway Network</text>
+  <text fill="gray" stroke="none" font-size="40" font-family="p22" x="1800.0" y="3280.0" text-anchor="middle" dominant-baseline="text-top">data from railway.gov.lk et al ~ music by @bensound ~ visualization by @nuuuwan</text>
+  <g>
+    <path fill="none" stroke-width="29.400000000000002" stroke-opacity="1" d="M 720.0,2280.0 L 960.0,2040.0 L 1200.0,1800.0 L 1431.5147186257614,1568.4852813742386 C 1434.3431457505076,1565.6568542494924 1448.0,1560.0 1452.0,1560.0 L 1680.0,1560.0 L 1920.0,1560.0 L 2148.0,1560.0 C 2152.0,1560.0 2165.6568542494924,1565.6568542494924 2168.4852813742386,1568.4852813742386 L 2400.0,1800.0 L 2640.0,2040.0 L 2880.0,2280.0" stroke="red"/>
+    <rect stroke="none" fill-opacity="1" x="2866" y="2252" width="28" height="56" fill="red"/>
+  </g>
+  <g>
+    <path fill="none" stroke-width="29.400000000000002" stroke-opacity="1" d="M 2160.0,1560.0 L 2400.0,1320.0" stroke="purple"/>
+    <rect stroke="none" fill-opacity="1" x="2386" y="1292" width="28" height="56" fill="purple"/>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="56.0" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="769.0" y="2280" transform="translate(720,2280) rotate(0) translate(-720,-2280)">C. Terminus</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="56.0" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2929.0" y="2280" transform="translate(2880,2280) rotate(0) translate(-2880,-2280)">Talawakele</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="56.0" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2449.0" y="1320" transform="translate(2400,1320) rotate(0) translate(-2400,-1320)">Kandy</text>
+  </g>
+  <g>
+    <circle r="28" fill="white" stroke="black" stroke-width="7.0" cx="2160" cy="1560"/>
+    <text fill="black" stroke="none" font-size="48.0" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2205.0" y="1560" transform="translate(2160,1560) rotate(0) translate(-2160,-1560)">Peradeniya</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="44.0" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1243.0" y="1800" transform="translate(1200,1800) rotate(0) translate(-1200,-1800)">Gampaha</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="40" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1001.0" y="2040" transform="translate(960,2040) rotate(0) translate(-960,-2040)">Ragama</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="40" font-family="p22" font-weight="100" text-anchor="end" dominant-baseline="central" x="1399.0" y="1560" transform="translate(1440,1560) rotate(0) translate(-1440,-1560)">Ambepussa</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="40" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1721.0" y="1560" transform="translate(1680,1560) rotate(-90) translate(-1680,-1560)">Polgahawela</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="40" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1961.0" y="1560" transform="translate(1920,1560) rotate(-90) translate(-1920,-1560)">Rambukkana</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="40" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2441.0" y="1800" transform="translate(2400,1800) rotate(0) translate(-2400,-1800)">Gampola</text>
+  </g>
+  <g>
+    <text fill="gray" stroke="none" font-size="40" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2681.0" y="2040" transform="translate(2640,2040) rotate(0) translate(-2640,-2040)">Nawalapitiya</text>
+  </g>
+</svg>
