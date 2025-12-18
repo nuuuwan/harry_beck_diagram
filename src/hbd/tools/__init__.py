@@ -1,3 +1,4 @@
 # hbd.tools (auto generate by build_inits.py)
+# flake8: noqa: F408
 
 from hbd.tools.ImageHighlight import ImageHighlight

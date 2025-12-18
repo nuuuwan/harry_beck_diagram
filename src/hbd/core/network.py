@@ -25,18 +25,18 @@ log = Log(__name__)
 
 
 def xy_to_k(x, y):
-    return f'{x:.1f}:{y:.1f}'
+    return f"{x:.1f}:{y:.1f}"
 
 
 def parse_direction(direction):
     dx, dy = 0, 0
-    if 'N' in direction:
+    if "N" in direction:
         dy = 1
-    if 'S' in direction:
+    if "S" in direction:
         dy = -1
-    if 'E' in direction:
+    if "E" in direction:
         dx = 1
-    if 'W' in direction:
+    if "W" in direction:
         dx = -1
     return [dx, dy]
 
@@ -53,6 +53,21 @@ class Network:
         self.subtitle = subtitle
         self.footer_text = footer_text
         self.line_idx = line_idx
+
+    @classmethod
+    def from_year(cls, year: int):
+        return cls(
+            title=str(year),
+            subtitle="",
+            footer_text=" ~ ".join(
+                [
+                    "data from multiple sources",
+                    "music by @bensound",
+                    "visualization by @nuuuwan",
+                ]
+            ),
+            line_idx={},
+        )
 
     def copy(
         self, title=None, subtitle=None, footer_text=None, line_idx=None
@@ -74,7 +89,7 @@ class Network:
             [dx, dy] = parse_direction(direction)
             cur_node = line.station_list[i_cur]
             if cur_node not in node_idx:
-                if cur_node == 'Pallai':
+                if cur_node == "Pallai":
                     node_idx[cur_node] = [4, 13]
             x_cur, y_cur = node_idx[cur_node]
 
@@ -222,7 +237,7 @@ class Network:
     def extend_line(self, line_name, station_list, path):
         line = self.line_idx[line_name]
         line.station_list += station_list
-        line.path += ' ' + path
+        line.path += " " + path
 
     def update_line(self, line_name, station_list, path):
         self.line_idx[line_name] = Line(
@@ -233,3 +248,14 @@ class Network:
 
     def remove_line(self, line_name):
         del self.line_idx[line_name]
+
+    def rename_station(self, old_name, new_name):
+        for line in self.line_idx.values():
+            line.station_list = [
+                new_name if x == old_name else x for x in line.station_list
+            ]
+
+    def update_line_at_start(self, line_name, station_name, path_item):
+        line = self.line_idx[line_name]
+        line.station_list = [station_name] + line.station_list
+        line.path = path_item + " " + line.path
