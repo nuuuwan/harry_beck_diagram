@@ -121,14 +121,17 @@ class Draw(DrawNode, DrawLine):
         dir_video_path = os.path.dirname(video_path)
         os.makedirs(dir_video_path, exist_ok=True)
 
-        image_duration = image_duration or (16.38 * 2 / 12)
-        png_path_list = png_path_list[:10]
+        image_duration = image_duration or (16.38 * 1 / 12)
         png_path_list.sort()
 
-        durations = [image_duration for _ in png_path_list] + [5.0]
-        extended_png_list = png_path_list + [png_path_list[-1]]
-        clip = ImageSequenceClip(extended_png_list, durations=durations)
+        durations = [image_duration for _ in png_path_list]
+        for i in range(0, 5):
+            durations[-i - 1] = 4.0
+        durations[-1] = 5
+
+        clip = ImageSequenceClip(png_path_list, durations=durations)
         video_duration = sum(durations)
+        log.debug(f"{video_duration=}")
 
         audio_clip = AudioFileClip(audio_path)
         audio_clip = audio_clip.subclipped(0, video_duration)
