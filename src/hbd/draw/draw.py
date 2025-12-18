@@ -4,6 +4,7 @@ from functools import cache
 
 import imageio
 from moviepy import AudioFileClip, ImageSequenceClip
+from moviepy.audio.fx import AudioFadeOut
 from reportlab.graphics import renderPM
 from svglib.svglib import svg2rlg
 from utils import Log, _
@@ -116,12 +117,16 @@ class Draw(DrawNode, DrawLine):
         image_duration = image_duration or (16.38 * 2 / 12)
         png_path_list = png_path_list[:10]
         png_path_list.sort()
-        clip = ImageSequenceClip(
-            png_path_list, durations=[image_duration for _ in png_path_list]
-        )
+
+        durations = [image_duration for _ in png_path_list] + [5.0]
+        extended_png_list = png_path_list + [png_path_list[-1]]
+        clip = ImageSequenceClip(extended_png_list, durations=durations)
 
         audio_path = os.path.join("media", "echoofsadness.mp3")
         audio_clip = AudioFileClip(audio_path)
+
+        audio_clip = audio_clip.with_effects([AudioFadeOut(2.0)])
+
         clip = clip.with_audio(audio_clip)
 
         clip.write_videofile(
