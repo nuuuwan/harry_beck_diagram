@@ -72,7 +72,7 @@ class Network:
             subtitle="",
             footer_text=" ~ ".join(
                 [
-                    "data from multiple sources",
+                    "data from railway.gov.lk et al",
                     "music by @bensound",
                     "visualization by @nuuuwan",
                 ]
@@ -95,24 +95,26 @@ class Network:
 
     @staticmethod
     def _process_line(line, node_idx):
+        log.debug(f"Processing line: {line.station_list}, path: {line.path}")
         i_cur = 0
-        for n, direction in line.direction_list:
+        for direction in line.direction_list:
             [dx, dy] = parse_direction(direction)
             cur_node = line.station_list[i_cur]
             if cur_node not in node_idx:
                 if cur_node == "Pallai":
                     node_idx[cur_node] = [4, 13]
+                elif cur_node == "Ambewela":
+                    node_idx[cur_node] = [10, 0]
             x_cur, y_cur = node_idx[cur_node]
 
-            for i in range(0, n):
-                node = line.station_list[i_cur + i + 1]
-                if node in node_idx:
-                    continue
-                node_idx[node] = [
-                    x_cur + dx * (i + 1),
-                    y_cur + dy * (i + 1),
-                ]
-            i_cur += n
+            node = line.station_list[i_cur + 1]
+            if node in node_idx:
+                continue
+            node_idx[node] = [
+                x_cur + dx * 1,
+                y_cur + dy * 1,
+            ]
+            i_cur += 1
         return node_idx
 
     @cached_property
@@ -270,3 +272,19 @@ class Network:
         line = self.line_idx[line_name]
         line.station_list = [station_name] + line.station_list
         line.path = path_item + " " + line.path
+
+    def remove_line_after(self, line_name, station_name):
+        line = self.line_idx[line_name]
+        print("-" * 32)
+        log.debug(f"line.path: {line.path}")
+        log.debug(f"line.station_list: {line.station_list}")
+
+        index = line.station_list.index(station_name)
+
+        n_directions_to_keep = index
+        new_direction_list = line.direction_list[:n_directions_to_keep]
+        line.path = Line.direction_list_to_path(new_direction_list)
+        log.debug(f"line.path: {line.path}")
+
+        line.station_list = line.station_list[: index + 1]
+        log.debug(f"line.station_list: {line.station_list}")

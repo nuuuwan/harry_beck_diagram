@@ -1,6 +1,5 @@
 import copy
 import re
-from functools import cached_property
 
 from utils import Log
 
@@ -49,7 +48,7 @@ class Line:
             )
         return " ".join(path_segments)
 
-    @cached_property
+    @property
     def direction_list(self):
         direction_list = Line.path_to_direction_list(self.path)
         assert len(self.station_list) - 1 == len(direction_list), (

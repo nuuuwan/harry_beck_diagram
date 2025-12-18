@@ -9,11 +9,18 @@ def build_year_to_config():  # noqa
     def get_latest_config():
         return list(year_to_config.values())[-1]
 
-    def add_year(year):
+    def add_year(year, latest_config_year=None):
         if year_to_config:
-            latest_config = get_latest_config()
+            latest_config = (
+                year_to_config[latest_config_year]
+                if latest_config_year
+                else get_latest_config()
+            )
             config = latest_config.copy(title=str(year))
         else:
+            assert (
+                latest_config_year is None
+            ), "The first year cannot have a latest_config_year"
             config = Network.from_year(year)
         year_to_config[year] = config
         return config
@@ -227,11 +234,12 @@ def build_year_to_config():  # noqa
             "Ja-Ela",
             "Katunayake S.",
             "Negombo",
+            "Nattandiya",
             "Madampe",
             "Chilaw",
             "Bangadeniya",
         ],
-        "3NW 3N",
+        "3NW 4N",
     )
 
     add_year(1946)
@@ -294,14 +302,63 @@ def build_year_to_config():  # noqa
 
     add_year(2015)
     extend_line("Nothern", ["Kankesanthurai"], "1N")
-    extend_line("Mannar", ["Mannar", "Talaimanar Pier"], "1NW 1W")
+    extend_line("Mannar", ["Mannar", "T'mannar P."], "1NW 1NW")
 
     add_year(2019)
     extend_line("Coastal", ["Beliatta"], "1E")
 
-    add_year("2025-12-16")
+    add_year("2025-12-05", 2019)
     remove_line("Mannar")
+    remove_line("Matale")
+    remove_line("Batticaloa")
+    remove_line("Trincomalee")
+    remove_line("Mihintale")
+    remove_line("Nothern")
+    remove_line_after("Main", "Ambepussa")
+    remove_line_after("Puttalam", "Nattandiya")
+
+    add_year("2025-12-16", 2019)
+    remove_line("Mannar")
+    remove_line("Matale")
+    remove_line("Batticaloa")
+    remove_line("Trincomalee")
+    remove_line("Mihintale")
     remove_line_after("Main", "Rambukkana")
+    remove_line_after("Nothern", "Maho")
+    remove_line_after("Puttalam", "Nattandiya")
+
+    add_year("2026-01-01", 2019)
+    remove_line("Mannar")
+    remove_line("Matale")
+    remove_line("Mihintale")
+    remove_line_after("Main", "Rambukkana")
+    add_line(
+        "Main-2",
+        "red",
+        [
+            "Ambewela",
+            "Haputale",
+            "Bandarawela",
+            "Badulla",
+        ],
+        "2E 1NE",
+    )
+
+    add_year("2026-02-01", 2019)
+    remove_line("Matale")
+    remove_line("Mihintale")
+    remove_line_after("Main", "Rambukkana")
+    add_line(
+        "Main-2",
+        "red",
+        [
+            "Ambewela",
+            "Haputale",
+            "Bandarawela",
+            "Badulla",
+        ],
+        "2E 1NE",
+    )
 
     return year_to_config
 
@@ -314,7 +371,7 @@ if __name__ == "__main__":
         draw.draw_svg(svg_path)
 
     png_path_list = []
-    for year, config in list(year_to_config.items())[:5]:
+    for year, config in list(year_to_config.items())[:10]:
         draw = Draw(config, Styler())
         svg_path = f"images/lk_rail_history/{year}.svg"
         png_path = draw.convert_svg_to_png(svg_path)
