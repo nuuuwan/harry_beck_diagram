@@ -1,0 +1,4 @@
+utils-nuuuwan
+reportlab
+svglib
+svgpathtools
