@@ -1,14 +1,12 @@
 from utils import Log, _
 
-from hbd.core.DISTRICT_CAPITAL_LIST import DISTRICT_CAPITAL_LIST
-
 log = Log(__name__)
 
 
 class DrawNode:
     def draw_node_circle(self, sx, sy):
         return _(
-            'circle',
+            "circle",
             None,
             self.styler.node_circle
             | dict(
@@ -19,35 +17,31 @@ class DrawNode:
 
     @staticmethod
     def get_transform(sx, sy, text_angle):
-        return ' '.join(
+        return " ".join(
             [
-                f'translate({sx},{sy})',
-                f'rotate({-text_angle})',
-                f'translate({-sx},{-sy})',
+                f"translate({sx},{sy})",
+                f"rotate({-text_angle})",
+                f"translate({-sx},{-sy})",
             ]
         )
 
     def draw_node_text(self, sx, sy, node, x, y, text_angle):
-        text_anchor = 'start'
+        text_anchor = "start"
         space_dir = 1
         if 90 < text_angle <= 270:
-            text_anchor = 'end'
+            text_anchor = "end"
             space_dir = -1
             text_angle -= 180
         transform = DrawNode.get_transform(sx, sy, text_angle)
         label = node
 
         cmp = self.config.get_node_cmp_value(node)
-        default_font_size = int(self.styler.node_text['font_size'])
+        default_font_size = int(self.styler.node_text["font_size"])
         font_size = default_font_size * [1.4, 1.2, 1.1, 1][cmp]
-        fill = 'black' if cmp < 2 else 'gray'
-
-        for district_name in DISTRICT_CAPITAL_LIST:
-            if district_name in label:
-                label = label.replace(district_name, district_name.upper())
+        fill = "black" if cmp < 2 else "gray"
 
         return _(
-            'text',
+            "text",
             label,
             self.styler.node_text
             | dict(
@@ -80,6 +74,6 @@ class DrawNode:
             )
 
         return _(
-            'g',
+            "g",
             inner_list,
         )

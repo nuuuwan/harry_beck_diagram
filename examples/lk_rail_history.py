@@ -1,3 +1,5 @@
+import os
+
 from hbd import Draw, ImageHighlight, Network, Styler
 
 
@@ -40,7 +42,7 @@ def build_year_to_config():  # noqa
     add_line(
         "Main",
         "red",
-        ["Colombo Terminus", "Ragama", "Gampaha", "Ambepussa"],
+        ["C. Terminus", "Ragama", "Gampaha", "Ambepussa"],
         "3NE",
     )
 
@@ -58,10 +60,10 @@ def build_year_to_config():  # noqa
     extend_line("Main", ["Talawakele"], "1SE")
 
     add_year(1877)
-    add_line("Coastal", "cyan", ["Colombo Terminus", "Panadura"], "1S")
+    add_line("Coastal", "cyan", ["C. Terminus", "Panadura"], "1S")
 
     add_year(1878)
-    extend_line("Coastal", ["Kalutara North"], "1S")
+    extend_line("Coastal", ["Kalutara N."], "1S")
 
     add_year(1879)
     extend_line("Coastal", ["Wadduwa"], "1S")
@@ -85,24 +87,24 @@ def build_year_to_config():  # noqa
     add_year(1894)
     extend_line("Main", ["Bandarawela"], "1E")
     extend_line("Coastal", ["Galle"], "1E")
-    add_line("Northern", "orange", ["Polgahawela", "Kurunegala"], "1N")
+    add_line("N.ern", "orange", ["Polgahawela", "Kurunegala"], "1N")
 
     add_year(1895)
     extend_line("Coastal", ["Matara"], "1E")
 
     add_year(1899)
-    extend_line("Northern", ["Maho"], "1N")
+    extend_line("N.ern", ["Maho"], "1N")
 
     add_year(1902)
     add_line(
         "Kelani Valley",
         "darkblue",
-        ["Colombo Terminus", "Homagama", "Avissawella"],
+        ["C. Terminus", "Homagama", "Avissawella"],
         "1SE 1E",
     )
 
     add_line(
-        "Northern-2",
+        "N.ern-2",
         "orange",
         [
             "Pallai",
@@ -123,12 +125,12 @@ def build_year_to_config():  # noqa
 
     add_year(1904)
     extend_line("Udu Pussellawa", ["Ragala"], "1E")
-    extend_line("Northern", ["Anuradhapura"], "1N")
+    extend_line("N.ern", ["Anuradhapura"], "1N")
 
     add_year(1905)
-    remove_line("Northern-2")
+    remove_line("N.ern-2")
     extend_line(
-        "Northern",
+        "N.ern",
         [
             "Mihintale Junction",
             "Medavachchiya",
@@ -143,11 +145,11 @@ def build_year_to_config():  # noqa
     )
 
     add_year(1908)
-    rename_station("Colombo Terminus", "Maradana")
+    rename_station("C. Terminus", "Maradana")
     add_line("Puttalam", "green", ["Ragama", "Ja-Ela"], "1NW")
 
     add_year(1909)
-    extend_line("Puttalam", ["Katunayake South", "Negombo"], "2NW")
+    extend_line("Puttalam", ["Katunayake S.", "Negombo"], "2NW")
 
     add_year(1912)
     add_line(
@@ -172,13 +174,13 @@ def build_year_to_config():  # noqa
 
     add_year(1917)
     extend_line("Coastal", ["Kosgoda"], "1SE")
+    update_line_at_start("Main", "C. Fort", "1NE")
     update_line(
         "Coastal",
         [
-            "Maradana",
-            "Colombo Fort",
+            "C. Fort",
             "Panadura",
-            "Kalutara North",
+            "Kalutara N.",
             "Wadduwa",
             "Aluthgama",
             "Kosgoda",
@@ -186,9 +188,8 @@ def build_year_to_config():  # noqa
             "Galle",
             "Matara",
         ],
-        "3S 3SE 3E",
+        "2S 3SE 3E",
     )
-    update_line_at_start("Main", "Colombo Fort", "1N")
 
     add_year(1924)
     extend_line("Main", ["Badulla"], "1NE")
@@ -221,7 +222,7 @@ def build_year_to_config():  # noqa
         [
             "Ragama",
             "Ja-Ela",
-            "Katunayake South",
+            "Katunayake S.",
             "Negombo",
             "Madampe",
             "Chilaw",
@@ -240,7 +241,7 @@ def build_year_to_config():  # noqa
     add_line(
         "Katunayake",
         "pink",
-        ["Katunayake South", "CMB Airport"],
+        ["Katunayake S.", "CMB Airport"],
         "1N",
     )
 
@@ -256,7 +257,7 @@ def build_year_to_config():  # noqa
 
     add_year(1990)
     update_line(
-        "Northern",
+        "N.ern",
         [
             "Polgahawela",
             "Kurunegala",
@@ -279,17 +280,17 @@ def build_year_to_config():  # noqa
     extend_line("Batticaloa", ["Batticaloa"], "1E")
 
     add_year(2011)
-    extend_line("Northern", ["Omanthai"], "1N")
+    extend_line("N.ern", ["Omanthai"], "1N")
 
     add_year(2013)
-    extend_line("Northern", ["Kilinochchi", "Pallai"], "1N 1NW")
+    extend_line("N.ern", ["Kilinochchi", "Pallai"], "1N 1NW")
     add_line("Mannar", "blue", ["Medavachchiya", "Madhu Road"], "1NW")
 
     add_year(2014)
-    extend_line("Northern", ["Jaffna"], "1NW")
+    extend_line("N.ern", ["Jaffna"], "1NW")
 
     add_year(2015)
-    extend_line("Northern", ["Kankesanthurai"], "1N")
+    extend_line("N.ern", ["Kankesanthurai"], "1N")
     extend_line("Mannar", ["Mannar", "Talaimanar Pier"], "1NW 1W")
 
     add_year(2019)
@@ -301,24 +302,17 @@ def build_year_to_config():  # noqa
 if __name__ == "__main__":
     year_to_config = build_year_to_config()
 
-    png_path_list = []
-    prev_png_path = None
     for year, config in year_to_config.items():
         draw = Draw(config, Styler())
-        png_path = f"images/lk_rail_history/{year}.png"
-        png_path = draw.draw(png_path, False)
+        svg_path = f"images/lk_rail_history/{year}.svg"
+        draw.draw_svg(svg_path)
 
-        if prev_png_path:
-            png_path_highlight = png_path[:-4] + ".highlight.png"
-            ImageHighlight(
-                png_path,
-                prev_png_path,
-                400,
-            ).write(png_path_highlight)
-        else:
-            png_path_highlight = png_path
-        prev_png_path = png_path
-        png_path_list.append(png_path_highlight)
+    png_path_list = []
+    for year, config in year_to_config.items():
+        draw = Draw(config, Styler())
+        svg_path = f"images/lk_rail_history/{year}.svg"
+        png_path = draw.convert_svg_to_png(svg_path)
+        png_path_list.append(png_path)
 
     gif_path = "images/lk_rail_history/timeline.gif"
     Draw.build_animated_gif(png_path_list, gif_path)

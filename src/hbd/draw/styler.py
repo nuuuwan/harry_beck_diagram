@@ -2,12 +2,12 @@ from functools import cached_property
 
 import svglib.svglib as svglib
 
-DEFAULT_FONT_FAMILY = 'p22'
-DEFAULT_FONT_PATH = f'C:\\Windows\\Fonts\\{DEFAULT_FONT_FAMILY}.ttf'
+DEFAULT_FONT_FAMILY = "p22"
+DEFAULT_FONT_PATH = f"C:\\Windows\\Fonts\\{DEFAULT_FONT_FAMILY}.ttf"
 
 
 svglib.register_font(
-    DEFAULT_FONT_FAMILY, DEFAULT_FONT_PATH, weight='normal', style='regular'
+    DEFAULT_FONT_FAMILY, DEFAULT_FONT_PATH, weight="normal", style="regular"
 )
 
 
@@ -17,7 +17,7 @@ class Styler:
         RADIUS=14,
         DIM=3600,
         OPACITY=1,
-        PADDING=360,
+        PADDING=480,
         FONT_FAMILY=DEFAULT_FONT_FAMILY,
         FONT_SIZE=40,
     ):
@@ -39,74 +39,74 @@ class Styler:
     @cached_property
     def text_title(self):
         return dict(
-            fill='black',
-            stroke='none',
+            fill="black",
+            stroke="none",
             font_size=self.FONT_SIZE * 4,
             font_family=self.FONT_FAMILY,
             x=self.DIM / 2,
             y=self.PADDING / 2,
-            text_anchor='middle',
-            dominant_baseline='hanging',
+            text_anchor="middle",
+            dominant_baseline="hanging",
         )
 
     @cached_property
     def text_subtitle(self):
         return dict(
-            fill='gray',
-            stroke='none',
+            fill="gray",
+            stroke="none",
             font_size=self.FONT_SIZE,
             font_family=self.FONT_FAMILY,
             x=self.DIM / 2,
             y=self.PADDING / 2 + self.FONT_SIZE * 1.25,
-            text_anchor='middle',
-            dominant_baseline='hanging',
+            text_anchor="middle",
+            dominant_baseline="hanging",
         )
 
     @cached_property
     def text_footer_text(self):
         return dict(
-            fill='gray',
-            stroke='none',
+            fill="gray",
+            stroke="none",
             font_size=self.FONT_SIZE,
             font_family=self.FONT_FAMILY,
             x=self.DIM / 2,
             y=self.DIM - (self.PADDING / 2 - self.FONT_SIZE),
-            text_anchor='middle',
-            dominant_baseline='text-top',
+            text_anchor="middle",
+            dominant_baseline="text-top",
         )
 
     @cached_property
     def text_watermark(self):
         return dict(
-            fill='#fcfcfc',
-            stroke='none',
+            fill="#fcfcfc",
+            stroke="none",
             font_size=self.DIM / 6,
             font_family=self.FONT_FAMILY,
             x=self.DIM / 2,
             y=self.DIM / 2,
-            text_anchor='middle',
-            dominant_baseline='center',
+            text_anchor="middle",
+            dominant_baseline="center",
         )
 
     @cached_property
     def node_circle(self):
         return dict(
             r=self.RADIUS * 2,
-            fill='white',
-            stroke='black',
+            fill="white",
+            stroke="black",
             stroke_width=self.RADIUS * 0.5,
         )
 
     @cached_property
     def node_text(self):
         return dict(
-            fill='black',
-            stroke='none',
+            fill="black",
+            stroke="none",
             font_size=self.FONT_SIZE,
             font_family=self.FONT_FAMILY,
             font_weight="100",
-            text_anchor='start',
-            dominant_baseline='central',
+            text_anchor="start",
+            dominant_baseline="central",
         )
 
     @cached_property
@@ -116,7 +116,7 @@ class Styler:
     @cached_property
     def line_path(self):
         return dict(
-            fill='none',
+            fill="none",
             stroke_width=self.RADIUS * 2.1,
             stroke_opacity=self.OPACITY,
         )

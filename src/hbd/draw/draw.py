@@ -39,33 +39,33 @@ class Draw(DrawNode, DrawLine):
 
     def draw_title(self):
         self.config.title
-        return _('text', self.config.title, self.styler.text_title)
+        return _("text", self.config.title, self.styler.text_title)
 
     def draw_subtitle(self):
-        return _('text', self.config.subtitle, self.styler.text_subtitle)
+        return _("text", self.config.subtitle, self.styler.text_subtitle)
 
     def draw_footer_text(self):
         footer_text = self.config.footer_text
         font_size = min(
-            self.styler.text_footer_text['font_size'],
-            self.styler.svg['width'] / len(footer_text),
+            self.styler.text_footer_text["font_size"],
+            self.styler.svg["width"] / len(footer_text),
         )
         return _(
-            'text',
+            "text",
             footer_text,
             self.styler.text_footer_text | dict(font_size=font_size),
         )
 
     def draw_watermark(self):
         return _(
-            'text',
-            '@nuuuwan',
+            "text",
+            "@nuuuwan",
             self.styler.text_watermark,
         )
 
-    def draw(self, png_path, do_open=True):
+    def draw_svg(self, svg_path):
         svg = _(
-            'svg',
+            "svg",
             [
                 self.draw_watermark(),
                 self.draw_title(),
@@ -76,22 +76,17 @@ class Draw(DrawNode, DrawLine):
             + self.draw_nodes(),
             self.styler.svg,
         )
-        svg_path = png_path[:-3] + 'svg'
         svg.store(svg_path)
-        log.debug(f'Saved {svg_path}')
-
-        png_path = Draw.convert_svg_to_png(svg_path)
-        if do_open:
-            webbrowser.open(os.path.abspath(png_path))
-        return png_path
+        log.debug(f"Saved {svg_path}")
+        return svg_path
 
     @staticmethod
     def convert_svg_to_png(svg_path):
-        png_path = svg_path[:-3] + 'png'
+        png_path = svg_path[:-3] + "png"
 
         drawing = svg2rlg(svg_path)
         renderPM.drawToFile(drawing, png_path, fmt="PNG")
-        log.info(f'Saved {png_path}')
+        log.info(f"Saved {png_path}")
 
         return png_path
 
@@ -107,5 +102,5 @@ class Draw(DrawNode, DrawLine):
             images.append(imageio.imread(png_path))
         DURATION = 55.70 / 24
         imageio.mimwrite(gif_path, images, duration=DURATION)
-        log.info(f'Built {gif_path} (from {len(png_path_list)} png files)')
+        log.info(f"Built {gif_path} (from {len(png_path_list)} png files)")
         webbrowser.open(os.path.abspath(gif_path))
