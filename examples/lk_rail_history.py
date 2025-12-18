@@ -43,7 +43,7 @@ def build_config_idx():  # noqa
     add_line(
         'Main',
         'red',
-        ['Colombo Fort', 'Maradana', 'Ragama', 'Gampaha', 'Ambepussa'],
+        ['Maradana', 'Ragama', 'Gampaha', 'Ambepussa'],
         '4NE',
     )
 
@@ -61,7 +61,7 @@ def build_config_idx():  # noqa
     extend_line('Main', ['Talawakele'], '1SE')
 
     init_year(1877)
-    add_line('Coastal', 'cyan', ['Colombo Fort', 'Panadura'], '1S')
+    add_line('Coastal', 'cyan', ['Maradana', 'Panadura'], '1S')
 
     init_year(1878)
     extend_line('Coastal', ['Kalutara North'], '1S')
