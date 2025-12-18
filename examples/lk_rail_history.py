@@ -47,7 +47,7 @@ def build_year_to_config():  # noqa
     )
 
     add_year(1867)
-    extend_line("Main", ["Polgahawela", "Peradeniya"], "2E")
+    extend_line("Main", ["Polgahawela", "Rambukkana", "Peradeniya"], "3E")
     add_line("Matale", "purple", ["Peradeniya", "Kandy"], "1NE")
 
     add_year(1873)
@@ -69,7 +69,7 @@ def build_year_to_config():  # noqa
     extend_line("Coastal", ["Wadduwa"], "1S")
 
     add_year(1880)
-    extend_line("Matale", ["Matale"], "1E")
+    extend_line("Matale", ["Wattegama", "Matale"], "2E")
 
     add_year(1885)
     extend_line("Main", ["Nanu Oya"], "1SE")
@@ -82,7 +82,7 @@ def build_year_to_config():  # noqa
 
     add_year(1893)
     extend_line("Coastal", ["Ambalangoda"], "1SE")
-    extend_line("Main", ["Haputale"], "1E")
+    extend_line("Main", ["Ambewela", "Haputale"], "2E")
 
     add_year(1894)
     extend_line("Main", ["Bandarawela"], "1E")
@@ -167,7 +167,7 @@ def build_year_to_config():  # noqa
         "2NW 1W",
     )
     add_year(1915)
-    extend_line("Puttalam", ["Madampe"], "1N")
+    extend_line("Puttalam", ["Nattandiya", "Madampe"], "2N")
 
     add_year(1916)
     extend_line("Puttalam", ["Chilaw"], "1N")
@@ -300,18 +300,14 @@ def build_year_to_config():  # noqa
 
 
 if __name__ == "__main__":
-    year_to_config = {
-        year: config
-        for year, config in list(build_year_to_config().items())[:10]
-    }
-
+    year_to_config = build_year_to_config()
     for year, config in year_to_config.items():
         draw = Draw(config, Styler())
         svg_path = f"images/lk_rail_history/{year}.svg"
         draw.draw_svg(svg_path)
 
     png_path_list = []
-    for year, config in year_to_config.items():
+    for year, config in list(year_to_config.items())[:5]:
         draw = Draw(config, Styler())
         svg_path = f"images/lk_rail_history/{year}.svg"
         png_path = draw.convert_svg_to_png(svg_path)

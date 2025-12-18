@@ -40,7 +40,6 @@ class Draw(DrawNode, DrawLine):
         return lines
 
     def draw_title(self):
-        self.config.title
         return _("text", self.config.title, self.styler.text_title)
 
     def draw_subtitle(self):

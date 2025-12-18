@@ -62,11 +62,6 @@ class DrawNode:
 
         if node in self.config.junction_list:
             inner_list.append(self.draw_node_circle(sx, sy))
-        # else:
-        #     if node not in self.config.terminal_list:
-        #         inner_list.append(
-        #             self.draw_node_blip(sx, sy, node, text_angle)
-        #         )
 
         if text_angle is not None:
             inner_list.append(
