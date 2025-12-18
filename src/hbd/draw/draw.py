@@ -113,6 +113,9 @@ class Draw(DrawNode, DrawLine):
 
     @staticmethod
     def build_video(png_path_list, video_path, image_duration=None):
+        dir_video_path = os.path.dirname(video_path)
+        os.makedirs(dir_video_path, exist_ok=True)
+
         image_duration = image_duration or (16.38 * 2 / 12)
         png_path_list = png_path_list[:10]
         png_path_list.sort()

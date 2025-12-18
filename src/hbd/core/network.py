@@ -69,7 +69,7 @@ class Network:
     def from_year(cls, year: int):
         return cls(
             title=str(year),
-            subtitle="",
+            subtitle="Sri Lanka's Railway Network",
             footer_text=" ~ ".join(
                 [
                     "data from railway.gov.lk et al",

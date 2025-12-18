@@ -1,6 +1,4 @@
-import os
-
-from hbd import Draw, ImageHighlight, Network, Styler
+from hbd import Draw, Network, Styler
 
 
 def build_year_to_config():  # noqa
@@ -377,5 +375,5 @@ if __name__ == "__main__":
         png_path = draw.convert_svg_to_png(svg_path)
         png_path_list.append(png_path)
 
-    video_path = "images/lk_rail_history/lk_rail_history.mp4"
+    video_path = "videos/lk_rail_history/lk_rail_history.mp4"
     Draw.build_video(png_path_list, video_path)
