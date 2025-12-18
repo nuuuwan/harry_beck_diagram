@@ -57,7 +57,7 @@ class Styler:
             font_size=self.FONT_SIZE * 2,
             font_family=self.FONT_FAMILY,
             x=self.DIM / 2,
-            y=self.PADDING * 0.7 + self.FONT_SIZE * 1.25,
+            y=self.PADDING * 0.65 + self.FONT_SIZE * 1.25,
             text_anchor="middle",
             dominant_baseline="hanging",
         )

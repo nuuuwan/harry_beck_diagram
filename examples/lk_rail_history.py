@@ -1,3 +1,5 @@
+import os
+
 from hbd import Draw, Network, Styler
 
 
@@ -365,15 +367,16 @@ if __name__ == "__main__":
     year_to_config = build_year_to_config()
     for year, config in year_to_config.items():
         draw = Draw(config, Styler())
-        svg_path = f"images/lk_rail_history/{year}.svg"
+        svg_path = f"media/images/lk_rail_history/{year}.svg"
         draw.draw_svg(svg_path)
 
     png_path_list = []
-    for year, config in list(year_to_config.items())[:10]:
+    for year, config in list(year_to_config.items())[:20]:
         draw = Draw(config, Styler())
-        svg_path = f"images/lk_rail_history/{year}.svg"
+        svg_path = f"media/images/lk_rail_history/{year}.svg"
         png_path = draw.convert_svg_to_png(svg_path)
         png_path_list.append(png_path)
 
-    video_path = "videos/lk_rail_history/lk_rail_history.mp4"
-    Draw.build_video(png_path_list, video_path)
+    audio_path = os.path.join("media", "audio", "echoofsadness.mp3")
+    video_path = "media/videos/lk_rail_history/lk_rail_history.mp4"
+    Draw.build_video(png_path_list, video_path, audio_path)

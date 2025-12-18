@@ -112,7 +112,12 @@ class Draw(DrawNode, DrawLine):
         webbrowser.open(os.path.abspath(gif_path))
 
     @staticmethod
-    def build_video(png_path_list, video_path, image_duration=None):
+    def build_video(
+        png_path_list, video_path, audio_path, image_duration=None
+    ):
+        assert (
+            audio_path is not None
+        ), "Audio path is required for building video"
         dir_video_path = os.path.dirname(video_path)
         os.makedirs(dir_video_path, exist_ok=True)
 
@@ -125,7 +130,6 @@ class Draw(DrawNode, DrawLine):
         clip = ImageSequenceClip(extended_png_list, durations=durations)
         video_duration = sum(durations)
 
-        audio_path = os.path.join("media", "echoofsadness.mp3")
         audio_clip = AudioFileClip(audio_path)
         audio_clip = audio_clip.subclipped(0, video_duration)
         audio_clip = audio_clip.with_effects([AudioFadeOut(2.0)])
