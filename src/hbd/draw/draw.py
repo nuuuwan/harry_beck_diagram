@@ -83,6 +83,9 @@ class Draw(DrawNode, DrawLine):
     @staticmethod
     def convert_svg_to_png(svg_path):
         png_path = svg_path[:-3] + "png"
+        if os.path.exists(png_path):
+            log.debug(f"Skipped {png_path} (already exists)")
+            return png_path
 
         drawing = svg2rlg(svg_path)
         renderPM.drawToFile(drawing, png_path, fmt="PNG")
@@ -100,7 +103,7 @@ class Draw(DrawNode, DrawLine):
         images = []
         for png_path in png_path_list:
             images.append(imageio.imread(png_path))
-        DURATION = 55.70 / 24
+        DURATION = 255.70 / 24
         imageio.mimwrite(gif_path, images, duration=DURATION)
         log.info(f"Built {gif_path} (from {len(png_path_list)} png files)")
         webbrowser.open(os.path.abspath(gif_path))
