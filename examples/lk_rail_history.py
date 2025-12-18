@@ -38,6 +38,9 @@ def build_year_to_config():  # noqa
             line_name, station_name, path_item
         )
 
+    def remove_line_after(line_name, station_name):
+        get_latest_config().remove_line_after(line_name, station_name)
+
     add_year(1865)
     add_line(
         "Main",
@@ -87,13 +90,13 @@ def build_year_to_config():  # noqa
     add_year(1894)
     extend_line("Main", ["Bandarawela"], "1E")
     extend_line("Coastal", ["Galle"], "1E")
-    add_line("N.ern", "orange", ["Polgahawela", "Kurunegala"], "1N")
+    add_line("Nothern", "orange", ["Polgahawela", "Kurunegala"], "1N")
 
     add_year(1895)
     extend_line("Coastal", ["Matara"], "1E")
 
     add_year(1899)
-    extend_line("N.ern", ["Maho"], "1N")
+    extend_line("Nothern", ["Maho"], "1N")
 
     add_year(1902)
     add_line(
@@ -104,7 +107,7 @@ def build_year_to_config():  # noqa
     )
 
     add_line(
-        "N.ern-2",
+        "Nothern-2",
         "orange",
         [
             "Pallai",
@@ -125,12 +128,12 @@ def build_year_to_config():  # noqa
 
     add_year(1904)
     extend_line("Udu Pussellawa", ["Ragala"], "1E")
-    extend_line("N.ern", ["Anuradhapura"], "1N")
+    extend_line("Nothern", ["Anuradhapura"], "1N")
 
     add_year(1905)
-    remove_line("N.ern-2")
+    remove_line("Nothern-2")
     extend_line(
-        "N.ern",
+        "Nothern",
         [
             "Mihintale Junction",
             "Medavachchiya",
@@ -257,7 +260,7 @@ def build_year_to_config():  # noqa
 
     add_year(1990)
     update_line(
-        "N.ern",
+        "Nothern",
         [
             "Polgahawela",
             "Kurunegala",
@@ -280,21 +283,25 @@ def build_year_to_config():  # noqa
     extend_line("Batticaloa", ["Batticaloa"], "1E")
 
     add_year(2011)
-    extend_line("N.ern", ["Omanthai"], "1N")
+    extend_line("Nothern", ["Omanthai"], "1N")
 
     add_year(2013)
-    extend_line("N.ern", ["Kilinochchi", "Pallai"], "1N 1NW")
+    extend_line("Nothern", ["Kilinochchi", "Pallai"], "1N 1NW")
     add_line("Mannar", "blue", ["Medavachchiya", "Madhu Road"], "1NW")
 
     add_year(2014)
-    extend_line("N.ern", ["Jaffna"], "1NW")
+    extend_line("Nothern", ["Jaffna"], "1NW")
 
     add_year(2015)
-    extend_line("N.ern", ["Kankesanthurai"], "1N")
+    extend_line("Nothern", ["Kankesanthurai"], "1N")
     extend_line("Mannar", ["Mannar", "Talaimanar Pier"], "1NW 1W")
 
     add_year(2019)
     extend_line("Coastal", ["Beliatta"], "1E")
+
+    add_year("2025-12-16")
+    remove_line("Mannar")
+    remove_line_after("Main", "Rambukkana")
 
     return year_to_config
 
