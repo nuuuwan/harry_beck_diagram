@@ -129,7 +129,6 @@ class Draw(DrawNode, DrawLine):
 
         image_duration = image_duration or (16.38 * 1 / 12)
         png_path_list.sort()
-        png_path_list = png_path_list[:10]
 
         durations = [image_duration for _ in png_path_list]
         if expand_end:
